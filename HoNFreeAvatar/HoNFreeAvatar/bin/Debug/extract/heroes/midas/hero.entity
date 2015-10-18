@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hero
+	name="Hero_Midas"
+
+	team="Legion"
+	icon="icon.tga"
+	portrait="icon.tga"
+	model="hd_midas/model.mdf"
+	skin=""
+	
+	passiveeffect="hd_midas/effects/body.effect"
+	spawneffect=""
+	respawneffect="/shared/effects/respawn.effect"
+	selectedsound="sounds/voice/select_%.wav"
+	selectedflavorsound="sounds/voice/select_flavour_%.wav"
+	confirmmovesound="sounds/voice/move_%.wav"
+	confirmattacksound="sounds/voice/attack_%.wav"
+	nomanasound="sounds/voice/no_mana.wav"
+	cooldownsound="sounds/voice/cooldown.wav"
+	announcersound="sounds/voice/hero_select.wav"
+	tauntedsound="sounds/voice/taunt_prior.wav"
+	tauntkillsound="sounds/voice/taunt_after.wav"
+	
+	preglobalscale="1.5"
+	modelscale="1.0"
+	effectscale="1"
+	boundsheight="112"
+	boundsradius="24"
+	selectionradius="48"
+	targetoffset="0 0 64"
+	infoheight="180"
+
+	category="magic cc"
+	difficulty="3.5"
+
+	solorating="4"
+	junglerating="0"
+	carryrating="0"
+	supportrating="0"
+	initiatorrating="0"
+	gankerrating="2"
+	pusherrating="2"
+	rangedrating="3"
+	meleerating="0"
+
+	movespeed="300"
+	turnrate="540"
+	turnsmoothing="0.05"
+	
+	maxhealth="150"
+	healthregen="0.25"
+	maxmana="0"
+	manaregen="0.01"
+
+	armor="1.3"
+	magicarmor="5.5"
+
+	inventory0="Ability_Midas1"
+	inventory1="Ability_Midas2"
+	inventory2="Ability_Midas3"
+	inventory3="Ability_Midas4"
+	inventory4="Ability_AttributeBoost"
+	inventory5=""
+	inventory6=""
+	inventory8="Ability_Taunt"
+	inventory9=""
+	inventory10=""
+	inventory11=""
+	inventory12="Ability_AutomatedCourier"
+
+	attackduration="1000"
+	attackactiontime="350"
+	attackcooldown="1700"
+	attackdamagemin="28"
+	attackdamagemax="34"
+	attacknumanims="2"
+	attackoffset="-55 50 80"
+	attackprojectile="Projectile_Midas_Attack"
+	attackrange="450"
+	attackstarteffect=""
+	attackactioneffect="effects/attack.effect"
+	attackimpacteffect=""
+	attacktype="ranged"
+	combattype="Hero"
+
+	aggrorange="800"
+	sightrangeday="1800"
+	sightrangenight="800"
+	wanderrange="250"
+	
+	corpsetime="1000"
+	corpsefadetime="3000"
+	corpsefadeeffect="/shared/effects/corpse_sink.effect"
+
+	primaryattribute="Strength"
+	strength="20"
+	strengthperlevel="2.2"
+	agility="12"
+	agilityperlevel="1.1"
+	intelligence="22"
+	intelligenceperlevel="3"
+	
+	previewmodel="hd_midas/preview.mdf"
+	previewpos="0 0 -50"
+	previewangles="0 0 0"
+	previewscale="1.4"
+	
+	storemodel="hd_midas/preview.mdf"
+	storepos="0 0 -20"
+	storeangles="0 0 0"
+	storescale="1.3"
+>
+	<recommendeditem name="Item_MinorTotem" />
+	<recommendeditem name="Item_RunesOfTheBlight" />
+	<recommendeditem name="Item_HealthPotion" />
+	<recommendeditem name="Item_PowerSupply" />
+	<recommendeditem name="Item_HomecomingStone" />
+	
+	<recommendeditem name="Item_Strength5" />
+	<recommendeditem name="Item_BloodChalice" />
+	<recommendeditem name="Item_EnhancedMarchers" />
+	<recommendeditem name="Item_PushStaff" />
+	<recommendeditem name="Item_Astrolabe" />
+	
+	<recommendeditem name="Item_NomesWisdom" />
+	<recommendeditem name="Item_PortalKey" />
+	<recommendeditem name="Item_Intelligence6" />
+	<recommendeditem name="Item_StrengthAgility" />
+	<recommendeditem name="Item_BehemothsHeart" />
+
+	<altavatar key="Hero_Midas.Alt"
+		icon2="alt/icon.tga"
+		portrait="alt/icon.tga"
+		model="alt/model.mdf"
+		
+		preglobalscale="1.6"
+		
+		previewmodel="alt/preview.mdf"
+		previewpos="0 0 -50"
+		previewangles="0 0 0"
+		previewscale="1.4"
+		
+		storemodel="alt/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.6"
+		
+		selectedsound="alt/sounds/voice/select_%.wav"
+		selectedflavorsound="alt/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt/sounds/voice/move_%.wav"
+		confirmattacksound="alt/sounds/voice/attack_%.wav"
+		nomanasound="alt/sounds/voice/no_mana.wav"
+		cooldownsound="alt/sounds/voice/cooldown.wav"
+		announcersound="alt/sounds/voice/hero_select.wav"
+		tauntedsound="alt/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt/sounds/voice/taunt_after.wav"
+	/>
+	
+	<altavatar key="Hero_Midas.Alt2"
+		icon2="alt2/icon.tga"
+		portrait="alt2/icon.tga"
+		model="hd_alt2/model.mdf"
+		
+		preglobalscale="1.5"
+	
+		attackactioneffect="alt2/effects/attack.effect"
+		passiveeffect="hd_alt2/effects/body.effect"
+		
+		previewmodel="hd_alt2/preview.mdf"
+		previewpos="0 0 -50"
+		previewangles="0 0 0"
+		previewscale="1.4"
+		
+		storemodel="hd_alt2/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.1"
+		
+		attackprojectile="Projectile_Midas_Attack_Alt2"
+		attackoffset="-55 100 120"
+		
+		selectedsound="sounds/voice/select_%.wav"
+		selectedflavorsound="sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt2/sounds/voice/move_%.wav"
+		confirmattacksound="alt2/sounds/voice/attack_%.wav"
+		nomanasound="alt2/sounds/voice/no_mana.wav"
+		cooldownsound="sounds/voice/cooldown.wav"
+		tauntedsound="alt2/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt2/sounds/voice/taunt_after.wav"
+		
+		portraitcampos="-7.5 20 30"
+	/>
+	
+	<altavatar key="Hero_Midas.Alt3"
+		preglobalscale="1.82"
+		
+		icon2="alt3/icon.tga"
+		portrait="alt3/icon.tga"
+		model="alt3/model.mdf"
+	
+		attackoffset="-25 85 150"
+	
+		attackactioneffect="alt3/effects/attack.effect"
+		passiveeffect="alt3/effects/body.effect"
+		
+		previewmodel="alt3/preview.mdf"
+		previewpos="0 0 -50"
+		previewangles="0 0 0"
+		previewscale="1.4"
+		
+		storemodel="alt3/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.4"
+		
+		attackprojectile="Projectile_Midas_Attack_Alt3"
+		
+		selectedsound="alt3/sounds/voice/select_%.wav"
+		selectedflavorsound="alt3/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt3/sounds/voice/move_%.wav"
+		confirmattacksound="alt3/sounds/voice/attack_%.wav"
+		nomanasound="alt3/sounds/voice/no_mana.wav"
+		cooldownsound="alt3/sounds/voice/cooldown.wav"
+		tauntedsound="alt3/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt3/sounds/voice/taunt_after.wav"
+	/>
+	
+	<altavatar key="Hero_Midas.Alt4"
+		preglobalscale="1.5"
+		
+		icon2="alt4/icon.tga"
+		portrait="alt4/icon.tga"
+		model="alt4/model.mdf"
+	
+		attackoffset="-25 115 75"
+		infoheight="175"
+		
+		attackactioneffect="alt4/effects/attack.effect"
+		passiveeffect="alt4/effects/body.effect"
+		
+		previewmodel="alt4/preview.mdf"
+		previewpos="0 0 -50"
+		previewangles="0 0 0"
+		previewscale="1.4"
+		
+		storemodel="alt4/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.4"
+		
+		selectedsound="alt4/sounds/voice/select_%.wav"
+		selectedflavorsound="alt4/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt4/sounds/voice/move_%.wav"
+		confirmattacksound="alt4/sounds/voice/attack_%.wav"
+		nomanasound="alt4/sounds/voice/no_mana.wav"
+		cooldownsound="alt4/sounds/voice/cooldown.wav"
+		tauntedsound="alt4/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt4/sounds/voice/taunt_after.wav"
+	>
+		<onspawn propagatetoillusions="false" >
+			<ownsproduct target="this_entity" product="aa.Hero_Chronos.Alt5 aa.Hero_Maliken.Alt5 aa.Hero_Midas.Alt4 aa.Hero_Nomad.Alt5 aa.Hero_Prisoner.Alt4 aa.Hero_Succubis.Alt3 aa.Hero_Xalynx.Alt4" />
+			<compare a="result" b="1" op="eq">
+				<activatemodifierkey name="Virtue_Set_Bonus" />
+			</compare>
+		</onspawn>
+		
+		<onrespawn propagatetoillusions="false" >
+			<ownsproduct target="this_entity" product="aa.Hero_Chronos.Alt5 aa.Hero_Maliken.Alt5 aa.Hero_Midas.Alt4 aa.Hero_Nomad.Alt5 aa.Hero_Prisoner.Alt4 aa.Hero_Succubis.Alt3 aa.Hero_Xalynx.Alt4" />
+			<compare a="result" b="1" op="eq">
+				<activatemodifierkey name="Virtue_Set_Bonus" />
+			</compare>
+		</onrespawn>
+		
+		<modifier key="Virtue_Set_Bonus" modpriority="1"
+			tooleffectpath38="alt4/effects/virtue_bonus.effect"
+		/>
+	</altavatar>
+	
+	<altavatar key="Hero_Midas.Alt5" modpriority="1"
+		altavatar="true"
+		
+		preglobalscale="1.82"
+		
+		icon2="alt5/icon.tga"
+		portrait="alt5/icon.tga"
+		model="alt5/model.mdf"
+	
+		attackoffset="-25 85 150"
+	
+		attackactioneffect="alt5/effects/attack.effect"
+		passiveeffect="alt5/effects/body.effect"
+		
+		previewmodel="alt5/preview.mdf"
+		previewpos="0 0 -50"
+		previewangles="0 0 0"
+		previewscale="1.4"
+		
+		storemodel="alt5/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.4"
+		
+		attackprojectile="Projectile_Midas_Attack_Alt5"
+		
+		selectedsound="alt5/sounds/voice/select_%.wav"
+		selectedflavorsound="alt5/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt5/sounds/voice/move_%.wav"
+		confirmattacksound="alt5/sounds/voice/attack_%.wav"
+		nomanasound="alt5/sounds/voice/no_mana.wav"
+		cooldownsound="alt5/sounds/voice/cooldown.wav"
+		tauntedsound="alt5/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt5/sounds/voice/taunt_after.wav"
+	/>
+	
+	<altavatar key="Hero_Midas.Alt6" modpriority="1"
+		altavatar="true"
+		
+		preglobalscale="1.90"
+		
+		icon2="alt6/icon.tga"
+		portrait="alt6/icon.tga"
+		model="alt6/model.mdf"
+
+		portraitcampos="15 -40 20"
+		overheadoffset="20"
+		attackoffset="-15 150 150"
+	
+		attackactioneffect="alt6/effects/attack.effect"
+		passiveeffect="alt6/effects/body.effect"
+		
+		previewmodel="/shared/models/invis.mdf"
+		previewpos="0 0 -50"
+		previewangles="0 0 0"
+		previewscale="1.4"
+		
+		storemodel="/shared/models/invis.mdf"
+		storepassiveeffect="alt6/effects/body_lvl_4_store.effect"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.55"
+		
+		attackprojectile="Projectile_Midas_Attack"
+		
+		selectedsound="alt6/sounds/voice/select_%.wav"
+		selectedflavorsound="alt6/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt6/sounds/voice/move_%.wav"
+		confirmattacksound="alt6/sounds/voice/attack_%.wav"
+		nomanasound="alt6/sounds/voice/no_mana.wav"
+		cooldownsound="alt6/sounds/voice/cooldown.wav"
+		tauntedsound="alt6/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt6/sounds/voice/taunt_after.wav"
+	>
+	
+	<onspawn propagatetoillusions="false" >
+		<ownsproduct target="this_entity" product="en.sterling_midas_01" />
+		<compare a="result" b="0" op="ne">
+			<activatemodifierkey name="Alt6_Level_1" />
+		</compare>
+		<ownsproduct target="this_entity" product="en.sterling_midas_02" />
+		<compare a="result" b="0" op="ne">
+			<activatemodifierkey name="Alt6_Level_2" />
+		</compare>
+		<ownsproduct target="this_entity" product="en.sterling_midas_03" />
+		<compare a="result" b="0" op="ne">
+			<activatemodifierkey name="Alt6_Level_3" />
+		</compare>
+		<ownsproduct target="this_entity" product="en.sterling_midas_04" />
+		<compare a="result" b="0" op="ne">
+			<activatemodifierkey name="Alt6_Level_4" />
+		</compare>
+		<ownsproduct target="this_entity" product="en.sterling_midas_05" />
+		<compare a="result" b="0" op="ne">
+			<activatemodifierkey name="Alt6_Level_5" />
+		</compare>
+		<ownsproduct target="this_entity" product="en.sterling_midas_06" />
+		<compare a="result" b="0" op="ne">
+			<activatemodifierkey name="Alt6_Level_6" />
+		</compare>
+		<ownsproduct target="this_entity" product="en.sterling_midas_07" />
+		<compare a="result" b="0" op="ne">
+			<activatemodifierkey name="Alt6_Level_7" />
+		</compare>
+		<ownsproduct target="this_entity" product="en.sterling_midas_08" />
+		<compare a="result" b="0" op="ne">
+			<activatemodifierkey name="Alt6_Level_8" />
+		</compare>
+		<ownsproduct target="this_entity" product="en.sterling_midas_09" />
+		<compare a="result" b="0" op="ne">
+			<activatemodifierkey name="Alt6_Level_9" />
+		</compare>
+		<ownsproduct target="this_entity" product="en.sterling_midas_10" />
+		<compare a="result" b="0" op="ne">
+			<activatemodifierkey name="Alt6_Level_10" />
+		</compare>
+	</onspawn>
+	
+	<onrespawn propagatetoillusions="false" >
+		<ownsproduct target="this_entity" product="en.sterling_midas_01" />
+		<compare a="result" b="0" op="ne">
+			<activatemodifierkey name="Alt6_Level_1" />
+		</compare>
+		<ownsproduct target="this_entity" product="en.sterling_midas_02" />
+		<compare a="result" b="0" op="ne">
+			<activatemodifierkey name="Alt6_Level_2" />
+		</compare>
+		<ownsproduct target="this_entity" product="en.sterling_midas_03" />
+		<compare a="result" b="0" op="ne">
+			<activatemodifierkey name="Alt6_Level_3" />
+		</compare>
+		<ownsproduct target="this_entity" product="en.sterling_midas_04" />
+		<compare a="result" b="0" op="ne">
+			<activatemodifierkey name="Alt6_Level_4" />
+		</compare>
+		<ownsproduct target="this_entity" product="en.sterling_midas_05" />
+		<compare a="result" b="0" op="ne">
+			<activatemodifierkey name="Alt6_Level_5" />
+		</compare>
+		<ownsproduct target="this_entity" product="en.sterling_midas_06" />
+		<compare a="result" b="0" op="ne">
+			<activatemodifierkey name="Alt6_Level_6" />
+		</compare>
+		<ownsproduct target="this_entity" product="en.sterling_midas_07" />
+		<compare a="result" b="0" op="ne">
+			<activatemodifierkey name="Alt6_Level_7" />
+		</compare>
+		<ownsproduct target="this_entity" product="en.sterling_midas_08" />
+		<compare a="result" b="0" op="ne">
+			<activatemodifierkey name="Alt6_Level_8" />
+		</compare>
+		<ownsproduct target="this_entity" product="en.sterling_midas_09" />
+		<compare a="result" b="0" op="ne">
+			<activatemodifierkey name="Alt6_Level_9" />
+		</compare>
+		<ownsproduct target="this_entity" product="en.sterling_midas_10" />
+		<compare a="result" b="0" op="ne">
+			<activatemodifierkey name="Alt6_Level_10" />
+		</compare>
+	</onrespawn>
+	
+	<modifier key="Alt6_Level_1" modpriority="1"
+		model="alt6/lvl_1/model.mdf"
+		preview="alt6/lvl_1/model.mdf"
+	/>
+	
+	<modifier key="Alt6_Level_2" modpriority="2"
+		passiveeffect="alt6/effects/body_lvl_1.effect"
+		deathanim="death_2"
+	/>
+	
+	<modifier key="Alt6_Level_4" modpriority="3"
+		model="alt6/lvl_2/model.mdf"
+		preview="alt6/lvl_2/model.mdf"
+	/>
+	
+	<modifier key="Alt6_Level_5" modpriority="4"
+		passiveeffect="alt6/effects/body_lvl_2.effect"
+		deathanim="death_2"
+	/>
+	
+	<modifier key="Alt6_Level_7" modpriority="5"
+		model="alt6/lvl_3/model.mdf"
+		preview="alt6/lvl_3/model.mdf"
+	/>
+	
+	<modifier key="Alt6_Level_8" modpriority="6"
+		passiveeffect="alt6/effects/body_lvl_3.effect"
+		deathanim="death_2"
+	/>
+	
+	<modifier key="Alt6_Level_10" modpriority="7"
+		passiveeffect="alt6/effects/body_lvl_4.effect"
+		selectedsound="alt6/sounds/voice/changed/select_%.wav"
+		selectedflavorsound="alt6/sounds/voice/changed/select_flavour_%.wav"
+		confirmmovesound="alt6/sounds/voice/changed/move_%.wav"
+		confirmattacksound="alt6/sounds/voice/changed/attack_%.wav"
+		nomanasound="alt6/sounds/voice/no_mana.wav"
+		cooldownsound="alt6/sounds/voice/cooldown.wav"
+		tauntedsound="alt6/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt6/sounds/voice/taunt_after.wav"
+	/>
+	
+	</altavatar>
+	
+	<modifier key="iamsheeped" modpriority="100"
+		passiveeffect=""
+	/>
+	
+</hero>

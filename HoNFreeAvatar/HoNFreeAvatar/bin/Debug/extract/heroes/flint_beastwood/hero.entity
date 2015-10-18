@@ -1,0 +1,1036 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hero
+	name="Hero_FlintBeastwood"
+
+	team="Hellbourne"
+	icon="icon.tga"
+	portrait="icon.tga"
+	model="model.mdf"
+	skin=""
+	
+	overrideportraiteffects="true"
+	passiveeffect=""
+	spawneffect=""
+	respawneffect="/shared/effects/respawn.effect"
+	selectedsound="sounds/voice/select_%.wav"
+	selectedflavorsound="sounds/voice/select_flavour_%.wav"
+	confirmmovesound="sounds/voice/move_%.wav"
+	confirmattacksound="sounds/voice/attack_%.wav"
+	nomanasound="sounds/voice/no_mana.wav"
+	cooldownsound="sounds/voice/cooldown.wav"
+	announcersound="sounds/voice/hero_select.wav"
+	tauntedsound="sounds/voice/taunt_prior.wav"
+	tauntkillsound="sounds/voice/taunt_after.wav"
+	
+	preglobalscale="1.60"
+	modelscale="1.0"
+	effectscale="0.9"
+	boundsheight="112"
+	boundsradius="24"
+	selectionradius="48"
+	targetoffset="0 0 64"
+
+	category="physical"
+	difficulty="1.5"
+
+	solorating="2"
+	junglerating="0"
+	carryrating="4"
+	supportrating="0"
+	initiatorrating="0"
+	gankerrating="1"
+	pusherrating="2"
+	rangedrating="5"
+	meleerating="0"
+
+	movespeed="290"
+	turnrate="450"
+	turnsmoothing="0.05"
+
+	maxhealth="150"
+	healthregen="0.25"
+	maxmana="0"
+	manaregen="0.01"
+
+	armor="-.94"
+	magicarmor="5.5"
+
+	inventory0="Ability_FlintBeastwood1"
+	inventory1="Ability_FlintBeastwood2"
+	inventory2="Ability_FlintBeastwood3"
+	inventory3="Ability_FlintBeastwood4"
+	inventory4="Ability_AttributeBoost"
+	inventory5=""
+	inventory6=""
+	inventory8="Ability_Taunt"
+	inventory9=""
+	inventory10=""
+	inventory11=""
+	inventory12="Ability_AutomatedCourier"
+
+	attackduration="1000"
+	attackactiontime="170"
+	attackcooldown="1700"
+	attackdamagemin="15"
+	attackdamagemax="21"
+	attacknumanims="2"
+	attackoffset="0 150 100"
+	attackprojectile="Projectile_FlintBeastwoodAttack"
+	attackrange="570"
+	attackstarteffect=""
+	attackactioneffect="projectile/attack_impact.effect"
+	attackimpacteffect="projectile/impact.effect"
+	attacktype="ranged"
+	combattype="Hero"
+
+	aggrorange="800"
+	sightrangeday="1800"
+	sightrangenight="800"
+	wanderrange="250"
+
+	primaryattribute="Agility"
+	strength="18"
+	strengthperlevel="1.7"
+	agility="21"
+	agilityperlevel="2.9"
+	intelligence="17"
+	intelligenceperlevel="2.6"
+	
+	previewmodel="preview.mdf"
+	previewpos="0 0 -50"
+	previewangles="0 0 0"
+	previewscale="1.4"
+	
+	storemodel="preview.mdf"
+	storepos="0 0 -20"
+	storeangles="0 0 0"
+	storescale="1.55"
+	
+	
+	corpsetime="1500"
+	corpsefadetime="3000"
+	corpsefadeeffect="/shared/effects/corpse_sink.effect"
+	
+>
+	<recommendeditem name="Item_MinorTotem" />
+	<recommendeditem name="Item_RunesOfTheBlight" />
+	<recommendeditem name="Item_HealthPotion" />
+	<recommendeditem name="Item_HomecomingStone" />
+	
+	<recommendeditem name="Item_Soulscream" />
+	<recommendeditem name="Item_Strength5" />
+	<recommendeditem name="Item_Bottle" />
+	<recommendeditem name="Item_PowerSupply" />
+	<recommendeditem name="Item_Steamboots" />
+	<recommendeditem name="Item_Critical1" />
+	<recommendeditem name="Item_Stealth" />
+	<recommendeditem name="Item_StrengthAgility" />
+	<recommendeditem name="Item_ManaBurn2" />
+
+	<recommendeditem name="Item_ArclightCrown" />
+	<recommendeditem name="Item_Evasion" />
+	
+	<onkill>
+		<hasavatarkey name="Hero_FlintBeastwood.Alt11" > 
+			<targettype type="hero">
+				<random min="0" max="6" />
+				<setvar0 a="result"/>
+				<compare a="var0" b="0" op="eq">
+					<setactivemodifierkey entity="this_entity" name="pearl" />
+					<playeffect effect="alt11/pearl/costume_change_sound.effect" target="source_entity" ignoreculling="true" />
+				</compare>
+				<compare a="var0" b="1" op="eq">
+					<setactivemodifierkey entity="this_entity" name="empath" />
+					<playeffect effect="alt11/empath/costume_change_sound.effect" target="source_entity" ignoreculling="true" />
+				</compare>
+				<compare a="var0" b="2" op="eq">
+					<setactivemodifierkey entity="this_entity" name="judge" />
+					<playeffect effect="alt11/judge/costume_change_sound.effect" target="source_entity" ignoreculling="true" />
+				</compare>
+				<compare a="var0" b="3" op="eq">
+					<setactivemodifierkey entity="this_entity" name="zephyr" />
+					<playeffect effect="alt11/zephyr/costume_change_sound.effect" target="source_entity" ignoreculling="true" />
+				</compare>
+				<compare a="var0" b="4" op="eq">
+					<setactivemodifierkey entity="this_entity" name="chicken" />
+					<playeffect effect="alt11/chicken/costume_change_sound.effect" target="source_entity" ignoreculling="true" />
+				</compare>
+				<compare a="var0" b="5" op="eq">
+					<setactivemodifierkey entity="this_entity" name="sushi" />
+					<playeffect effect="alt11/sushi/costume_change_sound.effect" target="source_entity" ignoreculling="true" />
+				</compare>
+				<compare a="var0" b="6" op="eq">
+					<setactivemodifierkey entity="this_entity" name="sherif" />
+					<playeffect effect="alt11/sherif/costume_change_sound.effect" target="source_entity" ignoreculling="true" />
+				</compare>
+			</targettype>
+		</hasavatarkey>
+	</onkill>
+	
+	<modifier key="Flint_E_invis"
+		idleanim="stealth"
+		boredanim=""
+	/>
+	
+	<modifier key="FlintBeastwood_Ability3_1" modpriority="98"
+		sightrangeday="1850"
+		sightrangenight="850"
+	/>
+	
+	<modifier key="FlintBeastwood_Ability3_2" modpriority="99"
+		sightrangeday="1900"
+		sightrangenight="900"
+	/>
+	
+	<modifier key="FlintBeastwood_Ability3_3" modpriority="100"
+		sightrangeday="1950"
+		sightrangenight="950"
+	/>
+	
+	<modifier key="FlintBeastwood_Ability3_4" modpriority="101"
+		aggrorange="850"
+		sightrangeday="2000"
+		sightrangenight="1000"
+	>
+	</modifier>
+	
+	<altavatar key="Hero_FlintBeastwood.Alt" modpriority="1"
+		altavatar="true"
+		
+		icon2="alt/icon.tga"
+		portrait="alt/icon.tga"
+		model="alt/model.mdf"
+		
+		previewmodel="alt/preview.mdf"
+		previewpos="0 0 -50"
+		previewangles="0 0 0"
+		previewscale="1.4"
+		
+		storemodel="alt/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.45"
+		
+		selectedsound="alt/sounds/voice/select_%.wav"
+		selectedflavorsound="alt/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt/sounds/voice/move_%.wav"
+		confirmattacksound="alt/sounds/voice/attack_%.wav"
+		nomanasound="alt/sounds/voice/no_mana.wav"
+		cooldownsound="alt/sounds/voice/cooldown.wav"
+		announcersound="alt/sounds/voice/hero_select.wav"
+		tauntedsound="alt/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt/sounds/voice/taunt_after.wav"
+	/>
+		
+	<altavatar key="Hero_FlintBeastwood.Alt2" modpriority="1"
+		altavatar="true"
+		icon2="alt2/icon.tga"
+		portrait="alt2/icon.tga"
+		model="alt2/model.mdf"		
+		previewmodel="alt2/preview.mdf"
+		previewpos="0 0 -50"
+		previewangles="0 0 0"
+		previewscale="1.5"	
+		
+		storemodel="alt2/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.45"
+		
+		attackoffset="15 75 90"
+	    attackprojectile="Projectile_FlintBeastwoodAttack_Alt2"
+		attackactioneffect="projectile/attack_impact_alt2.effect"
+	    attackimpacteffect="projectile/impact.effect"
+		
+		selectedsound="alt2/sounds/voice/select_%.wav"
+		selectedflavorsound="alt2/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt2/sounds/voice/move_%.wav"
+		confirmattacksound="alt2/sounds/voice/attack_%.wav"
+		nomanasound="alt2/sounds/voice/no_mana.wav"
+		cooldownsound="alt2/sounds/voice/cooldown.wav"
+		announcersound="alt2/sounds/voice/hero_select.wav"
+		tauntedsound="alt2/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt2/sounds/voice/taunt_after.wav"
+	/>
+	
+	<altavatar key="Hero_FlintBeastwood.Alt3" modpriority="1"
+		altavatar="true"
+		icon2="alt3/icon.tga"
+		portrait="alt3/icon.tga"
+		model="alt3/model.mdf"		
+		previewmodel="alt3/preview.mdf"
+		previewpos="0 0 -70"
+		previewangles="0 0 0"
+		previewscale="1.5"
+
+		preglobalscale="1.75"
+		
+		storemodel="alt3/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.45"
+		
+		attackoffset="0 85 90"
+	    attackprojectile="Projectile_FlintBeastwoodAttack"
+		attackactioneffect="projectile/attack_impact_alt3.effect"
+	    attackimpacteffect="projectile/impact.effect"
+		
+		selectedsound="alt3/sounds/voice/select_%.wav"
+		selectedflavorsound="alt3/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt3/sounds/voice/move_%.wav"
+		confirmattacksound="alt3/sounds/voice/attack_%.wav"
+		nomanasound="alt3/sounds/voice/no_mana.wav"
+		cooldownsound="alt3/sounds/voice/cooldown.wav"
+		tauntedsound="alt3/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt3/sounds/voice/taunt_after.wav"
+	/>
+	
+	<altavatar key="Hero_FlintBeastwood.Alt4" modpriority="1"
+		altavatar="true"
+		attackoffset="0 100 80"
+		
+		icon2="alt4/icon.tga"
+		portrait="alt4/icon.tga"
+		model="alt4/model.mdf"		
+		previewmodel="alt4/preview.mdf"
+		passiveeffect=""
+		
+		selectedsound="alt4/sounds/voice/select_%.wav"
+		selectedflavorsound="alt4/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt4/sounds/voice/move_%.wav"
+		confirmattacksound="alt4/sounds/voice/attack_%.wav"
+		nomanasound="alt4/sounds/voice/no_mana.wav"
+		cooldownsound="alt4/sounds/voice/cooldown.wav"
+		tauntedsound="alt4/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt4/sounds/voice/taunt_after.wav"
+
+		storemodel="alt4/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.45"
+		storepassiveeffect="alt4/effects/body.effect"
+		
+		attackprojectile="Projectile_FlintBeastwoodAttack_Alt4"
+		
+		attackactioneffect="alt4/projectile/attack_impact.effect"
+		attackimpacteffect="alt4/projectile/impact.effect"
+	/>
+	
+	<altavatar key="Hero_FlintBeastwood.Alt5" modpriority="1"
+		altavatar="true"
+		
+		icon2="alt5/icon.tga"
+		portrait="alt5/icon.tga"
+		model="alt5/model.mdf"
+		
+		previewmodel="alt5/preview.mdf"
+		previewpos="0 0 -70"
+		previewangles="0 0 0"
+		previewscale="1.5"
+
+		preglobalscale="1.20"
+		
+		storemodel="alt5/preview.mdf"
+		storepos="0 0 -30"
+		storeangles="0 0 0"
+		storescale="1.10"
+		
+		attackoffset="0 170 90"
+	    attackprojectile="Projectile_FlintBeastwoodAttack"
+		attackactioneffect="projectile/attack_impact_alt3.effect"
+	    attackimpacteffect="projectile/impact.effect"
+		
+		selectedsound="alt5/sounds/voice/select_%.wav"
+		selectedflavorsound="alt5/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt5/sounds/voice/move_%.wav"
+		confirmattacksound="alt5/sounds/voice/attack_%.wav"
+		nomanasound="alt5/sounds/voice/no_mana.wav"
+		cooldownsound="alt5/sounds/voice/cooldown.wav"
+		tauntedsound="alt5/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt5/sounds/voice/taunt_after.wav"
+	/>
+	
+	<altavatar key="Hero_FlintBeastwood.Alt6" modpriority="1"
+		altavatar="true"
+		
+		icon2="alt6/icon.tga"
+		portrait="alt6/icon.tga"
+		model="alt6/model.mdf"
+		
+		previewmodel="alt6/preview.mdf"
+		previewpos="0 0 -70"
+		previewangles="0 0 0"
+		previewscale="1.5"
+
+		preglobalscale="1.50"
+		
+		storemodel="alt6/preview.mdf"
+		storepos="0 0 -25"
+		storeangles="0 0 0"
+		storescale="1.5"
+		
+		attackoffset="0 170 110"
+		attackactioneffect="projectile/attack_impact_alt6.effect"
+		
+		selectedsound="alt6/sounds/voice/select_%.wav"
+		selectedflavorsound="alt6/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt6/sounds/voice/move_%.wav"
+		confirmattacksound="alt6/sounds/voice/attack_%.wav"
+		nomanasound="alt6/sounds/voice/no_mana.wav"
+		cooldownsound="alt6/sounds/voice/cooldown.wav"
+		tauntedsound="alt6/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt6/sounds/voice/taunt_after.wav"
+	/>
+	
+	<altavatar key="Hero_FlintBeastwood.Alt7" modpriority="1"
+		altavatar="true"
+		
+		icon2="alt7/icon.tga"
+		portrait="alt7/icon.tga"
+		model="alt7/model.mdf"
+		
+		previewmodel="alt7/preview.mdf"
+		previewpos="0 0 -70"
+		previewangles="0 0 0"
+		previewscale="1.5"
+
+		preglobalscale="2.00"
+		infoheight="185"
+		
+		storemodel="alt7/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.6"
+		
+		attackoffset="15 175 90"
+		attackprojectile="Projectile_FlintBeastwoodAttack_Alt7"
+		attackactioneffect="projectile/attack_impact_alt7.effect"
+		
+		selectedsound="alt7/sounds/voice/select_%.wav"
+		selectedflavorsound="alt7/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt7/sounds/voice/move_%.wav"
+		confirmattacksound="alt7/sounds/voice/attack_%.wav"
+		nomanasound="alt7/sounds/voice/no_mana.wav"
+		cooldownsound="alt7/sounds/voice/cooldown.wav"
+		tauntedsound="alt7/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt7/sounds/voice/taunt_after.wav"
+	/>
+	
+	<altavatar key="Hero_FlintBeastwood.Alt8" modpriority="1"
+		altavatar="true"
+		
+		icon2="alt8/icon.tga"
+		portrait="alt8/icon.tga"
+		model="alt8/model.mdf"
+		
+		previewmodel="alt8/preview.mdf"
+		previewpos="0 0 -70"
+		previewangles="0 0 0"
+		previewscale="1.5"
+				
+		selectedsound="alt8/sounds/voice/select_%.wav"
+		selectedflavorsound="alt8/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt8/sounds/voice/move_%.wav"
+		confirmattacksound="alt8/sounds/voice/attack_%.wav"
+		nomanasound="alt8/sounds/voice/no_mana.wav"
+		cooldownsound="alt8/sounds/voice/cooldown.wav"
+		tauntedsound="alt8/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt8/sounds/voice/taunt_after.wav"
+		
+		attackprojectile="Projectile_FlintBeastwoodAttack_Alt8"
+		attackactioneffect="alt8/projectile/attack_impact.effect"
+		attackoffset="-20 100 120"
+
+		preglobalscale="1.9"
+		infoheight="185"
+		
+		storemodel="alt8/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.6"
+		
+	/>
+	
+	<altavatar key="Hero_FlintBeastwood.Alt9"
+		icon2="alt9/icon.tga"
+		portrait="alt9/icon.tga"
+		model="alt9/model_body_1.mdf"
+		
+		previewmodel="alt9/preview.mdf"
+		previewpos="0 0 -70"
+		previewangles="0 0 0"
+		previewscale="1.5"
+				
+		selectedsound="alt9/sounds/young/voice/select_%.wav"
+		selectedflavorsound="alt9/sounds/young/voice/select_flavour_%.wav"
+		confirmmovesound="alt9/sounds/young/voice/move_%.wav"
+		confirmattacksound="alt9/sounds/young/voice/attack_%.wav"
+		nomanasound="alt9/sounds/young/voice/no_mana.wav"
+		cooldownsound="alt9/sounds/young/voice/cooldown.wav"
+		tauntedsound="alt9/sounds/young/voice/taunt_prior.wav"
+		tauntkillsound="alt9/sounds/young/voice/taunt_after.wav"
+		
+		attackactioneffect="alt9/projectile/attack_impact.effect"
+		attackoffset="-20 100 120"
+        
+		preglobalscale="1.9"
+		infoheight="185"
+		
+		storemodel="alt9/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.6"
+		storepassiveeffect="alt9/effects/store_body.effect"
+		previewpassiveeffect="alt9/effects/store_body.effect"
+		
+		portraitcampos="16 -25 20"
+		portraitangles="0 0 20"
+		
+		tooleffectitemorder="true"
+		
+		tooleffectkeyname0="Item_Pierce"
+		tooleffectpath0="alt9/gun_shieldbreaker/body_left.effect"
+		tooleffectgroup0="left"
+		
+		tooleffectkeyname1="Item_ElderParasite"
+		tooleffectpath1="alt9/gun_elder_parasite/body_left.effect"
+		tooleffectgroup1="left"
+		
+		tooleffectkeyname2="Item_Weapon3"
+		tooleffectpath2="alt9/gun_savage_mace/body_left.effect"
+		tooleffectgroup2="left"
+		
+		tooleffectkeyname3="Item_Sicarius"
+		tooleffectpath3="alt9/gun_firebrand/body_left.effect"
+		tooleffectgroup3="left"
+		
+		tooleffectkeyname4="Item_StrengthAgility"
+		tooleffectpath4="alt9/gun_frostburn/body_left.effect"
+		tooleffectgroup4="left"
+		
+		tooleffectkeyname5="Item_Stealth"
+		tooleffectpath5="alt9/gun_assassins_shroud/body_left.effect"
+		tooleffectgroup5="left"
+		
+		tooleffectkeyname6="Item_ManaBurn2"
+		tooleffectpath6="alt9/gun_geometers_bane/body_left.effect"
+		tooleffectgroup6="left"
+		
+		tooleffectkeyname7="Item_Sasuke"
+		tooleffectpath7="alt9/gun_genjuro/body_left.effect"
+		tooleffectgroup7="left"
+		
+		tooleffectkeyname8="Item_ArclightCrown"
+		tooleffectpath8="alt9/gun_charged_hammer/body_left.effect"
+		tooleffectgroup8="left"
+		
+		tooleffectkeyname9="Item_Lightning1"
+		tooleffectpath9="alt9/gun_thunderclaw/body_left.effect"
+		tooleffectgroup9="left"
+		
+		tooleffectkeyname10="Item_Dawnbringer"
+		tooleffectpath10="alt9/gun_dawnbringer/body_left.effect"
+		tooleffectgroup10="left"
+		
+		tooleffectkeyname11="Item_Steamstaff"
+		tooleffectpath11="alt9/gun_steamstaff/body_left.effect"
+		tooleffectgroup11="left"
+		
+		tooleffectkeyname12="Item_Immunity"
+		tooleffectpath12="alt9/gun_shrunken_head/body_left.effect"
+		tooleffectgroup12="left"
+		
+		tooleffectkeyname13="Item_Evasion"
+		tooleffectpath13="alt9/gun_wingbow/body_left.effect"
+		tooleffectgroup13="left"
+		
+		tooleffectkeyname14=""
+		tooleffectpath14="alt9/gun_base_1_left/body.effect"
+		tooleffectgroup14="left"
+		
+		tooleffectkeyname20="Item_Pierce"
+		tooleffectpath20="alt9/gun_shieldbreaker/body_right.effect"
+		tooleffectgroup20="right"
+		
+		tooleffectkeyname21="Item_ElderParasite"
+		tooleffectpath21="alt9/gun_elder_parasite/body_right.effect"
+		tooleffectgroup21="right"
+		
+		tooleffectkeyname22="Item_Weapon3"
+		tooleffectpath22="alt9/gun_savage_mace/body_right.effect"
+		tooleffectgroup22="right"
+		
+		tooleffectkeyname23="Item_Sicarius"
+		tooleffectpath23="alt9/gun_firebrand/body_right.effect"
+		tooleffectgroup23="right"
+		
+		tooleffectkeyname24="Item_StrengthAgility"
+		tooleffectpath24="alt9/gun_frostburn/body_right.effect"
+		tooleffectgroup24="right"
+		
+		tooleffectkeyname25="Item_Stealth"
+		tooleffectpath25="alt9/gun_assassins_shroud/body_right.effect"
+		tooleffectgroup25="right"
+		
+		tooleffectkeyname26="Item_ManaBurn2"
+		tooleffectpath26="alt9/gun_geometers_bane/body_right.effect"
+		tooleffectgroup26="right"
+		
+		tooleffectkeyname27="Item_Sasuke"
+		tooleffectpath27="alt9/gun_genjuro/body_right.effect"
+		tooleffectgroup27="right"
+		
+		tooleffectkeyname28="Item_ArclightCrown"
+		tooleffectpath28="alt9/gun_charged_hammer/body_right.effect"
+		tooleffectgroup28="right"
+		
+		tooleffectkeyname29="Item_Lightning1"
+		tooleffectpath29="alt9/gun_thunderclaw/body_right.effect"
+		tooleffectgroup29="right"
+		
+		tooleffectkeyname30="Item_Dawnbringer"
+		tooleffectpath30="alt9/gun_dawnbringer/body_right.effect"
+		tooleffectgroup30="right"
+		
+		tooleffectkeyname31="Item_Steamstaff"
+		tooleffectpath31="alt9/gun_steamstaff/body_right.effect"
+		tooleffectgroup31="right"
+		
+		tooleffectkeyname32="Item_Immunity"
+		tooleffectpath32="alt9/gun_shrunken_head/body_right.effect"
+		tooleffectgroup32="right"
+		
+		tooleffectkeyname33="Item_Evasion"
+		tooleffectpath33="alt9/gun_wingbow/body_right.effect"
+		tooleffectgroup33="right"
+		
+		tooleffectkeyname34=""
+		tooleffectpath34="alt9/gun_base_1_right/body.effect"
+		tooleffectgroup34="right"
+	>
+		<oninflicted>
+			<entitytype type="State_Taunting" target="inflictor_entity">
+				<setproxy entity="this_entity" target="inflictor_entity" />
+			</entitytype>
+		</oninflicted>
+	
+		<onspawn>
+			<applystate name="State_Flint_Sound_Initiator" target="source_entity" duration="2000" />
+			
+			<!-- Script for illusions to properly inherit level 6/11/16 modifiers -->
+			<compare a="level" b="16" op="ge">
+			    <playeffect effect="/heroes/flint_beastwood/alt9/effects/level16_sound.effect" source="source_entity" />
+				<setactivemodifierkey name="Level_16" />
+			</compare>
+			<else>
+				<compare a="level" b="11" op="ge">
+				    <playeffect effect="/heroes/flint_beastwood/alt9/effects/level11_sound.effect" source="source_entity" />
+					<setactivemodifierkey name="Level_11" />
+				</compare>
+				<else>
+					<compare a="level" b="6" op="ge">
+					    <playeffect effect="/heroes/flint_beastwood/alt9/effects/level6_sound.effect" source="source_entity" />
+						<setactivemodifierkey name="Level_6" />
+					</compare>
+					<else>
+						<setactivemodifierkey name="" />
+					</else>
+				</else>
+			</else>
+			<playeffect effect="/heroes/flint_beastwood/alt9/effects/levelup_sound.effect" source="source_entity" />
+		</onspawn>
+	
+		<!--
+			Weapon List:
+			========================================
+			Shield Breaker
+			Elder Parasite
+			Savage Mace
+			Firebrand
+			Frostburn
+			Assassin's Shroud
+			Geometer's Bane
+			Genjuro
+			Charged Hammer
+			Thunderclaw
+			Dawnbringer
+			Steamstaff
+			Shrunken Head
+			Wingbow
+			=========================================
+			0-14:  Left hand
+			20-34: Right hand
+		-->
+		
+		<onframe>
+			<countslaves targetregions="backpack" slavenames="Item_Pierce Item_ElderParasite Item_Weapon3 Item_Sicarius Item_StrengthAgility Item_Stealth Item_ManaBurn2 Item_Sasuke Item_ArclightCrown Item_Lightning1 Item_Dawnbringer Item_Steamstaff Item_Immunity Item_Evasion" />
+			<compare a="result" b="2" op="ge">
+				<!-- If we have at least 2 items that change our weapons, each hand gets its own effect. -->
+				<activatemodifierkey name="Multiple_Guns" />
+			</compare>
+			<else>
+				<!-- Otherwise, both hands hold the same gun. -->
+				<deactivatemodifierkey name="Multiple_Guns" />
+			</else>
+			<applystate name="State_Flint_Alt9_Projectile" target="source_entity" continuous="true" />
+		</onframe>
+		
+		<onlevelup>
+			<compare a="level" b="16" op="ge">
+			    <playeffect effect="/heroes/flint_beastwood/alt9/effects/level16_sound.effect" source="source_entity" />
+				<setactivemodifierkey name="Level_16" />
+			</compare>
+			<else>
+				<compare a="level" b="11" op="ge">
+				    <playeffect effect="/heroes/flint_beastwood/alt9/effects/level11_sound.effect" source="source_entity" />
+					<setactivemodifierkey name="Level_11" />
+				</compare>
+				<else>
+					<compare a="level" b="6" op="ge">
+					    <playeffect effect="/heroes/flint_beastwood/alt9/effects/level6_sound.effect" source="source_entity" />
+						<setactivemodifierkey name="Level_6" />
+					</compare>
+					<else>
+						<setactivemodifierkey name="" />
+					</else>
+				</else>
+			</else>
+			<playeffect effect="/heroes/flint_beastwood/alt9/effects/levelup_sound.effect" source="source_entity" />
+		</onlevelup>
+		
+		<modifier key="Level_6" modpriority="6"
+			model="alt9/model_body_6.mdf"
+			attackactioneffect="alt9/projectile/attack_impact_6.effect"
+			
+			tooleffectpath14="alt9/gun_base_6_left/body.effect"
+			tooleffectpath34="alt9/gun_base_6_right/body.effect"
+		/>
+		
+		<modifier key="Level_11" modpriority="11"
+			model="alt9/model_body_11.mdf"
+			attackactioneffect="alt9/projectile/attack_impact_11.effect"
+			
+			tooleffectpath14="alt9/gun_base_11_left/body.effect"
+			tooleffectpath34="alt9/gun_base_11_right/body.effect"
+		/>
+		
+		<modifier key="Level_16" modpriority="16"
+			model="alt9/model_body_16.mdf"
+			passiveeffect="alt9/effects/body_16.effect"
+			attackactioneffect="alt9/projectile/attack_impact_16.effect"
+			
+			selectedsound="alt9/sounds/old/voice/select_%.wav"
+		    selectedflavorsound="alt9/sounds/old/voice/select_flavour_%.wav"
+		    confirmmovesound="alt9/sounds/old/voice/move_%.wav"
+		    confirmattacksound="alt9/sounds/old/voice/attack_%.wav"
+		    nomanasound="alt9/sounds/old/voice/no_mana.wav"
+		    cooldownsound="alt9/sounds/old/voice/cooldown.wav"
+		    tauntedsound="alt9/sounds/old/voice/taunt_prior.wav"
+		    tauntkillsound="alt9/sounds/old/voice/taunt_after.wav"
+		
+			tooleffectpath14="alt9/gun_base_16_left/body.effect"
+			tooleffectpath34="alt9/gun_base_16_right/body.effect"
+		>
+			<onkill>
+				<targettype type="illusion" />
+				<else>
+					<hasmodifier entity="target_entity" name="Chipper_Alt4_Sound">
+						<pushentityproxy entity="this_proxy_entity" />
+						<compare a="stack_entity" b="inflictor_entity" op="ne">
+							<playeffect effect="alt9/interactions/killed_dreadger.effect" target="source_entity" />
+						</compare>
+					</hasmodifier>
+					<else>
+						<hasmodifier entity="target_entity" name="Valkyrie_Alt6_Sound">
+							<pushentityproxy entity="this_proxy_entity" />
+							<compare a="stack_entity" b="inflictor_entity" op="ne">
+								<playeffect effect="alt9/interactions/killed_skiver.effect" target="source_entity" />
+							</compare>
+						</hasmodifier>
+						<else>
+							<hasmodifier entity="target_entity" name="ForsakenArcher_Alt4_Sound">
+								<pushentityproxy entity="this_proxy_entity" />
+								<compare a="stack_entity" b="inflictor_entity" op="ne">
+									<playeffect effect="alt9/interactions/killed_sinew.effect" target="source_entity" />
+								</compare>
+							</hasmodifier>
+							<else>
+								<hasmodifier entity="target_entity" name="Electrician_Alt5_Sound">
+									<pushentityproxy entity="this_proxy_entity" />
+									<compare a="stack_entity" b="inflictor_entity" op="ne">
+										<playeffect effect="alt9/interactions/killed_killa.effect" target="source_entity" />
+									</compare>
+								</hasmodifier>
+								<else>
+									<hasmodifier entity="target_entity" name="Artillery_Alt6_Sound">
+										<pushentityproxy entity="this_proxy_entity" />
+										<compare a="stack_entity" b="inflictor_entity" op="ne">
+											<playeffect effect="alt9/interactions/killed_boggus.effect" target="source_entity" />
+										</compare>
+									</hasmodifier>
+								</else>
+							</else>
+						</else>
+					</else>
+				</else>
+			</onkill>
+				
+			<ondeath>
+				<targettype type="illusion" />
+				<else>
+					<hasmodifier entity="target_entity" name="Chipper_Alt4_Sound">
+						<pushentityproxy entity="this_proxy_entity" />
+						<compare a="stack_entity" b="inflictor_entity" op="ne">
+							<playeffect effect="alt9/interactions/killed_by_dreadger.effect" target="source_entity" ignoreculling="true" />
+						</compare>
+					</hasmodifier>
+					<else>
+						<hasmodifier entity="target_entity" name="ForsakenArcher_Alt4_Sound">
+							<pushentityproxy entity="this_proxy_entity" />
+							<compare a="stack_entity" b="inflictor_entity" op="ne">
+								<playeffect effect="alt9/interactions/killed_by_sinew.effect" target="source_entity" ignoreculling="true" />
+							</compare>
+						</hasmodifier>
+						<else>
+							<hasmodifier entity="target_entity" name="Artillery_Alt6_Sound">
+								<pushentityproxy entity="this_proxy_entity" />
+								<compare a="stack_entity" b="inflictor_entity" op="ne">
+									<playeffect effect="alt9/interactions/killed_by_boggus.effect" target="source_entity" ignoreculling="true" />
+								</compare>
+							</hasmodifier>
+							<else>
+								<hasmodifier entity="target_entity" name="Electrician_Alt5_Sound">
+									<pushentityproxy entity="this_proxy_entity" />
+									<compare a="stack_entity" b="inflictor_entity" op="ne">
+										<playeffect effect="alt9/interactions/killed_by_killa.effect" target="source_entity" ignoreculling="true" />
+									</compare>
+								</hasmodifier>
+								<else>
+									<hasmodifier entity="target_entity" name="Valkyrie_Alt6_Sound">
+										<pushentityproxy entity="this_proxy_entity" />
+										<compare a="stack_entity" b="inflictor_entity" op="ne">
+											<playeffect effect="alt9/interactions/killed_by_skiver.effect" target="source_entity" ignoreculling="true" />
+										</compare>
+									</hasmodifier>
+								</else>
+							</else>
+						</else>
+					</else>
+				</else>
+			</ondeath>
+		</modifier>
+		
+		<modifier key="Multiple_Guns" modpriority="100"
+			tooleffectgroup0="left shieldbreaker"
+			tooleffectgroup1="left elder_parasite"
+			tooleffectgroup2="left savage_mace"
+			tooleffectgroup3="left firebrand"
+			tooleffectgroup4="left frostburn"
+			tooleffectgroup5="left assassins_shroud"
+			tooleffectgroup6="left geometers_bane"
+			tooleffectgroup7="left genjuro"
+			tooleffectgroup8="left charged_hammer"
+			tooleffectgroup9="left thunderclaw"
+			tooleffectgroup10="left dawnbringer"
+			tooleffectgroup11="left steamstaff"
+			tooleffectgroup12="left shrunken_head"
+			tooleffectgroup13="left wingbow"
+			tooleffectgroup14="left"
+			tooleffectgroup20="right shieldbreaker"
+			tooleffectgroup21="right elder_parasite"
+			tooleffectgroup22="right savage_mace"
+			tooleffectgroup23="right firebrand"
+			tooleffectgroup24="right frostburn"
+			tooleffectgroup25="right assassins_shroud"
+			tooleffectgroup26="right geometers_bane"
+			tooleffectgroup27="right genjuro"
+			tooleffectgroup28="right charged_hammer"
+			tooleffectgroup29="right thunderclaw"
+			tooleffectgroup30="right dawnbringer"
+			tooleffectgroup31="right steamstaff"
+			tooleffectgroup32="right shrunken_head"
+			tooleffectgroup33="right wingbow"
+			tooleffectgroup34="right"
+		/>
+		
+		<modifier key="Flint_Alt9_Ability4_Channeling" modpriority="100"
+			tooleffectpath0="alt9/ability_04/effects/gun/body_left.effect"
+			tooleffectpath1="alt9/ability_04/effects/gun/body_left.effect"
+			tooleffectpath2="alt9/ability_04/effects/gun/body_left.effect"
+			tooleffectpath3="alt9/ability_04/effects/gun/body_left.effect"
+			tooleffectpath4="alt9/ability_04/effects/gun/body_left.effect"
+			tooleffectpath5="alt9/ability_04/effects/gun/body_left.effect"
+			tooleffectpath6="alt9/ability_04/effects/gun/body_left.effect"
+			tooleffectpath7="alt9/ability_04/effects/gun/body_left.effect"
+			tooleffectpath8="alt9/ability_04/effects/gun/body_left.effect"
+			tooleffectpath9="alt9/ability_04/effects/gun/body_left.effect"
+			tooleffectpath10="alt9/ability_04/effects/gun/body_left.effect"
+			tooleffectpath11="alt9/ability_04/effects/gun/body_left.effect"
+			tooleffectpath12="alt9/ability_04/effects/gun/body_left.effect"
+			tooleffectpath13="alt9/ability_04/effects/gun/body_left.effect"
+			tooleffectpath14="alt9/ability_04/effects/gun/body_left.effect"
+			tooleffectpath20="alt9/ability_04/effects/gun/body_right.effect"
+			tooleffectpath21="alt9/ability_04/effects/gun/body_right.effect"
+			tooleffectpath22="alt9/ability_04/effects/gun/body_right.effect"
+			tooleffectpath23="alt9/ability_04/effects/gun/body_right.effect"
+			tooleffectpath24="alt9/ability_04/effects/gun/body_right.effect"
+			tooleffectpath25="alt9/ability_04/effects/gun/body_right.effect"
+			tooleffectpath26="alt9/ability_04/effects/gun/body_right.effect"
+			tooleffectpath27="alt9/ability_04/effects/gun/body_right.effect"
+			tooleffectpath28="alt9/ability_04/effects/gun/body_right.effect"
+			tooleffectpath29="alt9/ability_04/effects/gun/body_right.effect"
+			tooleffectpath30="alt9/ability_04/effects/gun/body_right.effect"
+			tooleffectpath31="alt9/ability_04/effects/gun/body_right.effect"
+			tooleffectpath32="alt9/ability_04/effects/gun/body_right.effect"
+			tooleffectpath33="alt9/ability_04/effects/gun/body_right.effect"
+			tooleffectpath34="alt9/ability_04/effects/gun/body_right.effect"
+		/>
+		
+	</altavatar>
+	
+	<altavatar key="Hero_FlintBeastwood.Alt10" modpriority="1"
+		altavatar="true"
+		
+		icon2="alt10/icon.tga"
+		portrait="alt10/icon.tga"
+		model="alt10/model.mdf"
+		
+		previewmodel="alt10/preview.mdf"
+		previewpos="0 0 -70"
+		previewangles="0 0 0"
+		previewscale="1.5"
+				
+		selectedsound="alt10/sounds/voice/select_%.wav"
+		selectedflavorsound="alt10/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt10/sounds/voice/move_%.wav"
+		confirmattacksound="alt10/sounds/voice/attack_%.wav"
+		nomanasound="alt10/sounds/voice/no_mana.wav"
+		cooldownsound="alt10/sounds/voice/cooldown.wav"
+		tauntedsound="alt10/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt10/sounds/voice/taunt_after.wav"
+		
+		attackprojectile="Projectile_FlintBeastwoodAttack"
+		attackactioneffect="alt10/projectile/attack_impact.effect"
+		attackoffset="-20 100 120"
+
+		preglobalscale="1.9"
+		infoheight="185"
+		
+		portraitcampos="20 -35 15"
+		
+		storemodel="alt10/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.6"
+		
+	/>
+	
+	<altavatar key="Hero_FlintBeastwood.Alt11" modpriority="1"
+		altavatar="true"
+		
+		icon2="alt11/icon.tga"
+		portrait="alt11/icon.tga"
+		model="alt11/model.mdf"
+		
+		previewmodel="alt11/preview.mdf"
+		previewpos="0 0 -70"
+		previewangles="0 0 0"
+		previewscale="1.5"
+				
+		selectedsound="alt11/sounds/voice/select_%.wav"
+		selectedflavorsound="alt11/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt11/sounds/voice/move_%.wav"
+		confirmattacksound="alt11/sounds/voice/attack_%.wav"
+		nomanasound="alt11/sounds/voice/no_mana.wav"
+		cooldownsound="alt11/sounds/voice/cooldown.wav"
+		tauntedsound="alt11/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt11/sounds/voice/taunt_after.wav"
+		
+		attackprojectile="Projectile_FlintBeastwoodAttack"
+		attackactioneffect="alt11/projectile/attack_impact.effect"
+		attackimpacteffect="alt11/projectile/impact.effect"
+		attackoffset="-20 100 120"
+
+		preglobalscale="1.9"
+		infoheight="185"
+		
+		portraitcampos="20 -35 15"
+		
+		storemodel="alt11/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.6"
+		
+	>
+	
+	<onrespawn>
+		<setactivemodifierkey entity="this_entity" name="" />
+	</onrespawn>
+		
+	<modifier key="pearl" modpriority="1"
+		model="alt11/pearl/model.mdf"
+	/>
+	
+	<modifier key="empath" modpriority="1"
+		model="alt11/empath/model.mdf"
+	/>
+	
+	<modifier key="judge" modpriority="1"
+		model="alt11/judge/model.mdf"
+	/>
+	
+	<modifier key="zephyr" modpriority="1"
+		model="alt11/zephyr/model.mdf"
+	/>
+	
+	<modifier key="chicken" modpriority="1"
+		model="alt11/chicken/model.mdf"
+	/>
+	
+	<modifier key="sushi" modpriority="1"
+		model="alt11/sushi/model.mdf"
+	/>
+	
+	<modifier key="sherif" modpriority="1"
+		model="alt11/sherif/model.mdf"
+	/>
+	
+	</altavatar>
+	
+	<altavatar key="Hero_FlintBeastwood.pog_skin"
+		icon2="icon.tga"
+		portrait="icon.tga"
+		model="pog_skin/model.mdf"
+		
+		previewmodel="pog_skin/preview.mdf"
+		previewpos="0 0 -50"
+		previewangles="0 0 0"
+		previewscale="1.4"
+		
+		storemodel="pog_skin/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.45"
+		
+	/>
+	
+	<altavatar key="Hero_FlintBeastwood.trophy_skin"
+		icon2="trophy_skin/icon.tga"
+		portrait="trophy_skin/icon.tga"
+		model="trophy_skin/model.mdf"
+		passiveeffect="trophy_skin/effects/body.effect"
+		
+		previewmodel="trophy_skin/preview.mdf"
+		previewpos="0 0 -50"
+		previewangles="0 0 0"
+		previewscale="1.4"
+		
+		storemodel="trophy_skin/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.45"
+		
+		storepassiveeffect="trophy_skin/effects/body.effect"
+	/>
+	
+</hero>

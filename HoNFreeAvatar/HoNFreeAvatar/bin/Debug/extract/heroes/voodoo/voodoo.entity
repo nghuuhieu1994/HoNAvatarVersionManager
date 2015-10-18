@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hero
+	name="Hero_Voodoo"
+
+	team="Hellbourne"
+	icon="icon.tga"
+	portrait="icon.tga"
+	model="model.mdf"
+	skin=""
+	
+	passiveeffect="effects/body.effect"
+	spawneffect=""
+	respawneffect="/shared/effects/respawn.effect"
+	selectedsound="sounds/voice/select_%.wav"
+	selectedflavorsound="sounds/voice/select_flavour_%.wav"
+	confirmmovesound="sounds/voice/move_%.wav"
+	confirmattacksound="sounds/voice/attack_%.wav"
+	nomanasound="sounds/voice/no_mana.wav"
+	cooldownsound="sounds/voice/cooldown.wav"
+	announcersound="sounds/voice/hero_select.wav"
+	tauntedsound="sounds/voice/taunt_prior.wav"
+	tauntkillsound="sounds/voice/taunt_after.wav"
+	
+	preglobalscale="1.26"
+	modelscale="1.0"
+	effectscale="0.9"
+	boundsheight="112"
+	boundsradius="24"
+	selectionradius="48"
+	targetoffset="0 0 64"
+
+	category="magic protective"
+	difficulty="3"
+
+	solorating="0"
+	junglerating="0"
+	carryrating="0"
+	supportrating="5"
+	initiatorrating="0"
+	gankerrating="2"
+	pusherrating="0"
+	rangedrating="5"
+	meleerating="0"
+	
+	movespeed="305"
+	turnrate="450"
+	turnsmoothing="0.05"
+
+	maxhealth="150"
+	healthregen="0.25"
+	maxmana="0"
+	manaregen="0.01"
+
+	armor="-0.14"
+	magicarmor="5.75"
+
+	inventory0="Ability_Voodoo1"
+	inventory1="Ability_Voodoo2"
+	inventory2="Ability_Voodoo3"
+	inventory3="Ability_Voodoo4"
+	inventory4="Ability_AttributeBoost"
+	inventory5=""
+	inventory6=""
+	inventory8="Ability_Taunt"
+	inventory9=""
+	inventory10=""
+	inventory11=""
+	inventory12="Ability_AutomatedCourier"
+
+	attackduration="1000"
+	attackactiontime="400"
+	attackcooldown="1700"
+	attackdamagemin="24"
+	attackdamagemax="34"
+	attacknumanims="2"
+	attackoffset="20 64 100"
+	attackprojectile="Projectile_Voodoo_Attack"
+	attackrange="600"
+	attackstarteffect=""
+	attackactioneffect=""
+	attackimpacteffect=""
+	attacktype="ranged"
+	combattype="Hero"
+
+	aggrorange="800"
+	sightrangeday="1800"
+	sightrangenight="800"
+	wanderrange="250"
+	
+	corpsetime="3300"
+	corpsefadetime="3000"
+	corpsefadeeffect="/shared/effects/corpse_sink.effect"
+
+	primaryattribute="Intelligence"
+	strength="16"
+	strengthperlevel="1.8"
+	agility="14"
+	agilityperlevel="1.4"
+	intelligence="24"
+	intelligenceperlevel="3.0"
+	
+	previewmodel="preview.mdf"
+	previewpos="0 0 -60"
+	previewangles="0 0 0"
+	previewscale="1.0"
+	
+	storemodel="preview.mdf"
+	storepos="0 0 -20"
+	storeangles="0 0 0"
+	storescale="1.5"
+
+>
+	<recommendeditem name="Item_ManaPotion" />
+	<recommendeditem name="Item_MinorTotem" />
+	<recommendeditem name="Item_RunesOfTheBlight" />
+	<recommendeditem name="Item_HealthPotion" />
+	
+	<recommendeditem name="Item_HomecomingStone" />
+	<recommendeditem name="Item_FlamingEye" />
+	<recommendeditem name="Item_Strength5" />
+	<recommendeditem name="Item_Striders" />
+	
+	<recommendeditem name="Item_Nuke" />
+	<recommendeditem name="Item_Immunity" />
+	<recommendeditem name="Item_Stealth" />
+	<recommendeditem name="Item_Intelligence7" />
+	<recommendeditem name="Item_Morph" />
+	
+	<modifier key="ult_boost" modpriority="101"
+	>
+		<aura state="State_Voodoo_Ult_Boost" radius="0" targetscheme="self"/>
+	</modifier>
+	
+	<altavatar key="Hero_Voodoo.Alt" modpriority="1"
+		altavatar="true"
+		
+		preglobalscale="1.26"
+		modelscale="1.4"
+		effectscale="0.9"
+		
+		passiveeffect="alt/effects/body.effect"
+		
+		infoheight="170"
+		icon2="alt/icon.tga"
+		portrait="alt/icon.tga"
+		model="alt/model.mdf"
+		
+		previewmodel="alt/preview.mdf"
+		previewpos="0 -20 -50"
+		previewangles="0 0 0"
+		previewscale="1.15"
+		
+		attackprojectile="Projectile_Voodoo_Attack_Alt"
+		
+		storemodel="alt/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.6"
+
+	>
+	</altavatar>
+	
+	<altavatar key="Hero_Voodoo.Alt2" modpriority="1"
+		altavatar="true"
+		
+		preglobalscale="1.1"
+		modelscale="1.4"
+		effectscale="0.9"
+		
+		passiveeffect="alt2/effects/body.effect"
+		
+		infoheight="170"
+		icon2="alt2/icon.tga"
+		portrait="alt2/icon.tga"
+		model="alt2/model.mdf"
+			
+		selectedsound="alt2/sounds/voice/select_%.wav"
+	    selectedflavorsound="alt2/sounds/voice/select_flavour_%.wav"
+	    confirmmovesound="alt2/sounds/voice/move_%.wav"
+	    confirmattacksound="alt2/sounds/voice/attack_%.wav"
+	    nomanasound="alt2/sounds/voice/no_mana.wav"
+	    cooldownsound="alt2/sounds/voice/cooldown.wav"
+    	tauntedsound="alt2/sounds/voice/taunt_prior.wav"
+	    tauntkillsound="alt2/sounds/voice/taunt_after.wav"
+	
+		previewmodel="alt2/preview.mdf"
+		previewpos="0 0 -65"
+		previewangles="0 0 0"
+		previewscale="1.15"
+		
+		attackoffset="10 110 100"
+		attackprojectile="Projectile_Voodoo_Attack_Alt"
+		
+		storemodel="alt2/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.3"
+		
+		corpsetime="250"
+		corpsefadetime="2000"
+		corpsefadeeffect="/shared/effects/corpse_sink.effect"
+		
+	>
+	</altavatar>
+	
+	<altavatar key="Hero_Voodoo.Alt3" modpriority="1"
+		altavatar="true"
+		
+		preglobalscale="1.1"
+		modelscale="1.4"
+		effectscale="0.9"
+		
+		passiveeffect="alt3/effects/body.effect"
+		
+		infoheight="170"
+		icon2="alt3/icon.tga"
+		portrait="alt3/icon.tga"
+		model="alt3/model.mdf"
+			
+		selectedsound="alt3/sounds/voice/select_%.wav"
+	    selectedflavorsound="alt3/sounds/voice/select_flavour_%.wav"
+	    confirmmovesound="alt3/sounds/voice/move_%.wav"
+	    confirmattacksound="alt3/sounds/voice/attack_%.wav"
+	    nomanasound="alt3/sounds/voice/no_mana.wav"
+	    cooldownsound="alt3/sounds/voice/cooldown.wav"
+    	tauntedsound="alt3/sounds/voice/taunt_prior.wav"
+	    tauntkillsound="alt3/sounds/voice/taunt_after.wav"
+	
+		previewmodel="alt3/preview.mdf"
+		previewpos="0 0 -65"
+		previewangles="0 0 0"
+		previewscale="1.15"
+		
+		attackoffset="10 110 100"
+		attackprojectile="Projectile_Voodoo_Attack_Alt3"
+		
+		storemodel="alt3/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.3"
+		
+		corpsetime="250"
+		corpsefadetime="2000"
+		corpsefadeeffect="/shared/effects/corpse_sink.effect"
+		
+	>
+		<onspawn>
+	<setactivemodifierkey name="Norse_Sound" />
+	</onspawn>
+	
+	<onrespawn>
+	<setactivemodifierkey name="Norse_Sound" />
+	</onrespawn>
+	
+	<!-- elder evils set effect -->
+	
+		<onspawn propagatetoillusions="false" >
+			<ownsproduct target="this_entity" product="aa.Hero_Soulstealer.Alt3 aa.Hero_Voodoo.Alt3 aa.Hero_Ellonia.Alt3 aa.Hero_Dampeer.Alt4 aa.Hero_Ravenor.Alt5 aa.Hero_Vanya.Alt3" />
+			<compare a="result" b="1" op="eq">
+				<activatemodifierkey name="Elder_Evils" />
+			</compare>
+		</onspawn>
+		
+		<onrespawn propagatetoillusions="false" >
+			<ownsproduct target="this_entity" product="aa.Hero_Soulstealer.Alt3 aa.Hero_Voodoo.Alt3 aa.Hero_Ellonia.Alt3 aa.Hero_Dampeer.Alt4 aa.Hero_Ravenor.Alt5 aa.Hero_Vanya.Alt3" />
+			<compare a="result" b="1" op="eq">
+				<activatemodifierkey name="Elder_Evils" />
+			</compare>
+		</onrespawn>
+		
+		<ondeath>
+			<deactivatemodifierkey name="Elder_Evils" />
+		</ondeath>
+		<modifier key="Elder_Evils" modpriority="1"
+			tooleffectpath38="alt3/effects/weapon_effect.effect"
+			
+		/>
+		
+		
+		
+	</altavatar>
+	
+	<altavatar key="Hero_Voodoo.Alt4" modpriority="1"
+		altavatar="true"
+		
+		preglobalscale="1.4"
+		modelscale="1.4"
+		effectscale="0.9"
+		
+		passiveeffect="alt4/effects/body.effect"
+		
+		infoheight="170"
+		icon2="alt4/icon.tga"
+		portrait="alt4/icon.tga"
+		model="alt4/model.mdf"
+			
+		selectedsound="alt4/sounds/voice/select_%.wav"
+	    selectedflavorsound="alt4/sounds/voice/select_flavour_%.wav"
+	    confirmmovesound="alt4/sounds/voice/move_%.wav"
+	    confirmattacksound="alt4/sounds/voice/attack_%.wav"
+	    nomanasound="alt4/sounds/voice/no_mana.wav"
+	    cooldownsound="alt4/sounds/voice/cooldown.wav"
+    	tauntedsound="alt4/sounds/voice/taunt_prior.wav"
+	    tauntkillsound="alt4/sounds/voice/taunt_after.wav"
+	
+		previewmodel="alt4/preview.mdf"
+		previewpos="0 0 -65"
+		previewangles="0 0 0"
+		previewscale="1.15"
+		
+		attackoffset="10 110 100"
+		attackprojectile="Projectile_Voodoo_Attack_Alt4"
+		
+		storemodel="alt4/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.65"
+		
+		corpsetime="250"
+		corpsefadetime="2000"
+		corpsefadeeffect="/shared/effects/corpse_sink.effect"
+		
+	>
+		<onspawn>
+	<setactivemodifierkey name="Norse_Sound" />
+	</onspawn>
+	
+	<onrespawn>
+	<setactivemodifierkey name="Norse_Sound" />
+	</onrespawn>
+	</altavatar>
+
+	<altavatar key="Hero_Voodoo.pog_skin" modpriority="1"
+		
+		icon2="icon.tga"
+		portrait="icon.tga"
+		model="pog_skin/model.mdf"
+		
+		previewmodel="pog_skin/preview.mdf"
+		previewpos="0 0 -50"
+		previewangles="0 0 0"
+		previewscale="1.15"
+
+		storemodel="pog_skin/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.44"
+	/>
+	
+</hero>

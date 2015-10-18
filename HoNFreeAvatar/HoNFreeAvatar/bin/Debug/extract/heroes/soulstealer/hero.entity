@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hero
+	name="Hero_Soulstealer"
+
+	team="Hellbourne"
+	icon="icon.tga"
+	portrait="icon.tga"
+	model="hd_soulstealer/model.mdf"
+	skin=""
+	
+	passiveeffect="effects/body.effect"
+	spawneffect=""
+	respawneffect="/shared/effects/respawn.effect"
+	selectedsound="sounds/voice/select_%.wav"
+	selectedflavorsound="sounds/voice/select_flavour_%.wav"
+	confirmmovesound="sounds/voice/move_%.wav"
+	confirmattacksound="sounds/voice/attack_%.wav"
+	nomanasound="sounds/voice/no_mana.wav"
+	cooldownsound="sounds/voice/cooldown.wav"
+	announcersound="sounds/voice/hero_select.wav"
+	tauntedsound="sounds/voice/taunt_prior.wav"
+	tauntkillsound="sounds/voice/taunt_after.wav"
+	
+	preglobalscale="2.5"
+	modelscale="1"
+	effectscale=".85"
+	boundsheight="112"
+	boundsradius="24"
+	selectionradius="50"
+	targetoffset="0 0 64"
+
+	category="physical magic"
+	difficulty="3.5"
+
+	solorating="5"
+	junglerating="0"
+	carryrating="2"
+	supportrating="0"
+	initiatorrating="1"
+	gankerrating="0"
+	pusherrating="1"
+	rangedrating="4"
+	meleerating="0"
+
+	movespeed="300"
+	turnrate="900"
+	turnsmoothing="0.1"
+
+	maxhealth="150"
+	healthregen="0.25"
+	maxmana="0"
+	manaregen="0.01"
+
+	armor="-1"
+	magicarmor="5.5"
+
+	inventory0="Ability_Soulstealer1"
+	inventory1="Ability_Soulstealer2"
+	inventory2="Ability_Soulstealer3"
+	inventory3="Ability_Soulstealer4"
+	inventory4="Ability_AttributeBoost"
+	inventory5="Ability_Soulstealer1a"
+	inventory6="Ability_Soulstealer1b"
+	inventory7="Ability_Soulstealer1c"
+	inventory8="Ability_Taunt"
+	inventory9=""
+	inventory10=""
+	inventory11=""
+	inventory12="Ability_AutomatedCourier"
+
+	attackduration="1000"
+	attackactiontime="450"
+	attackcooldown="1700"
+	attackdamagemin="15"
+	attackdamagemax="21"
+	attacknumanims="2"
+	attackoffset="20 64 100"
+	attackprojectile="Projectile_SoulstealerAttack"
+	attackrange="500"
+	attackstarteffect=""
+	attackactioneffect=""
+	attackimpacteffect=""
+	attacktype="ranged"
+	combattype="Hero"
+
+	aggrorange="800"
+	sightrangeday="1800"
+	sightrangenight="800"
+	wanderrange="250"
+
+	primaryattribute="Agility"
+	strength="16"
+	strengthperlevel="2.0"
+	agility="20"
+	agilityperlevel="2.4"
+	intelligence="19"
+	intelligenceperlevel="2.0"
+	
+	previewmodel="hd_soulstealer/preview.mdf"
+	previewpos="0 0 -170"
+	previewangles="0 0 0"
+	previewscale="2.25"
+	
+	storemodel="hd_soulstealer/preview.mdf"
+	storepos="0 0 -40"
+	storeangles="0 0 0"
+	storescale="1.8"
+
+	corpsetime="2250"
+	corpsefadetime="5000"
+	corpsefadeeffect="/shared/effects/corpse_sink.effect"
+>
+	<recommendeditem name="Item_ManaPotion" />	
+	<recommendeditem name="Item_MinorTotem" />
+	<recommendeditem name="Item_RunesOfTheBlight" />
+	<recommendeditem name="Item_HealthPotion" />
+	<recommendeditem name="Item_HomecomingStone" />
+	
+	<recommendeditem name="Item_Strength5" />
+	<recommendeditem name="Item_Bottle" />
+	<recommendeditem name="Item_Stealth" />
+	<recommendeditem name="Item_PostHaste" />
+	<recommendeditem name="Item_Steamboots" />
+	
+	<recommendeditem name="Item_PortalKey" />
+	<recommendeditem name="Item_SpellShards" />
+	<recommendeditem name="Item_Immunity" />
+	<recommendeditem name="Item_Evasion" />
+	<recommendeditem name="Item_Pierce" />
+	
+	<modifier key="iamsheeped" modpriority="100"
+		passiveeffect=""
+	/>
+	
+	<altavatar key="Hero_Soulstealer.Classic" modpriority="1"
+		altavatar="true"
+		
+		icon2="icon.tga"
+		portrait="icon.tga"
+		model="model.mdf"
+		skin=""
+		
+		passiveeffect="effects/body.effect"
+		spawneffect=""
+		respawneffect="/shared/effects/respawn.effect"
+		selectedsound="sounds/voice/select_%.wav"
+		selectedflavorsound="sounds/voice/select_flavour_%.wav"
+		confirmmovesound="sounds/voice/move_%.wav"
+		confirmattacksound="sounds/voice/attack_%.wav"
+		nomanasound="sounds/voice/no_mana.wav"
+		cooldownsound="sounds/voice/cooldown.wav"
+		announcersound="sounds/voice/hero_select.wav"
+		tauntedsound="sounds/voice/taunt_prior.wav"
+		tauntkillsound="sounds/voice/taunt_after.wav"
+		
+		preglobalscale="2.5"
+		modelscale="1"
+		effectscale=".85"
+		boundsheight="112"
+		boundsradius="24"
+		selectionradius="50"
+		targetoffset="0 0 64"
+
+	
+		previewmodel="preview.mdf"
+		previewpos="0 0 -170"
+		previewangles="0 0 0"
+		previewscale="2.25"
+		
+		storemodel="preview.mdf"
+		storepos="0 0 -40"
+		storeangles="0 0 0"
+		storescale="1.8"
+
+		corpsetime="2250"
+		corpsefadetime="5000"
+		corpsefadeeffect="/shared/effects/corpse_sink.effect"
+	/>
+	
+	<altavatar key="Hero_Soulstealer.Alt" modpriority="1"
+		altavatar="true"
+		
+		icon2="alt/icon.tga"
+		portrait="alt/icon.tga"
+		model="alt/model.mdf"
+		
+		preglobalscale="2.5"
+		
+		previewmodel="alt/preview.mdf"
+		previewpos="0 0 -150"
+		previewangles="0 0 0"
+		previewscale="1.95"
+		
+		storemodel="alt/preview.mdf"
+		storepos="0 0 -45"
+		storeangles="0 0 0"
+		storescale="1.7"
+	>
+	</altavatar>
+	
+	<altavatar key="Hero_Soulstealer.Alt2" modpriority="1"
+		altavatar="true"
+		
+		passiveeffect="alt2/effects/body.effect"
+		icon2="alt2/icon.tga"
+		portrait="alt2/icon.tga"
+		model="alt2/model.mdf"
+		
+		preglobalscale="2"
+		infoheight="220"
+		
+		attackprojectile="Projectile_SoulstealerAttack_Alt2"
+		
+		storepassiveeffect="alt2/effects/body_store.effect"
+		previewpassiveeffect="alt2/effects/body_store.effect"
+		
+		selectedsound="alt2/sounds/voice/select_%.wav"
+		selectedflavorsound="alt2/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt2/sounds/voice/move_%.wav"
+		confirmattacksound="alt2/sounds/voice/attack_%.wav"
+		nomanasound="alt2/sounds/voice/no_mana.wav"
+		cooldownsound="alt2/sounds/voice/cooldown.wav"
+		tauntedsound="alt2/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt2/sounds/voice/taunt_after.wav"
+	
+		previewmodel="alt2/preview.mdf"
+		previewpos="0 0 -150"
+		previewangles="0 0 0"
+		previewscale="1.95"
+		
+		storemodel="alt2/preview.mdf"
+		storepos="0 0 -35"
+		storeangles="0 0 0"
+		storescale="1.60"
+	>
+		<onspawn propagatetoillusions="false" >
+			<ownsproduct target="this_entity" product="aa.Hero_Parasite.Alt2 aa.Hero_Armadon.Alt2 aa.Hero_Jereziah.Alt2 aa.Hero_Empath.Alt2 aa.Hero_Hammerstorm.Alt2 aa.Hero_Soulstealer.Alt2 aa.Hero_Devourer.Alt4" />
+			<compare a="result" b="1" op="eq">
+				<activatemodifierkey name="Alt2_Sin_Set_Bonus" />
+			</compare>
+		</onspawn>		
+
+		<modifier key="Alt2_Sin_Set_Bonus" modpriority="10"
+		
+			passiveeffect="alt2/sin_set_bonus/effects/body.effect"
+			icon2="alt2/icon.tga"
+			portrait="alt2/icon.tga"
+			model="alt2/sin_set_bonus/model.mdf"
+			
+			preglobalscale="2"
+			infoheight="220"
+			
+			attackprojectile="Projectile_SoulstealerAttack_Alt2_Sin_Set_Bonus"
+			
+			storepassiveeffect="alt2/effects/body_store.effect"
+			previewpassiveeffect="alt2/effects/body_store.effect"
+			
+			selectedsound="alt2/sounds/voice/select_%.wav"
+			selectedflavorsound="alt2/sounds/voice/select_flavour_%.wav"
+			confirmmovesound="alt2/sounds/voice/move_%.wav"
+			confirmattacksound="alt2/sounds/voice/attack_%.wav"
+			nomanasound="alt2/sounds/voice/no_mana.wav"
+			cooldownsound="alt2/sounds/voice/cooldown.wav"
+			tauntedsound="alt2/sounds/voice/taunt_prior.wav"
+			tauntkillsound="alt2/sounds/voice/taunt_after.wav"
+		
+			previewmodel="alt2/preview.mdf"
+			previewpos="0 0 -150"
+			previewangles="0 0 0"
+			previewscale="1.95"
+			
+			storemodel="alt2/preview.mdf"
+			storepos="0 0 -35"
+			storeangles="0 0 0"
+			storescale="1.60"
+		>
+		</modifier>
+	</altavatar>
+	
+	<altavatar key="Hero_Soulstealer.Alt3" modpriority="1"
+		altavatar="true"
+		
+		passiveeffect="alt3/effects/body.effect"
+		icon2="alt3/icon.tga"
+		portrait="alt3/icon.tga"
+		model="alt3/model.mdf"
+		
+		attackoffset="20 64 120"
+		preglobalscale="2.15"
+		infoheight="220"
+		
+		storepassiveeffect="alt3/effects/body_store.effect"
+		previewpassiveeffect="alt3/effects/body_store.effect"
+		
+		selectedsound="alt3/sounds/voice/select_%.wav"
+		selectedflavorsound="alt3/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt3/sounds/voice/move_%.wav"
+		confirmattacksound="alt3/sounds/voice/attack_%.wav"
+		nomanasound="alt3/sounds/voice/no_mana.wav"
+		cooldownsound="alt3/sounds/voice/cooldown.wav"
+		tauntedsound="alt3/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt3/sounds/voice/taunt_after.wav"
+	
+		previewmodel="alt3/preview.mdf"
+		previewpos="0 0 -150"
+		previewangles="0 0 0"
+		previewscale="1.95"
+		
+		storemodel="alt3/preview.mdf"
+		storepos="0 0 -35"
+		storeangles="0 0 0"
+		storescale="1.60"
+		>
+		
+			<onspawn propagatetoillusions="false" >
+			<ownsproduct target="this_entity" product="aa.Hero_Soulstealer.Alt3 aa.Hero_Voodoo.Alt3 aa.Hero_Ellonia.Alt3 aa.Hero_Dampeer.Alt4 aa.Hero_Ravenor.Alt5 aa.Hero_Vanya.Alt3" />
+			<compare a="result" b="1" op="eq">
+				<activatemodifierkey name="Elder_Evils" />
+			</compare>
+		</onspawn>
+		
+		<onrespawn propagatetoillusions="false" >
+			<ownsproduct target="this_entity" product="aa.Hero_Soulstealer.Alt3 aa.Hero_Voodoo.Alt3 aa.Hero_Ellonia.Alt3 aa.Hero_Dampeer.Alt4 aa.Hero_Ravenor.Alt5 aa.Hero_Vanya.Alt3" />
+			<compare a="result" b="1" op="eq">
+				<activatemodifierkey name="Elder_Evils" />
+			</compare>
+		</onrespawn>
+		
+		<ondeath>
+			<deactivatemodifierkey name="Elder_Evils" />
+		</ondeath>
+		<modifier key="Elder_Evils" modpriority="1"
+			tooleffectpath38="alt3/effects/weapon_effect.effect"
+			
+		/>
+	</altavatar>
+	
+	<altavatar key="Hero_Soulstealer.Alt4" modpriority="1"
+		altavatar="true"
+		
+		passiveeffect="alt4/effects/body.effect"
+		icon2="alt4/icon.tga"
+		portrait="alt4/icon.tga"
+		model="alt4/model.mdf"
+		
+		attackoffset="20 64 120"
+		preglobalscale="2.15"
+		infoheight="220"
+		
+		attackprojectile="Projectile_SoulstealerAttack_Alt4"
+		
+		storepassiveeffect="alt4/effects/body_store.effect"
+		previewpassiveeffect="alt4/effects/body_store.effect"
+		
+		selectedsound="alt4/sounds/voice/select_%.wav"
+		selectedflavorsound="alt4/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt4/sounds/voice/move_%.wav"
+		confirmattacksound="alt4/sounds/voice/attack_%.wav"
+		nomanasound="alt4/sounds/voice/no_mana.wav"
+		cooldownsound="alt4/sounds/voice/cooldown.wav"
+		tauntedsound="alt4/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt4/sounds/voice/taunt_after.wav"
+	
+		previewmodel="alt4/preview.mdf"
+		previewpos="0 0 -150"
+		previewangles="0 0 0"
+		previewscale="1.95"
+		
+		storemodel="alt4/preview.mdf"
+		storepos="0 0 -35"
+		storeangles="0 0 0"
+		storescale="1.60"
+	/>
+	
+	<altavatar key="Hero_Soulstealer.pog_skin" modpriority="1"
+		altavatar="true"
+		
+		icon2="icon.tga"
+		portrait="icon.tga"
+		model="pog_skin/model.mdf"
+		
+		preglobalscale="2.5"
+		
+		previewmodel="pog_skin/preview.mdf"
+		previewpos="0 0 -150"
+		previewangles="0 0 0"
+		previewscale="1.95"
+		
+		storemodel="pog_skin/preview.mdf"
+		storepos="0 0 -15"
+		storeangles="0 0 0"
+		storescale="1.7"
+	>
+	</altavatar>
+	
+</hero>

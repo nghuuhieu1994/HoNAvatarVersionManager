@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hero
+	name="Hero_EmeraldWarden"
+
+	team="Legion"
+	icon="icon.tga"
+	portrait="icon.tga"
+	model="model.mdf"
+	skin=""
+	
+	passiveeffect="effects/body.effect"
+	spawneffect=""
+	respawneffect="/shared/effects/respawn.effect"
+	selectedsound="sounds/voice/select_%.wav"
+	selectedflavorsound="sounds/voice/select_flavour_%.wav"
+	confirmmovesound="sounds/voice/move_%.wav"
+	confirmattacksound="sounds/voice/attack_%.wav"
+	nomanasound="sounds/voice/no_mana.wav"
+	cooldownsound="sounds/voice/cooldown.wav"
+	announcersound="sounds/voice/hero_select.wav"
+	tauntedsound="sounds/voice/taunt_prior.wav"
+	tauntkillsound="sounds/voice/taunt_after.wav"
+	
+	infoheight="170"
+	preglobalscale="1.675"
+	modelscale="1.0"
+	effectscale="0.9"
+	boundsheight="112"
+	boundsradius="24"
+	selectionradius="48"
+	targetoffset="0 0 64"
+
+	category="physical magic"
+	difficulty="2"
+
+	solorating="2"
+	junglerating="0"
+	carryrating="3"
+	supportrating="1"
+	initiatorrating="0"
+	gankerrating="2"
+	pusherrating="0"
+	rangedrating="5"
+	meleerating="0"
+	
+	movespeed="290"
+	turnrate="540"
+	turnsmoothing="0.05"
+
+	maxhealth="150"
+	healthregen="0.25"
+	maxmana="0"
+	manaregen="0.01"
+
+	armor="-1"
+	magicarmor="5.5"
+
+	inventory0="Ability_EmeraldWarden1"
+	inventory1="Ability_EmeraldWarden2"
+	inventory2="Ability_EmeraldWarden3"
+	inventory3="Ability_EmeraldWarden4"
+	inventory4="Ability_AttributeBoost"
+	inventory5="Ability_EmeraldWarden4_a"
+	inventory6="Ability_EmeraldWarden4_b"
+	inventory7="Ability_EmeraldWarden4_c"
+	inventory8="Ability_Taunt"
+	inventory9=""
+	inventory10=""
+	inventory11=""
+	inventory12="Ability_AutomatedCourier"
+
+	attackduration="1000"
+	attackactiontime="400"
+	attackcooldown="1700"
+	attackdamagemin="22"
+	attackdamagemax="26"
+	attacknumanims="2"
+	attackoffset="0 100 100"
+	attackprojectile="Projectile_EmeraldWardenAttack"
+	attackrange="625"
+	attackstarteffect=""
+	attackactioneffect="projectile/effects/attack_action.effect"
+	attackimpacteffect=""
+	attacktype="ranged"
+	combattype="Hero"
+
+	aggrorange="800"
+	sightrangeday="1800"
+	sightrangenight="800"
+	wanderrange="250"
+
+	primaryattribute="Agility"
+	strength="17"
+	strengthperlevel="1.7"
+	agility="22"
+	agilityperlevel="2.8"
+	intelligence="18"
+	intelligenceperlevel="2.3"
+	
+	previewmodel="preview.mdf"
+	previewpos="0 0 -50"
+	previewangles="0 0 0"
+	previewscale="1.4"
+	
+	storemodel="preview.mdf"
+	storepos="0 0 -20"
+	storeangles="0 0 0"
+	storescale="1.42"
+	
+	corpsetime="550"
+	corpsefadetime="3000"
+	corpsefadeeffect="/shared/effects/corpse_sink.effect"
+>
+	<recommendeditem name="Item_ManaPotion" />	
+	<recommendeditem name="Item_MinorTotem" />
+	<recommendeditem name="Item_RunesOfTheBlight" />
+	<recommendeditem name="Item_HealthPotion" />
+	<recommendeditem name="Item_HomecomingStone" />
+	
+	<recommendeditem name="Item_Soulscream" />
+	<recommendeditem name="Item_BloodChalice" />
+	<recommendeditem name="Item_EnhancedMarchers" />
+	<recommendeditem name="Item_StrengthAgility" />
+	<recommendeditem name="Item_Stealth" />
+	
+	<recommendeditem name="Item_ManaBurn1" />
+	<recommendeditem name="Item_Protect" />
+	<recommendeditem name="Item_ArclightCrown" />
+	<recommendeditem name="Item_Evasion" />
+	<recommendeditem name="Item_Weapon3" />
+	
+	<modifier key="iamsheeped" modpriority="100"
+		passiveeffect=""
+	/>
+	
+	<altavatar key="Hero_EmeraldWarden.Alt"
+		icon2="alt/icon.tga"
+		portrait="alt/icon.tga"
+		model="alt/model.mdf"
+		infoheight="185"
+		previewmodel="alt/preview.mdf"
+		previewpos="0 0 -60"
+		previewangles="0 0 0"
+		previewscale="1.4"
+		
+		storemodel="alt/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.55"
+	
+		tiltfactor="1.0"
+		tiltspeed="90.0"
+		passiveeffect="alt/effects/body.effect"
+		attackprojectile="Projectile_EmeraldWardenAttack_Alt"
+		attackactioneffect="alt/projectile/effects/attack_action.effect"
+		effectscale="0.7"
+		
+		selectedsound="alt/sounds/voice/select_%.wav"
+		selectedflavorsound="alt/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt/sounds/voice/move_%.wav"
+		confirmattacksound="alt/sounds/voice/attack_%.wav"
+		nomanasound="alt/sounds/voice/no_mana.wav"
+		cooldownsound="alt/sounds/voice/cooldown.wav"
+		announcersound="alt/sounds/voice/hero_select.wav"
+		tauntedsound="alt/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt/sounds/voice/taunt_after.wav"	
+	/>	
+	
+	<altavatar key="Hero_EmeraldWarden.Alt2"
+		icon2="alt2/icon.tga"
+		portrait="alt2/icon.tga"
+		model="alt2/model.mdf"
+		infoheight="185"
+		previewmodel="alt2/preview.mdf"
+		previewpos="0 0 -60"
+		previewangles="0 0 0"
+		previewscale="1.4"
+		
+		storemodel="alt2/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.55"
+	
+		tiltfactor="1.0"
+		tiltspeed="90.0"
+		passiveeffect="alt2/effects/body.effect"
+		attackprojectile="Projectile_EmeraldWardenAttack_Alt2"
+		attackoffset="32 75 50"
+		effectscale="0.7"
+		
+		selectedsound="alt2/sounds/voice/select_%.wav"
+		selectedflavorsound="alt2/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt2/sounds/voice/move_%.wav"
+		confirmattacksound="alt2/sounds/voice/attack_%.wav"
+		nomanasound="alt2/sounds/voice/no_mana.wav"
+		cooldownsound="alt2/sounds/voice/cooldown.wav"
+		announcersound="alt2/sounds/voice/hero_select.wav"
+		tauntedsound="alt2/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt2/sounds/voice/taunt_after.wav"	
+	/>	
+	
+	
+	<altavatar key="Hero_EmeraldWarden.Alt3"
+		icon2="alt3/icon.tga"
+		portrait="alt3/icon.tga"
+		model="alt3/model.mdf"
+		infoheight="185"
+		previewmodel="alt3/preview.mdf"
+		previewpos="0 0 -60"
+		previewangles="0 0 0"
+		previewscale="1.4"
+	
+		selectedsound="alt3/sounds/voice/select_%.wav"
+		selectedflavorsound="alt3/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt3/sounds/voice/move_%.wav"
+		confirmattacksound="alt3/sounds/voice/attack_%.wav"
+		nomanasound="alt3/sounds/voice/no_mana.wav"
+		cooldownsound="alt3/sounds/voice/cooldown.wav"
+		tauntedsound="alt3/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt3/sounds/voice/taunt_after.wav"
+	
+		storemodel="alt3/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.55"
+	
+		tiltfactor="1.0"
+		tiltspeed="90.0"
+		
+		attackprojectile="Projectile_EmeraldWardenAttack_Alt3"
+		attackactioneffect="alt3/projectile/effects/attack_action.effect"
+		effectscale="0.7"
+	/>
+
+	<altavatar key="Hero_EmeraldWarden.Alt4"
+		icon2="alt4/icon.tga"
+		portrait="alt4/icon.tga"
+		model="alt4/model.mdf"
+		infoheight="185"
+		
+		previewmodel="alt4/preview.mdf"
+		previewpos="0 0 -60"
+		previewangles="0 0 0"
+		previewscale="1.4"
+		
+		preglobalscale="1.4"
+	
+		attackoffset="0 100 145"
+	
+		selectedsound="alt4/sounds/voice/select_%.wav"
+		selectedflavorsound="alt4/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt4/sounds/voice/move_%.wav"
+		confirmattacksound="alt4/sounds/voice/attack_%.wav"
+		nomanasound="alt4/sounds/voice/no_mana.wav"
+		cooldownsound="alt4/sounds/voice/cooldown.wav"
+		tauntedsound="alt4/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt4/sounds/voice/taunt_after.wav"
+	
+		storemodel="alt4/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.3"
+	
+		tiltfactor="1.0"
+		tiltspeed="90.0"
+		
+		attackprojectile="Projectile_EmeraldWardenAttack_Alt4"
+		attackactioneffect="alt4/projectile/effects/attack_action.effect"
+		effectscale=".9"
+	/>
+	
+	<altavatar key="Hero_EmeraldWarden.Alt5"
+		icon2="alt5/icon.tga"
+		portrait="alt5/icon.tga"
+		model="alt5/model.mdf"
+		
+		previewmodel="alt5/preview.mdf"
+		previewpos="0 0 -60"
+		previewangles="0 0 0"
+		previewscale="1.6"
+		
+		preglobalscale="1.8"
+		passiveeffect="alt5/effects/body.effect"
+	
+		attackoffset="0 100 145"
+	
+		selectedsound="alt5/sounds/voice/select_%.wav"
+		selectedflavorsound="alt5/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt5/sounds/voice/move_%.wav"
+		confirmattacksound="alt5/sounds/voice/attack_%.wav"
+		nomanasound="alt5/sounds/voice/no_mana.wav"
+		cooldownsound="alt5/sounds/voice/cooldown.wav"
+		tauntedsound="alt5/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt5/sounds/voice/taunt_after.wav"
+	
+		storemodel="alt5/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.5"
+	
+		tiltfactor="1.0"
+		tiltspeed="90.0"
+		
+		attackprojectile="Projectile_EmeraldWardenAttack_Alt5"
+		attackactioneffect="alt5/projectile/effects/attack_action.effect"
+		effectscale=".9"
+	>
+		<onspawn propagatetoillusions="false" >
+			<ownsproduct target="this_entity" product="aa.Hero_Arachna.Alt3 aa.Hero_Bubbles.Alt4 aa.Hero_Devourer.Alt6 aa.Hero_Ebulus.Alt3 aa.Hero_EmeraldWarden.Alt5 aa.Hero_Predator.Alt4 aa.Hero_Ravenor.Alt4 aa.Hero_Riftmage.Alt2" />
+			<compare a="result" b="1" op="eq">
+				<activatemodifierkey name="RiftBeast_Set" />
+			</compare>
+		</onspawn>
+		
+		<onrespawn propagatetoillusions="false" >
+			<ownsproduct target="this_entity" product="aa.Hero_Arachna.Alt3 aa.Hero_Bubbles.Alt4 aa.Hero_Devourer.Alt6 aa.Hero_Ebulus.Alt3 aa.Hero_EmeraldWarden.Alt5 aa.Hero_Predator.Alt4 aa.Hero_Ravenor.Alt4 aa.Hero_Riftmage.Alt2" />
+			<compare a="result" b="1" op="eq">
+				<activatemodifierkey name="RiftBeast_Set" />
+			</compare>
+		</onrespawn>
+		
+		<modifier key="RiftBeast_Set" modpriority="101"
+			tooleffectpath38="/shared/effects/riftbeast.effect"
+		/>	
+		
+		<modifier key="gawain_Alt5" modpriority="2"
+			passiveeffect="alt5/effects/body_nohead.effect"
+		/>
+	</altavatar>
+	
+	<altavatar key="Hero_EmeraldWarden.Alt6"
+		icon2="alt6/icon.tga"
+		portrait="alt6/icon.tga"
+		model="alt6/model.mdf"
+		infoheight="185"
+		
+		previewmodel="alt6/preview.mdf"
+		previewpos="0 0 -60"
+		previewangles="0 0 0"
+		previewscale="1.4"
+		
+		passiveeffect="alt6/effects/body.effect"
+		
+		preglobalscale="1.55"
+	
+		attackoffset="0 100 100"
+	
+		selectedsound="alt6/sounds/voice/select_%.wav"
+		selectedflavorsound="alt6/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt6/sounds/voice/move_%.wav"
+		confirmattacksound="alt6/sounds/voice/attack_%.wav"
+		nomanasound="alt6/sounds/voice/no_mana.wav"
+		cooldownsound="alt6/sounds/voice/cooldown.wav"
+		tauntedsound="alt6/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt6/sounds/voice/taunt_after.wav"
+	
+		storemodel="alt6/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.3"
+	
+		tiltfactor="1.0"
+		tiltspeed="90.0"
+
+		corpsetime="1"
+		corpsefadetime="2500"
+		
+		attackprojectile="Projectile_EmeraldWardenAttack_Alt6"
+		attackactioneffect="alt6/projectile/effects/attack_action.effect"
+
+		effectscale=".9"
+	>
+		<onspawn>
+			<ownsproduct target="this_entity" product="aa.Hero_Solstice.Alt7 aa.Hero_Kraken.Alt4 aa.Hero_Pearl.Alt6 aa.Hero_Bubbles.Alt6 aa.Hero_Ophelia.Alt4 aa.Hero_Hantumon.Alt6 aa.Hero_Ebulus.Alt5 aa.Hero_MasterOfArms.Alt6 aa.Hero_Martyr.Alt5 aa.Hero_Magmar.Alt5 aa.Hero_Riptide.Alt2" />
+			<compare a="result" b="1" op="eq">
+				<activatemodifierkey name="Zodiac_Set" />
+			</compare>
+		</onspawn>
+
+		<onrespawn>
+			<ownsproduct target="this_entity" product="aa.Hero_Solstice.Alt7 aa.Hero_Kraken.Alt4 aa.Hero_Pearl.Alt6 aa.Hero_Bubbles.Alt6 aa.Hero_Ophelia.Alt4 aa.Hero_Hantumon.Alt6 aa.Hero_Ebulus.Alt5 aa.Hero_MasterOfArms.Alt6 aa.Hero_Martyr.Alt5 aa.Hero_Magmar.Alt5 aa.Hero_Riptide.Alt2" />
+			<compare a="result" b="1" op="eq">
+				<activatemodifierkey name="Zodiac_Set" />
+			</compare>
+		</onrespawn>
+
+		<modifier key="Zodiac_Set" modpriority="1"
+			tooleffectkeyname0=""
+			tooleffectpath0="/shared/effects/set_zodiac.effect"
+		/>
+	</altavatar>
+	
+	<altavatar key="Hero_EmeraldWarden.Alt7"
+		icon2="alt7/icon.tga
+"		portrait="alt7/icon.tga"
+		model="alt7/model.mdf"
+		infoheight="185"
+		
+		previewmodel="alt7/preview.mdf"
+		previewpos="0 0 -60"
+		previewangles="0 0 0"
+		previewscale="1.4"
+		
+		passiveeffect="alt7/effects/body_gawain.effect"
+		portraitcampos="5 0 -10"
+		preglobalscale="2"
+	
+		attackoffset="0 100 100"
+	
+		selectedsound="alt7/sounds/voice/select_%.wav"
+		selectedflavorsound="alt7/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt7/sounds/voice/move_%.wav"
+		confirmattacksound="alt7/sounds/voice/attack_%.wav"
+		nomanasound="alt7/sounds/voice/no_mana.wav"
+		cooldownsound="alt7/sounds/voice/cooldown.wav"
+		tauntedsound="alt7/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt7/sounds/voice/taunt_after.wav"
+	
+		storemodel="alt7/preview.mdf"
+		storepassiveeffect="alt7/effects/body_store.effect"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.6"
+	
+		tiltfactor="1.0"
+		tiltspeed="90.0"
+		
+		attackprojectile="Projectile_EmeraldWardenAttack"
+		attackactioneffect="alt7/effects/attack_action.effect"
+
+		effectscale=".9"
+		corpsetime="750"
+	>
+		<onspawn propagatetoillusions="false" >
+			<ownsproduct target="this_entity" product="aa.Hero_EmeraldWarden.Alt7 aa.Hero_Hammerstorm.Alt7 aa.Hero_Legionnaire.Alt8 aa.Hero_Predator.Alt9 aa.Hero_Rally.Alt7 aa.Hero_Rocky.Alt5 aa.Hero_Solstice.Alt6 aa.Hero_Dampeer.Alt5 aa.Hero_Kane.Alt3 aa.Hero_Pestilence.Alt5 aa.Hero_Ravenor.Alt6" />
+			<compare a="result" b="1" op="eq">
+				<activatemodifierkey name="ARMS_Set" />
+			</compare>
+		</onspawn>
+		
+		<onrespawn propagatetoillusions="false" >
+			<ownsproduct target="this_entity" product="aa.Hero_EmeraldWarden.Alt7 aa.Hero_Hammerstorm.Alt7 aa.Hero_Legionnaire.Alt8 aa.Hero_Predator.Alt9 aa.Hero_Rally.Alt7 aa.Hero_Rocky.Alt5 aa.Hero_Solstice.Alt6 aa.Hero_Dampeer.Alt5 aa.Hero_Kane.Alt3 aa.Hero_Pestilence.Alt5 aa.Hero_Ravenor.Alt6" />
+			<compare a="result" b="1" op="eq">
+				<activatemodifierkey name="ARMS_Set" />
+			</compare>
+		</onrespawn>
+
+		<modifier key="gawain_Alt7" modpriority="2"
+			passiveeffect="alt7/effects/body.effect"
+		/>
+
+		<modifier key="ARMS_Set" modpriority="1"
+			tooleffectkeyname0=""
+			tooleffectpath0="/shared/effects/set_arms_purple.effect"
+		/>
+	</altavatar>
+	
+	<altavatar key="Hero_EmeraldWarden.Alt8"
+		icon2="alt8/icon.tga"
+		portrait="alt8/icon.tga"
+		model="alt8/model.mdf"
+		infoheight="185"
+		
+		portraitcampos="-7 17 30"
+		
+		previewmodel="alt8/preview.mdf"
+		previewpos="0 0 -60"
+		previewangles="0 0 0"
+		previewscale="1.4"
+		
+		passiveeffect="alt8/effects/body.effect"
+		
+		preglobalscale="1"
+		modelscale="2"
+	
+		attackoffset="0 100 85"
+	
+		selectedsound="alt8/sounds/voice/select_%.wav"
+		selectedflavorsound="alt8/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt8/sounds/voice/move_%.wav"
+		confirmattacksound="alt8/sounds/voice/attack_%.wav"
+		nomanasound="alt8/sounds/voice/no_mana.wav"
+		cooldownsound="alt8/sounds/voice/cooldown.wav"
+		tauntedsound="alt8/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt8/sounds/voice/taunt_after.wav"	
+	
+		storemodel="alt8/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.5"
+	
+		tiltfactor="1.0"
+		tiltspeed="90.0"
+		
+		attackactioneffect="alt8/projectile/effects/attack_action.effect"
+
+		effectscale=".9"
+	/>
+	
+</hero>

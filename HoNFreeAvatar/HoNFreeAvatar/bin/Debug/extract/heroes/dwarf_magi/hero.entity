@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hero
+	name="Hero_DwarfMagi"
+
+	team="Legion"
+	icon="icon.tga"
+	portrait="icon.tga"
+	model="model.mdf"
+	skin=""
+	
+	passiveeffect=""
+	spawneffect=""
+	respawneffect="/shared/effects/respawn.effect"
+	selectedsound="sounds/voice/select_%.wav"
+	selectedflavorsound="sounds/voice/select_flavour_%.wav"
+	confirmmovesound="sounds/voice/move_%.wav"
+	confirmattacksound="sounds/voice/attack_%.wav"
+	nomanasound="sounds/voice/no_mana.wav"
+	cooldownsound="sounds/voice/cooldown.wav"
+	announcersound="sounds/voice/hero_select.wav"
+	tauntedsound="sounds/voice/taunt_prior.wav"
+	tauntkillsound="sounds/voice/taunt_after.wav"
+	
+	preglobalscale="1.332"
+	modelscale="1.0"
+	effectscale="0.9"
+	boundsheight="112"
+	boundsradius="24"
+	selectionradius="44"
+	targetoffset="0 0 92"
+
+	category="cc magic"
+	difficulty="1"
+
+	solorating="0"
+	junglerating="0"
+	carryrating="0"
+	supportrating="2"
+	initiatorrating="0"
+	gankerrating="3"
+	pusherrating="0"
+	rangedrating="0"
+	meleerating="5"
+
+	movespeed="295"
+	turnrate="540"
+	turnsmoothing="0.05"
+
+	maxhealth="150"
+	healthregen="1.00"
+	maxmana="0"
+	manaregen="0.01"
+
+	armor="2"
+	magicarmor="5.5"
+
+	inventory0="Ability_DwarfMagi1"
+	inventory1="Ability_DwarfMagi2"
+	inventory2="Ability_DwarfMagi3"
+	inventory3="Ability_DwarfMagi4"
+	inventory4="Ability_AttributeBoost"
+	inventory5=""
+	inventory6=""
+	inventory8="Ability_Taunt"
+	inventory9=""
+	inventory10=""
+	inventory11=""
+	inventory12="Ability_AutomatedCourier"
+
+	attackduration="1000"
+	attackactiontime="500"
+	attackcooldown="1700"
+	attackdamagemin="37"
+	attackdamagemax="43"
+	attacknumanims="2"
+	attackoffset="0 45 60"
+	attackprojectile=""
+	attackrange="128"
+	attackstarteffect=""
+	attackactioneffect=""
+	attackimpacteffect="effects/impact.effect"
+	attacktype="melee"
+	combattype="Hero"
+
+	aggrorange="600"
+	sightrangeday="1800"
+	sightrangenight="800"
+	wanderrange="250"
+
+	primaryattribute="Intelligence"
+	strength="23"
+	strengthperlevel="3.2"
+	agility="14"
+	agilityperlevel="1.5"
+	intelligence="19"
+	intelligenceperlevel="2.1"
+	
+	previewmodel="preview.mdf"
+	previewpos="0 0 -60"
+	previewangles="0 0 0"
+	previewscale="1.55"
+	
+	storemodel="preview.mdf"
+	storepos="0 0 -20"
+	storeangles="0 0 0"
+	storescale="1.35"
+	
+	corpsetime="3000"
+	corpsefadetime="5000"
+	corpsefadeeffect="/shared/effects/corpse_sink.effect"
+
+	tooleffectkeyname39="Item_Intelligence7"
+	tooleffectpath39="effects/sotm.effect"
+>
+	<recommendeditem name="Item_ManaPotion" />
+	<recommendeditem name="Item_MinorTotem" />
+	<recommendeditem name="Item_RunesOfTheBlight" />
+	<recommendeditem name="Item_HealthPotion" />
+	<recommendeditem name="Item_HomecomingStone" />
+	
+	<recommendeditem name="Item_Intelligence5" />	
+	<recommendeditem name="Item_Strength5" />
+	<recommendeditem name="Item_Striders" />
+	<recommendeditem name="Item_SacrificialStone" />
+	<recommendeditem name="Item_Astrolabe" />
+	<recommendeditem name="Item_Intelligence6" />
+	<recommendeditem name="Item_FrostfieldPlate" />
+	<recommendeditem name="Item_Morph" />
+	
+	<altavatar key="Hero_DwarfMagi.Alt" 
+		
+		icon2="alt/icon.tga"
+		portrait="alt/icon.tga"
+		model="alt/model.mdf"
+		
+		previewmodel="alt/preview.mdf"
+		previewpos="0 0 -60"
+		previewangles="0 0 0"
+		previewscale="1.55"
+		passiveeffect="alt/effects/body.effect"
+
+		selectedsound="alt/sounds/voice/select_%.wav"
+		selectedflavorsound="alt/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt/sounds/voice/move_%.wav"
+		confirmattacksound="alt/sounds/voice/attack_%.wav"
+		nomanasound="alt/sounds/voice/no_mana.wav"
+		cooldownsound="alt/sounds/voice/cooldown.wav"
+		announcersound="alt/sounds/voice/hero_select.wav"
+		tauntedsound="alt/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt/sounds/voice/taunt_after.wav"	
+
+		storemodel="alt/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.2"		
+		
+	>
+	</altavatar>
+	
+	<altavatar key="Hero_DwarfMagi.Alt2" modpriority="1"
+		altavatar="true"
+		
+		preglobalscale="1.37"
+		
+		icon2="alt2/icon.tga"
+		portrait="alt2/icon.tga"
+		model="alt2/model.mdf"
+		
+		previewmodel="alt2/preview.mdf"
+		previewpos="-15 0 -60"
+		previewangles="0 0 0"
+		previewscale="1.4"
+		
+		passiveeffect="alt2/effects/body.effect"
+
+		selectedsound="alt2/sounds/voice/select_%.wav"
+		selectedflavorsound="alt2/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt2/sounds/voice/move_%.wav"
+		confirmattacksound="alt2/sounds/voice/attack_%.wav"
+		nomanasound="alt2/sounds/voice/no_mana.wav"
+		cooldownsound="alt2/sounds/voice/cooldown.wav"
+		tauntedsound="alt2/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt2/sounds/voice/taunt_after.wav"	
+
+		storemodel="alt2/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.4"		
+		
+		tooleffectkeyname39="Item_Intelligence7"
+		tooleffectpath39="alt2/effects/sotm.effect"
+	>
+	</altavatar>
+	
+	<altavatar key="Hero_DwarfMagi.Alt3" modpriority="1"
+		altavatar="true"
+		
+		model="alt3/model.mdf"
+		icon2="alt3/icon.tga"
+		portrait="alt3/icon.tga"
+		
+		preglobalscale="1.4"
+		
+		previewmodel="alt3/preview.mdf"
+		previewpos="-15 0 -60"
+		previewangles="0 0 0"
+		previewscale="1.4"
+
+		selectedsound="alt3/sounds/voice/select_%.wav"
+		selectedflavorsound="alt3/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt3/sounds/voice/move_%.wav"
+		confirmattacksound="alt3/sounds/voice/attack_%.wav"
+		nomanasound="alt3/sounds/voice/no_mana.wav"
+		cooldownsound="alt3/sounds/voice/cooldown.wav"
+		tauntedsound="alt3/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt3/sounds/voice/taunt_after.wav"
+		
+		storemodel="alt3/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.4"
+		
+		tooleffectkeyname39="Item_Intelligence7"
+		tooleffectpath39="alt3/effects/sotm.effect"
+	>
+	
+	<onspawn>
+		<ownsproduct target="this_entity" product="aa.Hero_Legionnaire.Alt4" />
+		<compare a="result" b="1" op="eq">
+			<applystate name="State_Black_Legion" target="this_entity" continuous="true" />
+		</compare>
+	</onspawn>
+	
+	<onrespawn>
+		<ownsproduct target="this_entity" product="aa.Hero_Legionnaire.Alt4" />
+		<compare a="result" b="1" op="eq">
+			<applystate name="State_Black_Legion" target="this_entity" continuous="true" />
+		</compare>
+	</onrespawn>
+	
+	</altavatar>
+		
+	<altavatar key="Hero_DwarfMagi.Alt4" modpriority="1"
+		altavatar="true"
+		
+		model="alt4/model.mdf"
+		icon2="alt4/icon.tga"
+		portrait="alt4/icon.tga"
+		
+		preglobalscale="1.65"
+		
+		previewmodel="alt4/preview.mdf"
+		previewpos="-15 0 -60"
+		previewangles="0 0 0"
+		previewscale="1.4"
+
+		passiveeffect="alt4/effects/body.effect"
+		
+		selectedsound="alt4/sounds/voice/select_%.wav"
+		selectedflavorsound="alt4/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt4/sounds/voice/move_%.wav"
+		confirmattacksound="alt4/sounds/voice/attack_%.wav"
+		nomanasound="alt4/sounds/voice/no_mana.wav"
+		cooldownsound="alt4/sounds/voice/cooldown.wav"
+		tauntedsound="alt4/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt4/sounds/voice/taunt_after.wav"
+		
+		storemodel="alt4/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.4"
+	/>
+	
+	<altavatar key="Hero_DwarfMagi.pog_skin" modpriority="1"
+		
+		model="pog_skin/model.mdf"
+		icon2="icon.tga"
+		portrait="icon.tga"
+				
+		previewmodel="pog_skin/preview.mdf"
+		previewpos="-15 0 -60"
+		previewangles="0 0 0"
+		previewscale="1.4"
+
+		storemodel="pog_skin/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.4"
+	/>
+	
+</hero>
+
+	

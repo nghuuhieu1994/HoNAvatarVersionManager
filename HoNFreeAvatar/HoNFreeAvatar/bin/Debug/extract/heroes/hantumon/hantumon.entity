@@ -1,0 +1,635 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hero
+	name="Hero_Hantumon"
+
+	
+	team="Legion"
+	icon="icon.tga"
+	portrait="icon.tga"
+	model="hd_nighthound/model.mdf"
+	skin=""
+	
+	passiveeffect=""
+	spawneffect=""
+	respawneffect="/shared/effects/respawn.effect"
+	selectedsound="sounds/voice/select_%.wav"
+	selectedflavorsound="sounds/voice/select_flavour_%.wav"
+	confirmmovesound="sounds/voice/move_%.wav"
+	confirmattacksound="sounds/voice/attack_%.wav"
+	nomanasound="sounds/voice/no_mana.wav"
+	cooldownsound="sounds/voice/cooldown.wav"
+	announcersound="sounds/voice/hero_select.wav"
+	tauntedsound="sounds/voice/taunt_prior.wav"
+	tauntkillsound="sounds/voice/taunt_after.wav"
+	
+	preglobalscale="2.025"
+	modelscale="1.0"
+	effectscale="0.9"
+	boundsheight="112"
+	boundsradius="24"
+	selectionradius="44"
+	targetoffset="0 0 64"
+	infoheight="160"
+	
+	category="physical"
+	difficulty="2"
+
+	solorating="0"
+	junglerating="0"
+	carryrating="4"
+	supportrating="0"
+	initiatorrating="0"
+	gankerrating="2"
+	pusherrating="0"
+	rangedrating="0"
+	meleerating="5"
+	
+	movespeed="305"
+	turnrate="540"
+	turnsmoothing="0.05"
+
+	maxhealth="150"
+	healthregen="1.00"
+	maxmana="0"
+	manaregen="0.01"
+
+	armor="3.00"
+	magicarmor="5"
+
+	inventory0="Ability_Hantumon1"
+	inventory1="Ability_Hantumon2"
+	inventory2="Ability_Hantumon3"
+	inventory3="Ability_Hantumon4"
+	inventory4="Ability_AttributeBoost"
+	inventory5=""
+	inventory6=""
+	inventory8="Ability_Taunt"
+	inventory9=""
+	inventory10=""
+	inventory11=""
+	inventory12="Ability_AutomatedCourier"
+
+	attackduration="1000"
+	attackactiontime="400"
+	attackcooldown="1700"
+	attackdamagemin="24"
+	attackdamagemax="28"
+	attacknumanims="3"
+	attackoffset="0 0 0"
+	attackprojectile=""
+	attackrange="128"
+	attackstarteffect=""
+	attackactioneffect=""
+	attackimpacteffect="effects/impact.effect"
+	attacktype="melee"
+	combattype="Hero"
+
+	aggrorange="600"
+	sightrangeday="1800"
+	sightrangenight="800"
+	wanderrange="250"
+
+	primaryattribute="Agility"
+	strength="17"
+	strengthperlevel="2.0"
+	agility="24"
+	agilityperlevel="2.5"
+	intelligence="16"
+	intelligenceperlevel="1.3"
+	
+	previewmodel="hd_nighthound/preview.mdf"
+	previewpos="0 0 -50"
+	previewangles="0 0 0"
+	previewscale="2.0"
+	
+	storemodel="hd_nighthound/preview.mdf"
+	storepos="0 0 -20"
+	storeangles="0 0 0"
+	storescale="2"
+	
+	corpsefadeeffect="/shared/effects/corpse_sink.effect"
+	deathtime="1000"
+	corpsetime="4000"
+	corpsefadetime="5000"
+>
+	<recommendeditem name="Item_MinorTotem" />
+	<recommendeditem name="Item_RunesOfTheBlight" />
+	<recommendeditem name="Item_HealthPotion" />
+	<recommendeditem name="Item_HomecomingStone" />
+	
+	<recommendeditem name="Item_LoggersHatchet" />
+	<recommendeditem name="Item_IronShield" />
+	<recommendeditem name="Item_Soulscream" />
+	<recommendeditem name="Item_Strength5" />
+	<recommendeditem name="Item_EnhancedMarchers" />
+	<recommendeditem name="Item_Steamboots" />
+	<recommendeditem name="Item_ElderParasite" />
+	<recommendeditem name="Item_ManaBurn1" />
+	<recommendeditem name="Item_ManaBurn2" />
+	<recommendeditem name="Item_Immunity" />
+	<recommendeditem name="Item_Evasion" />
+	
+	<altavatar key="Hero_Hantumon.Classic"
+		icon2="icon.tga"
+		portrait="icon.tga"
+		model="model.mdf"
+		skin=""
+		
+		passiveeffect=""
+		spawneffect=""
+		respawneffect="/shared/effects/respawn.effect"
+		selectedsound="sounds/voice/select_%.wav"
+		selectedflavorsound="sounds/voice/select_flavour_%.wav"
+		confirmmovesound="sounds/voice/move_%.wav"
+		confirmattacksound="sounds/voice/attack_%.wav"
+		nomanasound="sounds/voice/no_mana.wav"
+		cooldownsound="sounds/voice/cooldown.wav"
+		announcersound="sounds/voice/hero_select.wav"
+		tauntedsound="sounds/voice/taunt_prior.wav"
+		tauntkillsound="sounds/voice/taunt_after.wav"
+		
+		preglobalscale="2.025"
+		modelscale="1.0"
+		effectscale="0.9"
+		boundsheight="112"
+		boundsradius="24"
+		selectionradius="44"
+		targetoffset="0 0 64"
+		infoheight="160"
+		
+		previewmodel="preview.mdf"
+		previewpos="0 0 -50"
+		previewangles="0 0 0"
+		previewscale="2.0"
+		
+		storemodel="preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="2"
+	/>
+	
+	<altavatar key="Hero_Hantumon.Alt"
+		icon2="alt/icon.tga"
+		portrait="alt/icon.tga"
+		model="alt/model.mdf"
+		
+		previewmodel="alt/preview.mdf"
+		previewpos="0 0 -50"
+		previewangles="0 0 0"
+		previewscale="2.0"
+		
+		storemodel="alt/preview.mdf"
+		storepos="0 0 -17"
+		storeangles="0 0 0"
+		storescale="1.8"
+	/>
+	
+	<altavatar key="Hero_Hantumon.Alt2"
+		preglobalscale="2"
+		
+		icon2="alt2/icon.tga"
+		portrait="alt2/icon.tga"
+		model="alt2/model.mdf"
+		
+	    selectedsound="alt2/sounds/voice/select_%.wav"
+	    selectedflavorsound="alt2/sounds/voice/select_flavour_%.wav"
+	    confirmmovesound="alt2/sounds/voice/move_%.wav"
+	    confirmattacksound="alt2/sounds/voice/attack_%.wav"
+	    nomanasound="alt2/sounds/voice/no_mana.wav"
+	    cooldownsound="alt2/sounds/voice/cooldown.wav"
+	    tauntedsound="alt2/sounds/voice/taunt_prior.wav"
+	    tauntkillsound="alt2/sounds/voice/taunt_after.wav"
+		
+		previewmodel="alt2/preview.mdf"
+		previewpos="0 0 -50"
+		previewangles="0 0 0"
+		previewscale="2.00"
+		
+		storemodel="alt2/preview.mdf"
+		storepos="0 0 -17"
+		storeangles="0 0 0"
+		storescale="1.8"
+	/>
+	
+	<altavatar key="Hero_Hantumon.Alt3" modpriority="1"
+		altavatar="true"
+		
+		preglobalscale="2"
+		
+		icon2="alt3/icon.tga"
+		portrait="alt3/icon.tga"
+		model="alt3/model.mdf"
+		
+		attacknumanims="2"
+		
+		selectedsound="alt3/sounds/voice/select_%.wav"
+	    selectedflavorsound="alt3/sounds/voice/select_flavour_%.wav"
+	    confirmmovesound="alt3/sounds/voice/move_%.wav"
+	    confirmattacksound="alt3/sounds/voice/attack_%.wav"
+	    nomanasound="alt3/sounds/voice/no_mana.wav"
+	    cooldownsound="alt3/sounds/voice/cooldown.wav"
+	    tauntedsound="alt3/sounds/voice/taunt_prior.wav"
+	    tauntkillsound="alt3/sounds/voice/taunt_after.wav"
+		
+		previewmodel="alt3/preview.mdf"
+		previewpos="0 0 -50"
+		previewangles="0 0 0"
+		previewscale="2.00"
+		
+		storemodel="alt3/preview.mdf"
+		storepos="0 0 -17"
+		storeangles="0 0 0"
+		storescale="1.8"
+	/>
+	
+	<altavatar key="Hero_Hantumon.Alt4"
+		preglobalscale="2"
+		
+		icon2="alt4/icon.tga"
+		portrait="alt4/icon.tga"
+		model="alt4/model.mdf"
+		
+		attacknumanims="2"
+		
+		selectedsound="alt4/sounds/voice_docile/select_%.wav"
+	    selectedflavorsound="alt4/sounds/voice_docile/select_flavour_%.wav"
+	    confirmmovesound="alt4/sounds/voice_docile/move_%.wav"
+	    confirmattacksound="alt4/sounds/voice_docile/attack_%.wav"
+	    nomanasound="alt4/sounds/voice_docile/no_mana.wav"
+	    cooldownsound="alt4/sounds/voice_docile/cooldown.wav"
+	    tauntedsound="alt4/sounds/voice_docile/taunt_prior.wav"
+	    tauntkillsound="alt4/sounds/voice_docile/taunt_after.wav"
+		
+		previewmodel="alt4/preview.mdf"
+		previewpos="0 0 -50"
+		previewangles="0 0 0"
+		previewscale="2.00"
+		previewpassiveeffect="alt4/effects/body_store.effect"
+		
+		storemodel="alt4/preview.mdf"
+		storepos="0 0 -17"
+		storeangles="0 0 0"
+		storescale="1.8"
+		storepassiveeffect="alt4/effects/body_store.effect"
+		
+		tooleffectkeyname1="Item_ElderParasite"
+		tooleffectpath1="alt4/upgraded_head/body.effect"
+		tooleffectgroup1="mane"
+		
+		tooleffectkeyname2="Item_LifeSteal4"
+		tooleffectpath2="alt4/upgraded_head/body.effect"
+		tooleffectgroup2="mane"
+		
+		tooleffectkeyname3="Item_LifeSteal5"
+		tooleffectpath3="alt4/upgraded_head/body.effect"
+		tooleffectgroup3="mane"
+		
+		tooleffectkeyname4="Item_WhisperingHelm"
+		tooleffectpath4="alt4/upgraded_head/body.effect"
+		tooleffectgroup4="mane"
+		
+		tooleffectkeyname5="Item_Shield2"
+		tooleffectpath5="alt4/upgraded_head/body.effect"
+		tooleffectgroup5="mane"
+		
+		tooleffectkeyname6="Item_Immunity"
+		tooleffectpath6="alt4/upgraded_head/body.effect"
+		tooleffectgroup6="mane"
+		
+		tooleffectkeyname7=""
+		tooleffectpath7="alt4/base_head/body.effect"
+		tooleffectgroup7="mane"
+		
+		tooleffectkeyname8="Item_Splash"
+		tooleffectpath8="alt4/upgraded_chest/body.effect"
+		tooleffectgroup8="chest"
+		
+		tooleffectkeyname9="Item_ManaBurn2"
+		tooleffectpath9="alt4/upgraded_chest/body.effect"
+		tooleffectgroup9="chest"
+		
+		tooleffectkeyname10="Item_Protect"
+		tooleffectpath10="alt4/upgraded_chest/body.effect"
+		tooleffectgroup10="chest"
+		
+		tooleffectkeyname11="Item_Evasion"
+		tooleffectpath11="alt4/upgraded_chest/body.effect"
+		tooleffectgroup11="chest"
+		
+		tooleffectkeyname12="Item_ArclightCrown"
+		tooleffectpath12="alt4/upgraded_weapon/body.effect"
+		tooleffectgroup12="weapon"
+		
+		tooleffectkeyname13="Item_ManaBurn1"
+		tooleffectpath13="alt4/upgraded_weapon/body.effect"
+		tooleffectgroup13="weapon"
+		
+		tooleffectkeyname14="Item_Brutalizer"
+		tooleffectpath14="alt4/upgraded_weapon/body.effect"
+		tooleffectgroup14="weapon"
+		
+		tooleffectkeyname15="Item_Lightning1"
+		tooleffectpath15="alt4/upgraded_weapon/body.effect"
+		tooleffectgroup15="weapon"
+		
+		tooleffectkeyname16="effect_brand"
+		tooleffectpath16="alt4/upgraded_weapon/body.effect"
+		tooleffectgroup16="weapon"
+		
+		tooleffectkeyname17=""
+		tooleffectpath17="alt4/base_weapon/body.effect"
+		tooleffectgroup17="weapon"
+			
+		tooleffectkeyname18="effect_Boots"
+		tooleffectpath18="alt4/upgraded_boots/body.effect"
+		tooleffectgroup18="boots"
+		
+		tooleffectkeyname19="Item_LexTalionis"
+		tooleffectpath19="alt4/medal/body.effect"
+		tooleffectgroup19="medal"
+		
+		tooleffectkeyname20="Item_MinorTotem"
+		tooleffectpath20="alt4/medal/body.effect"
+		tooleffectgroup20="medal"
+		
+		tooleffectkeyname21="effect_FireBrand effect_IceBrand effect_LightBrand effect_lightning"
+		tooleffectpath21="alt4/weapon_effects/all_left_all_right.effect"
+		tooleffectgroup21="weapon_particles"
+		
+		tooleffectkeyname22="effect_FireBrand effect_IceBrand effect_LightBrand"
+		tooleffectpath22="alt4/weapon_effects/fil_left_fil_right.effect"
+		tooleffectgroup22="weapon_particles"
+		
+		tooleffectkeyname23="effect_FireBrand effect_IceBrand effect_lightning"
+		tooleffectpath23="alt4/weapon_effects/fire_ice_left_electric_right.effect"
+		tooleffectgroup23="weapon_particles"
+		
+		tooleffectkeyname24="effect_FireBrand effect_LightBrand effect_lightning"
+		tooleffectpath24="alt4/weapon_effects/fire_light_left_electric_right.effect"
+		tooleffectgroup24="weapon_particles"
+		
+		tooleffectkeyname25="effect_IceBrand effect_LightBrand effect_lightning"
+		tooleffectpath25="alt4/weapon_effects/ice_light_left_electric_right.effect"
+		tooleffectgroup25="weapon_particles"
+		
+		tooleffectkeyname26="effect_FireBrand effect_IceBrand"
+		tooleffectpath26="alt4/weapon_effects/ice_left_fire_right.effect"
+		tooleffectgroup26="weapon_particles"
+		
+		tooleffectkeyname27="effect_FireBrand effect_LightBrand"
+		tooleffectpath27="alt4/weapon_effects/light_left_fire_right.effect"
+		tooleffectgroup27="weapon_particles"
+		
+		tooleffectkeyname28="effect_FireBrand effect_lightning"
+		tooleffectpath28="alt4/weapon_effects/fire_left_electric_right.effect"
+		tooleffectgroup28="weapon_particles"
+		
+		tooleffectkeyname29="effect_IceBrand effect_LightBrand"
+		tooleffectpath29="alt4/weapon_effects/ice_left_light_right.effect"
+		tooleffectgroup29="weapon_particles"
+		
+		tooleffectkeyname30="effect_IceBrand effect_lightning"
+		tooleffectpath30="alt4/weapon_effects/ice_left_electric_right.effect"
+		tooleffectgroup30="weapon_particles"
+		
+		tooleffectkeyname31="effect_LightBrand effect_lightning"
+		tooleffectpath31="alt4/weapon_effects/light_left_electric_right.effect"
+		tooleffectgroup31="weapon_particles"
+		
+		tooleffectkeyname32="effect_FireBrand"
+		tooleffectpath32="alt4/weapon_effects/fire_left_fire_right.effect"
+		tooleffectgroup32="weapon_particles"
+		
+		tooleffectkeyname33="effect_IceBrand"
+		tooleffectpath33="alt4/weapon_effects/ice_left_ice_right.effect"
+		tooleffectgroup33="weapon_particles"
+		
+		tooleffectkeyname34="effect_LightBrand"
+		tooleffectpath34="alt4/weapon_effects/light_left_light_right.effect"
+		tooleffectgroup34="weapon_particles"
+		
+		tooleffectkeyname35="effect_lightning"
+		tooleffectpath35="alt4/weapon_effects/electric_left_electric_right.effect"
+		tooleffectgroup35="weapon_particles"
+	> <!-- Note: tooleffect 38 is used in the collection modifiers below (39 is reserved for future SotM FX) -->
+		<onspawn propagatetoillusions="false" >
+			<ownsproduct target="this_entity" product="aa.Hero_Fade.Alt2 aa.Hero_Pearl.Alt4 aa.Hero_Hammerstorm.Alt5 aa.Hero_Deadwood.Alt4 aa.Hero_Hantumon.Alt4 aa.Hero_BabaYaga.Alt3" />
+			<compare a="result" b="1" op="eq">
+				<applystate name="State_Flying_Monkey" target="this_entity" continuous="true" />
+				<applystate name="State_Hantumon_Alt4_Collection_Effects" target="this_entity" continuous="true" />
+			</compare>
+			<applystate name="State_Hantumon_Alt4_Texture_Swap" target="this_entity" continuous="true" />
+			<applystate name="State_Hantumon_Alt4_Walk_Anim" target="this_entity" continuous="true" />
+			<applystate name="State_Hantumon_Alt4_Attack_Anim" target="this_entity" continuous="true" />
+			<applystate name="State_Hantumon_Alt4_Pounce_Anim" target="this_entity" continuous="true" />
+		</onspawn>
+		
+		<onrespawn propagatetoillusions="false" >
+			<ownsproduct target="this_entity" product="aa.Hero_Fade.Alt2 aa.Hero_Pearl.Alt4 aa.Hero_Hammerstorm.Alt5 aa.Hero_Deadwood.Alt4 aa.Hero_Hantumon.Alt4 aa.Hero_BabaYaga.Alt3" />
+			<compare a="result" b="1" op="eq">
+				<applystate name="State_Hantumon_Alt4_Collection_Effects" target="this_entity" continuous="true" />
+				<applystate name="State_Flying_Monkey" target="this_entity" continuous="true" />
+			</compare>
+			<applystate name="State_Hantumon_Alt4_Texture_Swap" target="this_entity" continuous="true" />
+			<applystate name="State_Hantumon_Alt4_Walk_Anim" target="this_entity" continuous="true" />
+			<applystate name="State_Hantumon_Alt4_Attack_Anim" target="this_entity" continuous="true" />
+			<applystate name="State_Hantumon_Alt4_Pounce_Anim" target="this_entity" continuous="true" />
+		</onrespawn>
+
+		<modifier key="Alt4_Texture2" modpriority="1000"
+			skin="stripe"
+			model="alt4/model_badass.mdf"
+			selectedsound="alt4/sounds/voice_badass/select_%.wav"
+			selectedflavorsound="alt4/sounds/voice_badass/select_flavour_%.wav"
+			confirmmovesound="alt4/sounds/voice_badass/move_%.wav"
+			confirmattacksound="alt4/sounds/voice_badass/attack_%.wav"
+			nomanasound="alt4/sounds/voice_badass/no_mana.wav"
+			cooldownsound="alt4/sounds/voice_badass/cooldown.wav"
+			tauntedsound="alt4/sounds/voice_badass/taunt_prior.wav"
+			tauntkillsound="alt4/sounds/voice_badass/taunt_after.wav"
+		/>
+		
+		<modifier key="Alt4_UpgradedWalk" modpriority="2"
+			walkanim="walk_1_ult"
+		/>
+		
+		<modifier key="Alt4_UpgradedAttack" modpriority="2"
+			attackanim="attack_%_ult"
+		/>
+		
+		<modifier key="Alt4_Collection" modpriority="2"
+			tooleffectkeyname38=""
+			tooleffectpath38="alt4/eye_glow/eye_glow.effect"
+			tooleffectgroup38="eye_glow"
+		/>
+		
+		<modifier key="Alt4_Collection_Mask" modpriority="2"
+			tooleffectkeyname38=""
+			tooleffectpath38="alt4/eye_glow/mask_glow.effect"
+			tooleffectgroup38="eye_glow"
+		/>
+	</altavatar>
+	
+	<altavatar key="Hero_Hantumon.Alt5"
+		icon2="alt5/icon.tga"
+		portrait="alt5/icon.tga"
+		model="alt5/model.mdf"
+		
+		previewmodel="alt5/preview.mdf"
+		previewpos="0 0 -50"
+		previewangles="0 0 0"
+		previewscale="2.0"
+			
+			selectedsound="alt5/sounds/voice/select_%.wav"
+			selectedflavorsound="alt5/sounds/voice/select_flavour_%.wav"
+			confirmmovesound="alt5/sounds/voice/move_%.wav"
+			confirmattacksound="alt5/sounds/voice/attack_%.wav"
+			nomanasound="alt5/sounds/voice/no_mana.wav"
+			cooldownsound="alt5/sounds/voice/cooldown.wav"
+			tauntedsound="alt5/sounds/voice/taunt_prior.wav"
+			tauntkillsound="alt5/sounds/voice/taunt_after.wav"
+			
+		storemodel="alt5/preview.mdf"
+		storepos="0 0 -17"
+		storeangles="0 0 0"
+		storescale="1.7"
+	/>
+	
+	<altavatar key="Hero_Hantumon.Alt6"
+		preglobalscale="2"
+		
+		icon2="alt6/icon.tga"
+		portrait="alt6/icon.tga"
+		model="alt6/model.mdf"
+		
+		attacknumanims="2"
+		
+		selectedsound="alt6/sounds/voice/select_%.wav"
+	    selectedflavorsound="alt6/sounds/voice/select_flavour_%.wav"
+	    confirmmovesound="alt6/sounds/voice/move_%.wav"
+	    confirmattacksound="alt6/sounds/voice/attack_%.wav"
+	    nomanasound="alt6/sounds/voice/no_mana.wav"
+	    cooldownsound="alt6/sounds/voice/cooldown.wav"
+	    tauntedsound="alt6/sounds/voice/taunt_prior.wav"
+	    tauntkillsound="alt6/sounds/voice/taunt_after.wav"
+		
+		previewmodel="alt6/preview.mdf"
+		previewpos="0 0 -50"
+		previewangles="0 0 0"
+		previewscale="2.00"
+		
+		storemodel="alt6/preview.mdf"
+		storepos="0 0 -17"
+		storeangles="0 0 0"
+		storescale="1.8"
+
+		corpsetime="1"
+		corpsefadetime="3000"
+	>
+		<onspawn>
+			<ownsproduct target="this_entity" product="aa.Hero_Solstice.Alt7 aa.Hero_Kraken.Alt4 aa.Hero_Pearl.Alt6 aa.Hero_Bubbles.Alt6 aa.Hero_Ophelia.Alt4 aa.Hero_EmeraldWarden.Alt6 aa.Hero_Ebulus.Alt5 aa.Hero_MasterOfArms.Alt6 aa.Hero_Martyr.Alt5 aa.Hero_Magmar.Alt5 aa.Hero_Riptide.Alt2" />
+			<compare a="result" b="1" op="eq">
+				<activatemodifierkey name="Zodiac_Set" />
+			</compare>
+		</onspawn>
+
+		<onrespawn>
+			<ownsproduct target="this_entity" product="aa.Hero_Solstice.Alt7 aa.Hero_Kraken.Alt4 aa.Hero_Pearl.Alt6 aa.Hero_Bubbles.Alt6 aa.Hero_Ophelia.Alt4 aa.Hero_EmeraldWarden.Alt6 aa.Hero_Ebulus.Alt5 aa.Hero_MasterOfArms.Alt6 aa.Hero_Martyr.Alt5 aa.Hero_Magmar.Alt5 aa.Hero_Riptide.Alt2" />
+			<compare a="result" b="1" op="eq">
+				<activatemodifierkey name="Zodiac_Set" />
+			</compare>
+		</onrespawn>
+
+		<modifier key="Zodiac_Set" modpriority="1"
+			tooleffectkeyname0=""
+			tooleffectpath0="/shared/effects/set_zodiac.effect"
+		/>
+	</altavatar>
+	
+	<altavatar key="Hero_Hantumon.Alt7"
+		preglobalscale="2"
+		
+		icon2="alt7/icon.tga"
+		portrait="alt7/icon.tga"
+		model="alt7/model.mdf"
+		
+		passiveeffect="alt7/effects/body.effect"
+		
+		attacknumanims="2"
+		
+		selectedsound="alt7/sounds/voice/select_%.wav"
+		selectedflavorsound="alt7/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt7/sounds/voice/move_%.wav"
+		confirmattacksound="alt7/sounds/voice/attack_%.wav"
+		nomanasound="alt7/sounds/voice/no_mana.wav"
+		cooldownsound="alt7/sounds/voice/cooldown.wav"
+		tauntedsound="alt7/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt7/sounds/voice/taunt_after.wav"
+		
+		previewmodel="alt7/preview.mdf"
+		previewpos="0 0 -50"
+		previewangles="0 0 0"
+		previewscale="2.00"
+		portraitcampos="10 10 10"
+		
+		storemodel="alt7/preview.mdf"
+		storepos="0 0 -17"
+		storeangles="0 0 0"
+		storescale="1.8"
+	>
+		<onspawn>
+			<ownsproduct target="this_entity" product="aa.Hero_Bushwack.Alt4 aa.Hero_Prophet.Alt6 aa.Hero_Valkyrie.Alt10 aa.Hero_Hellbringer.Alt6" />
+			<compare a="result" b="1" op="eq">
+				<activatemodifierkey name="Scar_Set" />
+			</compare>
+		</onspawn>
+
+		<onrespawn>
+			<ownsproduct target="this_entity" product="aa.Hero_Bushwack.Alt4 aa.Hero_Prophet.Alt6 aa.Hero_Valkyrie.Alt10 aa.Hero_Hellbringer.Alt6" />
+			<compare a="result" b="1" op="eq">
+				<activatemodifierkey name="Scar_Set" />
+			</compare>
+		</onrespawn>
+
+		<onframe>
+			<condition target="this_entity" test="modifier Scar_Set and target_type moving">
+				<activatemodifierkey name="Scar_Trail" />
+			</condition>
+			<else>
+				<deactivatemodifierkey name="Scar_Trail" />
+			</else>
+		</onframe>
+
+		<ondeath>
+			<deactivatemodifierkey name="Scar_Trail" />
+		</ondeath>
+
+		<modifier key="Scar_Set" modpriority="1"
+			tooleffectkeyname0=""
+			tooleffectpath0="alt7/effects/scar.effect"
+		/>
+
+		<modifier key="Scar_Trail" modpriority="2"
+			tooleffectkeyname1=""
+			tooleffectpath1="alt7/effects/scar_trail.effect"
+		/>
+	</altavatar>
+
+	<altavatar key="Hero_Hantumon.pog_skin" modpriority="1"
+		
+		icon2="icon.tga"
+		portrait="icon.tga"
+		model="pog_skin/model.mdf"
+		
+		previewmodel="pog_skin/preview.mdf"
+		previewpos="0 0 -50"
+		previewangles="0 0 0"
+		previewscale="1.15"
+
+		storemodel="pog_skin/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="2"
+	/>
+
+</hero>

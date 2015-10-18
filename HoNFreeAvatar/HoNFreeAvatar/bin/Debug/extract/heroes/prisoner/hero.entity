@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hero
+	name="Hero_Prisoner"
+
+	team="Legion"
+	icon="icon.tga"
+	portrait="icon.tga"
+	model="model.mdf"
+	skin=""
+	
+	passiveeffect="effects/body_bound.effect"
+	spawneffect=""
+	respawneffect="/shared/effects/respawn.effect"
+	selectedsound="sounds/voice/select_%.wav"
+	selectedflavorsound="sounds/voice/select_flavour_%.wav"
+	confirmmovesound="sounds/voice/move_%.wav"
+	confirmattacksound="sounds/voice/attack_%.wav"
+	nomanasound="sounds/voice/no_mana.wav"
+	cooldownsound="sounds/voice/cooldown.wav"
+	announcersound="sounds/voice/hero_select.wav"
+	tauntedsound="sounds/voice/taunt_prior.wav"
+	tauntkillsound="sounds/voice/taunt_after.wav"
+	
+	preglobalscale="2.3"
+	modelscale="1.0"
+	effectscale="0.9"
+	boundsheight="112"
+	boundsradius="24"
+	selectionradius="52"
+	targetoffset="0 0 92"
+	
+	category="physical cc"
+	difficulty="4.5"
+
+	solorating="0"
+	junglerating="0"
+	carryrating="1"
+	supportrating="0"
+	initiatorrating="3"
+	gankerrating="2"
+	pusherrating="0"
+	rangedrating="0"
+	meleerating="5"
+
+	movespeed="295"
+	turnrate="360"
+	turnsmoothing="0.1"
+	tiltfactor="1"
+	tiltspeed="40"
+
+	maxhealth="150"
+	healthregen="1.00"
+	maxmana="0"
+	manaregen="0.01"
+
+	armor="0.60"
+	magicarmor="5.50"
+
+	inventory0="Ability_Prisoner1"
+	inventory1="Ability_Prisoner2"
+	inventory2="Ability_Prisoner3"
+	inventory3="Ability_Prisoner4"
+	inventory4="Ability_AttributeBoost"
+	inventory5="Ability_Prisoner2_Sub"
+	inventory6=""
+	inventory8="Ability_Taunt"
+	inventory9=""
+	inventory10=""
+	inventory11=""
+	inventory12="Ability_AutomatedCourier"
+
+	attackduration="800"
+	attackactiontime="400"
+	attackcooldown="1900"
+	
+	attackdamagemin="33"
+	attackdamagemax="39"
+	attacknumanims="3"
+	attackoffset="0 30 100"
+	attackprojectile=""
+	attackrange="128"
+	attackstarteffect=""
+	attackactioneffect=""
+	attackimpacteffect="effects/impact.effect"
+	attacktype="melee"
+	combattype="Hero"
+
+	aggrorange="600"
+	sightrangeday="1800"
+	sightrangenight="800"
+	wanderrange="250"
+
+	primaryattribute="Strength"
+	strength="24"
+	strengthperlevel="2.8"
+	agility="17"
+	agilityperlevel="1.4"
+	intelligence="15"
+	intelligenceperlevel="1.8"
+	
+	previewmodel="preview.mdf"
+	previewpos="0 0 -60"
+	previewangles="0 0 0"
+	previewscale="1.8"
+	
+	storemodel="preview.mdf"
+	storepos="0 0 -20"
+	storeangles="0 0 0"
+	storescale="1.75"
+	
+	corpsetime="2000"
+	corpsefadetime="4000"
+	corpsefadeeffect="/shared/effects/corpse_sink.effect"
+>
+
+	<modifier key="iamsheeped" modpriority="100"
+		passiveeffect=""
+	/>
+	
+	<modifier key="unbound" modpriority="1"
+		model="model_unbound.mdf"
+		passiveeffect="effects/body_unbound.effect"
+		tiltfactor="0"
+		
+	    selectedsound="sounds/voice/unbound/select_%.wav"
+	    selectedflavorsound="sounds/voice/select_flavour_%.wav"
+	    confirmmovesound="sounds/voice/unbound/move_%.wav"
+	    confirmattacksound="sounds/voice/unbound/attack_%.wav"
+	    nomanasound="sounds/voice/no_mana.wav"
+	    cooldownsound="sounds/voice/cooldown.wav"
+	    tauntedsound="sounds/voice/taunt_prior.wav"
+	    tauntkillsound="sounds/voice/unbound/taunt_after.wav"
+	/>
+	
+	<altavatar key="Hero_Prisoner.Alt"
+		model="alt/model.mdf"
+		icon2="alt/icon.tga"
+		
+		passiveeffect="alt/effects/body_bound.effect"
+		tiltfactor="0"
+		attackimpacteffect="alt/effects/impact.effect"
+		
+		selectedsound="alt/sounds/voice/select_%.wav"
+		selectedflavorsound="alt/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt/sounds/voice/move_%.wav"
+		confirmattacksound="alt/sounds/voice/attack_%.wav"
+		nomanasound="alt/sounds/voice/no_mana.wav"
+		cooldownsound="alt/sounds/voice/cooldown.wav"
+		tauntedsound="alt/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt/sounds/voice/taunt_after.wav"
+		
+		preglobalscale="2.5"
+		infoheight="215"
+		
+		previewmodel="alt/preview.mdf"
+		previewpos="0 0 -60"
+		previewangles="0 0 0"
+		previewscale="1.75"
+	
+		storemodel="alt/preview.mdf"
+		storepos="0 0 -25"
+		storeangles="0 0 0"
+		storescale="2.5"
+	>
+		<modifier key="unbound" modpriority="101"
+			model="alt/model_unbound.mdf"
+			passiveeffect="alt/effects/body_unbound.effect"
+			selectedsound="alt/sounds/voice/unbound/select_%.wav"
+			selectedflavorsound="alt/sounds/voice/select_flavour_%.wav"
+			confirmmovesound="alt/sounds/voice/unbound/move_%.wav"
+			confirmattacksound="alt/sounds/voice/attack_%.wav"
+			nomanasound="alt/sounds/voice/no_mana.wav"
+			cooldownsound="alt/sounds/voice/cooldown.wav"
+			tauntedsound="alt/sounds/voice/unbound/taunt_prior.wav"
+			tauntkillsound="alt/sounds/voice/taunt_after.wav"
+		/>
+	</altavatar>
+	
+	<altavatar key="Hero_Prisoner.Alt2"
+		model="alt2/model.mdf"
+		icon2="alt2/icon.tga"
+		
+		passiveeffect="alt2/effects/body_bound.effect"
+		tiltfactor="0"
+		
+		selectedsound="alt2/sounds/voice/select_%.wav"
+		selectedflavorsound="alt2/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt2/sounds/voice/move_%.wav"
+		confirmattacksound="alt2/sounds/voice/attack_%.wav"
+		nomanasound="alt2/sounds/voice/no_mana.wav"
+		cooldownsound="alt2/sounds/voice/cooldown.wav"
+		tauntedsound="alt2/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt2/sounds/voice/taunt_after.wav"
+		
+		preglobalscale="2.0"
+		
+		previewmodel="alt2/preview.mdf"
+		previewpos="0 0 -60"
+		previewangles="0 0 0"
+		previewscale="1.4"
+	
+		storemodel="alt2/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.75"
+	>
+		<modifier key="unbound" modpriority="101"
+			model="alt2/model_unbound.mdf"
+			passiveeffect="alt2/effects/body_unbound.effect"
+			selectedsound="alt2/sounds/voice/unbound/select_%.wav"
+			selectedflavorsound="alt2/sounds/voice/select_flavour_%.wav"
+			confirmmovesound="alt2/sounds/voice/unbound/move_%.wav"
+			confirmattacksound="alt2/sounds/voice/unbound/attack_%.wav"
+			nomanasound="alt2/sounds/voice/no_mana.wav"
+			cooldownsound="alt2/sounds/voice/cooldown.wav"
+			tauntedsound="alt2/sounds/voice/taunt_prior.wav"
+			tauntkillsound="alt2/sounds/voice/unbound/taunt_after.wav"
+		/>
+	</altavatar>
+	
+	<altavatar key="Hero_Prisoner.Alt3"
+		model="alt3/model.mdf"
+		icon2="alt3/icon.tga"
+		
+		passiveeffect="alt3/effects/body_bound.effect"
+		attackimpacteffect="alt3/effects/impact.effect"
+		tiltfactor="0"
+		
+		selectedsound="alt3/sounds/voice/select_%.wav"
+		selectedflavorsound="alt3/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt3/sounds/voice/move_%.wav"
+		confirmattacksound="alt3/sounds/voice/attack_%.wav"
+		nomanasound="alt3/sounds/voice/no_mana.wav"
+		cooldownsound="alt3/sounds/voice/cooldown.wav"
+		tauntedsound="alt3/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt3/sounds/voice/taunt_after.wav"
+		
+		preglobalscale="2.1"
+		
+		previewmodel="alt3/preview.mdf"
+		previewpos="0 0 -60"
+		previewangles="0 0 0"
+		previewscale="1.4"
+	
+		storemodel="alt3/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.75"
+	>
+	
+	<onspawn>
+	<ownsproduct target="this_entity" product="aa.Hero_HellDemon.Alt3 aa.Hero_Martyr.Alt3 aa.Hero_Javaras.Alt3 aa.Hero_Panda.Alt3 aa.Hero_Yogi.Alt3"/>
+	<compare a="result" b="1" op="eq">
+		<spawnunit name="Pet_Panda" target="this_entity" offset="0 -100" facing="source_entity" pushentity="true" />
+	</compare>
+	</onspawn>
+	
+	<onrespawn>
+	<ownsproduct target="this_entity" product="aa.Hero_HellDemon.Alt3 aa.Hero_Martyr.Alt3 aa.Hero_Javaras.Alt3 aa.Hero_Panda.Alt3 aa.Hero_Yogi.Alt3"/>
+	<compare a="result" b="1" op="eq">
+		<spawnunit name="Pet_Panda" target="this_entity" offset="0 -100" facing="source_entity" pushentity="true" />
+	</compare>
+	</onrespawn>
+	
+		<modifier key="unbound" modpriority="101"
+			model="alt3/model_unbound.mdf"
+			attackimpacteffect="alt3/effects/impact.effect"
+			passiveeffect="alt3/effects/body_unbound.effect"
+			selectedsound="alt3/sounds/voice/select_%.wav"
+			selectedflavorsound="alt3/sounds/voice/select_flavour_%.wav"
+			confirmmovesound="alt3/sounds/voice/move_%.wav"
+			confirmattacksound="alt3/sounds/voice/attack_%.wav"
+			nomanasound="alt3/sounds/voice/no_mana.wav"
+			cooldownsound="alt3/sounds/voice/cooldown.wav"
+			tauntedsound="alt3/sounds/voice/taunt_prior.wav"
+			tauntkillsound="alt3/sounds/voice/taunt_after.wav"
+		/>
+
+	</altavatar>
+	
+	<altavatar key="Hero_Prisoner.Alt4"
+		model="alt4/model.mdf"
+		icon2="alt4/icon.tga"
+		
+		passiveeffect="alt4/effects/body_bound.effect"
+		attackimpacteffect="alt4/effects/impact.effect"
+		tiltfactor="0"
+		
+		selectedsound="alt4/sounds/voice/select_%.wav"
+		selectedflavorsound="alt4/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt4/sounds/voice/move_%.wav"
+		confirmattacksound="alt4/sounds/voice/attack_%.wav"
+		nomanasound="alt4/sounds/voice/no_mana.wav"
+		cooldownsound="alt4/sounds/voice/cooldown.wav"
+		tauntedsound="alt4/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt4/sounds/voice/taunt_after.wav"
+		
+		preglobalscale="2.05"
+		
+		previewmodel="alt4/preview.mdf"
+		previewpos="0 0 -60"
+		previewangles="0 0 0"
+		previewscale="1.4"
+	
+		storemodel="alt4/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.75"
+	>
+		<onspawn propagatetoillusions="false" >
+			<ownsproduct target="this_entity" product="aa.Hero_Chronos.Alt5 aa.Hero_Maliken.Alt5 aa.Hero_Midas.Alt4 aa.Hero_Nomad.Alt5 aa.Hero_Prisoner.Alt4 aa.Hero_Succubis.Alt3 aa.Hero_Xalynx.Alt4" />
+			<compare a="result" b="1" op="eq">
+				<activatemodifierkey name="Virtue_Set_Bonus" />
+			</compare>
+		</onspawn>
+		
+		<onrespawn propagatetoillusions="false" >
+			<ownsproduct target="this_entity" product="aa.Hero_Chronos.Alt5 aa.Hero_Maliken.Alt5 aa.Hero_Midas.Alt4 aa.Hero_Nomad.Alt5 aa.Hero_Prisoner.Alt4 aa.Hero_Succubis.Alt3 aa.Hero_Xalynx.Alt4" />
+			<compare a="result" b="1" op="eq">
+				<activatemodifierkey name="Virtue_Set_Bonus" />
+			</compare>
+		</onrespawn>
+		
+		<modifier key="Virtue_Set_Bonus" modpriority="1000"
+			tooleffectpath38="alt4/effects/virtue_bonus.effect"
+		/>
+		
+		<modifier key="Virtue_Set_Bonus_Unbound" modpriority="10"
+			tooleffectpath38="alt4/effects/virtue_bonus_unbound.effect"
+		/>
+		
+		<modifier key="unbound" modpriority="101"
+			model="alt4/model_unbound.mdf"
+			attackimpacteffect="alt4/effects/impact.effect"
+			passiveeffect="alt4/effects/body_unbound.effect"
+			selectedsound="alt4/sounds/voice/select_%.wav"
+			selectedflavorsound="alt4/sounds/voice/select_flavour_%.wav"
+			confirmmovesound="alt4/sounds/voice/move_%.wav"
+			confirmattacksound="alt4/sounds/voice/attack_%.wav"
+			nomanasound="alt4/sounds/voice/no_mana.wav"
+			cooldownsound="alt4/sounds/voice/cooldown.wav"
+			tauntedsound="alt4/sounds/voice/taunt_prior.wav"
+			tauntkillsound="alt4/sounds/voice/taunt_after.wav"
+		/>
+	</altavatar>
+	
+	<altavatar key="Hero_Prisoner.Alt5"
+		model="alt5/model.mdf"
+		icon2="alt5/icon.tga"
+		
+		passiveeffect="alt5/effects/body_bound.effect"
+		attackimpacteffect="alt5/effects/impact.effect"
+		tiltfactor="0"
+		
+		selectedsound="alt5/sounds/voice/select_%.wav"
+		selectedflavorsound="alt5/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt5/sounds/voice/move_%.wav"
+		confirmattacksound="alt5/sounds/voice/attack_%.wav"
+		nomanasound="alt5/sounds/voice/no_mana.wav"
+		cooldownsound="alt5/sounds/voice/cooldown.wav"
+		tauntedsound="alt5/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt5/sounds/voice/taunt_after.wav"
+		
+		preglobalscale="2.05"
+		
+		previewmodel="alt5/preview.mdf"
+		previewpos="0 0 -60"
+		previewangles="0 0 0"
+		previewscale="1.4"
+	
+		storemodel="alt5/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.75"
+	>
+		<modifier key="unbound" modpriority="101"
+			model="alt5/model_unbound.mdf"
+			attackimpacteffect="alt5/effects/impact.effect"
+			passiveeffect="alt5/effects/body_unbound.effect"
+			selectedsound="alt5/sounds/voice/select_%.wav"
+			selectedflavorsound="alt5/sounds/voice/select_flavour_%.wav"
+			confirmmovesound="alt5/sounds/voice/move_%.wav"
+			confirmattacksound="alt5/sounds/voice/attack_%.wav"
+			nomanasound="alt5/sounds/voice/no_mana.wav"
+			cooldownsound="alt5/sounds/voice/cooldown.wav"
+			tauntedsound="alt5/sounds/voice/taunt_prior.wav"
+			tauntkillsound="alt5/sounds/voice/taunt_after.wav"
+		/>
+	</altavatar>
+	
+	<altavatar key="Hero_Prisoner.Alt6"
+		model="alt6/model.mdf"
+		icon2="alt6/icon.tga"
+		
+		passiveeffect="alt6/effects/body_bound.effect"
+		attackimpacteffect="alt6/effects/impact.effect"
+		tiltfactor="0"
+		
+		selectedsound="alt6/sounds/voice/select_%.wav"
+		selectedflavorsound="alt6/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt6/sounds/voice/move_%.wav"
+		confirmattacksound="alt6/sounds/voice/attack_%.wav"
+		nomanasound="alt6/sounds/voice/no_mana.wav"
+		cooldownsound="alt6/sounds/voice/cooldown.wav"
+		tauntedsound="alt6/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt6/sounds/voice/taunt_after.wav"
+		
+		preglobalscale="1.85"
+		
+		previewmodel="alt6/preview.mdf"
+		previewpos="0 0 -60"
+		previewangles="0 0 0"
+		previewscale="1.4"
+		portraitcampos="-10 0 25"
+	
+		storemodel="alt6/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.4"
+		
+		tooleffectkeyname0="Item_PortalKey"
+		tooleffectpath0="alt6/effects/back.effect"
+		tooleffectgroup0="back"
+		
+		tooleffectkeyname1=""
+		tooleffectpath1=""
+		tooleffectgroup1="back"
+		
+	>
+		<modifier key="unbound" modpriority="101"
+			model="alt6/model_unbound.mdf"
+			attackimpacteffect="alt6/effects/impact.effect"
+			passiveeffect="alt6/effects/body_unbound.effect"
+			selectedsound="alt6/sounds/voice/select_%.wav"
+			selectedflavorsound="alt6/sounds/voice/select_flavour_%.wav"
+			confirmmovesound="alt6/sounds/voice/move_%.wav"
+			confirmattacksound="alt6/sounds/voice/attack_%.wav"
+			nomanasound="alt6/sounds/voice/no_mana.wav"
+			cooldownsound="alt6/sounds/voice/cooldown.wav"
+			tauntedsound="alt6/sounds/voice/taunt_prior.wav"
+			tauntkillsound="alt6/sounds/voice/taunt_after.wav"
+			
+			tooleffectkeyname0="Item_PortalKey"
+			tooleffectpath0="alt6/effects/unbound_back.effect"
+			tooleffectgroup0="back"
+			
+			portraitcampos="5 -10 30"
+			
+		/>
+	</altavatar>
+	
+</hero>

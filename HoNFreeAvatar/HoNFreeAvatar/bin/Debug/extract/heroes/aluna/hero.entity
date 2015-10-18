@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hero
+	name="Hero_Aluna"
+
+	team="Legion"
+	icon="icon.tga"
+	portrait="icon.tga"
+	model="model.mdf"
+	skin=""
+	
+	passiveeffect="effects/body.effect"
+	spawneffect=""
+	respawneffect="/shared/effects/respawn.effect"
+	selectedsound="sounds/voice/select_%.wav"
+	selectedflavorsound="sounds/voice/select_flavour_%.wav"
+	confirmmovesound="sounds/voice/move_%.wav"
+	confirmattacksound="sounds/voice/attack_%.wav"
+	nomanasound="sounds/voice/no_mana.wav"
+	cooldownsound="sounds/voice/cooldown.wav"
+	announcersound="sounds/voice/hero_select.wav"
+	tauntedsound="sounds/voice/taunt_prior.wav"
+	tauntkillsound="sounds/voice/taunt_after.wav"
+	
+	infoheight="170"
+	preglobalscale="1.35"
+	modelscale="1.0"
+	effectscale="0.9"
+	boundsheight="112"
+	boundsradius="24"
+	selectionradius="48"
+	targetoffset="0 0 64"
+
+	category="magic"
+	difficulty="3.5"
+
+	solorating="2"
+	junglerating="0"
+	carryrating="0"
+	supportrating="3"
+	initiatorrating="0"
+	gankerrating="2"
+	pusherrating="0"
+	rangedrating="5"
+	meleerating="0"
+	
+	movespeed="295"
+	turnrate="540"
+	turnsmoothing="0.05"
+
+	maxhealth="150"
+	healthregen="0.25"
+	maxmana="0"
+	manaregen="0.01"
+
+	armor="0"
+	magicarmor="5.5"
+
+	inventory0="Ability_Aluna1"
+	inventory1="Ability_Aluna2"
+	inventory2="Ability_Aluna3"
+	inventory3="Ability_Aluna4"
+	inventory4="Ability_AttributeBoost"
+	inventory5=""
+	inventory6=""
+	inventory8="Ability_Taunt"
+	inventory9=""
+	inventory10=""
+	inventory11=""
+	inventory12="Ability_AutomatedCourier"
+
+	attackduration="800"
+	attackactiontime="400"
+	attackcooldown="1550"
+	attackdamagemin="25"
+	attackdamagemax="31"
+	attacknumanims="3"
+	attackoffset="0 40 100"
+	attackprojectile="Projectile_AlunaAttack"
+	attackrange="600"
+	attackstarteffect="projectile/effects/attack.effect"
+	attackactioneffect=""
+	attackimpacteffect=""
+	attacktype="ranged"
+	combattype="Hero"
+
+	aggrorange="800"
+	sightrangeday="1800"
+	sightrangenight="800"
+	wanderrange="250"
+
+	primaryattribute="Intelligence"
+	strength="16"
+	strengthperlevel="2.0"
+	agility="18"
+	agilityperlevel="1.8"
+	intelligence="22"
+	intelligenceperlevel="2.8"
+	
+	previewmodel="preview.mdf"
+	previewpos="0 0 -60"
+	previewangles="0 0 0"
+	previewscale="1.3"
+	
+	storemodel="preview.mdf"
+	storepos="0 0 -20"
+	storeangles="0 0 0"
+	storescale="1.3"
+	
+	corpsetime="3000"
+	corpsefadetime="5000"
+	corpsefadeeffect="/shared/effects/corpse_sink.effect"
+>
+	<recommendeditem name="Item_ManaPotion" />	
+	<recommendeditem name="Item_MinorTotem" />
+	<recommendeditem name="Item_RunesOfTheBlight" />
+	<recommendeditem name="Item_HealthPotion" />
+	<recommendeditem name="Item_HomecomingStone" />
+	
+	<recommendeditem name="Item_Bottle" />
+	<recommendeditem name="Item_PowerSupply" />
+	<recommendeditem name="Item_BloodChalice" />
+	<recommendeditem name="Item_EnhancedMarchers" />
+	<recommendeditem name="Item_Astrolabe" />
+	
+	<recommendeditem name="Item_Silence" />
+	<recommendeditem name="Item_Morph" />
+	<recommendeditem name="Item_Weapon3" />
+	<recommendeditem name="Item_ArclightCrown" />
+	<recommendeditem name="Item_Stealth" />
+	
+	<modifier key="iamsheeped" modpriority="1000" passiveeffect=""/>
+	
+	<modifier key="aluna_red" modpriority="100" passiveeffect="ability_04/effects/state.effect" />
+	
+	<!-- Stardust/Space Aluna (Ultimate) -->
+	<altavatar key="Hero_Aluna.Alt" modpriority="1"
+		altavatar="true"
+		
+		model="alt/model.mdf"
+		icon2="alt/icon.tga"
+		portrait="alt/icon.tga"
+		passiveeffect="alt/effects/body.effect"
+		respawneffect="/shared/effects/respawn_aluna.effect"
+		
+		attacknumanims="2"
+	
+		previewmodel="alt/preview.mdf"
+		previewpos="0 0 -60"
+		previewangles="0 0 0"
+		previewscale="1.3"
+		previewpassiveeffect="alt/effects/store_body.effect"
+		
+	    selectedsound="alt/sounds/voice/select_%.wav"
+	    selectedflavorsound="alt/sounds/voice/select_flavour_%.wav"
+	    confirmmovesound="alt/sounds/voice/move_%.wav"
+	    confirmattacksound="alt/sounds/voice/attack_%.wav"
+	    nomanasound="alt/sounds/voice/no_mana.wav"
+	    cooldownsound="alt/sounds/voice/cooldown.wav"
+	    tauntedsound="alt/sounds/voice/taunt_prior.wav"
+	    tauntkillsound="alt/sounds/voice/taunt_after.wav"
+		
+		storemodel="alt/preview.mdf"
+		storepos="0 0 -23"
+		storeangles="0 0 0"
+		storescale="1.3"
+		storepassiveeffect="alt/effects/store_body.effect"
+		
+		tooleffectkeyname0="effect_Boots"
+		tooleffectpath0="alt/upgraded_boots/body.effect"
+		tooleffectgroup0="boots"
+		
+		tooleffectkeyname1="effect_Hellflower"
+		tooleffectpath1="alt/upgraded_weapon/body.effect"
+		tooleffectgroup1="weapon"
+		
+		tooleffectkeyname2="effect_ManaBattery"
+		tooleffectpath2="alt/upgraded_eyepiece/body.effect"
+		tooleffectgroup2="helm"
+		
+		tooleffectkeyname3="effect_RingOfSorcery"
+		tooleffectpath3="alt/upgraded_gloves/body.effect"
+		tooleffectgroup3="gloves"
+		
+		tooleffectkeyname4="Item_PushStaff"
+		tooleffectpath4="alt/upgraded_gloves/body.effect"
+		tooleffectgroup4="gloves"
+		
+		tooleffectkeyname5="effect_lightning"
+		tooleffectpath5="alt/upgraded_jetpack/body.effect"
+		tooleffectgroup5="backpack"
+		
+		tooleffectkeyname6="effect_SavageMace"
+		tooleffectpath6="alt/upgraded_jetpack/body.effect"
+		tooleffectgroup6="backpack"
+	>
+		<modifier key="ult_Alt" modpriority="101" passiveeffect="alt/ability_04/effects/state.effect" 
+			tooleffectpath1="alt/upgraded_weapon/body_red.effect"
+			tooleffectpath2="alt/upgraded_eyepiece/body_red.effect"
+		/>
+		
+		<onspawn>
+			<applystate name="State_Aluna_Alt_GemDroid_Effects" target="this_entity" continuous="true" />
+			<applystate name="State_Aluna_Alt_SheepDroid_Effects" target="this_entity" continuous="true" />
+		</onspawn>
+		
+		<onrespawn>
+			<applystate name="State_Aluna_Alt_GemDroid_Effects" target="this_entity" continuous="true" />
+			<applystate name="State_Aluna_Alt_SheepDroid_Effects" target="this_entity" continuous="true" />
+		</onrespawn>
+	</altavatar>
+	
+	<altavatar key="Hero_Aluna.Alt2" modpriority="1"
+		altavatar="true"
+		
+		model="alt2/model.mdf"
+		icon2="alt2/icon.tga"
+		portrait="alt2/icon.tga"
+		passiveeffect="alt2/effects/body.effect"
+		respawneffect="/shared/effects/respawn_aluna.effect"
+		
+		attacknumanims="2"
+	
+		previewmodel="alt2/preview.mdf"
+		previewpos="0 0 -60"
+		previewangles="0 0 0"
+		previewscale="1.3"
+		
+	    selectedsound="alt2/sounds/voice/select_%.wav"
+	    selectedflavorsound="alt2/sounds/voice/select_flavour_%.wav"
+	    confirmmovesound="alt2/sounds/voice/move_%.wav"
+	    confirmattacksound="alt2/sounds/voice/attack_%.wav"
+	    nomanasound="alt2/sounds/voice/no_mana.wav"
+	    cooldownsound="alt2/sounds/voice/cooldown.wav"
+	    tauntedsound="alt2/sounds/voice/taunt_prior.wav"
+	    tauntkillsound="alt2/sounds/voice/taunt_after.wav"
+		
+		storemodel="alt2/preview.mdf"
+		storepos="0 0 -23"
+		storeangles="0 0 0"
+		storescale="1.3"
+	>
+		<modifier key="ult_Alt2" modpriority="101" passiveeffect="alt2/ability_04/effects/state.effect" />
+	</altavatar>
+	
+	<altavatar key="Hero_Aluna.Alt3" modpriority="1"
+		altavatar="true"
+		
+		model="alt3/model.mdf"
+		icon2="alt3/icon.tga"
+		portrait="alt3/icon.tga"
+		passiveeffect="alt3/effects/body.effect"
+		respawneffect="/shared/effects/respawn_aluna.effect"
+		
+		preglobalscale="1.4"
+		
+		attacknumanims="2"
+	
+		previewmodel="alt3/preview.mdf"
+		previewpos="0 0 -60"
+		previewangles="0 0 0"
+		previewscale="1.3"
+		
+	    selectedsound="alt3/sounds/voice/select_%.wav"
+	    selectedflavorsound="alt3/sounds/voice/select_flavour_%.wav"
+	    confirmmovesound="alt3/sounds/voice/move_%.wav"
+	    confirmattacksound="alt3/sounds/voice/attack_%.wav"
+	    nomanasound="alt3/sounds/voice/no_mana.wav"
+	    cooldownsound="alt3/sounds/voice/cooldown.wav"
+	    tauntedsound="alt3/sounds/voice/taunt_prior.wav"
+	    tauntkillsound="alt3/sounds/voice/taunt_after.wav"
+		
+		storemodel="alt3/preview.mdf"
+		storepos="0 0 -23"
+		storeangles="0 0 0"
+		storescale="1.3"
+	>
+		<modifier key="aluna_red" modpriority="100" passiveeffect="alt3/ability_04/effects/state.effect" />
+	</altavatar>
+	
+	<altavatar key="Hero_Aluna.Alt4" modpriority="1"
+		altavatar="true"
+		
+		model="alt4/model.mdf"
+		icon2="alt4/icon.tga"
+		portrait="alt4/icon.tga"
+		passiveeffect="alt4/effects/body.effect"
+		respawneffect="/shared/effects/respawn_aluna.effect"
+		
+		preglobalscale="1.4"
+		
+		attacknumanims="2"
+	
+		previewmodel="alt4/preview.mdf"
+		previewpos="0 0 -60"
+		previewangles="0 0 0"
+		previewscale="1.3"
+		
+	    selectedsound="alt4/sounds/voice/select_%.wav"
+	    selectedflavorsound="alt4/sounds/voice/select_flavour_%.wav"
+	    confirmmovesound="alt4/sounds/voice/move_%.wav"
+	    confirmattacksound="alt4/sounds/voice/attack_%.wav"
+	    nomanasound="alt4/sounds/voice/no_mana.wav"
+	    cooldownsound="alt4/sounds/voice/cooldown.wav"
+	    tauntedsound="alt4/sounds/voice/taunt_prior.wav"
+	    tauntkillsound="alt4/sounds/voice/taunt_after.wav"
+		
+		storemodel="alt4/preview.mdf"
+		storepos="0 0 -23"
+		storeangles="0 0 0"
+		storescale="1.3"
+	>
+		<modifier key="aluna_red" modpriority="100" passiveeffect="alt4/ability_04/effects/state.effect" />
+	</altavatar>
+	
+</hero>

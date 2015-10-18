@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hero
+	name="Hero_Pyromancer"
+
+	team="Legion"
+	icon="icon.tga"
+	portrait="icon.tga"
+	model="model.mdf"
+	skin=""
+	
+	passiveeffect="effects/body.effect"
+	spawneffect=""
+	respawneffect="/shared/effects/respawn.effect"
+	selectedsound="sounds/voice/select_%.wav"
+	selectedflavorsound="sounds/voice/select_flavour_%.wav"
+	confirmmovesound="sounds/voice/move_%.wav"
+	confirmattacksound="sounds/voice/attack_%.wav"
+	nomanasound="sounds/voice/no_mana.wav"
+	cooldownsound="sounds/voice/cooldown.wav"
+	announcersound="sounds/voice/hero_select.wav"
+	tauntedsound="sounds/voice/taunt_prior.wav"
+	tauntkillsound="sounds/voice/taunt_after.wav"
+	
+	preglobalscale="1.665"
+	modelscale="1.0"
+	effectscale="0.9"
+	boundsheight="112"
+	boundsradius="24"
+	selectionradius="48"
+	targetoffset="0 0 92"
+
+	category="magic"
+	difficulty="2.5"
+
+	solorating="2"
+	junglerating="0"
+	carryrating="2"
+	supportrating="1"
+	initiatorrating="0"
+	gankerrating="3"
+	pusherrating="2"
+	rangedrating="5"
+	meleerating="0"
+
+	movespeed="295"
+	turnrate="450"
+	turnsmoothing="0.05"
+
+	maxhealth="150"
+	healthregen="0.25"
+	maxmana="0"
+	manaregen="0.01"
+
+	armor="-1.1"
+	magicarmor="5.5"
+
+	inventory0="Ability_Pyromancer1"
+	inventory1="Ability_Pyromancer2"
+	inventory2="Ability_Pyromancer3"
+	inventory3="Ability_Pyromancer4"
+	inventory4="Ability_AttributeBoost"
+	inventory5=""
+	inventory6=""
+	inventory8="Ability_Taunt"
+	inventory9=""
+	inventory10=""
+	inventory11=""
+	inventory12="Ability_AutomatedCourier"
+
+	attackduration="1200"
+	attackactiontime="450"
+	attackcooldown="1700"
+	attackdamagemin="19"
+	attackdamagemax="25"
+	attacknumanims="2"
+	attackoffset="0 30 150"
+	attackprojectile="Projectile_PyromancerAttack"
+	attackrange="600"
+	attackstarteffect=""
+	attackactioneffect=""
+	attackimpacteffect=""
+	attacktype="ranged"
+	combattype="Hero"
+
+	aggrorange="800"
+	sightrangeday="1800"
+	sightrangenight="800"
+	wanderrange="250"
+	
+	corpsetime="4000"
+	corpsefadetime="3000"
+	corpsefadeeffect="/shared/effects/corpse_sink.effect"
+
+	primaryattribute="Intelligence"
+	strength="18"
+	strengthperlevel="1.5"
+	agility="16"
+	agilityperlevel="1.5"
+	intelligence="24"
+	intelligenceperlevel="3.2"
+	
+	previewmodel="preview.mdf"
+	previewpos="0 0 -70"
+	previewangles="0 0 0"
+	previewscale="1.75"
+	
+	storemodel="preview.mdf"
+	storepos="0 0 -20"
+	storeangles="0 0 0"
+	storescale="1.45"
+>
+	<recommendeditem name="Item_ManaPotion" />
+	<recommendeditem name="Item_MinorTotem" />
+	<recommendeditem name="Item_RunesOfTheBlight" />
+	<recommendeditem name="Item_HealthPotion" />
+	<recommendeditem name="Item_HomecomingStone" />
+	
+	<recommendeditem name="Item_FlamingEye" />
+	<recommendeditem name="Item_Strength5" />
+	<recommendeditem name="Item_Bottle" />
+	<recommendeditem name="Item_Striders" />
+	<recommendeditem name="Item_SpellShards" />
+	
+	<recommendeditem name="Item_SacrificialStone" />
+	<recommendeditem name="Item_Intelligence7" />
+	<recommendeditem name="Item_FrostfieldPlate" />
+	<recommendeditem name="Item_BehemothsHeart" />
+	<recommendeditem name="Item_Morph" />
+	
+	<modifier key="iamsheeped" modpriority="999"
+		passiveeffect=""
+	/>
+
+	<!-- Staff of the master upgrade effect -->
+	<modifier key="ult_boost" modpriority="100"
+		passiveeffect=""
+		attackprojectile="Projectile_PyromancerAttack"
+	>
+		<aura state="State_Pyromancer_Ult_Boost_Art" radius="0" targetscheme="self"/>
+	</modifier>
+	
+	<altavatar key="Hero_Pyromancer.Female"
+		icon2="alt/icon.tga"
+		portrait="alt/icon.tga"
+		model="alt/model.mdf"
+		
+		passiveeffect="alt/effects/body.effect"
+		
+		preglobalscale="1.5"
+		infoheight="205"
+		
+		selectedsound="alt/sounds/voice/select_%.wav"
+		selectedflavorsound="alt/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt/sounds/voice/move_%.wav"
+		confirmattacksound="alt/sounds/voice/attack_%.wav"
+		nomanasound="alt/sounds/voice/no_mana.wav"
+		cooldownsound="alt/sounds/voice/cooldown.wav"
+		announcersound="alt/sounds/voice/hero_select.wav"
+		tauntedsound="alt/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt/sounds/voice/taunt_after.wav"
+		
+		previewmodel="alt/preview.mdf"
+		previewpos="0 0 -130"
+		previewangles="0 0 0"
+		previewscale="1.5"
+		
+		storemodel="alt/preview.mdf"
+		storepos="0 0 -35"
+		storeangles="0 0 0"
+		storescale="1.2"
+	/>
+	
+	<altavatar key="Hero_Pyromancer.Alt2"
+		icon2="alt2/icon.tga"
+		portrait="alt2/icon.tga"
+		model="alt2/model.mdf"
+		
+		passiveeffect="alt2/effects/body.effect"
+		attackprojectile="Projectile_PyromancerAttack_Alt2"
+		
+		attackoffset="35 75 60"
+		preglobalscale="2"
+		infoheight="205"
+		
+		selectedsound="alt2/sounds/voice/select_%.wav"
+		selectedflavorsound="alt2/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt2/sounds/voice/move_%.wav"
+		confirmattacksound="alt2/sounds/voice/attack_%.wav"
+		nomanasound="alt2/sounds/voice/no_mana.wav"
+		cooldownsound="alt2/sounds/voice/cooldown.wav"
+		tauntedsound="alt2/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt2/sounds/voice/taunt_after.wav"
+		
+		previewmodel="alt2/preview.mdf"
+		previewpos="-10 0 -75"
+		previewangles="0 0 0"
+		previewscale="1.8"
+		
+		storemodel="alt2/preview.mdf"
+		storepos="0 0 -15"
+		storeangles="0 0 0"
+		storescale="2"
+	/>
+	
+	<altavatar key="Hero_Pyromancer.Alt3"
+		icon2="alt3/icon.tga"
+		portrait="alt3/icon.tga"
+		model="alt3/model.mdf"
+		
+		passiveeffect="alt3/effects/body.effect"
+		attackprojectile="Projectile_PyromancerAttack_Alt3"
+		
+		tiltfactor="1"
+		tiltspeed="75.0"
+		
+		preglobalscale="1.1"
+		infoheight="205"
+		
+		selectedsound="alt3/sounds/voice/select_%.wav"
+		selectedflavorsound="alt3/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt3/sounds/voice/move_%.wav"
+		confirmattacksound="alt3/sounds/voice/attack_%.wav"
+		nomanasound="alt3/sounds/voice/no_mana.wav"
+		cooldownsound="alt3/sounds/voice/cooldown.wav"
+		tauntedsound="alt3/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt3/sounds/voice/taunt_after.wav"
+
+		corpsetime="2000"
+		corpsefadetime="5000"
+		corpsefadeeffect="/shared/effects/corpse_sink.effect"
+
+		previewmodel="alt3/preview.mdf"
+		previewpos="0 0 -130"
+		previewangles="0 0 0"
+		previewscale="1.5"
+		
+		storemodel="alt3/preview.mdf"
+		storepos="0 0 -25"
+		storeangles="0 0 35"
+		storescale="1.1"
+	/>
+	
+	<altavatar key="Hero_Pyromancer.Alt4"
+		icon2="alt4/icon.tga"
+		portrait="alt4/icon.tga"
+		model="alt4/model.mdf"
+		
+		respawneffect="/shared/effects/respawn_pyromancer.effect"
+		passiveeffect="alt4/effects/body.effect"
+		attackprojectile="Projectile_PyromancerAttack_Alt4"
+		attackoffset="20 105 90"
+		
+		preglobalscale="2.3"
+		infoheight="205"
+		
+		selectedsound="alt4/sounds/voice/select_%.wav"
+		selectedflavorsound="alt4/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt4/sounds/voice/move_%.wav"
+		confirmattacksound="alt4/sounds/voice/attack_%.wav"
+		nomanasound="alt4/sounds/voice/no_mana.wav"
+		cooldownsound="alt4/sounds/voice/cooldown.wav"
+		tauntedsound="alt4/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt4/sounds/voice/taunt_after.wav"
+
+		corpsetime="2000"
+		corpsefadetime="5000"
+		corpsefadeeffect="/shared/effects/corpse_sink.effect"
+
+		previewmodel="alt4/preview.mdf"
+		previewpos="0 0 -130"
+		previewangles="0 0 0"
+		previewscale="2.5"
+		previewpassiveeffect="alt4/effects/body_store.effect"
+		
+		storemodel="alt4/preview.mdf"
+		storepos="0 0 -25"
+		storeangles="0 0 0"
+		storescale="2.0"
+		storepassiveeffect="alt4/effects/body_store.effect"
+		
+		tooleffectkeyname0="effect_Boots"
+		tooleffectpath0="alt4/upgraded_boots/body.effect"
+		tooleffectgroup0="boots"
+		
+		tooleffectkeyname1=""
+		tooleffectpath1="alt4/base_boots/body.effect"
+		tooleffectgroup1="boots"
+		
+		tooleffectkeyname2="Item_GraveLocket"
+		tooleffectpath2="alt4/upgraded_helm/body.effect"
+		tooleffectgroup2="helm"
+		
+		tooleffectkeyname3="Item_SacrificialStone"
+		tooleffectpath3="alt4/upgraded_helm/body.effect"
+		tooleffectgroup3="helm"
+		
+		tooleffectkeyname4=""
+		tooleffectpath4="alt4/base_helm/body.effect"
+		tooleffectgroup4="helm"
+		
+		tooleffectkeyname5="Item_SpellShards"
+		tooleffectpath5="alt4/upgraded_chest/body.effect"
+		tooleffectgroup5="chest"
+		
+		tooleffectkeyname6="Item_GrimoireOfPower"
+		tooleffectpath6="alt4/upgraded_chest/body.effect"
+		tooleffectgroup6="chest"
+		
+		tooleffectkeyname7=""
+		tooleffectpath7="alt4/base_chest/body.effect"
+		tooleffectgroup7="chest"
+		
+		tooleffectkeyname8="Item_Intelligence7 Item_ManaBattery"
+		tooleffectpath8="alt4/upgraded_arms/boost.effect"
+		tooleffectgroup8="weapon"
+		
+		tooleffectkeyname9="Item_Intelligence7 Item_PowerSupply"
+		tooleffectpath9="alt4/upgraded_arms/boost.effect"
+		tooleffectgroup9="weapon"
+		
+		tooleffectkeyname10="Item_Intelligence7"
+		tooleffectpath10="alt4/base_weapon/boost.effect"
+		tooleffectgroup10="weapon"
+		
+		tooleffectkeyname11="Item_ManaBattery"
+		tooleffectpath11="alt4/upgraded_arms/body.effect"
+		tooleffectgroup11="weapon"
+		
+		tooleffectkeyname12="Item_PowerSupply"
+		tooleffectpath12="alt4/upgraded_arms/body.effect"
+		tooleffectgroup12="weapon"
+		
+		tooleffectkeyname13=""
+		tooleffectpath13="alt4/base_weapon/body.effect"
+		tooleffectgroup13="weapon"
+		
+		tooleffectkeyname14="Item_Intelligence7 Item_PushStaff"
+		tooleffectpath14="alt4/upgraded_back/boost.effect"
+		tooleffectgroup14="back"
+		
+		tooleffectkeyname15="Item_PushStaff"
+		tooleffectpath15="alt4/upgraded_back/body.effect"
+		tooleffectgroup15="back"
+		
+		tooleffectkeyname16=""
+		tooleffectpath16="alt4/base_back/body.effect"
+		tooleffectgroup16="back"
+		
+		tooleffectkeyname17="Item_PushStaff effect_Boots"
+		tooleffectpath17="alt4/upgraded_boots_tube/body.effect"
+		tooleffectgroup17=""
+		
+		tooleffectkeyname18="Item_PushStaff Item_SpellShards"
+		tooleffectpath18="alt4/upgraded_chest_tube/body.effect"
+		tooleffectgroup18="chest_tube"
+		
+		tooleffectkeyname19="Item_PushStaff Item_GrimoireOfPower"
+		tooleffectpath19="alt4/upgraded_chest_tube/body.effect"
+		tooleffectgroup19="chest_tube"
+		
+		tooleffectkeyname20="Item_PushStaff Item_PowerSupply"
+		tooleffectpath20="alt4/upgraded_weapon_tube/body.effect"
+		tooleffectgroup20=""
+	>
+		<onspawn>
+			<applystate name="State_Pyromancer_Alt4_Dragon_Effects" target="this_entity" continuous="true" />
+			<applystate name="State_Pyromancer_Alt4_Flamethrower_Effects" target="this_entity" continuous="true" />
+			<applystate name="State_Pyromancer_Alt4_Jetpack_Effects" target="this_entity" continuous="true" />
+		</onspawn>
+		
+		<onrespawn>
+			<applystate name="State_Pyromancer_Alt4_Dragon_Effects" target="this_entity" continuous="true" />
+			<applystate name="State_Pyromancer_Alt4_Flamethrower_Effects" target="this_entity" continuous="true" />
+			<applystate name="State_Pyromancer_Alt4_Jetpack_Effects" target="this_entity" continuous="true" />
+		</onrespawn>
+
+		<modifier key="Alt4_Flamethrower" modpriority="101"
+			idleanim="idle_flamethrower"
+			attackanim="attack_%_flamethrower"
+			numattackanims="2"
+			boredanim="bored_1_flamethrower"
+			tauntanim="taunt_1_flamethrower"
+			attackprojectile="Projectile_PyromancerAttack_Alt4_Flamethrower"
+		/>
+		
+		<modifier key="Alt4_Jetpack" modpriority="2"
+			model="alt4/model_flying.mdf"
+			attackoffset="20 105 130"
+		/>
+	</altavatar>
+	
+	<altavatar key="Hero_Pyromancer.Alt5"
+		icon2="alt5/icon.tga"
+		portrait="alt5/icon.tga"
+		model="alt5/model.mdf"
+		
+		passiveeffect="alt5/effects/body.effect"
+		attackprojectile="Projectile_PyromancerAttack_Alt5"
+		
+		attackoffset="35 75 60"
+		preglobalscale="1.7"
+		infoheight="205"
+		
+		selectedsound="alt5/sounds/voice/select_%.wav"
+		selectedflavorsound="alt5/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt5/sounds/voice/move_%.wav"
+		confirmattacksound="alt5/sounds/voice/attack_%.wav"
+		nomanasound="alt5/sounds/voice/no_mana.wav"
+		cooldownsound="alt5/sounds/voice/cooldown.wav"
+		tauntedsound="alt5/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt5/sounds/voice/taunt_after.wav"
+		
+		previewmodel="alt5/preview.mdf"
+		previewpos="-10 0 -75"
+		previewangles="0 0 0"
+		previewscale="1.8"
+		
+		storemodel="alt5/preview.mdf"
+		storepos="0 0 -15"
+		storeangles="0 0 0"
+		storescale="1.8"
+			
+		portraitcampos="-5 10 30"
+		
+		corpsetime="2950"
+		corpsefadetime="0"
+		corpsefadeeffect=""
+	>
+		<onframe>
+			<activatemodifierkey name="Pyromancer_Alt5_Sound" />
+		</onframe>
+	
+		<onspawn>
+			<ownsproduct target="this_entity" product="aa.Hero_Tarot.Alt4 aa.Hero_Engineer.Alt5 aa.Hero_Kenisis.Alt4 aa.Hero_Dreadknight.Alt5"/>
+			<compare a="result" b="1" op="eq">
+				<spawnunit name="Pet_Blackwal" target="this_entity" offset="0 -100" facing="source_entity" pushentity="true" />
+			</compare>
+		</onspawn>
+		
+		<onrespawn>
+			<ownsproduct target="this_entity" product="aa.Hero_Tarot.Alt4 aa.Hero_Engineer.Alt5 aa.Hero_Kenisis.Alt4 aa.Hero_Dreadknight.Alt5" />
+			<compare a="result" b="1" op="eq">
+				<spawnunit name="Pet_Blackwal" target="this_entity" offset="0 -100" facing="source_entity" pushentity="true" />
+			</compare>
+		</onrespawn>
+	</altavatar>
+	
+	<altavatar key="Hero_Pyromancer.Alt6"
+		icon2="alt6/icon.tga"
+		portrait="alt6/icon.tga"
+		model="alt6/model.mdf"
+		
+		passiveeffect="alt6/effects/body.effect"
+		attackprojectile="Projectile_PyromancerAttack"
+		
+		attackoffset="35 75 60"
+		preglobalscale="1.9"
+		infoheight="205"
+		
+		selectedsound="alt6/sounds/voice/select_%.wav"
+		selectedflavorsound="alt6/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt6/sounds/voice/move_%.wav"
+		confirmattacksound="alt6/sounds/voice/attack_%.wav"
+		nomanasound="alt6/sounds/voice/no_mana.wav"
+		cooldownsound="alt6/sounds/voice/cooldown.wav"
+		tauntedsound="alt6/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt6/sounds/voice/taunt_after.wav"
+		
+		previewmodel="alt6/preview.mdf"
+		previewpos="-10 0 -75"
+		previewangles="0 0 0"
+		previewscale="1.8"
+		
+		storemodel="alt6/preview.mdf"
+		storepos="0 0 -25"
+		storeangles="0 0 0"
+		storescale="1.8"
+			
+		portraitcampos="19 -50 25"
+		
+		corpsetime="2950"
+		corpsefadetime="0"
+		corpsefadeeffect=""
+	>
+	<onspawn>
+			<applystate name="Hotshot_Blaze_Sound_Initiator" target="source_entity" duration="2000" />
+			<activatemodifierkey name="Blaze_Sound" />
+	</onspawn>
+	
+	<modifier key="ult_boost" modpriority="100"
+		passiveeffect=""
+		boredanim="bored_boost"
+		attackprojectile="Projectile_PyromancerAttack"
+	>
+		<aura state="State_Pyromancer_Ult_Boost_Art" radius="0" targetscheme="self"/>
+	</modifier>
+	
+	</altavatar>
+
+	<altavatar key="Hero_Pyromancer.pog_skin"
+		
+		icon2="icon.tga"
+		portrait="icon.tga"
+		model="pog_skin/model.mdf"
+
+		preglobalscale="1.65"
+		infoheight="205"
+
+		selectedsound="alt/sounds/voice/select_%.wav"
+		selectedflavorsound="alt/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt/sounds/voice/move_%.wav"
+		confirmattacksound="alt/sounds/voice/attack_%.wav"
+		nomanasound="alt/sounds/voice/no_mana.wav"
+		cooldownsound="alt/sounds/voice/cooldown.wav"
+		announcersound="alt/sounds/voice/hero_select.wav"
+		tauntedsound="alt/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt/sounds/voice/taunt_after.wav"
+		
+		previewmodel="pog_skin/preview.mdf"
+		previewpos="0 0 -50"
+		previewangles="0 0 0"
+		previewscale="1.15"
+
+		storemodel="pog_skin/preview.mdf"
+		storepos="0 0 -40"
+		storeangles="0 0 0"
+		storescale="1.55"
+		
+		portraitcampos="5 0 50"
+	/>
+	
+	<altavatar key="Hero_Pyromancer.pog_skin2"
+		icon2="icon.tga"
+		portrait="icon.tga"
+		model="pog_skin2/model.mdf"
+		
+		previewmodel="pog_skin2/preview.mdf"
+		previewpos="0 0 -50"
+		previewangles="0 0 0"
+		previewscale="1.15"
+
+		storemodel="pog_skin2/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.1"
+	/>
+    
+    <altavatar key="Hero_Pyromancer.trophy_skin"
+        icon2="trophy_skin/icon.tga"
+        portrait="trophy_skin/icon.tga"
+
+		preglobalscale="1.665"
+        model="trophy_skin/model.mdf"
+        passiveeffect="trophy_skin/effects/body.effect"
+        
+		attackoffset="0 30 150"
+	
+		previewmodel="trophy_skin/preview.mdf"
+		previewpos="0 0 -70"
+		previewangles="0 0 0"
+		previewscale="1.75"
+		
+		storemodel="trophy_skin/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.65"
+    />
+	
+</hero>

@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hero
+	name="Hero_MasterOfArms"
+
+	team="Legion"
+	icon="icon.tga"
+	portrait="icon.tga"
+	model="model.mdf"
+	skin=""
+	
+	passiveeffect=""
+	spawneffect=""
+	respawneffect="/shared/effects/respawn.effect"
+	selectedsound="sounds/voice/select_%.wav"
+	selectedflavorsound="sounds/voice/select_flavour_%.wav"
+	confirmmovesound="sounds/voice/move_%.wav"
+	confirmattacksound="sounds/voice/attack_%.wav"
+	nomanasound="sounds/voice/no_mana.wav"
+	cooldownsound="sounds/voice/cooldown.wav"
+	announcersound="sounds/voice/hero_select.wav"
+	tauntedsound="sounds/voice/taunt_prior.wav"
+	tauntkillsound="sounds/voice/taunt_after.wav"
+	
+	preglobalscale="1.8"
+	modelscale="1"
+	effectscale="1"
+	boundsheight="112"
+	boundsradius="24"
+	selectionradius="50"
+	targetoffset="0 0 64"
+
+	category="magic cc"
+	difficulty="3"
+
+	solorating="1"
+	junglerating="0"
+	carryrating="3"
+	supportrating="2"
+	initiatorrating="0"
+	gankerrating="2"
+	pusherrating="0"
+	rangedrating="5"
+	meleerating="0"
+	
+	movespeed="295"
+	turnrate="540"
+	turnsmoothing="0.05"
+
+	maxhealth="150"
+	healthregen="0.25"
+	maxmana="0"
+	manaregen="0.01"
+
+	armor="0.0"
+	magicarmor="5.5"
+
+	inventory0="Ability_MasterOfArms1"
+	inventory1="Ability_MasterOfArms2"
+	inventory2="Ability_MasterOfArms3"
+	inventory3="Ability_MasterOfArms4"
+	inventory4="Ability_AttributeBoost"
+	inventory5=""
+	inventory6=""
+	inventory7=""
+	inventory8="Ability_Taunt"
+	inventory9=""
+	inventory10=""
+	inventory11=""
+	inventory12="Ability_AutomatedCourier"
+
+	attackduration="1000"
+	attackactiontime="500"
+	attackcooldown="1700"
+	attackdamagemin="20"
+	attackdamagemax="26"
+	attacknumanims="2"
+	attackoffset="22 100 95"
+	attackprojectile="Projectile_MasterOfArmsAttack"
+	attackrange="550"
+	attackstarteffect=""
+	attackactioneffect=""
+	attackimpacteffect=""
+	attacktype="ranged"
+	combattype="Hero"
+
+	aggrorange="800"
+	sightrangeday="1800"
+	sightrangenight="800"
+	wanderrange="250"
+
+	primaryattribute="Agility"
+	strength="15"
+	strengthperlevel="1.5"
+	agility="22"
+	agilityperlevel="2.5"
+	intelligence="20"
+	intelligenceperlevel="2.4"
+	
+	previewmodel="preview.mdf"
+	previewpos="0 0 -80"
+	previewangles="0 0 0"
+	previewscale="1.7"
+	previewpassiveeffect="ability_03/effects/state_blue_preview.effect"
+	
+	storemodel="preview.mdf"
+	storepos="0 0 -20"
+	storeangles="0 0 0"
+	storescale="1.65"
+	storepassiveeffect="ability_03/effects/state_blue_preview.effect"
+	
+	corpsetime="1750"
+	corpsefadetime="4500"
+	corpsefadeeffect="/shared/effects/corpse_sink.effect"
+>
+	<recommendeditem name="Item_ManaPotion" />	
+	<recommendeditem name="Item_MinorTotem" />
+	<recommendeditem name="Item_RunesOfTheBlight" />
+	<recommendeditem name="Item_HealthPotion" />
+	<recommendeditem name="Item_HomecomingStone" />
+	
+	<recommendeditem name="Item_Strength5" />
+	<recommendeditem name="Item_Bottle" />
+	
+	<onspawn>
+		<setactivemodifierkey entity="this_entity" name="MasterOfArms_Electrical" />
+	</onspawn>
+	
+	<modifier key="iamsheeped" modpriority="101"
+		passiveeffect=""
+	/>
+	
+	<modifier key="MasterOfArms_Electrical" modpriority="90"
+		attackprojectile="Projectile_MasterOfArmsAttack_Electrical"
+		attackanim="attack_elec"
+	/>
+	
+	<modifier key="MasterOfArms_Magnetic" modpriority="90"
+		attackprojectile="Projectile_MasterOfArmsAttack_Magnetic"
+		attackanim="attack_1_red"
+		attackoffset="5 100 95"
+		attackactioneffect="projectile/effects/magnetic_attack_action.effect"
+	/>
+	
+	<altavatar key="Hero_MasterOfArms.Alt2"
+		icon2="alt2/icon.tga"
+		portrait="alt2/icon.tga"
+		model="alt2/model.mdf"
+		
+		previewmodel="alt2/preview.mdf"
+		previewpos="0 0 -80"
+		previewangles="0 0 0"
+		previewscale="1.7"
+		previewpassiveeffect="ability_03/effects/state_blue_preview.effect"
+		
+		storemodel="alt2/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.65"
+		storepassiveeffect="ability_03/effects/state_blue_preview.effect"
+	>
+	</altavatar>
+	
+	
+	<altavatar key="Hero_MasterOfArms.Alt3"
+		icon2="alt3/icon.tga"
+		portrait="alt3/icon.tga"
+		model="alt3/model.mdf"
+		
+		attackoffset="0 120 80"
+		infoheight="155"
+
+		previewmodel="alt3/preview.mdf"
+		previewpos="0 0 -80"
+		previewangles="0 0 0"
+		previewscale="1.7"
+		previewpassiveeffect="alt3/ability_03/effects/state_blue.effect"
+		
+		selectedsound="alt3/sounds/voice/select_%.wav"
+		selectedflavorsound="alt3/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt3/sounds/voice/move_%.wav"
+		confirmattacksound="alt3/sounds/voice/attack_%.wav"
+		nomanasound="alt3/sounds/voice/no_mana.wav"
+		cooldownsound="alt3/sounds/voice/cooldown.wav"
+		tauntedsound="alt3/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt3/sounds/voice/taunt_after.wav" 
+		
+		storemodel="alt3/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.65"
+		storepassiveeffect="alt3/ability_03/effects/state_blue.effect"
+	>
+		<modifier key="MasterOfArms_Magnetic" modpriority="101"
+			attackprojectile="Projectile_MasterOfArmsAttack_Magnetic_Alt3"
+			attackoffset="-10 200 95"
+			attackactioneffect="alt3/projectile/effects/magnetic_attack_action.effect"
+			idleanim="idle_red"
+			attackanim="attack_1_red"
+			boredanim="bored_red"
+			itemanim="item_red"
+			deathanim="death_red"
+		/>
+	
+		<modifier key="MasterOfArms_Electrical" modpriority="101"
+			attackprojectile="Projectile_MasterOfArmsAttack_Electrical_Alt3"
+			attackoffset="0 145 75"
+			attackactioneffect="alt3/projectile/effects/electrical_attack_action.effect"
+			attackanim="attack_elec"
+		/>
+	</altavatar>
+	
+	<altavatar key="Hero_MasterOfArms.Alt4"
+		icon2="alt4/icon.tga"
+		portrait="alt4/icon.tga"
+		model="alt4/model.mdf"
+		
+		previewmodel="alt4/preview.mdf"
+		previewpos="0 0 -80"
+		previewangles="0 0 0"
+		previewscale="1.7"
+		previewpassiveeffect="ability_03/effects/state_blue_preview.effect"
+		
+		selectedsound="alt4/sounds/voice/select_%.wav"
+		selectedflavorsound="alt4/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt4/sounds/voice/move_%.wav"
+		confirmattacksound="alt4/sounds/voice/attack_%.wav"
+		nomanasound="alt4/sounds/voice/no_mana.wav"
+		cooldownsound="alt4/sounds/voice/cooldown.wav"
+		tauntedsound="alt4/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt4/sounds/voice/taunt_after.wav"
+		
+		storemodel="alt4/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.65"
+		storepassiveeffect="alt4/ability_03/effects/state_blue.effect"
+	>
+	
+	
+	
+	<onspawn propagatetoillusions="false" >
+			<ownsproduct target="this_entity" product="aa.Hero_Engineer.Alt4 aa.Hero_Nomad.Alt6 aa.Hero_FlameDragon.Alt4 aa.Hero_MasterOfArms.Alt4 aa.Hero_Armadon.Alt4 aa.Hero_Andromeda.Alt3" />
+			<compare a="result" b="1" op="eq">
+			<applystate name="Iron_Legion_Set_State" target="this_entity" continuous="true" />
+			</compare>
+			<setactivemodifierkey entity="this_entity" name="MasterOfArms_Electrical" />
+		</onspawn>
+		
+		<onrespawn propagatetoillusions="false" >
+			<ownsproduct target="this_entity" product="aa.Hero_Engineer.Alt4 aa.Hero_Nomad.Alt6 aa.Hero_FlameDragon.Alt4 aa.Hero_MasterOfArms.Alt4 aa.Hero_Armadon.Alt4 aa.Hero_Andromeda.Alt3" />
+			<compare a="result" b="1" op="eq">
+				<applystate name="Iron_Legion_Set_State" target="this_entity" continuous="true" />
+			</compare>
+		</onrespawn>
+
+		
+	
+		<modifier key="MasterOfArms_Electrical" modpriority="100"
+			attackprojectile="Projectile_MasterOfArmsAttack_Electrical"
+			attackoffset="15 50 75"
+			
+			
+		>
+		
+			<onspawn propagatetoillusions="false" >
+			<ownsproduct target="this_entity" product="aa.Hero_Engineer.Alt4 aa.Hero_Nomad.Alt6 aa.Hero_FlameDragon.Alt4 aa.Hero_MasterOfArms.Alt4 aa.Hero_Armadon.Alt4 aa.Hero_Andromeda.Alt3" />
+			<compare a="result" b="1" op="eq">
+			<applystate name="Iron_Legion_Set_State" target="this_entity" continuous="true" />
+			</compare>
+			</onspawn>
+		
+			<onrespawn propagatetoillusions="false" >
+			<ownsproduct target="this_entity" product="aa.Hero_Engineer.Alt4 aa.Hero_Nomad.Alt6 aa.Hero_FlameDragon.Alt4 aa.Hero_MasterOfArms.Alt4 aa.Hero_Armadon.Alt4 aa.Hero_Andromeda.Alt3" />
+			<compare a="result" b="1" op="eq">
+				<applystate name="Iron_Legion_Set_State" target="this_entity" continuous="true" />
+			</compare>
+			</onrespawn>
+		
+		</modifier>
+		
+		<modifier key="MasterOfArms_Magnetic" modpriority="100"
+			attackprojectile="Projectile_MasterOfArmsAttack_Magnetic"                                                                                 
+			attackoffset="15 50 75"
+			attackactioneffect="alt4/projectile/effects/magnetic_attack_action.effect"
+			skin="red"
+			attackanim="attack_1_red"
+		/>
+		
+		<modifier key="MasterOfArms_Electrical_Iron_Legion"
+		modpriority="101"
+			
+		
+		>
+		
+			<applystate name="Iron_Legion_Set_State" target="this_entity" continuous="true" />
+		</modifier>
+	</altavatar>
+	
+	<altavatar key="Hero_MasterOfArms.Alt5"
+		icon2="alt5/icon.tga"
+		portrait="alt5/icon.tga"
+		model="alt5/model.mdf"
+		
+		previewmodel="alt5/preview.mdf"
+		previewpos="0 0 -80"
+		previewangles="0 0 0"
+		previewscale="1.7"
+		previewpassiveeffect=""
+		
+		selectedsound="alt5/sounds/voice/select_%.wav"
+		selectedflavorsound="alt5/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt5/sounds/voice/move_%.wav"
+		confirmattacksound="alt5/sounds/voice/attack_%.wav"
+		nomanasound="alt5/sounds/voice/no_mana.wav"
+		cooldownsound="alt5/sounds/voice/cooldown.wav"
+		tauntedsound="alt5/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt5/sounds/voice/taunt_after.wav"
+		
+		storemodel="alt5/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.65"
+		storepassiveeffect="alt5/ability_03/effects/state_blue_preview.effect"
+	>
+		<modifier key="MasterOfArms_Electrical" modpriority="100"
+			attackprojectile="Projectile_MasterOfArmsAttack_Electrical"
+			attackoffset="5 125 125"
+			attackactioneffect="alt5/projectile/effects/electrical_attack_action.effect"
+		/>
+		
+		<modifier key="MasterOfArms_Magnetic" modpriority="100"
+			attackprojectile="Projectile_MasterOfArmsAttack_Magnetic"
+			attackoffset="5 125 125"
+			attackactioneffect="alt5/projectile/effects/magnetic_attack_action.effect"
+			skin="red"
+			deathanim="death_red"
+			attackanim="attack_1_red"
+		/>
+	</altavatar>
+	
+	<altavatar key="Hero_MasterOfArms.Alt6"
+		icon2="alt6/icon.tga"
+		portrait="alt6/icon.tga"
+		model="alt6/model_blue.mdf"
+		
+		previewmodel="alt6/preview.mdf"
+		previewpos="0 0 -80"
+		previewangles="0 0 0"
+		previewscale="1.7"
+		previewpassiveeffect="ability_03/effects/store.effect"
+		preglobalscale="2.1"
+		
+		passiveeffect="alt6/effects/body.effect"
+		
+		selectedsound="alt6/sounds/voice/select_%.wav"
+		selectedflavorsound="alt6/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt6/sounds/voice/move_%.wav"
+		confirmattacksound="alt6/sounds/voice/attack_%.wav"
+		nomanasound="alt6/sounds/voice/no_mana.wav"
+		cooldownsound="alt6/sounds/voice/cooldown.wav"
+		tauntedsound="alt6/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt6/sounds/voice/taunt_after.wav"
+		attackanim="attack_1_blue"
+		
+		storemodel="alt6/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.65"
+		storepassiveeffect="alt6/effects/store.effect"
+	>
+		<modifier key="MasterOfArms_Electrical" modpriority="100"
+			attackprojectile="Projectile_MasterOfArmsAttack_Electrical"
+			attackoffset="0 50 75"
+			model="alt6/model_blue.mdf"
+			deathanim="death_1"
+			attackanim="attack_elec"
+		/>
+		
+		<modifier key="MasterOfArms_Magnetic" modpriority="100"
+			attackprojectile="Projectile_MasterOfArmsAttack_Magnetic"
+			attackoffset="0 90 110"
+			attackactioneffect="alt6/projectile/effects/magnetic_attack_action.effect"
+			model="alt6/model_red.mdf"
+			deathanim="death_red"
+			attackanim="attack_1_red"
+		/>
+		
+		<onspawn>
+			<ownsproduct target="this_entity" product="aa.Hero_Solstice.Alt7 aa.Hero_Kraken.Alt4 aa.Hero_Pearl.Alt6 aa.Hero_Bubbles.Alt6 aa.Hero_Ophelia.Alt4 aa.Hero_EmeraldWarden.Alt6 aa.Hero_Ebulus.Alt5 aa.Hero_Hantumon.Alt6 aa.Hero_Martyr.Alt5 aa.Hero_Magmar.Alt5 aa.Hero_Riptide.Alt2" />
+			<compare a="result" b="1" op="eq">
+				<activatemodifierkey name="Zodiac_Set" />
+			</compare>
+		</onspawn>
+
+		<onrespawn>
+			<ownsproduct target="this_entity" product="aa.Hero_Solstice.Alt7 aa.Hero_Kraken.Alt4 aa.Hero_Pearl.Alt6 aa.Hero_Bubbles.Alt6 aa.Hero_Ophelia.Alt4 aa.Hero_EmeraldWarden.Alt6 aa.Hero_Ebulus.Alt5 aa.Hero_Hantumon.Alt6 aa.Hero_Martyr.Alt5 aa.Hero_Magmar.Alt5 aa.Hero_Riptide.Alt2" />
+			<compare a="result" b="1" op="eq">
+				<activatemodifierkey name="Zodiac_Set" />
+			</compare>
+		</onrespawn>
+
+		<!-- <onframe>
+			<activatemodifierkey name="Zodiac_Set" />
+		</onframe> -->
+
+		<modifier key="Zodiac_Set" modpriority="1"
+			tooleffectkeyname0=""
+			tooleffectpath0="/shared/effects/set_zodiac.effect"
+		/>
+	</altavatar>
+	
+	<altavatar key="Hero_MasterOfArms.Alt7"
+		icon2="alt7/icon.tga"
+		portrait="alt7/icon.tga"
+		model="alt7/model.mdf"
+		preglobalscale="2.1"
+		
+		previewmodel="alt7/preview.mdf"
+		previewpos="0 0 -80"
+		previewangles="0 0 0"
+		previewscale="1.7"
+		previewpassiveeffect=""
+		
+		selectedsound="alt7/sounds/voice/select_%.wav"
+		selectedflavorsound="alt7/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt7/sounds/voice/move_%.wav"
+		confirmattacksound="alt7/sounds/voice/attack_%.wav"
+		nomanasound="alt7/sounds/voice/no_mana.wav"
+		cooldownsound="alt7/sounds/voice/cooldown.wav"
+		tauntedsound="alt7/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt7/sounds/voice/taunt_after.wav"
+		
+		storemodel="alt7/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.65"
+		storepassiveeffect="alt7/effects/body_store.effect"
+	>
+		<modifier key="MasterOfArms_Electrical" modpriority="100"
+			attackoffset="5 125 125"
+			attackactioneffect="alt7/projectile/effects/electrical_attack_action.effect"
+			attackprojectile="Projectile_MasterOfArmsAttack_Electrical"
+			attackanim="attack_elec"
+		/>
+		
+		<modifier key="MasterOfArms_Magnetic" modpriority="100"
+			attackoffset="5 125 100"
+			attackactioneffect="alt7/projectile/effects/magnetic_attack_action.effect"
+			skin="red"
+			deathanim="death_red"
+			attackprojectile="Projectile_MasterOfArmsAttack_Magnetic"
+			attackanim="attack_1_red"
+		/>
+	</altavatar>
+	
+	<altavatar key="Hero_MasterOfArms.Alt8"
+		icon2="alt8/icon.tga"
+		portrait="alt8/icon.tga"
+		model="alt8/model.mdf"
+		preglobalscale="1.7"
+		
+		previewmodel="alt8/preview.mdf"
+		previewpos="0 0 -80"
+		previewangles="0 0 0"
+		previewscale="1.7"
+		previewpassiveeffect="alt8/effects/body_store.effect"
+		
+		selectedsound="alt8/sounds/voice/select_%.wav"
+		selectedflavorsound="alt8/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt8/sounds/voice/move_%.wav"
+		confirmattacksound="alt8/sounds/voice/attack_%.wav"
+		nomanasound="alt8/sounds/voice/no_mana.wav"
+		cooldownsound="alt8/sounds/voice/cooldown.wav"
+		tauntedsound="alt8/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt8/sounds/voice/taunt_after.wav"
+		
+		storemodel="alt8/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.50"
+		storepassiveeffect="alt8/effects/body_store.effect"
+		
+		portraitcampos="10 0 33"
+		
+		corpsetime="500"
+		corpsefadetime="3000"
+		corpsefadeeffect="/shared/effects/corpse_sink.effect"
+	>
+	
+	<onspawn>
+		<ownsproduct target="this_entity" product="aa.Hero_Legionnaire.Alt4" />
+		<compare a="result" b="1" op="eq">
+			<applystate name="State_Black_Legion" target="this_entity" continuous="true" />
+		</compare>
+	</onspawn>
+	
+	<onrespawn>
+		<ownsproduct target="this_entity" product="aa.Hero_Legionnaire.Alt4" />
+		<compare a="result" b="1" op="eq">
+			<applystate name="State_Black_Legion" target="this_entity" continuous="true" />
+		</compare>
+	</onrespawn>
+
+		<modifier key="MasterOfArms_Electrical" modpriority="100"
+			attackoffset="5 120 125"
+			attackprojectile="Projectile_MasterOfArmsAttack_Electrical"
+			attackanim="attack_elec"
+		/>
+		
+		<modifier key="MasterOfArms_Magnetic" modpriority="100"
+			attackoffset="5 135 90"
+			attackprojectile="Projectile_MasterOfArmsAttack_Magnetic"
+			attackanim="attack_1_red"
+		/>
+	</altavatar>
+	
+	<altavatar key="Hero_MasterOfArms.trophy_skin"
+		icon2="trophy_skin/icon.tga"
+		portrait="trophy_skin/icon.tga"
+		model="trophy_skin/model.mdf"
+		passiveeffect="trophy_skin/effects/body.effect"
+		
+		previewmodel="trophy_skin/preview.mdf"
+		previewpos="0 0 -50"
+		previewangles="0 0 0"
+		previewscale="1.4"
+		
+		storemodel="trophy_skin/preview.mdf"
+		storepos="0 0 -30"
+		storeangles="0 0 -10"
+		storescale="1.6"
+
+		storepassiveeffect="trophy_skin/effects/body_preview.effect"
+	/>
+	
+</hero>

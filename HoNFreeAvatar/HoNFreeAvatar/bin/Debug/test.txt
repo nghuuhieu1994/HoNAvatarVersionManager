@@ -1,0 +1,10 @@
+void main()
+{
+	printf (“hi”);
+	fork ();
+	fork ();
+	fork ();
+	printf (“Hello”);
+	fork ();
+	printf (“Bye”);
+}

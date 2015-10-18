@@ -1,0 +1,673 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hero
+	name="Hero_Hiro"
+	
+	team="Legion"
+	icon="icons/hero.tga"
+	portrait="icons/hero.tga"
+	model="hd_swiftblade/model.mdf"
+	skin=""
+	
+	passiveeffect=""
+	spawneffect=""
+	respawneffect="/shared/effects/respawn.effect"
+	selectedsound="sounds/voice/select_%.wav"
+	selectedflavorsound="sounds/voice/select_flavour_%.wav"
+	confirmmovesound="sounds/voice/move_%.wav"
+	confirmattacksound="sounds/voice/attack_%.wav"
+	nomanasound="sounds/voice/no_mana.wav"
+	cooldownsound="sounds/voice/cooldown.wav"
+	announcersound="sounds/voice/hero_select.wav"
+	tauntedsound="sounds/voice/taunt_prior.wav"
+	tauntkillsound="sounds/voice/taunt_after.wav"
+	
+	preglobalscale="1.8"
+	modelscale="1.0"
+	effectscale="0.9"
+	boundsheight="112"
+	boundsradius="24"
+	selectionradius="44"
+	targetoffset="0 0 64"
+
+	category="physical"
+	difficulty="2"
+	
+	solorating="0"
+	junglerating="0"
+	carryrating="4"
+	supportrating="0"
+	initiatorrating="0"
+	gankerrating="2"
+	pusherrating="0"
+	rangedrating="0"
+	meleerating="5"
+
+	movespeed="305"
+	turnrate="540"
+	turnsmoothing="0.06"
+
+	maxhealth="150"
+	healthregen="1.00"
+	maxmana="0"
+	manaregen="0.01"
+
+	armor="1.1"
+	magicarmor="5.5"
+
+	inventory0="Ability_Hiro1"
+	inventory1="Ability_Hiro2"
+	inventory2="Ability_Hiro3"
+	inventory3="Ability_Hiro4"
+	inventory4="Ability_AttributeBoost"
+	inventory5=""
+	inventory6=""
+	inventory8="Ability_Taunt"
+	inventory9=""
+	inventory10=""
+	inventory11=""
+	inventory12="Ability_AutomatedCourier"
+
+	attackduration="1000"
+	attackactiontime="330"
+	attackcooldown="1700"
+	attackdamagemin="24"
+	attackdamagemax="28"
+	attacknumanims="2"
+	attackoffset="0 0 75"
+	attackprojectile=""
+	attackrange="128"
+	attackstarteffect=""
+	attackactioneffect=""
+	attackimpacteffect="effects/impact.effect"
+	attacktype="melee"
+	combattype="Hero"
+
+	aggrorange="600"
+	sightrangeday="1800"
+	sightrangenight="800"
+	wanderrange="250"
+
+	primaryattribute="Agility"
+	strength="18"
+	strengthperlevel="1.9"
+	agility="20"
+	agilityperlevel="2.9"
+	intelligence="17"
+	intelligenceperlevel="1.3"
+	
+	corpsetime="1500"
+	corpsefadetime="3000"
+	corpsefadeeffect="/shared/effects/corpse_sink.effect"
+	
+	previewmodel="hd_swiftblade/preview.mdf"
+	previewpos="0 0 -50"
+	previewangles="0 0 0"
+	previewscale="1.75"
+	
+	storemodel="hd_swiftblade/preview.mdf"
+	storepos="0 0 -20"
+	storeangles="0 0 0"
+	storescale="1.7"
+>
+	<recommendeditem name="Item_ManaPotion" />
+	<recommendeditem name="Item_MinorTotem" />
+	<recommendeditem name="Item_RunesOfTheBlight" />
+	<recommendeditem name="Item_HealthPotion" />
+	<recommendeditem name="Item_HomecomingStone" />
+	
+	<recommendeditem name="Item_Soulscream" />
+	<recommendeditem name="Item_Strength5" />
+	<recommendeditem name="Item_EnhancedMarchers" />
+	<recommendeditem name="Item_Steamboots" />
+	<recommendeditem name="Item_Splash" />
+	<recommendeditem name="Item_StrengthAgility" />
+	<recommendeditem name="Item_Intelligence7" />
+	<recommendeditem name="Item_Pierce" />
+	<recommendeditem name="Item_Evasion" />
+
+	<onspawn>
+	</onspawn>
+	
+	<onframe>
+		<hasmodifier name="alt_Boots">
+		</hasmodifier>
+	</onframe>
+	
+	<modifier key="Hiro_Ability4" priority="100"
+		attackanim=""
+		ismobile="false"
+	/>
+	
+	<!-- Staff of the master upgrade effect-->
+	<modifier key="ult_boost" modpriority="100"
+	>
+		<aura state="State_Hiro_Ult_Boost" radius="0" targetscheme="self"/>
+	</modifier>
+	
+	
+	
+	<altavatar key="Hero_Hiro.Classic" modpriority="1"
+		altavatar="true"
+		icon2="icons/hero.tga"
+		portrait="icons/hero.tga"
+		model="model.mdf"
+		skin=""
+		
+		passiveeffect=""
+		spawneffect=""
+		respawneffect="/shared/effects/respawn.effect"
+		selectedsound="sounds/voice/select_%.wav"
+		selectedflavorsound="sounds/voice/select_flavour_%.wav"
+		confirmmovesound="sounds/voice/move_%.wav"
+		confirmattacksound="sounds/voice/attack_%.wav"
+		nomanasound="sounds/voice/no_mana.wav"
+		cooldownsound="sounds/voice/cooldown.wav"
+		tauntedsound="sounds/voice/taunt_prior.wav"
+		tauntkillsound="sounds/voice/taunt_after.wav"
+		
+		preglobalscale="1.8"
+		modelscale="1.0"
+		effectscale="0.9"
+		boundsheight="112"
+		boundsradius="24"
+		selectionradius="44"
+		targetoffset="0 0 64"
+	
+		corpsetime="3300"
+		corpsefadetime="3000"
+		corpsefadeeffect="/shared/effects/corpse_sink.effect"
+		
+		previewmodel="preview.mdf"
+		previewpos="0 0 -50"
+		previewangles="0 0 0"
+		previewscale="1.75"
+		
+		storemodel="preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.7"
+	/>
+	
+	<altavatar key="Hero_Hiro.Alt" modpriority="1"
+		altavatar="true"
+		
+		icon2="alt/icon.tga"
+		portrait="alt/icon.tga"
+		model="alt/model.mdf"
+		
+		corpsetime="3300"
+		corpsefadetime="3000"
+		corpsefadeeffect="/shared/effects/corpse_sink.effect"
+		
+		previewmodel="alt/preview.mdf"
+		previewpos="0 0 -50"
+		previewangles="0 0 0"
+		previewscale="1.6"
+		
+		storemodel="alt/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.4"
+		
+		preglobalscale="1.45"
+		
+		selectedsound="alt/sounds/voice/select_%.wav"
+		selectedflavorsound="alt/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt/sounds/voice/move_%.wav"
+		confirmattacksound="alt/sounds/voice/attack_%.wav"
+		nomanasound="alt/sounds/voice/no_mana.wav"
+		cooldownsound="alt/sounds/voice/cooldown.wav"
+		tauntedsound="alt/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt/sounds/voice/taunt_after.wav"
+	/>
+	
+	<altavatar key="Hero_Hiro.Alt2" modpriority="1"
+		altavatar="true"
+		
+		icon2="alt2/icon.tga"
+		portrait="alt2/icon.tga"
+		model="alt2/model.mdf"
+		
+		previewmodel="alt2/preview.mdf"
+		previewpos="0 0 -50"
+		previewangles="0 0 0"
+		previewscale="1.6"
+		
+		corpsetime="3300"
+		corpsefadetime="3000"
+		corpsefadeeffect="/shared/effects/corpse_sink.effect"
+		
+		storemodel="alt2/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.7"
+		
+		preglobalscale="2"
+		effectscale=".9"
+		
+		selectedsound="alt2/sounds/voice/select_%.wav"
+		selectedflavorsound="alt2/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt2/sounds/voice/move_%.wav"
+		confirmattacksound="alt2/sounds/voice/attack_%.wav"
+		nomanasound="alt2/sounds/voice/no_mana.wav"
+		cooldownsound="alt2/sounds/voice/cooldown.wav"
+		tauntedsound="alt2/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt2/sounds/voice/taunt_after.wav"
+	/>
+	
+	<altavatar key="Hero_Hiro.Alt3" modpriority="1"
+		altavatar="true"
+		
+		icon2="alt3/icon.tga"
+		portrait="alt3/icon.tga"
+		model="alt3/model.mdf"
+		
+		previewmodel="alt3/preview.mdf"
+		previewpos="0 0 -50"
+		previewangles="0 0 0"
+		previewscale="1.6"
+		
+		corpsetime="3300"
+		corpsefadetime="3000"
+		corpsefadeeffect="/shared/effects/corpse_sink.effect"
+		
+		storemodel="alt3/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.7"
+		
+		preglobalscale="1.7"
+		
+		passiveeffect="alt3/effects/body.effect"
+		
+		infoheight="180"
+
+		selectedsound="alt3/sounds/voice/select_%.wav"
+		selectedflavorsound="alt3/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt3/sounds/voice/move_%.wav"
+		confirmattacksound="alt3/sounds/voice/attack_%.wav"
+		nomanasound="alt3/sounds/voice/no_mana.wav"
+		cooldownsound="alt3/sounds/voice/cooldown.wav"
+		tauntedsound="alt3/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt3/sounds/voice/taunt_after.wav"
+	/>
+	
+	<altavatar key="Hero_Hiro.Alt4" modpriority="1"
+		altavatar="true"
+		
+		infoheight="175"		
+		passiveeffect="alt4/original_passive/body.effect"
+		respawneffect="/shared/effects/respawn_swiftblade.effect"
+				
+		icon2="alt4/icon.tga"
+		portrait="alt4/icon.tga"
+		model="alt4/model.mdf"
+		
+		corpsetime="3300"
+		corpsefadetime="3000"
+		corpsefadeeffect="/shared/effects/corpse_sink.effect"
+		
+		selectedsound="alt4/sounds/voice/select_%.wav"
+		selectedflavorsound="alt4/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt4/sounds/voice/move_%.wav"
+		confirmattacksound="alt4/sounds/voice/attack_%.wav"
+		nomanasound="alt4/sounds/voice/no_mana.wav"
+		cooldownsound="alt4/sounds/voice/cooldown.wav"
+		tauntedsound="alt4/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt4/sounds/voice/taunt_after.wav"
+		
+		previewmodel="alt4/runed_ax_passive/model.mdf"
+		previewpos="0 0 -50"
+		previewangles="0 0 0"
+		previewscale="1.6"
+		previewpassiveeffect="alt4/effects/body_store.effect"
+		
+		storemodel="alt4/runed_ax_passive/model.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.8"
+		storepassiveeffect="alt4/effects/body_store.effect"
+		
+		preglobalscale="2.12"
+		
+		tooleffectpath0="alt4/original_passive/body.effect"
+	
+		tooleffectkeyname10="effect_Boots"
+		tooleffectpath10="alt4/boots_passive/body.effect"
+		tooleffectgroup10="boots"
+		
+		tooleffectkeyname1="Item_Sasuke"
+		tooleffectpath1="alt4/genjuro_passive/body.effect"
+		tooleffectgroup1="cape"
+	
+		tooleffectkeyname2="Item_Stealth"
+		tooleffectpath2="alt4/assassins_shroud_passive/body.effect"
+		tooleffectgroup2="cape"
+	
+		tooleffectkeyname3="Item_LifeSteal4"
+		tooleffectpath3="alt4/symbol_of_rage/body.effect"
+		
+		tooleffectkeyname4="Item_Pierce"
+		tooleffectpath4="alt4/shieldbreaker/body.effect"
+		
+		tooleffectkeyname5="Item_LifeSteal5"
+		tooleffectpath5="alt4/abyssal/body.effect"
+		
+		tooleffectkeyname6="Item_Evasion"
+		tooleffectpath6="alt4/winged_bow/body.effect"
+		
+		tooleffectkeyname7="effect_FireBrand effect_IceBrand"
+		tooleffectpath7="alt4/frostburn_passive/body.effect"
+		tooleffectgroup7="fire ice"
+		
+		tooleffectkeyname8="effect_FireBrand"
+		tooleffectpath8="alt4/firebrand_passive/body.effect"
+		tooleffectgroup8="fire"
+		
+		tooleffectkeyname9="effect_IceBrand"
+		tooleffectpath9="alt4/icebrand_passive/body.effect"
+		tooleffectgroup9="ice"
+		
+	>
+		<onspawn>
+			<applystate name="State_Hiro_Alt4_Swords_Effects" target="this_entity" continuous="true" />
+		</onspawn>
+		
+		<onrespawn>
+			<applystate name="State_Hiro_Alt4_Swords_Effects" target="this_entity" continuous="true" />
+		</onrespawn>
+
+		<modifier key="alt4_RunedCleaverModel"
+			modpriority="100"
+			model="alt4/runed_ax_passive/model.mdf"
+			passiveeffect="alt4/runed_ax_passive/body.effect"
+			
+			tooleffectpath0=""
+			
+			tooleffectkeyname7="effect_FireBrand effect_IceBrand"
+			tooleffectpath7="alt4/upgraded_fx/axes.effect"
+			tooleffectgroup7="fire ice"
+			
+			tooleffectkeyname8="effect_FireBrand"
+			tooleffectpath8="alt4/upgraded_fx/axes_firebrand.effect"
+			tooleffectgroup8="fire"
+			
+			tooleffectkeyname9="effect_IceBrand"
+			tooleffectpath9="alt4/upgraded_fx/axes_icebrand.effect"
+			tooleffectgroup9="ice"
+		/>
+	
+	</altavatar>
+	
+	<altavatar key="Hero_Hiro.Alt5" modpriority="1"
+		altavatar="true"
+		
+		infoheight="175"		
+		passiveeffect="alt5/effects/body.effect"
+		respawneffect="/shared/effects/respawn_swiftblade.effect"
+				
+		icon2="alt5/icon.tga"
+		portrait="alt5/icon.tga"
+		model="alt5/model.mdf"
+		
+		corpsetime="3300"
+		corpsefadetime="3000"
+		corpsefadeeffect="/shared/effects/corpse_sink.effect"
+		
+		selectedsound="alt5/sounds/voice/select_%.wav"
+		selectedflavorsound="alt5/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt5/sounds/voice/move_%.wav"
+		confirmattacksound="alt5/sounds/voice/attack_%.wav"
+		nomanasound="alt5/sounds/voice/no_mana.wav"
+		cooldownsound="alt5/sounds/voice/cooldown.wav"
+		tauntedsound="alt5/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt5/sounds/voice/taunt_after.wav"
+		
+		previewmodel="alt5/preview.mdf"
+		previewpos="0 0 -50"
+		previewangles="0 0 0"
+		previewscale="1.6"
+		
+		storemodel="alt5/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.8"
+		
+		preglobalscale="2.12"
+	>
+		<onspawn>
+			<ownsproduct target="this_entity" product="aa.Hero_Bushwack.Alt3 aa.Hero_Gunblade.Alt3 aa.Hero_Hiro.Alt5 aa.Hero_Rally.Alt4 aa.Hero_Rampage.Alt6 aa.Hero_WitchSlayer.Alt4" />
+			<compare a="result" b="1" op="eq">
+				<activatemodifierkey name="RiftHunter_Set" />
+			</compare>
+		</onspawn>
+
+		<onrespawn>
+			<ownsproduct target="this_entity" product="aa.Hero_Bushwack.Alt3 aa.Hero_Gunblade.Alt3 aa.Hero_Hiro.Alt5 aa.Hero_Rally.Alt4 aa.Hero_Rampage.Alt6 aa.Hero_WitchSlayer.Alt4" />
+			<compare a="result" b="1" op="eq">
+				<activatemodifierkey name="RiftHunter_Set" />
+			</compare>
+		</onrespawn>
+		
+		<modifier key="RiftHunter_Set" modpriority="101"
+			tooleffectpath38="alt5/effects/set_boost.effect"
+			skin="setboost"
+		/>
+	</altavatar>
+	
+	<altavatar key="Hero_Hiro.Alt6" modpriority="1"
+		altavatar="true"
+		
+		infoheight="175"		
+		passiveeffect=""
+		respawneffect="/shared/effects/respawn_swiftblade.effect"
+				
+		icon2="alt6/icon.tga"
+		portrait="alt6/icon.tga"
+		model="alt6/model.mdf"
+		
+		corpsetime="3300"
+		corpsefadetime="3000"
+		corpsefadeeffect="/shared/effects/corpse_sink.effect"
+		
+		selectedsound="alt6/sounds/voice/select_%.wav"
+		selectedflavorsound="alt6/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt6/sounds/voice/move_%.wav"
+		confirmattacksound="alt6/sounds/voice/attack_%.wav"
+		nomanasound="alt6/sounds/voice/no_mana.wav"
+		cooldownsound="alt6/sounds/voice/cooldown.wav"
+		tauntedsound="alt6/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt6/sounds/voice/taunt_after.wav"
+		
+		previewmodel="alt6/preview.mdf"
+		previewpos="0 0 -50"
+		previewangles="0 0 0"
+		previewscale="1.6"
+		
+		storemodel="alt6/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.8"
+		
+		preglobalscale="2.3"
+	/>
+	
+	<altavatar key="Hero_Hiro.Alt7" modpriority="1"
+		
+		icon2="alt7/icon.tga"
+		portrait="alt7/icon.tga"
+		model="alt7/model.mdf"
+		
+		selectedsound="alt7/sounds/voice/select_%.wav"
+		selectedflavorsound="alt7/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt7/sounds/voice/move_%.wav"
+		confirmattacksound="alt7/sounds/voice/attack_%.wav"
+		nomanasound="alt7/sounds/voice/no_mana.wav"
+		cooldownsound="alt7/sounds/voice/cooldown.wav"
+		tauntedsound="alt7/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt7/sounds/voice/taunt_after.wav"
+			
+		attackimpacteffect="alt7/effects/impact.effect"
+		previewmodel="alt7/preview.mdf"
+		previewpos="0 0 -50"
+		previewangles="0 0 0"
+		previewscale="1.15"
+
+		storemodel="alt7/preview.mdf"
+		storepassiveeffect="alt7/effects/body_shop.effect"
+		previewpassiveeffect="alt7/effects/body_shop.effect"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.9"
+		
+		preglobalscale="2"
+		passiveeffect="alt7/effects/body.effect"
+	/>
+	
+	<altavatar key="Hero_Hiro.Alt8" modpriority="1"
+		
+		icon2="alt8/icon.tga"
+		portrait="alt8/icon.tga"
+		model="alt8/model.mdf"
+		
+		selectedsound="alt8/sounds/voice/select_%.wav"
+		selectedflavorsound="alt8/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt8/sounds/voice/move_%.wav"
+		confirmattacksound="alt8/sounds/voice/attack_%.wav"
+		nomanasound="alt8/sounds/voice/no_mana.wav"
+		cooldownsound="alt8/sounds/voice/cooldown.wav"
+		tauntedsound="alt8/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt8/sounds/voice/taunt_after.wav"
+			
+		attackimpacteffect="alt8/effects/impact.effect"
+		previewmodel="alt8/preview.mdf"
+		previewpos="0 0 -50"
+		previewangles="0 0 0"
+		previewscale="1.15"
+
+		storemodel="alt8/preview.mdf"
+		storepassiveeffect="alt8/effects/body_shop.effect"
+		previewpassiveeffect="alt8/effects/body_shop.effect"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.3"
+
+		infoheight="180"
+		
+		preglobalscale="1.7"
+		passiveeffect="alt8/effects/body.effect"
+	/>
+	
+	<altavatar key="Hero_Hiro.Alt9" modpriority="1"
+		
+		icon2="alt9/icon.tga"
+		portrait="alt9/icon.tga"
+		model="alt9/model.mdf"
+		
+		selectedsound="alt9/sounds/voice/select_%.wav"
+		selectedflavorsound="alt9/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt9/sounds/voice/move_%.wav"
+		confirmattacksound="alt9/sounds/voice/attack_%.wav"
+		nomanasound="alt9/sounds/voice/no_mana.wav"
+		cooldownsound="alt9/sounds/voice/cooldown.wav"
+		tauntedsound="alt9/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt9/sounds/voice/taunt_after.wav"
+			
+		attackimpacteffect="alt9/effects/impact.effect"
+		previewmodel="alt9/preview.mdf"
+		previewpos="0 0 -50"
+		previewangles="0 0 0"
+		previewscale="1.15"
+
+		storemodel="alt9/preview.mdf"
+		storepassiveeffect="alt9/effects/body_shop.effect"
+		previewpassiveeffect="alt9/effects/body_shop.effect"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.3"
+
+		infoheight="180"
+		
+		preglobalscale="1.7"
+		passiveeffect=""
+	/>
+	
+	<altavatar key="Hero_Hiro.Alt10" modpriority="1"
+		
+		icon2="alt10/icon.tga"
+		portrait="alt10/icon.tga"
+		model="alt10/model.mdf"
+		
+		selectedsound="alt10/sounds/voice/select_%.wav"
+		selectedflavorsound="alt10/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt10/sounds/voice/move_%.wav"
+		confirmattacksound="alt10/sounds/voice/attack_%.wav"
+		nomanasound="alt10/sounds/voice/no_mana.wav"
+		cooldownsound="alt10/sounds/voice/cooldown.wav"
+		tauntedsound="alt10/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt10/sounds/voice/taunt_after.wav"
+			
+		attackimpacteffect="alt10/effects/impact.effect"
+		previewmodel="alt10/preview.mdf"
+		previewpos="0 0 -50"
+		previewangles="0 0 0"
+		previewscale="1.15"
+
+		storemodel="alt10/preview.mdf"
+		storepassiveeffect="alt10/effects/body_shop.effect"
+		previewpassiveeffect="alt10/effects/body_shop.effect"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.3"
+
+		infoheight="180"
+		
+		preglobalscale="1"
+		modelscale="2.3"
+		passiveeffect=""
+	/>
+	
+	<altavatar key="Hero_Hiro.pog_skin" modpriority="1"
+		
+		icon2="icons/hero.tga"
+		portrait="icons/hero.tga"
+		model="pog_skin/model.mdf"
+		
+		previewmodel="pog_skin/preview.mdf"
+		previewpos="0 0 -50"
+		previewangles="0 0 0"
+		previewscale="1.15"
+
+		storemodel="pog_skin/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.75"
+		
+		preglobalscale="2"
+	/>
+	
+	<altavatar key="Hero_Hiro.trophy_skin"
+
+		icon2="trophy_skin/icon.tga"
+		portrait="trophy_skin/icon.tga"
+		model="trophy_skin/model.mdf"
+		passiveeffect="trophy_skin/effects/body.effect"
+		
+		previewmodel="trophy_skin/preview.mdf"
+		previewpos="0 0 -50"
+		previewangles="0 0 0"
+		previewscale="1.15"
+
+		storemodel="trophy_skin/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.75"
+		
+		preglobalscale="2"
+		
+		portraitcampos="-45 -5 20"
+		portraitangles="0 0 50"
+		portraitscale="1"
+	/>
+	
+</hero>

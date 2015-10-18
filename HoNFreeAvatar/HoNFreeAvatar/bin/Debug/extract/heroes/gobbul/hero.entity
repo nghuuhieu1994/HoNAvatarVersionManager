@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hero
+	name="Hero_Gobbul"
+
+	team="Dev_Hellbourne"
+	icon="icon.tga"
+	portrait="icon.tga"
+	model="model.mdf"
+	skin=""
+	
+	passiveeffect="effects/body.effect"
+	spawneffect=""
+	respawneffect="/shared/effects/respawn.effect"
+	selectedsound="sounds/voice/select_%.wav"
+	selectedflavorsound="sounds/voice/select_flavour_%.wav"
+	confirmmovesound="sounds/voice/move_%.wav"
+	confirmattacksound="sounds/voice/attack_%.wav"
+	nomanasound="sounds/voice/no_mana.wav"
+	cooldownsound="sounds/voice/cooldown.wav"
+	announcersound="sounds/voice/hero_select.wav"
+	tauntedsound="sounds/voice/taunt_prior.wav"
+	tauntkillsound="sounds/voice/taunt_after.wav"
+	
+	preglobalscale="2.25"
+	modelscale="1.0"
+	effectscale="0.9"
+	boundsheight="112"
+	boundsradius="24"
+	selectionradius="52"
+	targetoffset="0 0 92"
+	infoheight="180"
+	
+	category="cc magic"
+	difficulty="3.5"
+
+	solorating="0"
+	junglerating="0"
+	carryrating="0"
+	supportrating="1"
+	initiatorrating="4"
+	gankerrating="2"
+	pusherrating="0"
+	rangedrating="0"
+	meleerating="5"
+
+	movespeed="285"
+	turnrate="450"
+	turnsmoothing="0.05"
+
+	maxhealth="150"
+	healthregen="1.00"
+	maxmana="0"
+	manaregen="0.01"
+
+	armor="-0.9"
+	magicarmor="5.25"
+
+	inventory0="Ability_Gobbul1"
+	inventory1="Ability_Gobbul2"
+	inventory2="Ability_Gobbul3"
+	inventory3="Ability_Gobbul4"
+	inventory4="Ability_AttributeBoost"
+	inventory5=""
+	inventory6=""
+	inventory8="Ability_Taunt"
+	inventory9=""
+	inventory10=""
+	inventory11=""
+	inventory12="Ability_AutomatedCourier"
+
+	attackduration="1000"
+	attackactiontime="530"
+	attackcooldown="1700"
+	attackdamagemin="28"
+	attackdamagemax="39"
+	attacknumanims="2"
+	attackoffset="0 120 100"
+	attackprojectile=""
+	attackrange="128"
+	attackstarteffect=""
+	attackactioneffect=""
+	attackimpacteffect="effects/impact.effect"
+	attacktype="melee"
+	combattype="Hero"
+
+	aggrorange="600"
+	sightrangeday="1800"
+	sightrangenight="800"
+	wanderrange="250"
+
+	primaryattribute="Strength"
+	strength="22"
+	strengthperlevel="2.6"
+	agility="18"
+	agilityperlevel="2.1"
+	intelligence="14"
+	intelligenceperlevel="1.8"
+	
+	previewmodel="preview.mdf"
+	previewpos="0 0 -50"
+	previewangles="0 0 -20"
+	previewscale="1.8"
+		
+	storemodel="preview.mdf"
+	storepos="0 0 -15"
+	storeangles="0 0 0"
+	storescale="1.9"
+		
+	tiltfactor="1.0"
+	tiltspeed="90.0"
+	
+>
+	<recommendeditem name="Item_ManaPotion" />
+	<recommendeditem name="Item_MinorTotem" />
+	<recommendeditem name="Item_RunesOfTheBlight" />
+	<recommendeditem name="Item_HealthPotion" />
+	<recommendeditem name="Item_HomecomingStone" />
+	
+	<recommendeditem name="Item_Strength5" />
+	<recommendeditem name="Item_Bottle" />
+	<recommendeditem name="Item_Striders" />
+	<recommendeditem name="Item_Steamboots" />
+	<recommendeditem name="Item_PortalKey" />
+	<recommendeditem name="Item_Immunity" />
+	<recommendeditem name="Item_Intelligence7" />
+	<recommendeditem name="Item_BehemothsHeart" />
+	
+	<modifier key="iamsheeped" modpriority="100"
+		passiveeffect=""
+	/>
+	
+</hero>

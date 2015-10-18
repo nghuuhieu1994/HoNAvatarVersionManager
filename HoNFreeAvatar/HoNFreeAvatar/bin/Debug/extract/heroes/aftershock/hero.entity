@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hero
+	name="Hero_Aftershock"
+
+	team="dev_Legion"
+	icon="icon.tga"
+	portrait="icon.tga"
+	model="model.mdf"
+	skin=""
+	infoheight="185"
+	
+	passiveeffect=""
+	spawneffect=""
+	respawneffect="/shared/effects/respawn.effect"
+	selectedsound="sounds/voice/select_%.wav"
+	selectedflavorsound="sounds/voice/select_flavour_%.wav"
+	confirmmovesound="sounds/voice/move_%.wav"
+	confirmattacksound="sounds/voice/attack_%.wav"
+	nomanasound="sounds/voice/no_mana.wav"
+	cooldownsound="sounds/voice/cooldown.wav"
+	announcersound=""
+	tauntedsound="sounds/voice/taunt_prior.wav"
+	tauntkillsound="sounds/voice/taunt_after.wav"
+	
+	preglobalscale="1.7"
+	modelscale="1"
+	effectscale="1"
+	boundsheight="112"
+	boundsradius="24"
+	selectionradius="52"
+	targetoffset="0 0 92"
+
+	category="physical tank"
+	difficulty="1"
+
+	solorating="0"
+	junglerating="0"
+	carryrating="4"
+	supportrating="0"
+	initiatorrating="0"
+	gankerrating="0"
+	pusherrating="0"
+	rangedrating="0"
+	meleerating="5"
+
+	movespeed="295"
+	turnrate="540"
+	turnsmoothing="0.05"
+
+	maxhealth="150"
+	healthregen="1.00"
+	maxmana="0"
+	manaregen="0.01"
+
+	armor="1.5"
+	magicarmor="4.75"
+
+	inventory0="Ability_Aftershock1"
+	inventory1="Ability_Aftershock2"
+	inventory2="Ability_Aftershock3"
+	inventory3="Ability_Aftershock4"
+	inventory4="Ability_AttributeBoost"
+	inventory5="Ability_Aftershock2_Sub"
+	inventory6=""
+	inventory8="Ability_Taunt"
+	inventory9=""
+	inventory10=""
+	inventory11=""
+	inventory12="Ability_AutomatedCourier"
+
+	attackduration="1000"
+	attackactiontime="500"
+	attackcooldown="1700"
+	attackdamagemin="30"
+	attackdamagemax="40"
+	attacknumanims="2"
+	attackoffset="0 40 100"
+	attackprojectile=""
+	attackrange="128"
+	attackstarteffect=""
+	attackactioneffect=""
+	attackimpacteffect="effects/impact.effect"
+	attacktype="melee"
+	combattype="Hero"
+
+	aggrorange="600"
+	sightrangeday="1800"
+	sightrangenight="800"
+	wanderrange="250"
+
+	primaryattribute="Strength"
+	strength="21"
+	strengthperlevel="2.5"
+	agility="17"
+	agilityperlevel="1.6"
+	intelligence="16"
+	intelligenceperlevel="2.2"
+	
+	previewmodel="preview.mdf"
+	previewpos="0 0 -50"
+	previewangles="0 0 0"
+	previewscale="1.25"
+	
+	storemodel="preview.mdf"
+	storepos="0 0 -20"
+	storeangles="0 0 0"
+	storescale="1.5"
+	
+	corpsetime="500"
+	corpsefadetime="4000"
+	corpsefadeeffect="/shared/effects/corpse_sink.effect"
+>
+
+	<recommendeditem name="Item_ManaPotion" />
+	<recommendeditem name="Item_MinorTotem" />
+	<recommendeditem name="Item_RunesOfTheBlight" />
+	<recommendeditem name="Item_HealthPotion" />
+	<recommendeditem name="Item_HomecomingStone" />
+	
+	<recommendeditem name="Item_Strength5" />
+	<recommendeditem name="Item_EnhancedMarchers" />
+	<recommendeditem name="Item_PlatedGreaves" />
+	<recommendeditem name="Item_Shield2" />
+	<recommendeditem name="Item_NomesWisdom" />
+	<recommendeditem name="Item_Splash" />
+	<recommendeditem name="Item_BarrierIdol" />
+	<recommendeditem name="Item_Damage10" />
+	<recommendeditem name="Item_BehemothsHeart" />
+	<recommendeditem name="Item_Pierce" />
+
+	<modifier key="iamsheeped" modpriority="100"
+		passiveeffect=""
+	/>
+
+</hero>

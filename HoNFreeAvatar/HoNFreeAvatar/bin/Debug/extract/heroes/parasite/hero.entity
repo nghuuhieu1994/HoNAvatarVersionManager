@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hero
+	name="Hero_Parasite"
+
+	team="Hellbourne"
+	icon="icon.tga"
+	portrait="icon.tga"
+	model="model.mdf"
+	skin=""
+	
+	passiveeffect="effects/body.effect"
+	spawneffect=""
+	respawneffect="/shared/effects/respawn.effect"
+	selectedsound="sounds/voice/select_%.wav"
+	selectedflavorsound="sounds/voice/select_flavour_%.wav"
+	confirmmovesound="sounds/voice/move_%.wav"
+	confirmattacksound="sounds/voice/attack_%.wav"
+	nomanasound="sounds/voice/no_mana.wav"
+	cooldownsound="sounds/voice/cooldown.wav"
+	announcersound="sounds/voice/hero_select.wav"
+	tauntedsound="sounds/voice/taunt_prior.wav"
+	tauntkillsound="sounds/voice/taunt_after.wav"
+	
+	preglobalscale="2.25"
+	modelscale="1"
+	effectscale="1"
+	boundsheight="112"
+	boundsradius="24"
+	selectionradius="64"
+	targetoffset="0 0 64"
+
+	category="magic"
+	difficulty="4"
+
+	solorating="0"
+	junglerating="5"
+	carryrating="0"
+	supportrating="0"
+	initiatorrating="0"
+	gankerrating="2"
+	pusherrating="0"
+	rangedrating="0"
+	meleerating="5"
+	
+	movespeed="300"
+	turnrate="540"
+	turnsmoothing="0.05"
+
+	maxhealth="150"
+	healthregen="1.00"
+	maxmana="0"
+	manaregen="0.01"
+
+	armor="0.2"
+	magicarmor="5.25"
+
+	inventory0="Ability_Parasite1"
+	inventory1="Ability_Parasite2"
+	inventory2="Ability_Parasite3"
+	inventory3="Ability_Parasite4"
+	inventory4="Ability_AttributeBoost"
+	inventory5=""
+	inventory6=""
+	inventory7=""
+	inventory8="Ability_Taunt"
+	inventory9=""
+	inventory10=""
+	inventory11=""
+	inventory12="Ability_AutomatedCourier"
+
+	attackduration="1000"
+	attackactiontime="500"
+	attackcooldown="1700"
+	attackdamagemin="30"
+	attackdamagemax="36"
+	attacknumanims="2"
+	attackoffset="0 45 80"
+	attackprojectile=""
+	attackrange="128"
+	attackstarteffect=""
+	attackactioneffect="effects/attack_action.effect"
+	attackimpacteffect="effects/impact.effect"
+	attacktype="melee"
+	combattype="Hero"
+
+	aggrorange="600"
+	sightrangeday="1800"
+	sightrangenight="800"
+	wanderrange="250"
+
+	primaryattribute="Intelligence"
+	strength="21"
+	strengthperlevel="2.6"
+	agility="17"
+	agilityperlevel="1.7"
+	intelligence="20"
+	intelligenceperlevel="2.3"
+	
+	previewmodel="preview.mdf"
+	previewpos="0 0 -50"
+	previewangles="0 0 0"
+	previewscale="2.1"
+	
+	storemodel="preview.mdf"
+	storepos="0 0 -20"
+	storeangles="0 0 0"
+	storescale="2.05"
+>
+
+
+	<recommendeditem name="Item_ManaPotion" />	
+	<recommendeditem name="Item_MinorTotem" />
+	<recommendeditem name="Item_RunesOfTheBlight" />
+	<recommendeditem name="Item_HealthPotion" />
+	<recommendeditem name="Item_HomecomingStone" />
+	
+	<recommendeditem name="Item_Strength5" />
+	<recommendeditem name="Item_Bottle" />
+	
+	<modifier key="iamsheeped" modpriority="100"
+		passiveeffect=""
+	/>
+	
+	<modifier key="Parasite_Inside" modpriority="100"
+		norender="true"
+		drawonmap="false"
+	/>
+	
+	<altavatar key="Hero_Parasite.Alt" modpriority="1"
+		altavatar="true"
+		preglobalscale="1.5"
+		icon2="alt/icon.tga"
+		portrait="alt/icon.tga"
+		model="alt/model.mdf"
+		infoheight="185"
+		previewmodel="alt/preview.mdf"
+		previewpos="0 0 -50"
+		previewangles="0 0 0"
+		previewscale="1.5"
+		
+		storemodel="alt/preview.mdf"
+		storepos="0 0 -17"
+		storeangles="0 0 0"
+		storescale="1.25"
+	/>
+	
+	<altavatar key="Hero_Parasite.Alt2" modpriority="1"
+		passiveeffect="alt2/effects/body.effect"
+		
+		storepassiveeffect="alt2/effects/store_body.effect"
+		previewpassiveeffect="alt2/effects/preview_body.effect"
+	
+		altavatar="true"
+		preglobalscale="1.5"
+		icon2="alt2/icon.tga"
+		portrait="alt2/icon.tga"
+		model="alt2/model.mdf"
+		infoheight="185"
+		previewmodel="alt2/preview.mdf"
+		previewpos="0 0 -50"
+		previewangles="0 0 0"
+		previewscale="1.2"
+		
+		selectedsound="alt2/sounds/voice/select_%.wav"
+	    selectedflavorsound="alt2/sounds/voice/select_flavour_%.wav"
+    	confirmmovesound="alt2/sounds/voice/move_%.wav"
+    	confirmattacksound="alt2/sounds/voice/attack_%.wav"
+    	nomanasound="alt2/sounds/voice/no_mana.wav"
+    	cooldownsound="alt2/sounds/voice/cooldown.wav"
+    	tauntedsound="alt2/sounds/voice/taunt_prior.wav"
+	    tauntkillsound="alt2/sounds/voice/taunt_after.wav"
+		
+		storemodel="alt2/preview.mdf"
+		storepos="0 0 -17"
+		storeangles="0 0 0"
+		storescale="1.25"
+	>
+		<onspawn propagatetoillusions="false" >
+			<ownsproduct target="this_entity" product="aa.Hero_Parasite.Alt2 aa.Hero_Armadon.Alt2 aa.Hero_Jereziah.Alt2 aa.Hero_Empath.Alt2 aa.Hero_Hammerstorm.Alt2 aa.Hero_Soulstealer.Alt2 aa.Hero_Devourer.Alt4" />
+			<compare a="result" b="1" op="eq">
+				<activatemodifierkey name="Alt2_Sin_Set_Bonus" />
+			</compare>
+		</onspawn>	
+
+		<modifier key="Alt2_Sin_Set_Bonus" modpriority="10"
+	
+			passiveeffect="alt2/sin_set_bonus/effects/body_sin.effect"
+		
+			preglobalscale="1.5"
+			icon2="alt2/icon.tga"
+			portrait="alt2/icon.tga"
+			model="alt2/sin_set_bonus/model.mdf"
+			infoheight="185"
+			previewpos="0 0 -50"
+			previewangles="0 0 0"
+			previewscale="1.2"
+			
+			selectedsound="alt2/sounds/voice/select_%.wav"
+		    selectedflavorsound="alt2/sounds/voice/select_flavour_%.wav"
+	    	confirmmovesound="alt2/sounds/voice/move_%.wav"
+	    	confirmattacksound="alt2/sounds/voice/attack_%.wav"
+	    	nomanasound="alt2/sounds/voice/no_mana.wav"
+	    	cooldownsound="alt2/sounds/voice/cooldown.wav"
+	    	tauntedsound="alt2/sounds/voice/taunt_prior.wav"
+		    tauntkillsound="alt2/sounds/voice/taunt_after.wav"
+			
+			storepos="0 0 -17"
+			storeangles="0 0 0"
+			storescale="1.25"
+		/>
+	</altavatar>
+
+	<altavatar key="Hero_Parasite.Alt3" modpriority="1"
+		altavatar="true"
+		preglobalscale="2.5"
+		
+		icon2="alt3/icon.tga"
+		portrait="alt3/icon.tga"
+		model="alt3/model.mdf"
+		passiveeffect="alt3/effects/body.effect"
+		
+		tiltfactor="1"
+		tiltspeed="50"
+		
+		infoheight="185"
+		previewmodel="alt3/preview.mdf"
+		previewpos="0 0 -50"
+		previewangles="0 0 0"
+		previewscale="1.5"
+				
+		selectedsound="alt3/sounds/voice/select_%.wav"
+	    selectedflavorsound="alt3/sounds/voice/select_flavour_%.wav"
+    	confirmmovesound="alt3/sounds/voice/move_%.wav"
+    	confirmattacksound="alt3/sounds/voice/attack_%.wav"
+    	nomanasound="alt3/sounds/voice/no_mana.wav"
+    	cooldownsound="alt3/sounds/voice/cooldown.wav"
+    	tauntedsound="alt3/sounds/voice/taunt_prior.wav"
+	    tauntkillsound="alt3/sounds/voice/taunt_after.wav"
+		
+		storemodel="alt3/preview.mdf"
+		storepos="0 0 -17"
+		storeangles="0 0 0"
+		storescale="2"
+	/>
+	
+	<altavatar key="Hero_Parasite.Alt4"
+		preglobalscale="1.7"
+		
+		icon2="alt4/icon.tga"
+		portrait="alt4/icon.tga"
+		model="alt4/model.mdf"
+		passiveeffect="alt4/effects/body.effect"
+		infoheight="185"
+		
+		previewmodel="alt4/preview.mdf"
+		previewpos="0 0 -50"
+		previewangles="0 0 0"
+		previewscale="1.5"
+				
+		selectedsound="alt4/sounds/voice/select_%.wav"
+	    selectedflavorsound="alt4/sounds/voice/select_flavour_%.wav"
+    	confirmmovesound="alt4/sounds/voice/move_%.wav"
+    	confirmattacksound="alt4/sounds/voice/attack_%.wav"
+    	nomanasound="alt4/sounds/voice/no_mana.wav"
+    	cooldownsound="alt4/sounds/voice/cooldown.wav"
+    	tauntedsound="alt4/sounds/voice/taunt_prior.wav"
+	    tauntkillsound="alt4/sounds/voice/taunt_after.wav"
+		
+		storemodel="alt4/preview.mdf"
+		storepos="0 0 -17"
+		storeangles="0 0 0"
+		storescale="1.5"
+		
+		>
+		
+		<onframe> 
+			<hasmodifier name="Deadlift_Ghost">
+				<activatemodifierkey name="ghost"/>
+			</hasmodifier>
+		</onframe>
+	
+		<onspawn propagatetoillusions="false" >
+			<ownsproduct target="this_entity" product="aa.Hero_Parasite.Alt4 aa.Hero_Klanx.Alt2 aa.Hero_HellDemon.Alt4 aa.Hero_Ra.Alt4 aa.Hero_Grinex.Alt4 aa.Hero_Lodestone.Alt3" />
+			<compare a="result" b="1" op="eq">
+				<activatemodifierkey name="Hell_Forged" />
+			</compare>
+		</onspawn>
+		
+		<onrespawn propagatetoillusions="false" >
+			<ownsproduct target="this_entity" product="aa.Hero_Parasite.Alt4 aa.Hero_Klanx.Alt2 aa.Hero_HellDemon.Alt4 aa.Hero_Ra.Alt4 aa.Hero_Grinex.Alt4 aa.Hero_Lodestone.Alt3" />
+			<compare a="result" b="1" op="eq">
+				<deactivatemodifierkey name="ghost" />
+				<activatemodifierkey name="Hell_Forged" />
+			</compare>
+		</onrespawn>
+		
+		
+		<onkilled>
+			<ownsproduct target="this_entity" product="aa.Hero_Parasite.Alt4 aa.Hero_Klanx.Alt2 aa.Hero_HellDemon.Alt4 aa.Hero_Ra.Alt4 aa.Hero_Grinex.Alt4 aa.Hero_Lodestone.Alt3" />
+			<compare a="result" b="1" op="eq">
+				<activatemodifierkey name="ghost" />
+			</compare>
+		</onkilled>
+		
+		
+		<modifier key="ghost" modpriority="1"
+			model="alt4/model.mdf"
+		/>
+		
+		
+		<modifier key="Hell_Forged" modpriority="1000"
+			tooleffectpath37="alt4/effects/Hell_Forged.effect"
+		/>
+	</altavatar>
+	
+	<altavatar key="Hero_Parasite.Alt5"
+		preglobalscale="2"
+		
+		icon2="alt5/icon.tga"
+		portrait="alt5/icon.tga"
+		model="alt5/model.mdf"
+		passiveeffect="alt5/effects/body.effect"
+		infoheight="185"
+		
+		previewmodel="alt5/preview.mdf"
+		previewpos="0 0 -50"
+		previewangles="0 0 0"
+		previewscale="1.5"
+		
+		attackactioneffect=""
+		attackimpacteffect="alt5/effects/impact.effect"
+
+		selectedsound="alt5/sounds/voice/select_%.wav"
+	    selectedflavorsound="alt5/sounds/voice/select_flavour_%.wav"
+    	confirmmovesound="alt5/sounds/voice/move_%.wav"
+    	confirmattacksound="alt5/sounds/voice/attack_%.wav"
+    	nomanasound="alt5/sounds/voice/no_mana.wav"
+    	cooldownsound="alt5/sounds/voice/cooldown.wav"
+    	tauntedsound="alt5/sounds/voice/taunt_prior.wav"
+	    tauntkillsound="alt5/sounds/voice/taunt_after.wav"
+		
+		storemodel="alt5/preview.mdf"
+		storepos="0 0 -17"
+		storeangles="0 0 0"
+		storescale="1.5"
+		
+		portraitcampos="-10 0 26"
+	>
+		<onspawn>
+		    <applystate name="State_Amethyst_Paragon_Sound_Initiator" target="source_entity" duration="2000" />
+			<activatemodifierkey name="Paragon_Sound_Para" />
+			<ownsproduct target="this_entity" product="en.paragon_trail" />
+			<compare a="result" b="0" op="ne">
+				<applystate name="State_Paragon_Trail" target="this_entity" continuous="true" />
+			</compare>
+
+			<ownsproduct target="this_entity" product="en.paragon_circle_upgrade" />
+			<compare a="result" b="0" op="ne">
+				<activatemodifierkey name="Alt7_Paragon_Circle" />
+			</compare>
+			
+			<ownsproduct target="this_entity" product="en.parasite_ability01_upgrade" />
+			<compare a="result" b="0" op="ne">
+				<activatemodifierkey name="Alt5_Ability1_Upgrade" />
+			</compare>
+			
+			<ownsproduct target="this_entity" product="en.parasite_ability02_upgrade" />
+			<compare a="result" b="0" op="ne">
+				<activatemodifierkey name="Alt5_Ability2_Upgrade" />
+			</compare>
+			
+			<ownsproduct target="this_entity" product="en.parasite_ability03_upgrade" />
+			<compare a="result" b="0" op="ne">
+				<activatemodifierkey name="Alt5_Ability3_Upgrade" />
+			</compare>
+			
+			<ownsproduct target="this_entity" product="en.parasite_ability04_upgrade" />
+			<compare a="result" b="0" op="ne">
+				<activatemodifierkey name="Alt5_Ability4_Upgrade" />
+			</compare>
+
+            <ownsproduct target="this_entity" product="en.paragon_pet" />
+            <compare a="result" b="0" op="ne">
+                <spawnunit name="Pet_Paragon" target="this_entity" offset="0 -100" facing="source_entity" pushentity="true" />
+                <activatemodifierkey name="Pet_Paragon_Amethyst" entity="stack_entity" />
+            </compare>
+		</onspawn>
+
+        <onrespawn>
+			<ownsproduct target="this_entity" product="en.paragon_trail" />
+			<compare a="result" b="0" op="ne">
+				<applystate name="State_Paragon_Trail" target="this_entity" continuous="true" />
+			</compare>
+			
+            <ownsproduct target="this_entity" product="en.paragon_pet" />
+            <compare a="result" b="0" op="ne">
+                <spawnunit name="Pet_Paragon" target="this_entity" offset="0 -100" facing="source_entity" pushentity="true" />
+                <activatemodifierkey name="Pet_Paragon_Amethyst" entity="stack_entity" />
+            </compare>
+			
+			<ownsproduct target="this_entity" product="en.parasite_stat_track" />
+            <compare a="result" b="0" op="ne">
+                <!-- <playeffect effect="/shared/effects/paragon_stats.effect" source="this_entity" target="this_entity" /> -->
+				<applystate name="State_Paragon_Stats_VFX" source="this_entity" target="this_entity" duration="4000" />
+			</compare>
+        </onrespawn>
+		
+		<onchannelingstart>
+			<ownsproduct target="this_entity" product="en.parasite_stat_track" />
+            <compare a="result" b="0" op="ne">
+				<entitytype type="Ability_Taunt" target="inflictor_entity">
+                    <!-- <playeffect effect="/shared/effects/paragon_stats.effect" source="this_entity" target="this_entity" /> -->
+					<applystate name="State_Paragon_Stats_VFX" source="this_entity" target="this_entity" duration="4000" />
+				</entitytype>
+			</compare>
+		</onchannelingstart>
+		
+		<onkill>
+			<ownsproduct target="this_entity" product="en.parasite_stat_track" />
+            <compare a="result" b="0" op="ne">
+                <cantarget targetscheme="enemy_heroes" >
+                    <!-- <playeffect effect="/shared/effects/paragon_stats.effect" source="this_entity" target="this_entity" /> -->
+					<applystate name="State_Paragon_Stats_VFX" source="this_entity" target="this_entity" duration="4000" />
+                </cantarget>
+			</compare>
+        </onkill>
+	
+		<onassist>
+			<ownsproduct target="this_entity" product="en.parasite_stat_track" />
+            <compare a="result" b="0" op="ne">
+                <!-- <playeffect effect="/shared/effects/paragon_stats.effect" source="this_entity" target="this_entity" /> -->
+				<applystate name="State_Paragon_Stats_VFX" source="this_entity" target="this_entity" duration="4000" />
+			</compare>
+        </onassist>
+
+		<modifier key="Alt7_Paragon_Circle" modpriority="2"
+            localselectionringmaterial="/shared/materials/selection_indicator_paragon.material"
+        />
+	</altavatar>
+	
+	<altavatar key="Hero_Parasite.Alt6"
+		preglobalscale="1.7"
+		
+		icon2="alt6/icon.tga"
+		portrait="alt6/icon.tga"
+		model="alt6/model.mdf"
+		passiveeffect="alt6/effects/body.effect"
+		infoheight="185"
+		
+		previewmodel="alt6/preview.mdf"
+		previewpos="0 0 -50"
+		previewangles="0 0 0"
+		previewscale="1.5"
+		
+		attackactioneffect="alt6/effects/attack_action.effect"
+		attackimpacteffect="alt6/effects/impact.effect"
+
+		selectedsound="alt6/sounds/voice/select_%.wav"
+	    selectedflavorsound="alt6/sounds/voice/select_flavour_%.wav"
+    	confirmmovesound="alt6/sounds/voice/move_%.wav"
+    	confirmattacksound="alt6/sounds/voice/attack_%.wav"
+    	nomanasound="alt6/sounds/voice/no_mana.wav"
+    	cooldownsound="alt6/sounds/voice/cooldown.wav"
+    	tauntedsound="alt6/sounds/voice/taunt_prior.wav"
+	    tauntkillsound="alt6/sounds/voice/taunt_after.wav"
+		
+		storemodel="alt6/preview.mdf"
+		storepos="0 0 -17"
+		storeangles="0 0 0"
+		storescale="1.5"
+	>
+		
+		<onspawn propagatetoillusions="false" >
+			<ownsproduct target="this_entity" product="aa.Hero_Grinex.Alt5 aa.Hero_Parasite.Alt6 aa.Hero_Hunter.Alt7 aa.Hero_Predator.Alt7" />
+			<compare a="result" b="1" op="eq">
+				<targettype type="mimic" target="this_entity" >
+					<deactivatemodifierkey name="Halloween_Set_Bonus" />
+				</targettype>
+				<else>
+					<activatemodifierkey name="Halloween_Set_Bonus" />
+				</else>
+			</compare>
+		</onspawn>
+		
+		<onrespawn propagatetoillusions="false" >
+			<ownsproduct target="this_entity" product="aa.Hero_Grinex.Alt5 aa.Hero_Parasite.Alt6 aa.Hero_Hunter.Alt7 aa.Hero_Predator.Alt7" />
+			<compare a="result" b="1" op="eq">
+				<targettype type="mimic" target="this_entity" >
+					<deactivatemodifierkey name="Halloween_Set_Bonus" />
+				</targettype>
+				<else>
+					<activatemodifierkey name="Halloween_Set_Bonus" />
+				</else>
+			</compare>
+		</onrespawn>
+		
+		<modifier key="Halloween_Set_Bonus" modpriority="102"
+			model="alt6/model2.mdf"
+		/>
+	</altavatar>
+	
+	<altavatar key="Hero_Parasite.trophy_skin" modpriority="1"
+		
+		icon2="icon.tga"
+		portrait="icon.tga"
+		model="trophy_skin/model.mdf"
+		passiveeffect="trophy_skin/effects/body.effect"
+		
+		previewmodel="trophy_skin/preview.mdf"
+		previewpos="0 0 -50"
+		previewangles="0 0 0"
+		previewscale="1.15"
+
+		storemodel="trophy_skin/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="2.1"
+	/>
+	
+</hero>

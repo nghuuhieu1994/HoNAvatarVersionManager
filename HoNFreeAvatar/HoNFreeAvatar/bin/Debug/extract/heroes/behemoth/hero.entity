@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hero
+	name="Hero_Behemoth"
+
+	team="Legion"
+	icon="icon.tga"
+	portrait="icon.tga"
+	model="model.mdf"
+	skin=""
+	
+	passiveeffect=""
+	spawneffect=""
+	respawneffect="/shared/effects/respawn.effect"
+	selectedsound="sounds/voice/select_%.wav"
+	selectedflavorsound="sounds/voice/select_%.wav"
+	confirmmovesound="sounds/voice/select_%.wav"
+	confirmattacksound="sounds/voice/select_%.wav"
+	nomanasound="sounds/voice/select_%.wav"
+	cooldownsound="sounds/voice/select_%.wav"
+	announcersound="sounds/voice/hero_select.wav"
+	tauntedsound="sounds/voice/taunt_prior.wav"
+	tauntkillsound="sounds/voice/taunt_after.wav"
+	
+	preglobalscale="2.25"
+	modelscale="1.0"
+	effectscale="0.9"
+	boundsheight="112"
+	boundsradius="24"
+	selectionradius="64"
+	targetoffset="0 0 92"
+
+	category="magic cc"
+	difficulty="4"
+
+	solorating="0"
+	junglerating="0"
+	carryrating="0"
+	supportrating="2"
+	initiatorrating="4"
+	gankerrating="2"
+	pusherrating="0"
+	rangedrating="0"
+	meleerating="5"
+
+	movespeed="300"
+	turnrate="360"
+	turnsmoothing="0.05"
+
+	maxhealth="150"
+	healthregen="1.00"
+	maxmana="0"
+	manaregen="0.01"
+
+	armor="1.0"
+	magicarmor="5.5"
+
+	inventory0="Ability_Behemoth1"
+	inventory1="Ability_Behemoth2"
+	inventory2="Ability_Behemoth3"
+	inventory3="Ability_Behemoth4"
+	inventory4="Ability_AttributeBoost"
+	inventory5=""
+	inventory6=""
+	inventory8="Ability_Taunt"
+	inventory9=""
+	inventory10=""
+	inventory11=""
+	inventory12="Ability_AutomatedCourier"
+
+	attackduration="1000"
+	attackactiontime="500"
+	attackcooldown="1700"
+	attackdamagemin="23"
+	attackdamagemax="34"
+	attacknumanims="2"
+	attackoffset="0 30 100"
+	attackprojectile=""
+	attackrange="128"
+	attackstarteffect=""
+	attackactioneffect=""
+	attackimpacteffect="effects/impact.effect"
+	attacktype="melee"
+	combattype="Hero"
+
+	aggrorange="600"
+	sightrangeday="1800"
+	sightrangenight="800"
+	wanderrange="250"
+
+	primaryattribute="Strength"
+	strength="22"
+	strengthperlevel="2.5"
+	agility="12"
+	agilityperlevel="1.4"
+	intelligence="17"
+	intelligenceperlevel="2.0"
+	
+	previewmodel="preview.mdf"
+	previewpos="0 0 -60"
+	previewangles="0 0 0"
+	previewscale="1.5"
+	
+	corpsetime="5000"
+	corpsefadetime="2000"
+	corpsefadeeffect="/shared/effects/corpse_sink.effect"
+	
+	storemodel="preview.mdf"
+	storepos="0 0 -20"
+	storeangles="0 0 0"
+	storescale="1.65"
+>
+	<recommendeditem name="Item_ManaPotion" />
+	<recommendeditem name="Item_MinorTotem" />
+	<recommendeditem name="Item_RunesOfTheBlight" />
+	<recommendeditem name="Item_HealthPotion" />
+	<recommendeditem name="Item_HomecomingStone" />
+	
+	<recommendeditem name="Item_Intelligence5" />
+	<recommendeditem name="Item_Strength5" />
+	<recommendeditem name="Item_Bottle" />
+	<recommendeditem name="Item_EnhancedMarchers" />
+	<recommendeditem name="Item_Replenish" />
+	<recommendeditem name="Item_PortalKey" />
+	<recommendeditem name="Item_Immunity" />
+	<recommendeditem name="Item_FrostfieldPlate" />
+	<recommendeditem name="Item_Morph" />
+	<recommendeditem name="Item_BehemothsHeart" />
+	
+	<modifier key="iamsheeped" modpriority="101"
+		passiveeffect=""
+	/>
+	
+	<altavatar key="Hero_Behemoth.Alt" modpriority="1"
+		icon2="alt/icon.tga"
+		portrait="alt/icon.tga"
+		model="alt/model.mdf"
+		
+		passiveeffect="alt/effects/body.effect"
+		
+		previewmodel="alt/preview.mdf"
+		previewpos="0 0 -60"
+		previewangles="0 0 0"
+		previewscale="1.5"
+		
+		storemodel="alt/preview.mdf"
+		storepos="0 0 -20  "
+		storeangles="0 0 0"
+		storescale="1.65"
+	/>
+	
+	<altavatar key="Hero_Behemoth.Alt2" modpriority="1"
+		preglobalscale="2.02"
+		
+		icon2="alt2/icon.tga"
+		portrait="alt2/icon.tga"
+		model="alt2/model.mdf"
+		
+		passiveeffect="alt2/effects/body.effect"
+				
+		selectedsound="alt2/sounds/voice/select_%.wav"
+		selectedflavorsound="alt2/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt2/sounds/voice/move_%.wav"
+		confirmattacksound="alt2/sounds/voice/attack_%.wav"
+		nomanasound="alt2/sounds/voice/no_mana.wav"
+		cooldownsound="alt2/sounds/voice/cooldown.wav"
+		tauntedsound="alt2/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt2/sounds/voice/taunt_after.wav"
+		
+		previewmodel="alt2/preview.mdf"
+		previewpos="0 0 -60"
+		previewangles="0 0 0"
+		previewscale="1.5"
+		
+		storemodel="alt2/preview.mdf"
+		storepos="0 0 -20  "
+		storeangles="0 0 0"
+		storescale="1.65"
+	/>
+	
+	<altavatar key="Hero_Behemoth.Alt3" modpriority="1"
+		preglobalscale="2.02"
+		effectscale="1.25"
+		
+		icon2="alt3/icon.tga"
+		portrait="alt3/icon.tga"
+		model="alt3/model.mdf"
+		attackimpacteffect="alt3/effects/impact.effect"
+		passiveeffect="alt3/effects/body.effect"
+		
+		corpsetime="2000"
+		corpsefadetime="5000"
+		corpsefadeeffect="/shared/effects/corpse_sink.effect"
+	
+		selectedsound="alt3/sounds/voice/select_%.wav"
+		selectedflavorsound="alt3/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt3/sounds/voice/move_%.wav"
+		confirmattacksound="alt3/sounds/voice/attack_%.wav"
+		nomanasound="alt3/sounds/voice/no_mana.wav"
+		cooldownsound="alt3/sounds/voice/cooldown.wav"
+		tauntedsound="alt3/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt3/sounds/voice/taunt_after.wav"
+		
+		previewmodel="alt3/preview.mdf"
+		previewpos="0 0 -60"
+		previewangles="0 0 0"
+		previewscale="1.5"
+		
+		storemodel="alt3/preview.mdf"
+		storepos="0 0 -20  "
+		storeangles="0 0 0"
+		storescale="1.65"
+	/>
+	
+	<altavatar key="Hero_Behemoth.Alt4"
+		preglobalscale="2.02"
+		effectscale="1.25"
+		
+		icon2="alt4/icon.tga"
+		portrait="alt4/icon.tga"
+		model="alt4/model.mdf"
+		attackimpacteffect="alt4/effects/impact.effect"
+		passiveeffect="alt4/effects/body.effect"
+		
+		corpsetime="2000"
+		corpsefadetime="5000"
+		corpsefadeeffect="/shared/effects/corpse_sink.effect"
+	
+		selectedsound="alt4/sounds/voice/select_%.wav"
+		selectedflavorsound="alt4/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt4/sounds/voice/move_%.wav"
+		confirmattacksound="alt4/sounds/voice/attack_%.wav"
+		nomanasound="alt4/sounds/voice/no_mana.wav"
+		cooldownsound="alt4/sounds/voice/cooldown.wav"
+		tauntedsound="alt4/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt4/sounds/voice/taunt_after.wav"
+		
+		previewmodel="alt4/preview.mdf"
+		previewpos="0 0 -60"
+		previewangles="0 0 0"
+		previewscale="1.5"
+		
+		storemodel="alt4/preview.mdf"
+		storepos="0 0 -20  "
+		storeangles="0 0 0"
+		storescale="1.65"
+	/>
+	
+	<altavatar key="Hero_Behemoth.Alt5"
+		preglobalscale="2.25"
+		effectscale="1.25"
+		
+		icon2="alt5/icon.tga"
+		portrait="alt5/icon.tga"
+		model="alt5/model.mdf"
+
+		passiveeffect="alt5/effects/body.effect"
+		
+		corpsetime="2000"
+		corpsefadetime="5000"
+		corpsefadeeffect="/shared/effects/corpse_sink.effect"
+	
+		selectedsound="alt5/sounds/voice/select_%.wav"
+		selectedflavorsound="alt5/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt5/sounds/voice/move_%.wav"
+		confirmattacksound="alt5/sounds/voice/attack_%.wav"
+		nomanasound="alt5/sounds/voice/no_mana.wav"
+		cooldownsound="alt5/sounds/voice/cooldown.wav"
+		tauntedsound="alt5/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt5/sounds/voice/taunt_after.wav"
+		
+		previewmodel="alt5/preview.mdf"
+		previewpos="0 0 -60"
+		previewangles="0 0 0"
+		previewscale="1.5"
+		
+		storemodel="alt5/preview.mdf"
+		storepos="0 0 -20  "
+		storeangles="0 0 0"
+		storescale="1.65"
+		storepassiveeffect="alt5/effects/back.effect"
+
+		portraitcampos="0 0 10"
+		
+		tooleffectkeyname0="Item_PortalKey"
+		tooleffectpath0="alt5/effects/back.effect"
+		tooleffectgroup0="back"
+		
+		tooleffectkeyname1=""
+		tooleffectpath1=""
+		tooleffectgroup1="back"
+	/>
+	
+	<altavatar key="Hero_Behemoth.Alt6"
+		preglobalscale="2.25"
+		effectscale=".9"
+		
+		icon2="alt6/icon.tga"
+		portrait="alt6/icon.tga"
+		model="alt6/model.mdf"
+
+		passiveeffect="alt6/effects/body.effect"
+		infoheight= "200"
+		
+		corpsetime="2000"
+		corpsefadetime="5000"
+		corpsefadeeffect="/shared/effects/corpse_sink.effect"
+	
+		selectedsound="alt6/sounds/voice/select_%.wav"
+		selectedflavorsound="alt6/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt6/sounds/voice/move_%.wav"
+		confirmattacksound="alt6/sounds/voice/attack_%.wav"
+		nomanasound="alt6/sounds/voice/no_mana.wav"
+		cooldownsound="alt6/sounds/voice/cooldown.wav"
+		tauntedsound="alt6/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt6/sounds/voice/taunt_after.wav"
+		
+		previewmodel="alt6/preview.mdf"
+		previewpos="0 0 -60"
+		previewangles="0 0 0"
+		previewscale="1.5"
+		
+		storemodel="alt6/preview.mdf"
+		storepos="-10 0 -20  "
+		storeangles="0 0 0"
+		storescale="1.75"
+		storepassiveeffect="alt6/effects/back.effect"
+
+		portraitcampos="20 0 -35"
+
+	>
+	    <onspawn>
+		    <pausevoiceovers duration="8000" />
+			<applystate name="State_Behemoth_Alt6_Sound_Initiator" target="source_entity" duration="2000" />
+		</onspawn>
+		
+		<onkill>
+		       <targettype type="illusion" />
+				<else>
+					<hasmodifier entity="target_entity" name="Ravenor_Alt3_Sound">
+					    <pausevoiceovers duration="5000" />
+						<delayannouncer duration="4000" source="target.entity" sourceonly="true"/>
+						<delayannouncer duration="4000" sourceonly="true"/>
+						<pushentityproxy entity="this_proxy_entity" />
+						<compare a="stack_entity" b="inflictor_entity" op="ne">
+							<playeffect effect="alt6/interactions/killed_zeus.effect" target="source_entity" />
+						</compare>
+					</hasmodifier>
+					</else>
+		</onkill>
+	</altavatar>
+	
+	<altavatar key="Hero_Behemoth.Alt7"
+		preglobalscale="2.7"
+		effectscale=".9"
+		
+		icon2="alt7/icon.tga"
+		portrait="alt7/icon.tga"
+		model="alt7/model.mdf"
+
+		passiveeffect="alt7/effects/body.effect"
+		infoheight= "200"
+		
+		attackimpacteffect="alt7/effects/impact.effect"
+		
+		corpsetime="2000"
+		corpsefadetime="5000"
+		corpsefadeeffect="/shared/effects/corpse_sink.effect"
+	
+		selectedsound="alt7/sounds/voice/select_%.wav"
+		selectedflavorsound="alt7/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt7/sounds/voice/move_%.wav"
+		confirmattacksound="alt7/sounds/voice/attack_%.wav"
+		nomanasound="alt7/sounds/voice/no_mana.wav"
+		cooldownsound="alt7/sounds/voice/cooldown.wav"
+		tauntedsound="alt7/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt7/sounds/voice/taunt_after.wav"
+		
+		previewmodel="alt7/preview.mdf"
+		previewpos="0 0 -60"
+		previewangles="0 0 0"
+		previewscale="1.5"
+		
+		storemodel="alt7/preview.mdf"
+		storepos="-10 0 -20  "
+		storeangles="0 0 0"
+		storescale="1.75"
+		storepassiveeffect="alt7/effects/back.effect"
+
+		portraitcampos="5 0 16"
+
+	/>
+	
+	<altavatar key="Hero_Behemoth.Alt8"
+		preglobalscale="2.3"
+		effectscale=".9"
+		
+		icon2="alt8/icon.tga"
+		portrait="alt8/icon.tga"
+		model="alt8/model.mdf"
+
+		passiveeffect=""
+		infoheight= "200"
+		
+		attackimpacteffect="alt8/effects/impact.effect"
+		
+		corpsetime="2000"
+		corpsefadetime="6000"
+		corpsefadeeffect="/shared/effects/corpse_sink.effect"
+	
+		selectedsound="alt8/sounds/voice/select_%.wav"
+		selectedflavorsound="alt8/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt8/sounds/voice/move_%.wav"
+		confirmattacksound="alt8/sounds/voice/attack_%.wav"
+		nomanasound="alt8/sounds/voice/no_mana.wav"
+		cooldownsound="alt8/sounds/voice/cooldown.wav"
+		tauntedsound="alt8/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt8/sounds/voice/taunt_after.wav"
+		
+		previewmodel="alt8/preview.mdf"
+		previewpos="0 0 -60"
+		previewangles="0 0 0"
+		previewscale="1.5"
+		
+		storemodel="alt8/preview.mdf"
+		storepos="-10 0 -20  "
+		storeangles="0 0 0"
+		storescale="1.75"
+		storepassiveeffect="alt8/effects/back.effect"
+
+		portraitcampos="12 -20 12"
+
+	/>
+	
+	<altavatar key="Hero_Behemoth.Alt9"
+		preglobalscale="2.3"
+
+		model="alt9/model.mdf"
+	/>
+	
+	<altavatar key="Hero_Behemoth.main_reskin" modpriority="1"
+		icon2="reskin/icon.tga"
+		portrait="reskin/icon.tga"
+		model="reskin/model.mdf"
+		
+		previewmodel="reskin/preview.mdf"
+		previewpos="0 0 -60"
+		previewangles="0 0 0"
+		previewscale="1.5"
+		
+		storemodel="reskin/preview.mdf"
+		storepos="0 0 -20  "
+		storeangles="0 0 0"
+		storescale="1.65"
+	/>
+	
+	<altavatar key="Hero_Behemoth.pog_skin" modpriority="1"
+		icon2="icon.tga"
+		portrait="icon.tga"
+		model="pog_skin/model.mdf"
+		
+		previewmodel="pog_skin/preview.mdf"
+		previewpos="0 0 -60"
+		previewangles="0 0 0"
+		previewscale="1.5"
+		
+		storemodel="pog_skin/preview.mdf"
+		storepos="0 0 -20  "
+		storeangles="0 0 0"
+		storescale="1.65"
+	/>
+	
+</hero>

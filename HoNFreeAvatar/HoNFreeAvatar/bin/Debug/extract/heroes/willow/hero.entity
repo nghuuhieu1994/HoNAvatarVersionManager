@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hero
+	name="Hero_Willow"
+	
+	team="dev_Legion"
+	icon="icon.tga"
+	portrait="icon.tga"
+	model="model.mdf"
+	skin=""
+	
+	passiveeffect="effects/glow.effect"
+	spawneffect=""
+	respawneffect="/shared/effects/respawn.effect"
+	selectedsound="sounds/voice/select_%.wav"
+	selectedflavorsound="sounds/voice/select_flavour_%.wav"
+	confirmmovesound="sounds/voice/move_%.wav"
+	confirmattacksound="sounds/voice/attack_%.wav"
+	nomanasound="sounds/voice/no_mana.wav"
+	cooldownsound="sounds/voice/cooldown.wav"
+	announcersound=""
+	tauntedsound="sounds/voice/taunt_prior.wav"
+	tauntkillsound="sounds/voice/taunt_after.wav"
+	
+	preglobalscale="1.26"
+	modelscale="1.0"
+	effectscale="0.9"
+	boundsheight="112"
+	boundsradius="24"
+	selectionradius="48"
+	targetoffset="0 0 92"
+	
+	infoheight="200"
+	
+	category="cc protective"
+	difficulty="3"
+
+	solorating="0"
+	junglerating="0"
+	carryrating="0"
+	supportrating="5"
+	initiatorrating="0"
+	gankerrating="2"
+	pusherrating="2"
+	rangedrating="5"
+	meleerating="0"
+
+	movespeed="295"
+	turnrate="450"
+	turnsmoothing="0.05"
+
+	maxhealth="150"
+	healthregen="0.25"
+	maxmana="0"
+	manaregen="0.01"
+
+	armor="-0.1"
+	magicarmor="5.5"
+
+	inventory0="Ability_Willow1"
+	inventory1="Ability_Willow2"
+	inventory2="Ability_Willow3"
+	inventory3="Ability_Willow4"
+	inventory4="Ability_AttributeBoost"
+	inventory5=""
+	inventory6=""
+	inventory7=""
+	inventory8="Ability_Taunt"
+	inventory9=""
+	inventory10=""
+	inventory11=""
+	inventory12="Ability_AutomatedCourier"
+
+	attackduration="1000"
+	attackactiontime="450"
+	attackcooldown="1700"
+	attackdamagemin="20"
+	attackdamagemax="27"
+	attacknumanims="2"
+	attackoffset="0 30 80"
+	attackprojectile="Projectile_Fairy_Attack"
+	attackrange="600"
+	attackstarteffect=""
+	attackactioneffect="projectile/cast.effect"
+	attackimpacteffect="projectile/impact.effect"
+	attacktype="ranged"
+	combattype="Hero"
+
+	aggrorange="800"
+	sightrangeday="1800"
+	sightrangenight="800"
+	wanderrange="250"
+
+	primaryattribute="Intelligence"
+	strength="18"
+	strengthperlevel="1.7"
+	agility="18"
+	agilityperlevel="2"
+	intelligence="24"
+	intelligenceperlevel="2.8"
+	
+	previewmodel="preview.mdf"
+	previewpos="0 0 -110"
+	previewangles="0 0 0"
+	previewscale="1.2"
+	
+	storemodel="preview.mdf"
+	storepos="0 0 -60"
+	storeangles="0 0 0"
+	storescale="1.2"
+	
+	corpsetime="2500"
+	corpsefadetime="2500"
+	corpsefadeeffect="/shared/effects/corpse_sink.effect"
+	
+>
+	<recommendeditem name="Item_ManaPotion" />
+	<recommendeditem name="Item_MinorTotem" />
+	<recommendeditem name="Item_RunesOfTheBlight" />
+	<recommendeditem name="Item_HealthPotion" />
+	<recommendeditem name="Item_HomecomingStone" />
+	
+	<recommendeditem name="Item_FlamingEye" />
+	<recommendeditem name="Item_Intelligence5" />
+	<recommendeditem name="Item_Strength5" />
+	<recommendeditem name="Item_PlatedGreaves" />
+	<recommendeditem name="Item_Astrolabe" />
+	<recommendeditem name="Item_Intelligence7" />
+	<recommendeditem name="Item_BarrierIdol" />
+	<recommendeditem name="Item_Morph" />
+	
+	<modifier key="iamsheeped" modpriority="100"
+		passiveeffect=""
+	/>
+	
+</hero>

@@ -1,0 +1,642 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hero
+	name="Hero_WitchSlayer"
+
+	team="Legion"
+	icon="icon.tga"
+	portrait="icon.tga"
+	model="model.mdf"
+	skin=""
+	
+	passiveeffect=""
+	spawneffect=""
+	respawneffect="/shared/effects/respawn.effect"
+	selectedsound="sounds/voice/select_%.wav"
+	selectedflavorsound="sounds/voice/select_flavour_%.wav"
+	confirmmovesound="sounds/voice/move_%.wav"
+	confirmattacksound="sounds/voice/attack_%.wav"
+	nomanasound="sounds/voice/no_mana.wav"
+	cooldownsound="sounds/voice/cooldown.wav"
+	announcersound="sounds/voice/hero_select.wav"
+	tauntedsound="sounds/voice/taunt_prior.wav"
+	tauntkillsound="sounds/voice/taunt_after.wav"
+	
+	preglobalscale="1.5"
+	modelscale="1.0"
+	effectscale="1"
+	boundsheight="112"
+	boundsradius="24"
+	selectionradius="48"
+	targetoffset="0 0 64"
+
+	category="cc magic"
+	difficulty="2.5"
+
+	solorating="2"
+	junglerating="0"
+	carryrating="0"
+	supportrating="3"
+	initiatorrating="1"
+	gankerrating="2"
+	pusherrating="0"
+	rangedrating="5"
+	meleerating="0"
+
+	movespeed="290"
+	turnrate="540"
+	turnsmoothing="0.05"
+	
+	maxhealth="150"
+	healthregen="0.25"
+	maxmana="0"
+	manaregen="0.01"
+
+	armor="-1.14"
+	magicarmor="5.5"
+
+	inventory0="Ability_WitchSlayer1"
+	inventory1="Ability_WitchSlayer2"
+	inventory2="Ability_WitchSlayer3"
+	inventory3="Ability_WitchSlayer4"
+	inventory4="Ability_AttributeBoost"
+	inventory5=""
+	inventory6=""
+	inventory8="Ability_Taunt"
+	inventory9=""
+	inventory10=""
+	inventory11=""
+	inventory12="Ability_AutomatedCourier"
+
+	attackduration="1000"
+	attackactiontime="430"
+	attackcooldown="1700"
+	attackdamagemin="19"
+	attackdamagemax="25"
+	attacknumanims="2"
+	attackoffset="20 64 100"
+	attackprojectile="Projectile_WitchSlayer_Attack"
+	attackrange="600"
+	attackstarteffect=""
+	attackactioneffect=""
+	attackimpacteffect=""
+	attacktype="ranged"
+	combattype="Hero"
+
+	aggrorange="800"
+	sightrangeday="1800"
+	sightrangenight="800"
+	wanderrange="250"
+	
+	corpsetime="3300"
+	corpsefadetime="3000"
+	corpsefadeeffect="/shared/effects/corpse_sink.effect"
+
+	primaryattribute="Intelligence"
+	strength="16"
+	strengthperlevel="1.7"
+	agility="16"
+	agilityperlevel="1.5"
+	intelligence="23"
+	intelligenceperlevel="3"
+	
+	previewmodel="preview.mdf"
+	previewpos="0 0 -70"
+	previewangles="0 0 0"
+	previewscale="1.35"
+
+	storemodel="preview.mdf"
+	storepos="0 0 -20"
+	storeangles="0 0 0"
+	storescale="1.35"
+>
+	<recommendeditem name="Item_MinorTotem" />
+	<recommendeditem name="Item_RunesOfTheBlight" />
+	<recommendeditem name="Item_HealthPotion" />
+	<recommendeditem name="Item_HomecomingStone" />
+	
+	<recommendeditem name="Item_Strength5" />
+	<recommendeditem name="Item_Intelligence5" />
+	<recommendeditem name="Item_Astrolabe" />
+	<recommendeditem name="Item_Striders" />
+	
+	<recommendeditem name="Item_NomesWisdom" />
+	<recommendeditem name="Item_Intelligence7" />
+	<recommendeditem name="Item_HarkonsBlade" />
+	<recommendeditem name="Item_Morph" />
+	
+	<!-- Staff of the master upgrade effect-->
+	<modifier key="ult_boost" modpriority="100"
+	>
+		<aura state="State_WitchSlayer_Ult_Boost" radius="0" targetscheme="self"/>
+	</modifier>
+	
+	<altavatar key="Hero_WitchSlayer.Pimp"
+		icon2="alt/icon.tga"
+		portrait="alt/icon.tga"
+		model="alt/model.mdf"
+		attackprojectile="Projectile_WitchSlayer_AttackAlt"
+		selectedsound="alt/sounds/voice/select_%.wav"
+		selectedflavorsound="alt/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt/sounds/voice/move_%.wav"
+		confirmattacksound="alt/sounds/voice/attack_%.wav"
+		nomanasound="alt/sounds/voice/no_mana.wav"
+		cooldownsound="alt/sounds/voice/cooldown.wav"
+		announcersound="alt/sounds/voice/hero_select.wav"
+		tauntedsound="alt/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt/sounds/voice/taunt_after.wav"
+		
+		previewmodel="alt/preview.mdf"
+		previewpos="0 0 -70"
+		previewangles="0 0 0"
+		previewscale="1.35"
+		
+		storemodel="alt/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.25"
+	/>
+	
+	<altavatar key="Hero_WitchSlayer.Alt2"
+		preglobalscale="1.65"
+		passiveeffect="alt2/effects/body.effect"
+		
+		icon2="alt2/icon.tga"
+		portrait="alt2/icon.tga"
+		model="alt2/model.mdf"
+		attackprojectile="Projectile_WitchSlayer_Attack_Alt2"
+		selectedsound="alt2/sounds/voice/select_%.wav"
+		selectedflavorsound="alt2/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt2/sounds/voice/move_%.wav"
+		confirmattacksound="alt2/sounds/voice/attack_%.wav"
+		nomanasound="alt2/sounds/voice/no_mana.wav"
+		cooldownsound="alt2/sounds/voice/cooldown.wav"
+		announcersound="alt2/sounds/voice/hero_select.wav"
+		tauntedsound="alt2/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt2/sounds/voice/taunt_after.wav"
+
+		attackoffset="0 65 60"
+		previewmodel="alt2/preview.mdf"
+		previewpos="0 0 -70"
+		previewangles="0 0 0"
+		previewscale="1.45"
+		
+		storemodel="alt2/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.3"
+		
+		infoheight="175"
+	/>
+	
+	<altavatar key="Hero_WitchSlayer.Alt3"
+		preglobalscale="1.825"
+		passiveeffect="alt3/effects/body.effect"
+		
+		icon2="alt3/icon.tga"
+		portrait="alt3/icon.tga"
+		model="alt3/model.mdf"
+		
+		attackprojectile="Projectile_WitchSlayer_Attack_Alt3"
+		selectedsound="alt3/sounds/voice/select_%.wav"
+		selectedflavorsound="alt3/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt3/sounds/voice/move_%.wav"
+		confirmattacksound="alt3/sounds/voice/attack_%.wav"
+		nomanasound="alt3/sounds/voice/no_mana.wav"
+		cooldownsound="alt3/sounds/voice/cooldown.wav"
+		tauntedsound="alt3/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt3/sounds/voice/taunt_after.wav"
+
+		attackoffset="0 80 90"
+		previewmodel="alt3/preview.mdf"
+		previewpos="0 0 -70"
+		previewangles="0 0 0"
+		previewscale="1.45"
+		
+		storemodel="alt3/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.5"
+		
+		infoheight="175"
+	/>
+	
+	<altavatar key="Hero_WitchSlayer.Alt4"
+		preglobalscale="1.0"
+		
+		icon2="alt4/icon.tga"
+		portrait="alt4/icon.tga"
+		model="alt4/model.mdf"
+		
+		attackprojectile="Projectile_WitchSlayer_Attack_Alt4"
+		
+		selectedsound="alt4/sounds/voice/select_%.wav"
+		selectedflavorsound="alt4/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt4/sounds/voice/move_%.wav"
+		confirmattacksound="alt4/sounds/voice/attack_%.wav"
+		nomanasound="alt4/sounds/voice/no_mana.wav"
+		cooldownsound="alt4/sounds/voice/cooldown.wav"
+		tauntedsound="alt4/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt4/sounds/voice/taunt_after.wav"
+
+		previewmodel="alt4/preview.mdf"
+		previewpos="0 0 -70"
+		previewangles="0 0 0"
+		previewscale="1.45"
+		
+		storemodel="alt4/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale=".90"
+	>
+		<onspawn>
+			<ownsproduct target="this_entity" product="aa.Hero_Bushwack.Alt3 aa.Hero_Gunblade.Alt3 aa.Hero_Hiro.Alt5 aa.Hero_Rally.Alt4 aa.Hero_Rampage.Alt6 aa.Hero_WitchSlayer.Alt4" />
+			<compare a="result" b="1" op="eq">
+				<activatemodifierkey name="RiftHunter_Set" />
+			</compare>
+		</onspawn>
+
+		<onrespawn>
+			<ownsproduct target="this_entity" product="aa.Hero_Bushwack.Alt3 aa.Hero_Gunblade.Alt3 aa.Hero_Hiro.Alt5 aa.Hero_Rally.Alt4 aa.Hero_Rampage.Alt6 aa.Hero_WitchSlayer.Alt4" />
+			<compare a="result" b="1" op="eq">
+				<activatemodifierkey name="RiftHunter_Set" />
+			</compare>
+		</onrespawn>
+		
+		<modifier key="RiftHunter_Set" modpriority="101"
+			tooleffectpath38="alt4/effects/set_boost.effect"
+			skin="setboost"
+		/>
+	</altavatar>
+		
+	<altavatar key="Hero_WitchSlayer.Alt5"
+		preglobalscale="1.75"
+		passiveeffect="alt5/effects/body.effect"
+		
+		icon2="alt5/icon.tga"
+		portrait="alt5/icon.tga"
+		model="alt5/model.mdf"
+		attackprojectile="Projectile_WitchSlayer_Attack"
+
+		selectedsound="alt5/sounds/voice/select_%.wav"
+		selectedflavorsound="alt5/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt5/sounds/voice/move_%.wav"
+		confirmattacksound="alt5/sounds/voice/attack_%.wav"
+		nomanasound="alt5/sounds/voice/no_mana.wav"
+		cooldownsound="alt5/sounds/voice/cooldown.wav"
+		announcersound="alt5/sounds/voice/hero_select.wav"
+		tauntedsound="alt5/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt5/sounds/voice/taunt_after.wav"
+
+		attackoffset="0 65 60"
+
+		previewmodel="alt5/preview.mdf"
+		previewpos="0 0 -70"
+		previewangles="0 0 0"
+		previewscale="1.45"
+		
+		storemodel="alt5/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.45"
+		
+		infoheight="175"
+	/>
+		
+	<altavatar key="Hero_WitchSlayer.Alt6"
+		preglobalscale="1.6"
+		passiveeffect="alt6/body_stage1/body.effect"
+		
+		icon2="alt6/icon.tga"
+		portrait="alt6/icon.tga"
+		model="alt6/body_stage1/model.mdf"
+
+		selectedsound="alt6/sounds/voice/corrupted/select_%.wav"
+		selectedflavorsound="alt6/sounds/voice/corrupted/select_flavour_%.wav"
+		confirmmovesound="alt6/sounds/voice/corrupted/move_%.wav"
+	    confirmattacksound="alt6/sounds/voice/corrupted/attack_%.wav"
+	    nomanasound="alt6/sounds/voice/corrupted/no_mana.wav"
+		cooldownsound="alt6/sounds/voice/corrupted/cooldown.wav"
+		tauntedsound="alt6/sounds/voice/corrupted/taunt_prior.wav"
+		tauntkillsound="alt6/sounds/voice/corrupted/taunt_after.wav"
+
+		attackoffset="0 65 60"
+
+		previewmodel="alt6/preview.mdf"
+		previewpos="0 0 -70"
+		previewangles="0 0 0"
+		previewscale="1.45"
+		previewpassiveeffect="alt6/body_stage3/preview.effect"
+		
+		storemodel="alt6/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.45"
+		storepassiveeffect="alt6/body_stage3/preview.effect"
+		
+		infoheight="175"
+		
+		tooleffectpath0="alt6/dagger_stage1/body.effect"
+		
+		tooleffectpath1="alt6/gun_stage1/body.effect"
+	>
+	
+	<onspawn propagatetoillusions="false">
+	<setactivemodifierkey name="Voice_Store" />
+	</onspawn>
+
+		<onlevelup>
+			<condition test="level gt 12" >
+				<setactivemodifierkey name="Stage3" />
+			</condition>
+			<elsecondition test="level gt 6" >
+				<setactivemodifierkey name="Stage2" />
+			</elsecondition>
+			<else>
+				<setactivemodifierkey name="Voice_Store" />
+			</else>
+		</onlevelup>
+		
+		<modifier key="Stage2" modpriority="1"
+			model="alt6/body_stage2/model.mdf"
+			passiveeffect="alt6/body_stage2/body.effect"
+			selectedsound="alt6/sounds/voice/select_%.wav"
+		    selectedflavorsound="alt6/sounds/voice/select_flavour_%.wav"
+		    confirmmovesound="alt6/sounds/voice/move_%.wav"
+		    confirmattacksound="alt6/sounds/voice/attack_%.wav"
+		    nomanasound="alt6/sounds/voice/no_mana.wav"
+		    cooldownsound="alt6/sounds/voice/cooldown.wav"
+		    tauntedsound="alt6/sounds/voice/taunt_prior.wav"
+		    tauntkillsound="alt6/sounds/voice/taunt_after.wav"
+		
+			tooleffectpath0="alt6/dagger_stage2/body.effect"
+		
+			tooleffectpath1="alt6/gun_stage2/body.effect"
+			
+		/>
+		
+		<modifier key="Stage3" modpriority="2"
+			model="alt6/body_stage3/model.mdf"
+			passiveeffect="alt6/body_stage3/body.effect"
+			selectedsound="alt6/sounds/voice/corrupted/select_%.wav"
+		    selectedflavorsound="alt6/sounds/voice/corrupted/select_flavour_%.wav"
+		    confirmmovesound="alt6/sounds/voice/corrupted/move_%.wav"
+		    confirmattacksound="alt6/sounds/voice/corrupted/attack_%.wav"
+		    nomanasound="alt6/sounds/voice/corrupted/no_mana.wav"
+		    cooldownsound="alt6/sounds/voice/corrupted/cooldown.wav"
+		    tauntedsound="alt6/sounds/voice/corrupted/taunt_prior.wav"
+		    tauntkillsound="alt6/sounds/voice/corrupted/taunt_after.wav"
+			
+			tooleffectpath0="alt6/dagger_stage3/body.effect"
+		
+			tooleffectpath1="alt6/gun_stage3/body.effect"
+		/>
+		
+		<modifier key="Voice_Store" modpriority="2"
+		selectedsound="alt6/sounds/voice/select_%.wav"
+		selectedflavorsound="alt6/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt6/sounds/voice/move_%.wav"
+		confirmattacksound="alt6/sounds/voice/attack_%.wav"
+		nomanasound="alt6/sounds/voice/no_mana.wav"
+		cooldownsound="alt6/sounds/voice/cooldown.wav"
+		tauntedsound="alt6/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt6/sounds/voice/taunt_after.wav"
+		/>
+		
+		
+		<modifier key="alt_Boots" modpriority="1"
+			walkanim="walk_2"
+		/>
+
+		<modifier key="iamsheeped" modpriority="9999"
+			passiveeffect=""
+			tooleffectpath0=""
+			tooleffectpath1=""
+		/>
+	
+		<!-- Staff of the master upgrade effect-->
+		<modifier key="ult_boost" modpriority="100"
+		>
+			<aura state="State_WitchSlayer_Ult_Boost" radius="0" targetscheme="self"/>
+		</modifier>
+	</altavatar>
+	
+	<altavatar key="Hero_WitchSlayer.Alt7"
+		preglobalscale="1.75"
+		passiveeffect="alt7/effects/body.effect"
+		
+		icon2="alt7/icon.tga"
+		portrait="alt7/icon.tga"
+		model="alt7/model.mdf"
+
+		selectedsound="alt7/sounds/voice/select_%.wav"
+		selectedflavorsound="alt7/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt7/sounds/voice/move_%.wav"
+		confirmattacksound="alt7/sounds/voice/attack_%.wav"
+		nomanasound="alt7/sounds/voice/no_mana.wav"
+		cooldownsound="alt7/sounds/voice/cooldown.wav"
+		announcersound="alt7/sounds/voice/hero_select.wav"
+		tauntedsound="alt7/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt7/sounds/voice/taunt_after.wav"
+
+		attackoffset="0 65 60"
+
+		previewmodel="alt7/preview.mdf"
+		previewpos="0 0 -70"
+		previewangles="0 0 0"
+		previewscale="1.45"
+		
+		storemodel="alt7/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.45"
+		
+		portraitcampos="15 0 26"
+		
+		infoheight="175"
+	/>
+	
+	<altavatar key="Hero_WitchSlayer.Alt8"
+		preglobalscale="1.75"
+		passiveeffect="alt8/effects/body.effect"
+		
+		icon2="alt8/icon.tga"
+		portrait="alt8/icon.tga"
+		model="alt8/model.mdf"
+
+		selectedsound="alt8/sounds/voice/select_%.wav"
+		selectedflavorsound="alt8/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt8/sounds/voice/move_%.wav"
+		confirmattacksound="alt8/sounds/voice/attack_%.wav"
+		nomanasound="alt8/sounds/voice/no_mana.wav"
+		cooldownsound="alt8/sounds/voice/cooldown.wav"
+		announcersound="alt8/sounds/voice/hero_select.wav"
+		tauntedsound="alt8/sounds/voice/taunt_prior.wav"
+
+		previewmodel="alt8/preview.mdf"
+		previewpos="0 0 -70"
+		previewangles="0 0 0"
+		previewscale="1.45"
+		
+		storemodel="alt8/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.45"
+		
+	>
+		<onspawn>
+			<applystate name="State_LapisLazuli_Paragon_Sound_Initiator" target="source_entity" duration="2000" />
+			<activatemodifierkey name="Paragon_Sound_Tour" />
+			<ownsproduct target="this_entity" product="en.paragon_trail" />
+			<compare a="result" b="0" op="ne">
+				<applystate name="State_Paragon_Trail" target="this_entity" continuous="true" />
+			</compare>
+
+			<ownsproduct target="this_entity" product="en.paragon_circle_upgrade" />
+			<compare a="result" b="0" op="ne">
+				<activatemodifierkey name="Alt8_Paragon_Circle" />
+			</compare>
+			
+			<ownsproduct target="this_entity" product="en.witchslayer_ability01_upgrade" />
+			<compare a="result" b="0" op="ne">
+				<activatemodifierkey name="Alt8_Ability1_Upgrade" />
+			</compare>
+			
+			<ownsproduct target="this_entity" product="en.witchslayer_ability02_upgrade" />
+			<compare a="result" b="0" op="ne">
+				<activatemodifierkey name="Alt8_Ability2_Upgrade" />
+			</compare>
+			
+			<ownsproduct target="this_entity" product="en.witchslayer_ability03_upgrade" />
+			<compare a="result" b="0" op="ne">
+				<activatemodifierkey name="Alt8_Ability3_Upgrade" />
+			</compare>
+			
+			<ownsproduct target="this_entity" product="en.witchslayer_ability04_upgrade" />
+			<compare a="result" b="0" op="ne">
+				<activatemodifierkey name="Alt8_Ability4_Upgrade" />
+			</compare>
+
+            <ownsproduct target="this_entity" product="en.paragon_pet" />
+            <compare a="result" b="0" op="ne">
+                <spawnunit name="Pet_Paragon" target="this_entity" offset="0 -100" facing="source_entity" pushentity="true" />
+                <activatemodifierkey name="Pet_Paragon_LapisLazuli" entity="stack_entity" />
+            </compare>
+		</onspawn>
+
+        <onrespawn>
+			<ownsproduct target="this_entity" product="en.paragon_trail" />
+			<compare a="result" b="0" op="ne">
+				<applystate name="State_Paragon_Trail" target="this_entity" continuous="true" />
+			</compare>
+			
+            <ownsproduct target="this_entity" product="en.paragon_pet" />
+            <compare a="result" b="0" op="ne">
+                <spawnunit name="Pet_Paragon" target="this_entity" offset="0 -100" facing="source_entity" pushentity="true" />
+                <activatemodifierkey name="Pet_Paragon_LapisLazuli" entity="stack_entity" />
+            </compare>
+			
+			<ownsproduct target="this_entity" product="en.witchslayer_stat_track" />
+            <compare a="result" b="0" op="ne">
+                <!-- <playeffect effect="/shared/effects/paragon_stats.effect" source="this_entity" target="this_entity" /> -->
+				<applystate name="State_Paragon_Stats_VFX" source="this_entity" target="this_entity" duration="4000" />
+			</compare>
+        </onrespawn>
+		
+		<onchannelingstart>
+			<ownsproduct target="this_entity" product="en.witchslayer_stat_track" />
+            <compare a="result" b="0" op="ne">
+				<entitytype type="Ability_Taunt" target="inflictor_entity">
+                    <!-- <playeffect effect="/shared/effects/paragon_stats.effect" source="this_entity" target="this_entity" /> -->
+					<applystate name="State_Paragon_Stats_VFX" source="this_entity" target="this_entity" duration="4000" />
+				</entitytype>
+			</compare>
+		</onchannelingstart>
+		
+		<onkill>
+			<ownsproduct target="this_entity" product="en.witchslayer_stat_track" />
+            <compare a="result" b="0" op="ne">
+                <cantarget targetscheme="enemy_heroes" >
+                    <!-- <playeffect effect="/shared/effects/paragon_stats.effect" source="this_entity" target="this_entity" /> -->
+					<applystate name="State_Paragon_Stats_VFX" source="this_entity" target="this_entity" duration="4000" />
+                </cantarget>
+			</compare>
+        </onkill>
+	
+		<onassist>
+			<ownsproduct target="this_entity" product="en.witchslayer_stat_track" />
+            <compare a="result" b="0" op="ne">
+                <!-- <playeffect effect="/shared/effects/paragon_stats.effect" source="this_entity" target="this_entity" /> -->
+				<applystate name="State_Paragon_Stats_VFX" source="this_entity" target="this_entity" duration="4000" />
+			</compare>
+        </onassist>
+
+		<modifier key="Alt8_Paragon_Circle" modpriority="2"
+            localselectionringmaterial="/shared/materials/selection_indicator_paragon.material"
+        />
+	</altavatar>
+
+	<altavatar key="Hero_WitchSlayer.pog_skin"
+		preglobalscale="1.65"
+		passiveeffect="pog_skin/effects/body.effect"
+		
+		icon2="icon.tga"
+		portrait="icon.tga"
+		model="pog_skin/model.mdf"
+
+		selectedsound="sounds/voice/select_%.wav"
+		selectedflavorsound="sounds/voice/select_flavour_%.wav"
+		confirmmovesound="sounds/voice/move_%.wav"
+		confirmattacksound="sounds/voice/attack_%.wav"
+		nomanasound="sounds/voice/no_mana.wav"
+		cooldownsound="sounds/voice/cooldown.wav"
+		announcersound="sounds/voice/hero_select.wav"
+		tauntedsound="sounds/voice/taunt_prior.wav"
+		tauntkillsound="sounds/voice/taunt_after.wav"
+
+		attackoffset="0 65 60"
+		previewmodel="pog_skin/preview.mdf"
+		previewpos="0 0 -70"
+		previewangles="0 0 0"
+		previewscale="1.45"
+		
+		storemodel="pog_skin/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.3"
+		
+		infoheight="175"
+	/>
+	
+	<altavatar key="Hero_WitchSlayer.pog_skin2"
+		preglobalscale="1.65"
+		passiveeffect="pog_skin2/effects/body.effect"
+		
+		icon2="pog_skin2/icon.tga"
+		portrait="pog_skin2/icon.tga"
+		model="pog_skin2/model.mdf"
+
+		selectedsound="pog_skin2/sounds/voice/select_%.wav"
+		selectedflavorsound="pog_skin2/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="pog_skin2/sounds/voice/move_%.wav"
+		confirmattacksound="pog_skin2/sounds/voice/attack_%.wav"
+		nomanasound="pog_skin2/sounds/voice/no_mana.wav"
+		cooldownsound="pog_skin2/sounds/voice/cooldown.wav"
+		announcersound="pog_skin2/sounds/voice/hero_select.wav"
+		tauntedsound="pog_skin2/sounds/voice/taunt_prior.wav"
+		tauntkillsound="pog_skin2/sounds/voice/taunt_after.wav"
+
+		attackoffset="0 65 60"
+		previewmodel="pog_skin2/preview.mdf"
+		previewpos="0 0 -70"
+		previewangles="0 0 0"
+		previewscale="1.45"
+		
+		storemodel="pog_skin2/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.3"
+		
+		infoheight="175"
+	/>
+	
+</hero>

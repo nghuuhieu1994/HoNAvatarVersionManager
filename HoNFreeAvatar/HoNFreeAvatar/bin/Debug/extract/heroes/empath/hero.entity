@@ -1,0 +1,740 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hero
+	name="Hero_Empath"
+
+	team="Legion"
+	icon="icon.tga"
+	portrait="icon.tga"
+	model="model.mdf"
+	skin=""
+	
+	passiveeffect="effects/body.effect"
+	spawneffect=""
+	respawneffect="/shared/effects/respawn.effect"
+	selectedsound="sounds/voice/select_%.wav"
+	selectedflavorsound="sounds/voice/select_flavour_%.wav"
+	confirmmovesound="sounds/voice/move_%.wav"
+	confirmattacksound="sounds/voice/attack_%.wav"
+	nomanasound="sounds/voice/no_mana.wav"
+	cooldownsound="sounds/voice/cooldown.wav"
+	announcersound="sounds/voice/hero_select.wav"
+	tauntedsound="sounds/voice/taunt_prior.wav"
+	tauntkillsound="sounds/voice/taunt_after.wav"
+
+	preglobalscale="1.72"
+	modelscale="1.0"
+	effectscale="0.9"
+	boundsheight="112"
+	boundsradius="24"
+	selectionradius="40"
+	targetoffset="0 0 64"
+
+	category="protective"
+	difficulty="4.5"
+
+	solorating="0"
+	junglerating="0"
+	carryrating="0"
+	supportrating="5"
+	initiatorrating="0"
+	gankerrating="2"
+	pusherrating="0"
+	rangedrating="5"
+	meleerating="0"
+
+	movespeed="300"
+	turnrate="540"
+	turnsmoothing="0.05"
+
+	maxhealth="150"
+	healthregen="0.25"
+	maxmana="0"
+	manaregen="0.01"
+
+	armor="-0.6"
+	magicarmor="6"
+
+	inventory0="Ability_Empath1"
+	inventory1="Ability_Empath2"
+	inventory2="Ability_Empath3"
+	inventory3="Ability_Empath4"
+	inventory4="Ability_AttributeBoost"
+	inventory5="Ability_Empath5"
+	inventory6=""
+	inventory8="Ability_Taunt"
+	inventory9=""
+	inventory10=""
+	inventory11=""
+	inventory12="Ability_AutomatedCourier"
+
+	attackduration="1000"
+	attackactiontime="500"
+	attackcooldown="1700"
+	attackdamagemin="22"
+	attackdamagemax="30"
+	attacknumanims="2"
+	attackoffset="0 120 100"
+	attackprojectile="Projectile_Empath_Attack"
+	attackrange="600"
+	attackstarteffect=""
+	attackactioneffect=""
+	attackimpacteffect=""
+	attacktype="ranged"
+	combattype="Hero"
+
+	aggrorange="800"
+	sightrangeday="1800"
+	sightrangenight="800"
+	wanderrange="250"
+
+	primaryattribute="Intelligence"
+	strength="17"
+	strengthperlevel="2.0"
+	agility="16"
+	agilityperlevel="1.5"
+	intelligence="21"
+	intelligenceperlevel="2.7"
+	
+	previewmodel="preview.mdf"
+	previewpos="0 0 -80"
+	previewangles="0 0 0"
+	previewscale="1.85"
+	
+	storemodel="preview.mdf"
+	storepos="0 0 -21"
+	storeangles="0 0 0"
+	storescale="1.42"
+	
+	deathtime="0"
+	corpsetime="1500"
+	corpsefadetime="7500"
+	corpsefadeeffect="/shared/effects/corpse_sink.effect"
+>	
+	<recommendeditem name="Item_ManaPotion" />
+	<recommendeditem name="Item_MinorTotem" />
+	<recommendeditem name="Item_RunesOfTheBlight" />
+	<recommendeditem name="Item_FlamingEye" />
+	<recommendeditem name="Item_HomecomingStone" />
+	
+	<recommendeditem name="Item_Strength5" />
+	<recommendeditem name="Item_BloodChalice" />
+	<recommendeditem name="Item_Striders" />
+	<recommendeditem name="Item_PushStaff" />
+	<recommendeditem name="Item_Astrolabe" />
+
+	<recommendeditem name="Item_Intelligence6" />
+	<recommendeditem name="Item_Summon" />
+	<recommendeditem name="Item_BarrierIdol" />
+	<recommendeditem name="Item_Silence" />
+	<recommendeditem name="Item_VoidTalisman" />
+	
+	<!-- Staff of the master upgrade effect-->
+	<modifier key="ult_boost" modpriority="101"
+	>
+		<aura state="State_Empath_Ult_Boost" radius="0" targetscheme="self"/>
+	</modifier>
+	
+	
+	<modifier key="Empath_Inside" modpriority="100"
+		drawonmap="false"
+	/>
+	
+	<modifier key="iamsheeped" modpriority="100"
+		passiveeffect=""
+	/>
+	
+	<altavatar key="Hero_Empath.Alt"
+		preglobalscale="1.72"
+	
+		icon2="alt/icon.tga"
+		portrait="alt/icon.tga"
+		model="alt/model.mdf"
+		
+		previewmodel="alt/preview.mdf"
+		previewpos="0 0 -80"
+		previewangles="0 0 0"
+		previewscale="1.85"
+		
+		storemodel="alt/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.55"
+	/>
+	
+	<altavatar key="Hero_Empath.Alt2"
+		passiveeffect="alt2/effects/body.effect"
+		
+		icon2="alt2/icon.tga"
+		portrait="alt2/icon.tga"
+		model="alt2/model.mdf"
+		
+		attackoffset="0 80 75"
+		
+	    selectedsound="alt2/sounds/voice/select_%.wav"
+	    selectedflavorsound="alt2/sounds/voice/select_flavour_%.wav"
+	    confirmmovesound="alt2/sounds/voice/move_%.wav"
+	    confirmattacksound="alt2/sounds/voice/attack_%.wav"
+	    nomanasound="alt2/sounds/voice/no_mana.wav"
+	    cooldownsound="alt2/sounds/voice/cooldown.wav"
+	    tauntedsound="alt2/sounds/voice/taunt_prior.wav"
+	    tauntkillsound="alt2/sounds/voice/taunt_after.wav"
+		
+		preglobalscale="1.525"		
+		
+		previewmodel="alt2/preview.mdf"
+		previewpos="0 0 -80"
+		previewangles="0 0 0"
+		previewscale="1.85"
+		
+		storemodel="alt2/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.4"
+	>
+		<onspawn propagatetoillusions="false" >
+			<ownsproduct target="this_entity" product="aa.Hero_Parasite.Alt2 aa.Hero_Armadon.Alt2 aa.Hero_Jereziah.Alt2 aa.Hero_Empath.Alt2 aa.Hero_Hammerstorm.Alt2 aa.Hero_Soulstealer.Alt2 aa.Hero_Devourer.Alt4" />
+			<compare a="result" b="1" op="eq">
+				<activatemodifierkey name="Alt2_Sin_Set_Bonus" />
+			</compare>
+		</onspawn>
+		
+		<onlevelup>
+			<condition test="level ge 16">
+				<setactivemodifierkey name="Level_16" />
+			</condition>
+			<else>
+				<condition test="level ge 11">
+					<setactivemodifierkey name="Level_11" />
+				</condition>
+				<else>
+					<condition test="level ge 6">
+						<setactivemodifierkey name="Level_6" />
+					</condition>
+					<else>
+						<setactivemodifierkey name="" />
+					</else>
+				</else>
+			</else>
+		</onlevelup>
+		
+		<onkilled>
+			<hasmodifier name="Level_6" entity="this_entity">
+				<playeffect effect="alt2/effects/death_6.effect" source="this_entity" target="this_entity"/>
+			</hasmodifier>
+			<else>
+				<hasmodifier name="Level_11" entity="this_entity">
+					<playeffect effect="alt2/effects/death_11.effect" source="this_entity" target="this_entity"/>
+				</hasmodifier>
+				<else>
+					<hasmodifier name="Level_16" entity="this_entity">
+						<playeffect effect="alt2/effects/death_16.effect" source="this_entity" target="this_entity"/>
+					</hasmodifier>
+					<else>
+						<playeffect effect="alt2/effects/death.effect" source="this_entity" target="this_entity"/>
+					</else>
+				</else>
+			</else>
+		</onkilled>
+
+		<modifier key="Empathlevel6" modpriority="10"
+			icon2="alt2/icon.tga"
+			portrait="alt2/icon.tga"
+			model="alt2/6/model.mdf"
+			
+			attackoffset="0 80 75"
+			
+			preglobalscale="1.525"
+			passiveeffect="alt2/effects/body.effect"
+			
+			previewmodel="alt2/preview.mdf"
+			previewpos="0 0 -80"
+			previewangles="0 0 0"
+			previewscale="1.85"
+			
+			storemodel="alt2/preview.mdf"
+			storepos="0 0 -20"
+			storeangles="0 0 0"
+			storescale="1.4"
+			deathanim="death_6"
+		/>
+		
+		<modifier key="Empathlevel11" modpriority="10"
+			icon2="alt2/icon.tga"
+			portrait="alt2/icon.tga"
+			model="alt2/11/model.mdf"
+			
+			attackoffset="0 80 75"
+			
+			preglobalscale="1.525"
+			passiveeffect="alt2/effects/body.effect"
+			
+			previewmodel="alt2/preview.mdf"
+			previewpos="0 0 -80"
+			previewangles="0 0 0"
+			previewscale="1.85"
+			
+			storemodel="alt2/preview.mdf"
+			storepos="0 0 -20"
+			storeangles="0 0 0"
+			storescale="1.4"
+		/>
+		
+		<modifier key="Empathlevel16" modpriority="10"
+			icon2="alt2/icon.tga"
+			portrait="alt2/icon.tga"
+			model="alt2/16/model.mdf"
+			
+			attackoffset="0 80 75"
+			
+			preglobalscale="1.525"
+			passiveeffect="alt2/effects/body.effect"
+			
+			previewmodel="alt2/preview.mdf"
+			previewpos="0 0 -80"
+			previewangles="0 0 0"
+			previewscale="1.85"
+			
+			storemodel="alt2/preview.mdf"
+			storepos="0 0 -20"
+			storeangles="0 0 0"
+			storescale="1.4"
+		/>
+		
+		<modifier key="Alt2_Sin_Set_Bonus" modpriority="2"
+			
+			passiveeffect="alt2/sin_set_bonus/effects/body.effect"
+			
+			icon2="alt2/icon.tga"
+			portrait="alt2/icon.tga"
+			model="alt2/model.mdf"
+			
+			attackoffset="0 80 75"
+			
+		    selectedsound="alt2/sounds/voice/select_%.wav"
+		    selectedflavorsound="alt2/sounds/voice/select_flavour_%.wav"
+		    confirmmovesound="alt2/sounds/voice/move_%.wav"
+		    confirmattacksound="alt2/sounds/voice/attack_%.wav"
+		    nomanasound="alt2/sounds/voice/no_mana.wav"
+		    cooldownsound="alt2/sounds/voice/cooldown.wav"
+		    tauntedsound="alt2/sounds/voice/taunt_prior.wav"
+		    tauntkillsound="alt2/sounds/voice/taunt_after.wav"
+			
+			preglobalscale="1.525"		
+			
+			previewmodel="alt2/preview.mdf"
+			previewpos="0 0 -80"
+			previewangles="0 0 0"
+			previewscale="1.85"
+			
+			storemodel="alt2/preview.mdf"
+			storepos="0 0 -20"
+			storeangles="0 0 0"
+			storescale="1.4"
+		/>
+		
+		<modifier key="Empathlevel6_Sin_Set_Bonus" modpriority="11"
+			icon2="alt2/icon.tga"
+			portrait="alt2/icon.tga"
+			model="alt2/6/model.mdf"
+			
+			attackoffset="0 80 75"
+			
+			preglobalscale="1.525"
+			passiveeffect="alt2/sin_set_bonus/effects/body.effect"
+			
+			previewmodel="alt2/preview.mdf"
+			previewpos="0 0 -80"
+			previewangles="0 0 0"
+			previewscale="1.85"
+			
+			storemodel="alt2/preview.mdf"
+			storepos="0 0 -20"
+			storeangles="0 0 0"
+			storescale="1.4"
+		/>
+		
+		<modifier key="Empathlevel11_Sin_Set_Bonus" modpriority="11"
+			icon2="alt2/icon.tga"
+			portrait="alt2/icon.tga"
+			model="alt2/11/model.mdf"
+			
+			attackoffset="0 80 75"
+			
+			preglobalscale="1.525"
+			passiveeffect="alt2/sin_set_bonus/effects/body.effect"
+			
+			previewmodel="alt2/preview.mdf"
+			previewpos="0 0 -80"
+			previewangles="0 0 0"
+			previewscale="1.85"
+			
+			storemodel="alt2/preview.mdf"
+			storepos="0 0 -20"
+			storeangles="0 0 0"
+			storescale="1.4"
+		/>
+		
+		<modifier key="Empathlevel16_Sin_Set_Bonus" modpriority="11"
+			icon2="alt2/icon.tga"
+			portrait="alt2/icon.tga"
+			model="alt2/16/model.mdf"
+			
+			attackoffset="0 80 75"
+			
+			preglobalscale="1.525"
+			passiveeffect="alt2/sin_set_bonus/effects/body.effect"
+			
+			previewmodel="alt2/preview.mdf"
+			previewpos="0 0 -80"
+			previewangles="0 0 0"
+			previewscale="1.85"
+			
+			storemodel="alt2/preview.mdf"
+			storepos="0 0 -20"
+			storeangles="0 0 0"
+			storescale="1.4"
+		/>
+	</altavatar>
+	
+	<altavatar key="Hero_Empath.Alt3"
+		icon2="alt3/icon.tga"
+		portrait="alt3/icon.tga"
+		model="alt3/model.mdf"
+		
+		preglobalscale="1.72"
+		
+		passiveeffect="alt3/effects/body.effect"
+		
+		selectedsound="alt3/sounds/voice/select_%.wav"
+	    selectedflavorsound="alt3/sounds/voice/select_flavour_%.wav"
+	    confirmmovesound="alt3/sounds/voice/move_%.wav"
+	    confirmattacksound="alt3/sounds/voice/attack_%.wav"
+	    nomanasound="alt3/sounds/voice/no_mana.wav"
+	    cooldownsound="alt3/sounds/voice/cooldown.wav"
+	    tauntedsound="alt3/sounds/voice/taunt_prior.wav"
+	    tauntkillsound="alt3/sounds/voice/taunt_after.wav"
+		
+		previewmodel="alt3/preview.mdf"
+		previewpos="0 0 -80"
+		previewangles="0 0 0"
+		previewscale="1.85"
+		
+		storemodel="alt3/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.55"
+	/>
+	
+	<altavatar key="Hero_Empath.Alt4"
+		icon2="alt4/icon.tga"
+		portrait="alt4/icon.tga"
+		model="alt4/model.mdf"
+		
+		preglobalscale="1.72"
+		
+		passiveeffect="alt4/grass/body.effect"
+		portraitpassiveeffect="alt4/grass/body_no_transition.effect"
+		overrideportraiteffects="true"
+		
+		selectedsound="alt4/sounds/voice/water/select_%.wav"
+	    selectedflavorsound="alt4/sounds/voice/water/select_flavour_%.wav"
+	    confirmmovesound="alt4/sounds/voice/water/move_%.wav"
+	    confirmattacksound="alt4/sounds/voice/water/attack_%.wav"
+	    nomanasound="alt4/sounds/voice/water/no_mana.wav"
+	    cooldownsound="alt4/sounds/voice/water/cooldown.wav"
+	    tauntedsound="alt4/sounds/voice/water/taunt_prior.wav"
+	    tauntkillsound="alt4/sounds/voice/water/taunt_after.wav"
+		
+		previewpassiveeffect="alt4/effects/body_store.effect"
+		previewmodel="alt4/preview.mdf"
+		previewpos="0 0 -80"
+		previewangles="0 0 0"
+		previewscale="1.85"
+		
+		storepassiveeffect="alt4/effects/body_store.effect"
+		storemodel="alt4/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.70"
+		
+		tooleffectkeyname1="Item_Astrolabe"
+		tooleffectpath1="alt4/astrolabe/body.effect"
+		
+		tooleffectkeyname2="Item_PushStaff"
+		tooleffectpath2="alt4/tablet/body.effect"
+		
+		tooleffectkeyname3="Item_LifeSteal5"
+		tooleffectpath3="alt4/abyssal/body.effect"
+	>
+		<onspawn>
+			<applystate name="State_Empath_Alt4_Terrain" continuous="true" />
+		</onspawn>
+		
+		<onrespawn>
+			<applystate name="State_Empath_Alt4_Terrain" continuous="true" />
+		</onrespawn>
+		
+		<modifier key="Grass" modpriority="100"
+			skin="grass"
+			passiveeffect="alt4/grass/body.effect"
+			portraitpassiveeffect="alt4/grass/body_no_transition.effect"
+			
+			preglobalscale="1.72"
+			
+			attackprojectile="Projectile_Empath_Attack_Alt4_Grass"
+		
+		selectedsound="alt4/sounds/voice/grass/select_%.wav"
+	    selectedflavorsound="alt4/sounds/voice/grass/select_flavour_%.wav"
+	    confirmmovesound="alt4/sounds/voice/grass/move_%.wav"
+	    confirmattacksound="alt4/sounds/voice/grass/attack_%.wav"
+	    nomanasound="alt4/sounds/voice/grass/no_mana.wav"
+	    cooldownsound="alt4/sounds/voice/grass/cooldown.wav"
+	    tauntedsound="alt4/sounds/voice/grass/taunt_prior.wav"
+	    tauntkillsound="alt4/sounds/voice/grass/taunt_after.wav"
+		
+			tooleffectkeyname0="effect_UpgradedBoots"
+			tooleffectpath0="alt4/grass/ground.effect"
+		>
+			<ondeath>
+				<playeffect effect="alt4/effects/death_grass.effect" source="this_entity" target="this_entity" />
+			</ondeath>
+		</modifier>
+		
+		<modifier key="Fire" modpriority="100"
+			skin="fire"
+			passiveeffect="alt4/fire/body.effect"
+			portraitpassiveeffect="alt4/fire/body_no_transition.effect"
+			
+			preglobalscale="1.72"
+			
+			attackprojectile="Projectile_Empath_Attack_Alt4_Fire"
+			
+		selectedsound="alt4/sounds/voice/fire/select_%.wav"
+	    selectedflavorsound="alt4/sounds/voice/fire/select_flavour_%.wav"
+	    confirmmovesound="alt4/sounds/voice/fire/move_%.wav"
+	    confirmattacksound="alt4/sounds/voice/fire/attack_%.wav"
+	    nomanasound="alt4/sounds/voice/fire/no_mana.wav"
+	    cooldownsound="alt4/sounds/voice/fire/cooldown.wav"
+	    tauntedsound="alt4/sounds/voice/fire/taunt_prior.wav"
+	    tauntkillsound="alt4/sounds/voice/fire/taunt_after.wav"
+		
+			tooleffectkeyname0="effect_UpgradedBoots"
+			tooleffectpath0="alt4/fire/ground.effect"
+		>
+			<ondeath>
+				<playeffect effect="alt4/effects/death_fire.effect" source="this_entity" target="this_entity" />
+			</ondeath>
+		</modifier>
+		
+		<modifier key="Rock" modpriority="100"
+			skin="rock"
+			passiveeffect="alt4/rock/body.effect"
+			portraitpassiveeffect="alt4/rock/body_no_transition.effect"
+			
+			preglobalscale="1.72"
+			
+			attackprojectile="Projectile_Empath_Attack_Alt4_Rock"
+		
+		selectedsound="alt4/sounds/voice/earth/select_%.wav"
+	    selectedflavorsound="alt4/sounds/voice/earth/select_flavour_%.wav"
+	    confirmmovesound="alt4/sounds/voice/earth/move_%.wav"
+	    confirmattacksound="alt4/sounds/voice/earth/attack_%.wav"
+	    nomanasound="alt4/sounds/voice/earth/no_mana.wav"
+	    cooldownsound="alt4/sounds/voice/earth/cooldown.wav"
+	    tauntedsound="alt4/sounds/voice/earth/taunt_prior.wav"
+	    tauntkillsound="alt4/sounds/voice/earth/taunt_after.wav"
+		
+			tooleffectkeyname0="effect_UpgradedBoots"
+			tooleffectpath0="alt4/rock/ground.effect"
+		>
+			<ondeath>
+				<playeffect effect="alt4/effects/death_rock.effect" source="this_entity" target="this_entity" />
+			</ondeath>
+		</modifier>
+		
+		<modifier key="Water" modpriority="100"
+			skin="water"
+			passiveeffect="alt4/water/body.effect"
+			portraitpassiveeffect="alt4/water/body_no_transition.effect"
+			
+			preglobalscale="1.72"
+			
+			attackprojectile="Projectile_Empath_Attack_Alt4_Water"
+		
+        selectedsound="alt4/sounds/voice/water/select_%.wav"
+	    selectedflavorsound="alt4/sounds/voice/water/select_flavour_%.wav"
+	    confirmmovesound="alt4/sounds/voice/water/move_%.wav"
+	    confirmattacksound="alt4/sounds/voice/water/attack_%.wav"
+	    nomanasound="alt4/sounds/voice/water/no_mana.wav"
+	    cooldownsound="alt4/sounds/voice/water/cooldown.wav"
+	    tauntedsound="alt4/sounds/voice/water/taunt_prior.wav"
+	    tauntkillsound="alt4/sounds/voice/water/taunt_after.wav"		
+		
+			tooleffectkeyname0="effect_UpgradedBoots"
+			tooleffectpath0="alt4/water/ground.effect"
+		>
+			<ondeath>
+				<playeffect effect="alt4/effects/death_water.effect" source="this_entity" target="this_entity" />
+			</ondeath>
+		</modifier>
+	</altavatar>
+	
+	<altavatar key="Hero_Empath.Alt5"
+		icon2="alt5/icon.tga"
+		portrait="alt5/icon.tga"
+		model="alt5/model.mdf"
+		
+		passiveeffect="alt5/effects/body.effect"
+		portraitcampos="25 -10 20"
+		preglobalscale="1.7"
+		
+		selectedsound="alt5/sounds/voice/select_%.wav"
+	    selectedflavorsound="alt5/sounds/voice/select_flavour_%.wav"
+	    confirmmovesound="alt5/sounds/voice/move_%.wav"
+	    confirmattacksound="alt5/sounds/voice/attack_%.wav"
+	    nomanasound="alt5/sounds/voice/no_mana.wav"
+	    cooldownsound="alt5/sounds/voice/cooldown.wav"
+	    tauntedsound="alt5/sounds/voice/taunt_prior.wav"
+	    tauntkillsound="alt5/sounds/voice/taunt_after.wav"
+		
+		previewmodel="alt5/preview.mdf"
+		previewpos="0 0 -80"
+		previewangles="0 0 0"
+		previewscale="1.85"
+		
+		storemodel="alt5/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.65"
+	/>
+	
+	<altavatar key="Hero_Empath.Alt7"
+		icon2="alt7/icon.tga"
+		portrait="alt7/icon.tga"
+		model="alt7/model.mdf"
+		
+		passiveeffect="alt7/effects/body.effect"
+		portraitcampos="32.5 -40 26"
+		preglobalscale="1.8"
+        modelscale="1.0"
+        effectscale="1.0"
+		
+		selectedsound="alt7/sounds/voice/select_%.wav"
+	    selectedflavorsound="alt7/sounds/voice/select_flavour_%.wav"
+	    confirmmovesound="alt7/sounds/voice/move_%.wav"
+	    confirmattacksound="alt7/sounds/voice/attack_%.wav"
+	    nomanasound="alt7/sounds/voice/no_mana.wav"
+	    cooldownsound="alt7/sounds/voice/cooldown.wav"
+	    tauntedsound="alt7/sounds/voice/taunt_prior.wav"
+	    tauntkillsound="alt7/sounds/voice/taunt_after.wav"
+		
+		previewmodel="alt7/preview.mdf"
+		previewpos="0 0 -80"
+		previewangles="0 0 0"
+		previewscale="1.85"
+		
+		storemodel="alt7/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.65"
+
+		
+		corpsetime="4000"
+		corpsefadetime="2000"
+	>
+		<onspawn>
+		    <applystate name="State_Emerald_Paragon_Sound_Initiator" target="source_entity" duration="2000" />
+			<activatemodifierkey name="Paragon_Sound_Em" />
+			<ownsproduct target="this_entity" product="en.paragon_trail" />
+			<compare a="result" b="0" op="ne">
+				<applystate name="State_Paragon_Trail" target="this_entity" continuous="true" />
+			</compare>
+
+			<ownsproduct target="this_entity" product="en.paragon_circle_upgrade" />
+			<compare a="result" b="0" op="ne">
+				<activatemodifierkey name="Alt7_Paragon_Circle" />
+			</compare>
+			
+			<ownsproduct target="this_entity" product="en.empath_ability01_upgrade" />
+			<compare a="result" b="0" op="ne">
+				<activatemodifierkey name="Alt7_Ability1_Upgrade" />
+			</compare>
+			
+			<ownsproduct target="this_entity" product="en.empath_ability02_upgrade" />
+			<compare a="result" b="0" op="ne">
+				<activatemodifierkey name="Alt7_Ability2_Upgrade" />
+			</compare>
+			
+			<ownsproduct target="this_entity" product="en.empath_ability03_upgrade" />
+			<compare a="result" b="0" op="ne">
+				<activatemodifierkey name="Alt7_Ability3_Upgrade" />
+			</compare>
+			
+			<ownsproduct target="this_entity" product="en.empath_ability04_upgrade" />
+			<compare a="result" b="0" op="ne">
+				<activatemodifierkey name="Alt7_Ability4_Upgrade" />
+			</compare>
+
+            <ownsproduct target="this_entity" product="en.paragon_pet" />
+            <compare a="result" b="0" op="ne">
+                <spawnunit name="Pet_Paragon" target="this_entity" offset="0 -100" facing="source_entity" pushentity="true" />
+                <activatemodifierkey name="Pet_Paragon_Emerald" entity="stack_entity" />
+            </compare>
+		</onspawn>
+
+        <onrespawn>
+			<ownsproduct target="this_entity" product="en.paragon_trail" />
+			<compare a="result" b="0" op="ne">
+				<applystate name="State_Paragon_Trail" target="this_entity" continuous="true" />
+			</compare>
+			
+            <ownsproduct target="this_entity" product="en.paragon_pet" />
+            <compare a="result" b="0" op="ne">
+                <spawnunit name="Pet_Paragon" target="this_entity" offset="0 -100" facing="source_entity" pushentity="true" />
+                <activatemodifierkey name="Pet_Paragon_Emerald" entity="stack_entity" />
+            </compare>
+			
+			<ownsproduct target="this_entity" product="en.empath_stat_track" />
+            <compare a="result" b="0" op="ne">
+                <!-- <playeffect effect="/shared/effects/paragon_stats.effect" source="this_entity" target="this_entity" /> -->
+				<applystate name="State_Paragon_Stats_VFX" source="this_entity" target="this_entity" duration="4000" />
+			</compare>
+        </onrespawn>
+		
+		<onchannelingstart>
+			<ownsproduct target="this_entity" product="en.empath_stat_track" />
+            <compare a="result" b="0" op="ne">
+				<entitytype type="Ability_Taunt" target="inflictor_entity">
+                    <!-- <playeffect effect="/shared/effects/paragon_stats.effect" source="this_entity" target="this_entity" /> -->
+					<applystate name="State_Paragon_Stats_VFX" source="this_entity" target="this_entity" duration="4000" />
+				</entitytype>
+			</compare>
+		</onchannelingstart>
+		
+		<onkill>
+			<ownsproduct target="this_entity" product="en.empath_stat_track" />
+            <compare a="result" b="0" op="ne">
+                <cantarget targetscheme="enemy_heroes" >
+                    <!-- <playeffect effect="/shared/effects/paragon_stats.effect" source="this_entity" target="this_entity" /> -->
+					<applystate name="State_Paragon_Stats_VFX" source="this_entity" target="this_entity" duration="4000" />
+                </cantarget>
+			</compare>
+        </onkill>
+	
+		<onassist>
+			<ownsproduct target="this_entity" product="en.empath_stat_track" />
+            <compare a="result" b="0" op="ne">
+                <!-- <playeffect effect="/shared/effects/paragon_stats.effect" source="this_entity" target="this_entity" /> -->
+				<applystate name="State_Paragon_Stats_VFX" source="this_entity" target="this_entity" duration="4000" />
+			</compare>
+        </onassist>
+			
+		<modifier key="Alt7_Paragon_Circle" modpriority="2"
+            localselectionringmaterial="/shared/materials/selection_indicator_paragon.material"
+        />
+		
+	</altavatar>
+	
+</hero>
+
+

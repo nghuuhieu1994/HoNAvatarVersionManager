@@ -1,0 +1,850 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hero
+	name="Hero_Solstice"
+	
+	team="Legion"
+	icon="icon.tga"
+	portrait="icon.tga"
+	model="model.mdf"
+	skin=""
+	
+	passiveeffect="effects/dayform.effect"
+	spawneffect=""
+	respawneffect="/shared/effects/respawn_solstice.effect"
+	selectedsound="sounds/voice/select_%.wav"
+	selectedflavorsound="sounds/voice/select_flavour_%.wav"
+	confirmmovesound="sounds/voice/move_%.wav"
+	confirmattacksound="sounds/voice/attack_%.wav"
+	nomanasound="sounds/voice/no_mana.wav"
+	cooldownsound="sounds/voice/cooldown.wav"
+	announcersound="sounds/voice/hero_select.wav"
+	tauntedsound="sounds/voice/taunt_prior.wav"
+	tauntkillsound="sounds/voice/taunt_after.wav"
+	
+	preglobalscale="1.9"
+	modelscale="1.0"
+	effectscale="0.9"
+	boundsheight="112"
+	boundsradius="24"
+	selectionradius="54"
+	targetoffset="0 0 92"
+	infoheight="150"
+
+	category="physical magic"
+	difficulty="3"
+
+	solorating="0"
+	junglerating="4"
+	carryrating="1"
+	supportrating="0"
+	initiatorrating="1"
+	gankerrating="2"
+	pusherrating="0"
+	rangedrating="0"
+	meleerating="5"
+	
+	movespeed="300"
+	turnrate="900"
+	turnsmoothing="0.05"
+
+	maxhealth="150"
+	healthregen="1.00"
+	maxmana="0"
+	manaregen="0.01"
+
+	armor="0.2"
+	magicarmor="5.5"
+
+	inventory0="Ability_Solstice1"
+	inventory1="Ability_Solstice2"
+	inventory2="Ability_Solstice3"
+	inventory3="Ability_Solstice4"
+	inventory4="Ability_AttributeBoost"
+	inventory5="Ability_Solstice4a"
+	inventory6=""
+	inventory8="Ability_Taunt"
+	inventory9=""
+	inventory10=""
+	inventory11=""
+	inventory12="Ability_AutomatedCourier"
+
+	attackduration="1000"
+	attackactiontime="500" 
+	attackcooldown="1700"
+	attackdamagemin="26"
+	attackdamagemax="30"
+	attacknumanims="2"
+	attackoffset="0 0 100"
+	attackprojectile=""
+	attackrange="128"
+	attackstarteffect=""
+	attackactioneffect=""
+	attackimpacteffect="effects/impact.effect"
+	attacktype="melee"
+	combattype="Hero"
+
+	aggrorange="600"
+	sightrangeday="1800"
+	sightrangenight="800"
+	wanderrange="250"
+
+	primaryattribute="Strength"
+	strength="24"
+	strengthperlevel="2.7"
+	agility="20"
+	agilityperlevel="2.0"
+	intelligence="17"
+	intelligenceperlevel="1.9"
+
+	corpsetime="2000"
+	corpsefadetime="2000"
+	corpsefadeeffect="/shared/effects/corpse_sink.effect"
+	
+	previewpassiveeffect="effects/dayform_store.effect"
+	previewmodel="preview.mdf"
+	previewpos="0 0 -60"
+	previewangles="0 0 0"
+	previewscale="1.7"
+	
+	storepassiveeffect="effects/dayform_store.effect"
+	storemodel="preview.mdf"
+	storepos="0 0 -20"
+	storeangles="0 0 0"
+	storescale="1.75"
+>
+	<recommendeditem name="Item_ManaPotion" />
+	<recommendeditem name="Item_MinorTotem" />
+	<recommendeditem name="Item_RunesOfTheBlight" />
+	<recommendeditem name="Item_HealthPotion" />
+
+	<recommendeditem name="Item_HomecomingStone" />
+	<recommendeditem name="Item_Strength5" />
+	<recommendeditem name="Item_Steamboots" />
+	<recommendeditem name="Item_LifeSteal5" />
+	
+	<recommendeditem name="Item_Summon" />
+	<recommendeditem name="Item_Insanitarius" />
+	<recommendeditem name="Item_Pierce" />
+	<recommendeditem name="Item_Immunity" />
+	<recommendeditem name="Item_DaemonicBreastplate" />
+	<recommendeditem name="Item_BehemothsHeart" />
+	<recommendeditem name="Item_LifeSteal4" />
+	
+	<onspawn>
+		<applystate name="State_Solstice_DayFX" continuous="true" />
+		<applystate name="State_Solstice_Spawn_Mute" target="source_entity" duration="3000" ignoreinvulnerable="true" />
+	</onspawn>
+	
+	<onrespawn>
+		<applystate name="State_Solstice_DayFX" continuous="true" />
+	</onrespawn>
+
+	<ondeath>
+		<applystate name="State_Solstice_DayFX" continuous="true" />
+	</ondeath>
+	
+	<modifier key="iamsheeped" modpriority="100"
+		passiveeffect=""
+	/>
+	
+	<modifier key="Solstice_Spawn_Mute" modpriority="2"
+		selectedsound=""
+		selectedflavorsound=""
+	/>
+
+	<modifier key="Night_Solstice" modpriority="100"
+		icon2="icon_b.tga"
+		model="night_form/model.mdf"
+		modelscale="1.2"
+		passiveeffect="effects/nightform.effect"
+		
+		selectedsound="night_form/sounds/voice/select_%.wav"
+		selectedflavorsound="night_form/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="night_form/sounds/voice/move_%.wav"
+		confirmattacksound="night_form/sounds/voice/attack_%.wav"
+		nomanasound="night_form/sounds/voice/no_mana.wav"
+		cooldownsound="night_form/sounds/voice/cooldown.wav"
+		tauntedsound="night_form/sounds/voice/taunt_prior.wav"
+		tauntkillsound="night_form/sounds/voice/taunt_after.wav"
+	/>
+	
+	<altavatar key="Hero_Solstice.Alt"
+		icon2="alt/icon.tga"
+		portrait="alt/icon.tga"
+		model="alt/model.mdf"
+		passiveeffect="alt/effects/dayform.effect"
+		storepassiveeffect="alt/effects/dayform_store.effect"
+		previewpassiveeffect="alt/effects/dayform_store.effect"
+		
+		previewmodel="alt/preview.mdf"
+		previewpos="0 0 -50"
+		previewangles="0 0 0"
+		previewscale="1.7"
+		
+		selectedsound="alt/sounds/voice/select_%.wav"
+		selectedflavorsound="alt/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt/sounds/voice/move_%.wav"
+		confirmattacksound="alt/sounds/voice/attack_%.wav"
+		nomanasound="alt/sounds/voice/no_mana.wav"
+		cooldownsound="alt/sounds/voice/cooldown.wav"
+		tauntedsound="alt/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt/sounds/voice/taunt_after.wav"
+		
+		storemodel="alt/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.6"
+		
+		attackimpacteffect="alt/effects/impact.effect"
+	>
+		<modifier key="Night_Solstice" modpriority="100"
+			icon2="alt/icon_b.tga"
+			model="alt/night_form/model.mdf"
+			modelscale=".95"
+			passiveeffect="effects/nightform_alt.effect"
+			
+			selectedsound="alt/night_form/sounds/voice/select_%.wav"
+			selectedflavorsound="alt/night_form/sounds/voice/select_flavour_%.wav"
+			confirmmovesound="alt/night_form/sounds/voice/move_%.wav"
+			confirmattacksound="alt/night_form/sounds/voice/attack_%.wav"
+			nomanasound="alt/night_form/sounds/voice/no_mana.wav"
+			cooldownsound="alt/night_form/sounds/voice/cooldown.wav"
+			tauntedsound="alt/night_form/sounds/voice/taunt_prior.wav"
+			tauntkillsound="alt/night_form/sounds/voice/taunt_after.wav"
+			attackimpacteffect="effects/impact.effect"
+		/>
+	</altavatar>
+
+	<altavatar key="Hero_Solstice.Alt2"
+		icon2="alt2/icon.tga"
+		portrait="alt2/icon.tga"
+		model="alt2/model.mdf"
+		passiveeffect="alt2/effects/dayform.effect"
+		storepassiveeffect="alt2/effects/dayform_store.effect"
+		previewpassiveeffect="alt2/effects/dayform_store.effect"
+		
+		previewmodel="alt2/preview.mdf"
+		previewpos="0 0 -50"
+		previewangles="0 0 0"
+		previewscale="1.7"
+		
+		selectedsound="alt2/sounds/voice/select_%.wav"
+		selectedflavorsound="alt2/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt2/sounds/voice/move_%.wav"
+		confirmattacksound="alt2/sounds/voice/attack_%.wav"
+		nomanasound="alt2/sounds/voice/no_mana.wav"
+		cooldownsound="alt2/sounds/voice/cooldown.wav"
+		tauntedsound="alt2/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt2/sounds/voice/taunt_after.wav"
+		
+		storemodel="alt2/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"		
+		storescale="1.6"
+	>
+		<modifier key="Night_Solstice" modpriority="100"
+			icon2="alt2/icon_b.tga"
+			model="alt2/night_form/model.mdf"
+			modelscale=".825"
+			passiveeffect="effects/nightform_alt2.effect"
+			
+			selectedsound="alt2/night_form/sounds/voice/select_%.wav"
+			selectedflavorsound="alt2/night_form/sounds/voice/select_flavour_%.wav"
+			confirmmovesound="alt2/night_form/sounds/voice/move_%.wav"
+			confirmattacksound="alt2/night_form/sounds/voice/attack_%.wav"
+			nomanasound="alt2/night_form/sounds/voice/no_mana.wav"
+			cooldownsound="alt2/night_form/sounds/voice/cooldown.wav"
+			tauntedsound="alt2/night_form/sounds/voice/taunt_prior.wav"
+			tauntkillsound="alt2/night_form/sounds/voice/taunt_after.wav"
+		/>
+	</altavatar>
+
+	<altavatar key="Hero_Solstice.Alt3"
+		icon2="alt3/icon.tga"
+		portrait="alt3/icon.tga"
+		model="alt3/model.mdf"
+		passiveeffect="alt3/effects/dayform.effect"
+		storepassiveeffect="alt3/effects/dayform_store.effect"
+		previewpassiveeffect="alt3/effects/dayform_store.effect"
+		
+		preglobalscale="1.725"
+		
+		previewmodel="alt3/preview.mdf"
+		previewpos="0 0 -50"
+		previewangles="0 0 0"
+		previewscale="1.7"
+		
+		selectedsound="alt3/sounds/voice/select_%.wav"
+		selectedflavorsound="alt3/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt3/sounds/voice/move_%.wav"
+		confirmattacksound="alt3/sounds/voice/attack_%.wav"
+		nomanasound="alt3/sounds/voice/no_mana.wav"
+		cooldownsound="alt3/sounds/voice/cooldown.wav"
+		tauntedsound="alt3/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt3/sounds/voice/taunt_after.wav"
+		
+		storemodel="alt3/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"		
+		storescale="1.6"
+	>
+		<modifier key="Night_Solstice" modpriority="100"
+			icon2="alt3/icon_b.tga"
+			model="alt3/night_form/model.mdf"
+			modelscale=".85"
+			passiveeffect="effects/nightform_alt3.effect"
+			
+			selectedsound="alt3/sounds/voice/select_%.wav"
+			selectedflavorsound="alt3/sounds/voice/select_flavour_%.wav"
+			confirmmovesound="alt3/sounds/voice/move_%.wav"
+			confirmattacksound="alt3/sounds/voice/attack_%.wav"
+			nomanasound="alt3/sounds/voice/no_mana.wav"
+			cooldownsound="alt3/sounds/voice/cooldown.wav"
+			tauntedsound="alt3/sounds/voice/taunt_prior.wav"
+			tauntkillsound="sounds/voice/taunt_after.wav"
+		/>
+	</altavatar>
+
+	<altavatar key="Hero_Solstice.Alt4"
+		icon2="alt4/icon.tga"
+		portrait="alt4/icon.tga"
+		model="alt4/model.mdf"
+		passiveeffect="alt4/effects/dayform.effect"
+		storepassiveeffect="alt4/effects/dayform_store.effect"
+		previewpassiveeffect="alt4/effects/dayform_store.effect"
+		
+		preglobalscale="2.0"
+		
+		infoheight="200"
+		
+		previewmodel="alt4/preview.mdf"
+		previewpos="0 0 -50"
+		previewangles="0 0 0"
+		previewscale="1.8"
+		
+		selectedsound="alt4/sounds/voice/select_%.wav"
+		selectedflavorsound="alt4/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt4/sounds/voice/move_%.wav"
+		confirmattacksound="alt4/sounds/voice/attack_%.wav"
+		nomanasound="alt4/sounds/voice/no_mana.wav"
+		cooldownsound="alt4/sounds/voice/cooldown.wav"
+		tauntedsound="alt4/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt4/sounds/voice/taunt_after.wav"
+		
+		storemodel="alt4/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"		
+		storescale="1.8"
+	>
+		<modifier key="Night_Solstice" modpriority="100"
+			icon2="alt4/icon_b.tga"
+			model="alt4/night_form/model.mdf"
+			modelscale=".95"
+			passiveeffect="effects/nightform_alt4.effect"
+			
+			selectedsound="alt4/night_form/sounds/voice/select_%.wav"
+			selectedflavorsound="alt4/night_form/sounds/voice/select_flavour_%.wav"
+			confirmmovesound="alt4/night_form/sounds/voice/move_%.wav"
+			confirmattacksound="alt4/night_form/sounds/voice/attack_%.wav"
+			nomanasound="alt4/night_form/sounds/voice/no_mana.wav"
+			cooldownsound="alt4/night_form/sounds/voice/cooldown.wav"
+			tauntedsound="alt4/night_form/sounds/voice/taunt_prior.wav"
+			tauntkillsound="alt4/night_form/voice/taunt_after.wav"
+		/>
+	</altavatar>
+
+	<altavatar key="Hero_Solstice.Alt5"
+		icon2="alt5/icon.tga"
+		portrait="alt5/icon.tga"
+		model="alt5/model.mdf"
+		passiveeffect="alt5/effects/dayform.effect"
+		storepassiveeffect="alt5/effects/dayform_store.effect"
+		previewpassiveeffect="alt5/effects/dayform_store.effect"
+		
+		preglobalscale="1.9"
+		
+		infoheight="200"
+		
+		previewmodel="alt5/preview.mdf"
+		previewpos="0 0 -50"
+		previewangles="0 0 0"
+		previewscale="1.8"
+		
+			selectedsound="alt5/sounds/voice_day/select_%.wav"
+			selectedflavorsound="alt5/sounds/voice_day/select_flavour_%.wav"
+			confirmmovesound="alt5/sounds/voice_day/move_%.wav"
+			confirmattacksound="alt5/sounds/voice_day/attack_%.wav"
+			nomanasound="alt5/sounds/voice_day/no_mana.wav"
+			cooldownsound="alt5/sounds/voice_day/cooldown.wav"
+			tauntedsound="alt5/sounds/voice_day/taunt_prior.wav"
+			tauntkillsound="alt5/sounds/voice_day/taunt_after.wav"
+		
+		storemodel="alt5/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 -10"
+		storescale="1.6"
+		
+		tooleffectkeyname0="effect_UpgradedBoots"
+		tooleffectpath0="alt5/ultimate_legs/body.effect"
+		tooleffectgroup0="legs"
+		
+		tooleffectkeyname1=""
+		tooleffectpath1="alt5/base_legs/body.effect"
+		tooleffectgroup1="legs"
+		
+		tooleffectkeyname2="effect_brand"
+		tooleffectpath2="alt5/ultimate_weapon/body.effect"
+		tooleffectgroup2="weapon"
+		
+		tooleffectkeyname3="Item_GrimoireOfPower"
+		tooleffectpath3="alt5/ultimate_weapon/body.effect"
+		tooleffectgroup3="weapon"
+		
+		tooleffectkeyname4="Item_Pierce"
+		tooleffectpath4="alt5/ultimate_weapon/body.effect"
+		tooleffectgroup4="weapon"
+		
+		tooleffectkeyname5="Item_Brutalizer"
+		tooleffectpath5="alt5/ultimate_weapon/body.effect"
+		tooleffectgroup5="weapon"
+		
+		tooleffectkeyname7="Item_Critical1"
+		tooleffectpath7="alt5/ultimate_weapon/body.effect"
+		tooleffectgroup7="weapon"
+		
+		tooleffectkeyname8=""
+		tooleffectpath8="alt5/base_weapon/body.effect"
+		tooleffectgroup8="weapon"
+		
+		tooleffectkeyname9="Item_Energizer"
+		tooleffectpath9="alt5/ultimate_cape/body.effect"
+		tooleffectgroup9="cape"
+		
+		tooleffectkeyname10="Item_PowerSupply"
+		tooleffectpath10="alt5/ultimate_cape/body.effect"
+		tooleffectgroup10="cape"
+		
+		tooleffectkeyname11="Item_Stealth"
+		tooleffectpath11="alt5/ultimate_cape/body.effect"
+		tooleffectgroup11="cape"
+		
+		tooleffectkeyname12="Item_Sasuke"
+		tooleffectpath12="alt5/ultimate_cape/body.effect"
+		tooleffectgroup12="cape"
+		
+		tooleffectkeyname13="Item_Shield2"
+		tooleffectpath13="alt5/ultimate_cape/body.effect"
+		tooleffectgroup13="cape"
+		
+		tooleffectkeyname14="Item_BehemothsHeart"
+		tooleffectpath14="alt5/ultimate_cape/body.effect"
+		tooleffectgroup14="cape"
+		
+		tooleffectkeyname15=""
+		tooleffectpath15="alt5/base_cape/body.effect"
+		tooleffectgroup15="cape"
+		
+		tooleffectkeyname16="Item_Protect"
+		tooleffectpath16="alt5/ultimate_arms/body.effect"
+		tooleffectgroup16="arms"
+		
+		tooleffectkeyname17="Item_SolsBulwark"
+		tooleffectpath17="alt5/ultimate_arms/body.effect"
+		tooleffectgroup17="arms"
+		
+		tooleffectkeyname18="Item_DaemonicBreastplate"
+		tooleffectpath18="alt5/ultimate_arms/body.effect"
+		tooleffectgroup18="arms"
+		
+		tooleffectkeyname19="Item_Gloves3"
+		tooleffectpath19="alt5/ultimate_arms/body.effect"
+		tooleffectgroup19="arms"
+		
+		tooleffectkeyname20="Item_Insanitarius"
+		tooleffectpath20="alt5/ultimate_arms/body.effect"
+		tooleffectgroup20="arms"
+		
+		tooleffectkeyname21="Item_Excruciator"
+		tooleffectpath21="alt5/ultimate_arms/body.effect"
+		tooleffectgroup21="arms"
+		
+		tooleffectkeyname22=""
+		tooleffectpath22="alt5/base_arms/body.effect"
+		tooleffectgroup22="arms"
+		
+		tooleffectkeyname23="Item_Immunity"
+		tooleffectpath23="alt5/ultimate_head/body.effect"
+		tooleffectgroup23="head"
+		
+		tooleffectkeyname24="Item_LifeSteal5"
+		tooleffectpath24="alt5/ultimate_head/body.effect"
+		tooleffectgroup24="head"
+		
+		tooleffectkeyname25="Item_ElderParasite"
+		tooleffectpath25="alt5/ultimate_head/body.effect"
+		tooleffectgroup25="head"
+		
+		tooleffectkeyname26="Item_Shield2"
+		tooleffectpath26="alt5/ultimate_head/body.effect"
+		tooleffectgroup26="head"
+		
+		tooleffectkeyname27="Item_BehemothsHeart"
+		tooleffectpath27="alt5/ultimate_head/body.effect"
+		tooleffectgroup27="head"
+		
+		tooleffectkeyname28="Item_WhisperingHelm"
+		tooleffectpath28="alt5/ultimate_head/body.effect"
+		tooleffectgroup28="head"
+		
+		tooleffectkeyname29=""
+		tooleffectpath29="alt5/base_head/body.effect"
+		tooleffectgroup29="head"
+		
+		tooleffectkeyname=""
+		tooleffectpath=""
+		tooleffectgroup=""
+	>
+		<modifier key="Night_Solstice" modpriority="100"
+			icon2="alt5/icon_b.tga"
+			model="alt5/night_form/model.mdf"
+			modelscale="1.2"
+			passiveeffect="alt5/effects/nightform.effect"
+			
+			selectedsound="alt5/sounds/voice_night/select_%.wav"
+			selectedflavorsound="alt5/sounds/voice_night/select_flavour_%.wav"
+			confirmmovesound="alt5/sounds/voice_night/move_%.wav"
+			confirmattacksound="alt5/sounds/voice_night/attack_%.wav"
+			nomanasound="alt5/sounds/voice_night/no_mana.wav"
+			cooldownsound="alt5/sounds/voice_night/cooldown.wav"
+			tauntedsound="alt5/sounds/voice_night/taunt_prior.wav"
+			tauntkillsound="alt5/sounds/voice_night/taunt_after.wav"
+		
+
+	
+			tooleffectkeyname0="effect_UpgradedBoots"
+			tooleffectpath0="alt5/night_form/ultimate_legs/body.effect"
+			tooleffectgroup0="legs"
+			
+			tooleffectkeyname1=""
+			tooleffectpath1="alt5/night_form/base_legs/body.effect"
+			tooleffectgroup1="legs"
+			
+			tooleffectkeyname2="effect_brand"
+			tooleffectpath2="alt5/night_form/ultimate_weapon/body.effect"
+			tooleffectgroup2="weapon"
+			
+			tooleffectkeyname3="Item_GrimoireOfPower"
+			tooleffectpath3="alt5/night_form/ultimate_weapon/body.effect"
+			tooleffectgroup3="weapon"
+			
+			tooleffectkeyname4="Item_Pierce"
+			tooleffectpath4="alt5/night_form/ultimate_weapon/body.effect"
+			tooleffectgroup4="weapon"
+			
+			tooleffectkeyname5="Item_Brutalizer"
+			tooleffectpath5="alt5/night_form/ultimate_weapon/body.effect"
+			tooleffectgroup5="weapon"
+			
+			tooleffectkeyname7="Item_Critical1"
+			tooleffectpath7="alt5/night_form/ultimate_weapon/body.effect"
+			tooleffectgroup7="weapon"
+			
+			tooleffectkeyname8=""
+			tooleffectpath8="alt5/night_form/base_weapon/body.effect"
+			tooleffectgroup8="weapon"
+			
+			tooleffectkeyname9="Item_Energizer"
+			tooleffectpath9="alt5/night_form/ultimate_head/body.effect"
+			tooleffectgroup9="head"
+			
+			tooleffectkeyname10="Item_PowerSupply"
+			tooleffectpath10="alt5/night_form/ultimate_head/body.effect"
+			tooleffectgroup10="head"
+			
+			tooleffectkeyname11="Item_Stealth"
+			tooleffectpath11="alt5/night_form/ultimate_head/body.effect"
+			tooleffectgroup11="head"
+			
+			tooleffectkeyname12="Item_Sasuke"
+			tooleffectpath12="alt5/night_form/ultimate_head/body.effect"
+			tooleffectgroup12="head"
+			
+			tooleffectkeyname13="Item_Shield2"
+			tooleffectpath13="alt5/night_form/ultimate_head/body.effect"
+			tooleffectgroup13="head"
+			
+			tooleffectkeyname14="Item_BehemothsHeart"
+			tooleffectpath14="alt5/night_form/ultimate_head/body.effect"
+			tooleffectgroup14="head"
+			
+			tooleffectkeyname15=""
+			tooleffectpath15=""
+			tooleffectgroup15="cape"
+			
+			tooleffectkeyname16="Item_Protect"
+			tooleffectpath16="alt5/night_form/ultimate_arms/body.effect"
+			tooleffectgroup16="arms"
+			
+			tooleffectkeyname17="Item_SolsBulwark"
+			tooleffectpath17="alt5/night_form/ultimate_arms/body.effect"
+			tooleffectgroup17="arms"
+			
+			tooleffectkeyname18="Item_DaemonicBreastplate"
+			tooleffectpath18="alt5/night_form/ultimate_arms/body.effect"
+			tooleffectgroup18="arms"
+			
+			tooleffectkeyname19="Item_Gloves3"
+			tooleffectpath19="alt5/night_form/ultimate_arms/body.effect"
+			tooleffectgroup19="arms"
+			
+			tooleffectkeyname20="Item_Insanitarius"
+			tooleffectpath20="alt5/night_form/ultimate_arms/body.effect"
+			tooleffectgroup20="arms"
+			
+			tooleffectkeyname21="Item_Excruciator"
+			tooleffectpath21="alt5/night_form/ultimate_arms/body.effect"
+			tooleffectgroup21="arms"
+			
+			tooleffectkeyname22=""
+			tooleffectpath22="alt5/night_form/base_arms/body.effect"
+			tooleffectgroup22="arms"
+			
+			tooleffectkeyname23="Item_Immunity"
+			tooleffectpath23="alt5/night_form/ultimate_head/body.effect"
+			tooleffectgroup23="head"
+			
+			tooleffectkeyname24="Item_LifeSteal5"
+			tooleffectpath24="alt5/night_form/ultimate_head/body.effect"
+			tooleffectgroup24="head"
+			
+			tooleffectkeyname25="Item_ElderParasite"
+			tooleffectpath25="alt5/night_form/ultimate_head/body.effect"
+			tooleffectgroup25="head"
+			
+			tooleffectkeyname26="Item_Shield2"
+			tooleffectpath26="alt5/night_form/ultimate_head/body.effect"
+			tooleffectgroup26="head"
+			
+			tooleffectkeyname27="Item_BehemothsHeart"
+			tooleffectpath27="alt5/night_form/ultimate_head/body.effect"
+			tooleffectgroup27="head"
+			
+			tooleffectkeyname28="Item_WhisperingHelm"
+			tooleffectpath28="alt5/night_form/ultimate_head/body.effect"
+			tooleffectgroup28="head"
+			
+			tooleffectkeyname29=""
+			tooleffectpath29="alt5/night_form/base_head/body.effect"
+			tooleffectgroup29="head"
+		/>
+	</altavatar>
+	
+	<altavatar key="Hero_Solstice.Alt6"
+		icon2="alt6/icon.tga"
+		portrait="alt6/icon.tga"
+		model="alt6/model.mdf"
+		passiveeffect="alt6/effects/dayform.effect"
+		storepassiveeffect="alt6/effects/dayform_store.effect"
+		previewpassiveeffect="alt6/effects/dayform_store.effect"
+		
+		previewmodel="alt6/preview.mdf"
+		previewpos="0 0 -50"
+		previewangles="0 0 0"
+		previewscale="1.7"
+		
+		selectedsound="alt6/sounds/voice/select_%.wav"
+		selectedflavorsound="alt6/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt6/sounds/voice/move_%.wav"
+		confirmattacksound="alt6/sounds/voice/attack_%.wav"
+		nomanasound="alt6/sounds/voice/no_mana.wav"
+		cooldownsound="alt6/sounds/voice/cooldown.wav"
+		tauntedsound="alt6/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt6/sounds/voice/taunt_after.wav"
+		
+		corpsetime="3000"
+		corpsefadetime="3000"
+
+		storemodel="alt6/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.6"
+		
+		attackimpacteffect="alt6/effects/impact.effect"
+	>
+		<onspawn propagatetoillusions="false" >
+			<ownsproduct target="this_entity" product="aa.Hero_EmeraldWarden.Alt7 aa.Hero_Hammerstorm.Alt7 aa.Hero_Legionnaire.Alt8 aa.Hero_Predator.Alt9 aa.Hero_Rally.Alt7 aa.Hero_Rocky.Alt5 aa.Hero_Solstice.Alt6 aa.Hero_Dampeer.Alt5 aa.Hero_Kane.Alt3 aa.Hero_Pestilence.Alt5 aa.Hero_Ravenor.Alt6" />
+			<compare a="result" b="1" op="eq">
+				<activatemodifierkey name="ARMS_Set" />
+			</compare>
+		</onspawn>
+		
+		<onrespawn propagatetoillusions="false" >
+			<ownsproduct target="this_entity" product="aa.Hero_EmeraldWarden.Alt7 aa.Hero_Hammerstorm.Alt7 aa.Hero_Legionnaire.Alt8 aa.Hero_Predator.Alt9 aa.Hero_Rally.Alt7 aa.Hero_Rocky.Alt5 aa.Hero_Solstice.Alt6 aa.Hero_Dampeer.Alt5 aa.Hero_Kane.Alt3 aa.Hero_Pestilence.Alt5 aa.Hero_Ravenor.Alt6" />
+			<compare a="result" b="1" op="eq">
+				<activatemodifierkey name="ARMS_Set" />
+			</compare>
+		</onrespawn>
+
+		<modifier key="ARMS_Set" modpriority="1"
+			tooleffectkeyname0=""
+			tooleffectpath0="/shared/effects/set_arms_purple.effect"
+		/>
+
+		<modifier key="Night_Solstice" modpriority="100"
+			icon2="alt6/icon_b.tga"
+			model="alt6/night_form/model.mdf"
+			modelscale="1.2"
+			passiveeffect="alt6/effects/nightform.effect"
+			
+	    	selectedsound="alt6/sounds/voice/select_%.wav"
+	    	selectedflavorsound="alt6/sounds/voice/select_flavour_%.wav"
+	    	confirmmovesound="alt6/sounds/voice/move_%.wav"
+	    	confirmattacksound="alt6/sounds/voice/attack_%.wav"
+	    	nomanasound="alt6/sounds/voice/no_mana.wav"
+	    	cooldownsound="alt6/sounds/voice/cooldown.wav"
+		    tauntedsound="alt6/sounds/voice/taunt_prior.wav"
+		    tauntkillsound="alt6/sounds/voice/taunt_after.wav"
+			attackimpacteffect="effects/impact.effect"
+		/>
+	</altavatar>
+	
+	<altavatar key="Hero_Solstice.Alt7"
+		icon2="alt7/icon.tga"
+		portrait="alt7/icon.tga"
+		model="alt7/model.mdf"
+		passiveeffect="alt7/effects/dayform.effect"
+		storepassiveeffect="alt7/effects/dayform_store.effect"
+		previewpassiveeffect="alt7/effects/dayform_store.effect"
+		
+		previewmodel="alt7/preview.mdf"
+		previewpos="0 0 -50"
+		previewangles="0 0 0"
+		previewscale="1.7"
+		
+		selectedsound="alt7/sounds/voice/select_%.wav"
+		selectedflavorsound="alt7/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt7/sounds/voice/move_%.wav"
+		confirmattacksound="alt7/sounds/voice/attack_%.wav"
+		nomanasound="alt7/sounds/voice/no_mana.wav"
+		cooldownsound="alt7/sounds/voice/cooldown.wav"
+		tauntedsound="alt7/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt7/sounds/voice/taunt_after.wav"
+		
+		corpsetime="3000"
+		corpsefadetime="3000"
+
+		storemodel="alt7/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.6"
+		
+		portraitcampos="-35 0 26"
+	>
+		<onkill>
+			<targettype type="illusion" />
+			<else>
+				<hasmodifier entity="target_entity" name="Maliken_Sound">
+					<pausevoiceovers duration="2400" />  
+					<delayannouncer duration="2400"/>
+					<pushentityproxy entity="this_proxy_entity" />
+					<compare a="stack_entity" b="inflictor_entity" op="ne">
+						<playeffect effect="alt7/sounds/interactions/killed_maliken_l.effect" target="source_entity" />
+					</compare>
+				</hasmodifier>
+			</else>
+		</onkill>
+		
+		<onspawn>
+			<ownsproduct target="this_entity" product="aa.Hero_Hantumon.Alt6 aa.Hero_Kraken.Alt4 aa.Hero_Pearl.Alt6 aa.Hero_Bubbles.Alt6 aa.Hero_Ophelia.Alt4 aa.Hero_EmeraldWarden.Alt6 aa.Hero_Ebulus.Alt5 aa.Hero_MasterOfArms.Alt6 aa.Hero_Martyr.Alt5 aa.Hero_Magmar.Alt5 aa.Hero_Riptide.Alt2" />
+			<compare a="result" b="1" op="eq">
+				<activatemodifierkey name="Zodiac_Set" />
+			</compare>
+		</onspawn>
+
+		<onrespawn>
+			<ownsproduct target="this_entity" product="aa.Hero_Hantumon.Alt6 aa.Hero_Kraken.Alt4 aa.Hero_Pearl.Alt6 aa.Hero_Bubbles.Alt6 aa.Hero_Ophelia.Alt4 aa.Hero_EmeraldWarden.Alt6 aa.Hero_Ebulus.Alt5 aa.Hero_MasterOfArms.Alt6 aa.Hero_Martyr.Alt5 aa.Hero_Magmar.Alt5 aa.Hero_Riptide.Alt2" />
+			<compare a="result" b="1" op="eq">
+				<activatemodifierkey name="Zodiac_Set" />
+			</compare>
+		</onrespawn>
+
+		<!-- <onframe>
+			<activatemodifierkey name="Zodiac_Set" />
+		</onframe> -->
+
+		<modifier key="Zodiac_Set" modpriority="1"
+			tooleffectkeyname0=""
+			tooleffectpath0="/shared/effects/set_zodiac.effect"
+		/>
+	
+		<modifier key="Night_Solstice" modpriority="100"
+			icon2="alt7/icon_b.tga"
+			model="alt7/night_form/model.mdf"
+			modelscale="1.2"
+			passiveeffect="alt7/night_form/effects/nightform.effect"
+			
+	    	selectedsound="alt7/sounds/voice/nightform/select_%.wav"
+	    	selectedflavorsound="alt7/sounds/voice/nightform/select_flavour_%.wav"
+	    	confirmmovesound="alt7/sounds/voice/nightform/move_%.wav"
+	    	confirmattacksound="alt7/sounds/voice/nightform/attack_%.wav"
+	    	nomanasound="alt7/sounds/voice/nightform/no_mana.wav"
+	    	cooldownsound="alt7/sounds/voice/nightform/cooldown.wav"
+		    tauntedsound="alt7/sounds/voice/nightform/taunt_prior.wav"
+		    tauntkillsound="alt7/sounds/voice/nightform/taunt_after.wav"
+			attackimpacteffect="effects/impact.effect"
+			
+			portraitcampos="0 0 26"
+		>
+			<onkill>
+				<targettype type="illusion" />
+				<else>
+					<hasmodifier entity="target_entity" name="Maliken_Sound">
+						<pausevoiceovers duration="2400" />  
+						<delayannouncer duration="2400" sourceonly="true"/>
+						<delayannouncer duration="2400" source="target.entity" sourceonly="true"/>
+						<pushentityproxy entity="this_proxy_entity" />
+						<compare a="stack_entity" b="inflictor_entity" op="ne">
+							<playeffect effect="alt7/sounds/interactions/killed_maliken_s.effect" target="source_entity" />
+						</compare>
+					</hasmodifier>
+				</else>
+			</onkill>
+		</modifier>
+	</altavatar>
+
+	<altavatar key="Hero_Solstice.trophy_skin"
+		icon2="trophy_skin/icon.tga"
+		portrait="trophy_skin/icon.tga"
+		model="trophy_skin/model.mdf"
+		passiveeffect="trophy_skin/effects/dayform.effect"
+		
+		previewmodel="trophy_skin/preview.mdf"
+		previewpos="0 0 -50"
+		previewangles="0 0 0"
+		previewscale="1.4"
+		
+		storemodel="trophy_skin/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.70"
+		
+		storepassiveeffect="trophy_skin/effects/dayform_store.effect"
+	>
+		<modifier key="Night_Solstice" modpriority="100"
+			icon2="trophy_skin/icon_b.tga"
+			model="trophy_skin/night_form/model.mdf"
+			modelscale="1.2"
+			passiveeffect="trophy_skin/effects/nightform.effect"
+			
+			selectedsound="night_form/sounds/voice/select_%.wav"
+			selectedflavorsound="night_form/sounds/voice/select_flavour_%.wav"
+			confirmmovesound="night_form/sounds/voice/move_%.wav"
+			confirmattacksound="night_form/sounds/voice/attack_%.wav"
+			nomanasound="night_form/sounds/voice/no_mana.wav"
+			cooldownsound="night_form/sounds/voice/cooldown.wav"
+			tauntedsound="night_form/sounds/voice/taunt_prior.wav"
+			tauntkillsound="night_form/sounds/voice/taunt_after.wav"
+		/>
+	</altavatar>
+
+</hero>

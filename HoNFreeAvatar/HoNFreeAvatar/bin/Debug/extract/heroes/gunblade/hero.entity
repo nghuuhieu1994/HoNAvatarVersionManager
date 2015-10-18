@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hero
+	name="Hero_Gunblade"
+
+	team="Hellbourne"
+	icon="icon.tga"
+	portrait="icon.tga"
+	model="model.mdf"
+	skin=""
+	
+	passiveeffect=""
+	spawneffect=""
+	respawneffect="/shared/effects/respawn.effect"
+	selectedsound="sounds/voice/select_%.wav"
+	selectedflavorsound="sounds/voice/select_flavour_%.wav"
+	confirmmovesound="sounds/voice/move_%.wav"
+	confirmattacksound="sounds/voice/attack_%.wav"
+	nomanasound="sounds/voice/no_mana.wav"
+	cooldownsound="sounds/voice/cooldown.wav"
+	announcersound="sounds/voice/hero_select.wav"
+	tauntedsound="sounds/voice/taunt_prior.wav"
+	tauntkillsound="sounds/voice/taunt_after.wav"
+	
+	preglobalscale="1.4"
+	modelscale="1"
+	effectscale="1"
+	boundsheight="112"
+	boundsradius="24"
+	selectionradius="48"
+	targetoffset="0 0 64"
+
+	category="physical"
+	difficulty="2.5"
+
+	solorating="2"
+	junglerating="0"
+	carryrating="3"
+	supportrating="0"
+	initiatorrating="0"
+	gankerrating="2"
+	pusherrating="0"
+	rangedrating="5"
+	meleerating="0"
+
+	movespeed="310"
+	turnrate="450"
+	turnsmoothing="0.05"
+	
+	maxhealth="150"
+	healthregen="0.25"
+	maxmana="0"
+	manaregen="0.01"
+
+	armor="-.1"
+	magicarmor="5.5"
+
+	inventory0="Ability_Gunblade1"
+	inventory1="Ability_Gunblade2"
+	inventory2="Ability_Gunblade3"
+	inventory3="Ability_Gunblade4"
+	inventory4="Ability_AttributeBoost"
+	inventory5=""
+	inventory6=""
+	inventory8="Ability_Taunt"
+	inventory9=""
+	inventory10=""
+	inventory11=""
+	inventory12="Ability_AutomatedCourier"
+
+	attackduration="1000"
+	attackactiontime="400"
+	attackcooldown="1700"
+	attackdamagemin="23"
+	attackdamagemax="29"
+	attacknumanims="2"
+	attackoffset="0 110 135"
+	attackprojectile="Projectile_StrafeAttack"
+	attackrange="600"
+	attackstarteffect=""
+	attackactioneffect=""
+	attackimpacteffect=""
+	attacktype="ranged"
+	combattype="Hero"
+
+	aggrorange="800"
+	sightrangeday="1800"
+	sightrangenight="800"
+	wanderrange="250"
+	
+	corpsetime="3300"
+	corpsefadetime="3000"
+	corpsefadeeffect="/shared/effects/corpse_sink.effect"
+
+	primaryattribute="Agility"
+	strength="19"
+	strengthperlevel="2.2"
+	agility="22"
+	agilityperlevel="2.6"
+	intelligence="14"
+	intelligenceperlevel="1.7"
+	
+	previewmodel="preview.mdf"
+	previewpos="0 0 -50"
+	previewangles="0 0 0"
+	previewscale="1.35"
+	
+	storemodel="preview.mdf"
+	storepos="0 0 -20"
+	storeangles="0 0 0"
+	storescale="1.35"
+>
+	<recommendeditem name="Item_ManaPotion" />
+	<recommendeditem name="Item_MinorTotem" />
+	<recommendeditem name="Item_RunesOfTheBlight" />
+	<recommendeditem name="Item_HealthPotion" />
+	<recommendeditem name="Item_HomecomingStone" />
+	
+	<recommendeditem name="Item_Soulscream" />	
+	<recommendeditem name="Item_Strength5" />
+	<recommendeditem name="Item_Steamboots" />
+	<recommendeditem name="Item_Gloves3" />
+	<recommendeditem name="Item_Pierce" />
+	<recommendeditem name="Item_ManaBurn2" />
+	<recommendeditem name="Item_Weapon3" />
+	<recommendeditem name="Item_StrengthAgility" />
+	<recommendeditem name="Item_ArclightCrown" />
+	<recommendeditem name="Item_BehemothsHeart" />
+	<recommendeditem name="Item_Evasion" />
+	
+	
+	<modifier key="Gunblade_Ability4_On"
+		idleanim="ability_4_fly"
+	/>
+	
+	<modifier key="iamsheeped" priority="101"
+		passiveeffect=""
+	/>
+	
+	<altavatar key="Hero_Gunblade.Alt" modpriority="1"
+		altavatar="true"
+		
+		passiveeffect="alt/effects/body.effect"
+		attackoffset="25 135 120"
+		preglobalscale="1.8"
+		attackactioneffect="alt/effects/attack_action.effect"
+		
+		icon2="alt/icon.tga"
+		portrait="alt/icon.tga"
+		model="alt/model.mdf"
+	
+     	selectedsound="alt/sounds/voice/select_%.wav"
+	    selectedflavorsound="alt/sounds/voice/select_flavour_%.wav"
+	    confirmmovesound="alt/sounds/voice/move_%.wav"
+	    confirmattacksound="alt/sounds/voice/attack_%.wav"
+	    nomanasound="alt/sounds/voice/no_mana.wav"
+	    cooldownsound="alt/sounds/voice/cooldown.wav"
+	    tauntedsound="alt/sounds/voice/taunt_prior.wav"
+	    tauntkillsound="alt/sounds/voice/taunt_after.wav"
+	
+		previewmodel="alt/preview.mdf"
+		previewpos="0 0 -85"
+		previewangles="0 0 0"
+		previewscale="2"
+		
+		storemodel="alt/preview.mdf"
+		storepos="0 -100 -25"
+		storeangles="0 0 0"
+		storescale="1.80"
+		storepassiveeffect=""
+	/>
+	
+	<altavatar key="Hero_Gunblade.Alt2" modpriority="1"
+		altavatar="true"
+		
+		passiveeffect=""
+		
+		attackoffset="0 135 120"
+		
+		preglobalscale="1.8"
+		
+		attackactioneffect="alt2/effects/attack_action.effect"
+		
+		icon2="alt2/icon.tga"
+		portrait="alt2/icon.tga"
+		model="alt2/model.mdf"
+	
+     	selectedsound="alt2/sounds/voice/select_%.wav"
+	    selectedflavorsound="alt2/sounds/voice/select_flavour_%.wav"
+	    confirmmovesound="alt2/sounds/voice/move_%.wav"
+	    confirmattacksound="alt2/sounds/voice/attack_%.wav"
+	    nomanasound="alt2/sounds/voice/no_mana.wav"
+	    cooldownsound="alt2/sounds/voice/cooldown.wav"
+	    tauntedsound="alt2/sounds/voice/taunt_prior.wav"
+	    tauntkillsound="alt2/sounds/voice/taunt_after.wav"
+	
+		previewmodel="alt2/preview.mdf"
+		previewpos="0 0 -85"
+		previewangles="0 0 0"
+		previewscale="2"
+		
+		storemodel="alt2/preview.mdf"
+		storepos="0 -100 -25"
+		storeangles="0 0 0"
+		storescale="1.6"
+		storepassiveeffect=""
+	/>
+	
+	<altavatar key="Hero_Gunblade.Alt3" modpriority="1"
+		altavatar="true"
+		
+		passiveeffect=""
+		
+		attackoffset="5 135 95"
+		
+		preglobalscale="1.5"
+		
+		attackactioneffect="alt3/effects/attack_action.effect"
+		
+		icon2="alt3/icon.tga"
+		portrait="alt3/icon.tga"
+		model="alt3/model.mdf"
+	
+     	selectedsound="alt3/sounds/voice/select_%.wav"
+	    selectedflavorsound="alt3/sounds/voice/select_flavour_%.wav"
+	    confirmmovesound="alt3/sounds/voice/move_%.wav"
+	    confirmattacksound="alt3/sounds/voice/attack_%.wav"
+	    nomanasound="alt3/sounds/voice/no_mana.wav"
+	    cooldownsound="alt3/sounds/voice/cooldown.wav"
+	    tauntedsound="alt3/sounds/voice/taunt_prior.wav"
+	    tauntkillsound="alt3/sounds/voice/taunt_after.wav"
+	
+		previewmodel="alt3/preview.mdf"
+		previewpos="0 0 -85"
+		previewangles="0 0 0"
+		previewscale="2"
+		
+		storemodel="alt3/preview.mdf"
+		storepos="0 -100 -25"
+		storeangles="0 0 0"
+		storescale="1.6"
+		storepassiveeffect=""
+	>
+		<onspawn propagatetoillusions="false" >
+			<ownsproduct target="this_entity" product="aa.Hero_Rampage.Alt6 aa.Hero_Hiro.Alt5 aa.Hero_Bushwack.Alt3 aa.Hero_Rally.Alt4 aa.Hero_WitchSlayer.Alt4" />
+			<compare a="result" b="1" op="eq">
+				<applystate name="State_Gunblade_Alt3_Leader_Effects" target="this_entity" continuous="true" />
+				<activatemodifierkey name="RiftHunter_Set" />
+			</compare>
+		</onspawn>
+		<onrespawn propagatetoillusions="false" >
+			<ownsproduct target="this_entity" product="aa.Hero_Rampage.Alt6 aa.Hero_Hiro.Alt5 aa.Hero_Bushwack.Alt3 aa.Hero_Rally.Alt4 aa.Hero_WitchSlayer.Alt4" />
+			<compare a="result" b="1" op="eq">
+				<applystate name="State_Gunblade_Alt3_Leader_Effects" target="this_entity" continuous="true" />
+				<activatemodifierkey name="RiftHunter_Set" />
+			</compare>
+		</onrespawn>
+		
+		<modifier key="RiftHunter_Set" modpriority="101"
+			tooleffectpath38="alt3/effects/set_boost.effect"
+			skin="setboost"
+		/>
+	</altavatar>
+	
+	<altavatar key="Hero_Gunblade.Alt4" modpriority="1"
+		altavatar="true"
+		
+		passiveeffect=""
+		
+		attackoffset="22 135 150"
+		
+		preglobalscale="1.4"
+		
+		attackactioneffect="alt4/effects/attack_action.effect"
+		
+		icon2="alt4/icon.tga"
+		portrait="alt4/icon.tga"
+		model="alt4/model.mdf"
+	
+     	selectedsound="alt4/sounds/voice/select_%.wav"
+	    selectedflavorsound="alt4/sounds/voice/select_flavour_%.wav"
+	    confirmmovesound="alt4/sounds/voice/move_%.wav"
+	    confirmattacksound="alt4/sounds/voice/attack_%.wav"
+	    nomanasound="alt4/sounds/voice/no_mana.wav"
+	    cooldownsound="alt4/sounds/voice/cooldown.wav"
+	    tauntedsound="alt4/sounds/voice/taunt_prior.wav"
+	    tauntkillsound="alt4/sounds/voice/taunt_after.wav"
+	
+		previewmodel="alt4/preview.mdf"
+		previewpos="0 0 -85"
+		previewangles="0 0 0"
+		previewscale="2"
+		
+		storemodel="alt4/preview.mdf"
+		storepos="0 -100 -25"
+		storeangles="0 0 0"
+		storescale="1.1"
+		storepassiveeffect=""
+	/>
+	
+	<altavatar key="Hero_Gunblade.Alt5" modpriority="1"
+		altavatar="true"
+		
+		passiveeffect="alt5/effects/body.effect"
+		
+		attackoffset="22 135 150"
+		
+		preglobalscale="1.6"
+		
+		attackactioneffect="alt5/effects/attack_action.effect"
+		
+		icon2="alt5/icon.tga"
+		portrait="alt5/icon.tga"
+		model="alt5/model.mdf"
+	
+     	selectedsound="alt5/sounds/voice/select_%.wav"
+	    selectedflavorsound="alt5/sounds/voice/select_flavour_%.wav"
+	    confirmmovesound="alt5/sounds/voice/move_%.wav"
+	    confirmattacksound="alt5/sounds/voice/attack_%.wav"
+	    nomanasound="alt5/sounds/voice/no_mana.wav"
+	    cooldownsound="alt5/sounds/voice/cooldown.wav"
+	    tauntedsound="alt5/sounds/voice/taunt_prior.wav"
+	    tauntkillsound="alt5/sounds/voice/taunt_after.wav"
+	
+		previewmodel="alt5/preview.mdf"
+		previewpos="0 0 -85"
+		previewangles="0 0 0"
+		previewscale="2"
+		
+		storemodel="alt5/preview.mdf"
+		storepos="0 -100 -25"
+		storeangles="0 0 0"
+		storescale="1.5"
+		storepassiveeffect="alt5/effects/preview.effect"
+	>
+		<onspawn>
+	<setactivemodifierkey name="Norse_Sound" />
+	</onspawn>
+	
+	<onrespawn>
+	<setactivemodifierkey name="Norse_Sound" />
+	</onrespawn>
+	</altavatar>
+	
+	<altavatar key="Hero_Gunblade.Alt6" modpriority="1"
+		altavatar="true"
+		
+		passiveeffect="alt6/effects/body.effect"
+		
+		attackoffset="0 100 125"
+		
+		preglobalscale="1.6"
+		portraitcampos="-85 0 35"
+		attackactioneffect="alt6/effects/attack_action.effect"
+		
+		icon2="alt6/icon.tga"
+		portrait="alt6/icon.tga"
+		model="alt6/model.mdf"
+	
+     	selectedsound="alt6/sounds/voice/select_%.wav"
+	    selectedflavorsound="alt6/sounds/voice/select_flavour_%.wav"
+	    confirmmovesound="alt6/sounds/voice/move_%.wav"
+	    confirmattacksound="alt6/sounds/voice/attack_%.wav"
+	    nomanasound="alt6/sounds/voice/no_mana.wav"
+	    cooldownsound="alt6/sounds/voice/cooldown.wav"
+	    tauntedsound="alt6/sounds/voice/taunt_prior.wav"
+	    tauntkillsound="alt6/sounds/voice/taunt_after.wav"
+	
+		previewmodel="alt6/preview.mdf"
+		previewpos="0 0 -85"
+		previewangles="0 0 0"
+		previewscale="2"
+		
+		storemodel="alt6/preview.mdf"
+		storepos="0 -100 -25"
+		storeangles="0 0 0"
+		storescale="1.35"
+		storepassiveeffect="alt6/effects/preview.effect"
+	>
+	<onspawn>
+	<setactivemodifierkey name="Gunclaw_Sound" />
+    <activatemodifierkey name="Ursa_Sound"/>
+	</onspawn>
+	
+	<onrespawn>
+	<setactivemodifierkey name="Gunclaw_Sound" />
+	</onrespawn>
+		
+		<onrespawn>
+			<setactivemodifierkey name="Gunclaw_Sound" />
+		</onrespawn>
+	</altavatar>
+	
+	<altavatar key="Hero_Gunblade.Alt7" modpriority="1"
+		altavatar="true"
+		
+		passiveeffect="alt7/effects/body.effect"
+		
+		attackoffset="0 100 125"
+		
+		preglobalscale="1.5"
+		portraitcampos="0 0 90"
+		portraitscale="1.6"
+		attackactioneffect="alt7/effects/attack_action.effect"
+		
+		icon2="alt7/icon.tga"
+		portrait="alt7/icon.tga"
+		model="alt7/model.mdf"
+	
+     	selectedsound="alt7/sounds/voice/select_%.wav"
+	    selectedflavorsound="alt7/sounds/voice/select_flavour_%.wav"
+	    confirmmovesound="alt7/sounds/voice/move_%.wav"
+	    confirmattacksound="alt7/sounds/voice/attack_%.wav"
+	    nomanasound="alt7/sounds/voice/no_mana.wav"
+	    cooldownsound="alt7/sounds/voice/cooldown.wav"
+	    tauntedsound="alt7/sounds/voice/taunt_prior.wav"
+	    tauntkillsound="alt7/sounds/voice/taunt_after.wav"
+	
+		previewmodel="alt7/preview.mdf"
+		previewpos="0 0 -85"
+		previewangles="0 0 0"
+		previewscale="2"
+		
+		storemodel="alt7/preview.mdf"
+		storepos="0 -100 -25"
+		storeangles="0 0 0"
+		storescale="1.55"
+		storepassiveeffect="alt7/effects/preview.effect"
+	>
+	<onkill>
+				<targettype type="illusion" />
+				<else>
+			<cantarget targetscheme="enemy_heroes">
+			    <delayannouncer duration="2300"/>
+			    <pausevoiceovers duration="5000" />
+				<playeffect effect="alt7/sounds/kills.effect" target="source_entity" occlude="true" />
+			</cantarget>
+			</else>
+			</onkill>
+			
+			<onrespawn>
+				<playeffect effect="alt7/sounds/respawns.effect" target="source_entity" occlude="true" />
+				<pausevoiceovers duration="5000" />
+				<delayannouncer duration="2500" sourceonly="true"/>
+			</onrespawn>
+			</altavatar>
+				
+				
+	
+</hero>

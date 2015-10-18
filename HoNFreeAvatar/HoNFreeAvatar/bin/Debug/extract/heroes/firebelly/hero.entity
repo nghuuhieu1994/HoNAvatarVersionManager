@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hero
+	name="Hero_Firebelly"
+
+	team="dev_Legion"
+	icon="icon.tga"
+	portrait="icon.tga"
+	model="model.mdf"
+	skin=""
+	
+	passiveeffect=""
+	spawneffect=""
+	respawneffect="/shared/effects/respawn.effect"
+	selectedsound="sounds/voice/select_%.wav"
+	selectedflavorsound="sounds/voice/select_flavour_%.wav"
+	confirmmovesound="sounds/voice/move_%.wav"
+	confirmattacksound="sounds/voice/attack_%.wav"
+	nomanasound="sounds/voice/no_mana.wav"
+	cooldownsound="sounds/voice/cooldown.wav"
+	announcersound=""
+	tauntedsound="sounds/voice/taunt_prior.wav"
+	tauntkillsound="sounds/voice/taunt_after.wav"
+	
+	preglobalscale="1.53"
+	modelscale="1.0"
+	effectscale="0.9"
+	boundsheight="112"
+	boundsradius="24"
+	selectionradius="44"
+	targetoffset="0 0 64"
+
+	category="cc"
+	difficulty="3.5"
+
+	solorating="2"
+	junglerating="0"
+	carryrating="0"
+	supportrating="3"
+	initiatorrating="2"
+	gankerrating="4"
+	pusherrating="0"
+	rangedrating="0"
+	meleerating="5"
+
+	movespeed="290"
+	turnrate="360"
+	turnsmoothing="0.05"
+
+	maxhealth="150"
+	healthregen="0.25"
+	maxmana="0"
+	manaregen="0.01"
+
+	armor="-0.6"
+	magicarmor="5.5"
+
+	inventory0="Ability_Firebelly1"
+	inventory1="Ability_Firebelly2"
+	inventory2="Ability_Firebelly3"
+	inventory3="Ability_Firebelly4"
+	inventory4="Ability_AttributeBoost"
+	inventory5="Ability_Firebelly2_Purge"
+	inventory6=""
+	inventory8="Ability_Taunt"
+	inventory9=""
+	inventory10=""
+	inventory11=""
+	inventory12="Ability_AutomatedCourier"
+
+	attackduration="1500"
+	attackactiontime="300"
+	attackcooldown="2000"
+	attackdamagemin="21"
+	attackdamagemax="28"
+	attacknumanims="2"
+	attackoffset="0 80 30"
+	attackprojectile=""
+	attackrange="128"
+	attackstarteffect=""
+	attackactioneffect=""
+	attackimpacteffect=""
+	attacktype="melee"
+	combattype="Hero"
+
+	aggrorange="800"
+	sightrangeday="1800"
+	sightrangenight="800"
+	wanderrange="250"
+
+	primaryattribute="Strength"
+	strength="21"
+	strengthperlevel="2.8"
+	agility="16"
+	agilityperlevel="1.6"
+	intelligence="19"
+	intelligenceperlevel="2.4"
+	
+	previewmodel="preview.mdf"
+	previewpos="0 0 -80"
+	previewangles="0 0 0"
+	previewscale="1.3"
+	
+	storemodel="preview.mdf"
+	storepos="0 0 -20"
+	storeangles="0 0 0"
+	storescale="1.4"
+	
+	corpsetime="1000"
+	corpsefadetime="3000"
+	corpsefadeeffect="/shared/effects/corpse_sink.effect"
+>
+	<recommendeditem name="Item_ManaPotion" />
+	<recommendeditem name="Item_MinorTotem" />
+	<recommendeditem name="Item_RunesOfTheBlight" />
+	<recommendeditem name="Item_HealthPotion" />
+	<recommendeditem name="Item_HomecomingStone" />
+	
+	<recommendeditem name="Item_FlamingEye" />
+	<recommendeditem name="Item_Strength5" />
+	<recommendeditem name="Item_Bottle" />
+	<recommendeditem name="Item_Striders" />
+	<recommendeditem name="Item_PlatedGreaves" />
+	<recommendeditem name="Item_Intelligence6" />	
+	<recommendeditem name="Item_Intelligence7" />
+	<recommendeditem name="Item_RestorationStone" />
+	<recommendeditem name="Item_Morph" />
+	
+	<modifier key="iamsheeped" modpriority="102"
+		passiveeffect=""
+	/>
+	
+</hero>

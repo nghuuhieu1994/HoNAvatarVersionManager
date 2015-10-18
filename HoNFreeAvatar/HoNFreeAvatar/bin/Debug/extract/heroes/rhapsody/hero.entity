@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hero
+	name="Hero_Rhapsody"
+
+	team="Legion"
+	icon="icon.tga"
+	portrait="icon/icon.tga"
+	model="model.mdf"
+	skin=""
+	
+	passiveeffect=""
+	spawneffect=""
+	respawneffect="/shared/effects/respawn.effect"
+	selectedsound="sounds/voice/select_%.wav"
+	selectedflavorsound="sounds/voice/select_flavour_%.wav"
+	confirmmovesound="sounds/voice/move_%.wav"
+	confirmattacksound="sounds/voice/attack_%.wav"
+	nomanasound="sounds/voice/no_mana.wav"
+	cooldownsound="sounds/voice/cooldown.wav"
+	announcersound="sounds/voice/hero_select.wav"
+	tauntedsound="sounds/voice/taunt_prior.wav"
+	tauntkillsound="sounds/voice/taunt_after.wav"
+	
+	preglobalscale="1.6"
+	modelscale="1"
+	effectscale="1"
+	boundsheight="112"
+	boundsradius="24"
+	selectionradius="48"
+	targetoffset="0 0 92"
+
+	category="protective magic"
+	difficulty="3"
+
+	solorating="0"
+	junglerating="0"
+	carryrating="0"
+	supportrating="5"
+	initiatorrating="0"
+	gankerrating="0"
+	pusherrating="2"
+	rangedrating="5"
+	meleerating="0"
+	
+	movespeed="295"
+	turnrate="540"
+	turnsmoothing="0.05"
+
+	maxhealth="150"
+	healthregen="0.25"
+	maxmana="0"
+	manaregen="0.01"
+
+	armor="0.5"
+	magicarmor="6"
+
+	inventory0="Ability_Rhapsody1"
+	inventory1="Ability_Rhapsody2"
+	inventory2="Ability_Rhapsody3"
+	inventory3="Ability_Rhapsody4"
+	inventory4="Ability_AttributeBoost"
+	inventory5="Ability_Rhapsody4_In"
+	inventory6="Ability_Rhapsody4_Out"
+	inventory8="Ability_Taunt"
+    	inventory9=""
+	inventory10=""
+	inventory11=""
+	inventory12="Ability_AutomatedCourier"
+
+	attackduration="1000"
+	attackactiontime="400"
+	attackcooldown="1700"
+	attackdamagemin="19"
+	attackdamagemax="23"
+	attacknumanims="2"
+	attackoffset="0 30 100"
+	attackprojectile="Projectile_RhapsodyAttack"
+	attackrange="550"
+	attackstarteffect=""
+	attackactioneffect="projectile/effects/attackaction.effect"
+	attackimpacteffect=""
+	attacktype="ranged"
+	combattype="Hero"
+
+	aggrorange="800"
+	sightrangeday="1800"
+	sightrangenight="800"
+	wanderrange="250"
+
+	primaryattribute="Intelligence"
+	strength="18"
+	strengthperlevel="1.8"
+	agility="17"
+	agilityperlevel="1.7"
+	intelligence="28"
+	intelligenceperlevel="2.8"
+	
+	previewmodel="preview.mdf"
+	previewpos="0 0 -60"
+	previewangles="0 0 0"
+	previewscale="1.5"
+	
+	storemodel="preview.mdf"
+	storepos="0 0 -20"
+	storeangles="0 0 0"
+	storescale="1.55"
+	
+	corpsetime="2000"
+	corpsefadetime="5000"
+	corpsefadeeffect="/shared/effects/corpse_sink.effect"
+	
+	tooleffectkeyname39="Item_Intelligence7"
+	tooleffectpath39="effects/boost.effect"
+>
+	<recommendeditem name="Item_ManaPotion" />
+	<recommendeditem name="Item_MinorTotem" />
+	<recommendeditem name="Item_RunesOfTheBlight" />
+	<recommendeditem name="Item_HealthPotion" />
+	<recommendeditem name="Item_HomecomingStone" />
+	
+	<recommendeditem name="Item_FlamingEye" />
+	<recommendeditem name="Item_Strength5" />
+	<recommendeditem name="Item_Intelligence5" />
+	<recommendeditem name="Item_EnhancedMarchers" />
+	<recommendeditem name="Item_NomesWisdom" />
+	<recommendeditem name="Item_Immunity" />
+	<recommendeditem name="Item_Summon" />
+	<recommendeditem name="Item_Intelligence7" />
+	<recommendeditem name="Item_Morph" />
+
+	<modifier key="Rhapsody_Staff_Ult_Channel" modpriority="101"
+		aggrorange="0"
+		walkanim="ability_4_walk"
+		idleanim="ability_4_idle"
+	/>
+
+	<modifier key="iamsheeped" modpriority="100"
+		passiveeffect=""
+	/>	
+	
+	<altavatar key="Hero_Rhapsody.Alt" modpriority="1"
+		altavatar="true"
+		
+		icon2="alt/icon.tga"
+		portrait="alt/icon.tga"
+		model="alt/model.mdf"
+		
+		previewmodel="alt/preview.mdf"
+		previewpos="0 0 -60"
+		previewangles="0 0 0"
+		previewscale="1.65"
+		
+		attackprojectile="Projectile_RhapsodyAttack_Alt"
+		attackactioneffect="alt/projectile/effects/attackaction.effect"
+		
+		storemodel="alt/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.55"
+		
+		preglobalscale="1.75"
+		
+		selectedsound="alt/sounds/voice/select_%.wav"
+		selectedflavorsound="alt/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt/sounds/voice/move_%.wav"
+		confirmattacksound="alt/sounds/voice/attack_%.wav"
+		nomanasound="alt/sounds/voice/no_mana.wav"
+		cooldownsound="alt/sounds/voice/cooldown.wav"
+		announcersound="alt/sounds/voice/hero_select.wav"
+		tauntedsound="alt/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt/sounds/voice/taunt_after.wav"
+		
+		tooleffectkeyname39="Item_Intelligence7"
+		tooleffectpath39="alt/effects/boost.effect"
+	/>
+	
+	<altavatar key="Hero_Rhapsody.Alt2" modpriority="1"
+		altavatar="true"
+		
+		icon2="alt2/icon.tga"
+		portrait="alt2/icon.tga"
+		model="alt2/model.mdf"
+		passiveeffect="alt2/effects/body.effect"
+		
+		previewmodel="alt2/preview.mdf"
+		previewpos="0 0 -60"
+		previewangles="0 0 0"
+		previewscale="1.65"
+		infoheight="170"
+		
+		attackprojectile="Projectile_RhapsodyAttack_Alt2"
+		attackactioneffect=""
+		
+		storemodel="alt2/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.55"
+		
+		preglobalscale="1.75"
+		
+		selectedsound="alt2/sounds/voice/select_%.wav"
+		selectedflavorsound="alt2/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt2/sounds/voice/move_%.wav"
+		confirmattacksound="alt2/sounds/voice/attack_%.wav"
+		nomanasound="alt2/sounds/voice/no_mana.wav"
+		cooldownsound="alt2/sounds/voice/cooldown.wav"
+		announcersound="alt2/sounds/voice/hero_select.wav"
+		tauntedsound="alt2/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt2/sounds/voice/taunt_after.wav"
+	/>
+	
+	<altavatar key="Hero_Rhapsody.Alt3" modpriority="1"
+		altavatar="true"
+		
+		icon2="alt3/icon.tga"
+		portrait="alt3/icon.tga"
+		model="alt3/model.mdf"
+		passiveeffect="alt3/effects/body.effect"
+		
+		previewmodel="alt3/preview.mdf"
+		previewpos="0 0 -60"
+		previewangles="0 0 0"
+		previewscale="1.65"
+		infoheight="170"
+		
+		attackprojectile="Projectile_RhapsodyAttack_Alt3"
+		attackactioneffect="alt3/projectile/effects/attackaction1.effect"
+		
+		storemodel="alt3/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.55"
+		
+		preglobalscale="1.75"
+		
+		selectedsound="alt3/sounds/voice/select_%.wav"
+		selectedflavorsound="alt3/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt3/sounds/voice/move_%.wav"
+		confirmattacksound="alt3/sounds/voice/attack_%.wav"
+		nomanasound="alt3/sounds/voice/no_mana.wav"
+		cooldownsound="alt3/sounds/voice/cooldown.wav"
+		announcersound="alt3/sounds/voice/hero_select.wav"
+		tauntedsound="alt3/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt3/sounds/voice/taunt_after.wav"
+	>
+	
+		<onspawn propagatetoillusions="false" >
+			<ownsproduct target="this_entity" product="aa.Hero_Rhapsody.Alt3 aa.Hero_Artesia.Alt4 aa.Hero_DrunkenMaster.Alt7 aa.Hero_Zephyr.Alt7 aa.Hero_Devourer.Alt7" />
+			<compare a="result" b="1" op="eq">
+				<activatemodifierkey name="Pirate_Set_Bonus" />
+			</compare>
+		</onspawn>
+		
+		<onrespawn propagatetoillusions="false" >
+			<ownsproduct target="this_entity" product="aa.Hero_Rhapsody.Alt3 aa.Hero_Artesia.Alt4 aa.Hero_DrunkenMaster.Alt7 aa.Hero_Zephyr.Alt7 aa.Hero_Devourer.Alt7" />
+			<compare a="result" b="1" op="eq">
+				<activatemodifierkey name="Pirate_Set_Bonus" />
+			</compare>
+		</onrespawn>
+	
+	</altavatar>
+	
+	<altavatar key="Hero_Rhapsody.Alt4" modpriority="1"
+		alt4avatar="true"
+		
+		icon2="alt4/icon.tga"
+		portrait="alt4/icon.tga"
+		model="alt4/model.mdf"
+		
+		previewmodel="alt4/preview.mdf"
+		previewpos="0 0 -60"
+		previewangles="0 0 0"
+		previewscale="1.65"
+		
+		attackprojectile="Projectile_RhapsodyAttack_alt4"
+		attackactioneffect="alt4/projectile/effects/attackaction.effect"
+		
+		storemodel="alt4/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.55"
+		
+		preglobalscale="1.75"
+		
+		passiveeffect="alt4/effects/body.effect"
+		
+		selectedsound="alt4/sounds/voice/select_%.wav"
+		selectedflavorsound="alt4/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt4/sounds/voice/move_%.wav"
+		confirmattacksound="alt4/sounds/voice/attack_%.wav"
+		nomanasound="alt4/sounds/voice/no_mana.wav"
+		cooldownsound="alt4/sounds/voice/cooldown.wav"
+		announcersound="alt4/sounds/voice/hero_select.wav"
+		tauntedsound="alt4/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt4/sounds/voice/taunt_after.wav"
+		
+		tooleffectkeyname39="Item_Intelligence7"
+		tooleffectpath39="alt4/effects/boost.effect"
+	/>
+	
+	<altavatar key="Hero_Rhapsody.Alt5" modpriority="1"
+		alt4avatar="true"
+		
+		icon2="alt5/icon.tga"
+		portrait="alt5/icon.tga"
+		model="alt5/model.mdf"
+		
+		previewmodel="alt5/preview.mdf"
+		previewpos="0 0 -60"
+		previewangles="0 0 0"
+		previewscale="1.65"
+		
+		attackprojectile="Projectile_RhapsodyAttack"
+		attackactioneffect="alt5/projectile/effects/attackaction.effect"
+		
+		storemodel="alt5/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.55"
+		
+		preglobalscale="1.75"
+		portraitcampos="0 0 20"
+		passiveeffect="alt5/effects/body.effect"
+		
+		selectedsound="alt5/sounds/voice/select_%.wav"
+		selectedflavorsound="alt5/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt5/sounds/voice/move_%.wav"
+		confirmattacksound="alt5/sounds/voice/attack_%.wav"
+		nomanasound="alt5/sounds/voice/no_mana.wav"
+		cooldownsound="alt5/sounds/voice/cooldown.wav"
+		announcersound="alt5/sounds/voice/hero_select.wav"
+		tauntedsound="alt5/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt5/sounds/voice/taunt_after.wav"
+		
+		tooleffectkeyname39="Item_Intelligence7"
+		tooleffectpath39="alt5/effects/boost.effect"
+	>
+	    <onrespawn>
+		 <playeffect effect="alt5/sounds/respawns.effect" target="source_entity" occlude="true" />
+		 <pausevoiceovers duration="5000" />
+		 <delayannouncer duration="2500" sourceonly="true"/>
+		</onrespawn>
+		
+		<onspawn>
+	     <playeffect effect="alt5/sounds/spawn.effect" target="source_entity" occlude="true" />
+		 <pausevoiceovers duration="5000" />
+		 <delayannouncer duration="2500" sourceonly="true"/>
+		</onspawn>
+	</altavatar>
+	
+	<altavatar key="Hero_Rhapsody.Alt6" modpriority="1"
+		alt4avatar="true"
+		
+		icon2="alt6/icon.tga"
+		portrait="alt6/icon.tga"
+		model="alt6/model.mdf"
+		
+		previewmodel="alt6/preview.mdf"
+		previewpos="0 0 -60"
+		previewangles="0 0 0"
+		previewscale="1.65"
+		
+		attackprojectile="Projectile_RhapsodyAttack"
+		attackactioneffect="alt6/projectile/effects/attackaction.effect"
+		
+		storemodel="alt6/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.55"
+		
+		preglobalscale="1.75"
+		portraitcampos="-5 -10 30"
+		passiveeffect="alt6/effects/body.effect"
+		
+		selectedsound="alt6/sounds/voice/select_%.wav"
+		selectedflavorsound="alt6/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt6/sounds/voice/move_%.wav"
+		confirmattacksound="alt6/sounds/voice/attack_%.wav"
+		nomanasound="alt6/sounds/voice/no_mana.wav"
+		cooldownsound="alt6/sounds/voice/cooldown.wav"
+		announcersound="alt6/sounds/voice/hero_select.wav"
+		tauntedsound="alt6/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt6/sounds/voice/taunt_after.wav"
+		
+		tooleffectkeyname39="Item_Intelligence7"
+		tooleffectpath39="alt6/effects/boost.effect"
+	/>
+	
+	<altavatar key="Hero_Rhapsody.Alt7" modpriority="1"
+		alt4avatar="true"
+		
+		icon2="alt7/icon.tga"
+		portrait="alt7/icon.tga"
+		model="alt7/model.mdf"
+		
+		previewmodel="alt7/preview.mdf"
+		previewpos="0 0 -60"
+		previewangles="0 0 0"
+		previewscale="1.65"
+		infoheight="180"
+		
+		attackactioneffect="alt7/projectile/effects/attackaction.effect"
+		
+		storemodel="alt7/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.55"
+		
+		preglobalscale="1.55"
+		portraitcampos="23 -30 -30"
+		passiveeffect="alt7/effects/body.effect"
+		
+		selectedsound="alt7/sounds/voice/select_%.wav"
+		selectedflavorsound="alt7/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt7/sounds/voice/move_%.wav"
+		confirmattacksound="alt7/sounds/voice/attack_%.wav"
+		nomanasound="alt7/sounds/voice/no_mana.wav"
+		cooldownsound="alt7/sounds/voice/cooldown.wav"
+		announcersound="alt7/sounds/voice/hero_select.wav"
+		tauntedsound="alt7/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt7/sounds/voice/taunt_after.wav"
+		
+		tooleffectkeyname39="Item_Intelligence7"
+		tooleffectpath39="alt7/effects/boost.effect"
+	>
+		<onspawn>
+			<applystate name="State_Tourmaline_Paragon_Sound_Initiator" target="source_entity" duration="2000" />
+			<activatemodifierkey name="Paragon_Sound_Tour" />
+			<ownsproduct target="this_entity" product="en.paragon_trail" />
+			<compare a="result" b="0" op="ne">
+				<applystate name="State_Paragon_Trail" target="this_entity" continuous="true" />
+			</compare>
+
+			<ownsproduct target="this_entity" product="en.paragon_circle_upgrade" />
+			<compare a="result" b="0" op="ne">
+				<activatemodifierkey name="Alt7_Paragon_Circle" />
+			</compare>
+			
+			<ownsproduct target="this_entity" product="en.rhapsody_ability01_upgrade" />
+			<compare a="result" b="0" op="ne">
+				<activatemodifierkey name="Alt7_Ability1_Upgrade" />
+			</compare>
+			
+			<ownsproduct target="this_entity" product="en.rhapsody_ability02_upgrade" />
+			<compare a="result" b="0" op="ne">
+				<activatemodifierkey name="Alt7_Ability2_Upgrade" />
+			</compare>
+			
+			<ownsproduct target="this_entity" product="en.rhapsody_ability03_upgrade" />
+			<compare a="result" b="0" op="ne">
+				<activatemodifierkey name="Alt7_Ability3_Upgrade" />
+			</compare>
+			
+			<ownsproduct target="this_entity" product="en.rhapsody_ability04_upgrade" />
+			<compare a="result" b="0" op="ne">
+				<activatemodifierkey name="Alt7_Ability4_Upgrade" />
+			</compare>
+
+            <ownsproduct target="this_entity" product="en.paragon_pet" />
+            <compare a="result" b="0" op="ne">
+                <spawnunit name="Pet_Paragon" target="this_entity" offset="0 -100" facing="source_entity" pushentity="true" />
+                <activatemodifierkey name="Pet_Paragon_Tourmaline" entity="stack_entity" />
+            </compare>
+		</onspawn>
+
+        <onrespawn>
+			<ownsproduct target="this_entity" product="en.paragon_trail" />
+			<compare a="result" b="0" op="ne">
+				<applystate name="State_Paragon_Trail" target="this_entity" continuous="true" />
+			</compare>
+			
+            <ownsproduct target="this_entity" product="en.paragon_pet" />
+            <compare a="result" b="0" op="ne">
+                <spawnunit name="Pet_Paragon" target="this_entity" offset="0 -100" facing="source_entity" pushentity="true" />
+                <activatemodifierkey name="Pet_Paragon_Tourmaline" entity="stack_entity" />
+            </compare>
+			
+			<ownsproduct target="this_entity" product="en.rhapsody_stat_track" />
+            <compare a="result" b="0" op="ne">
+                <!-- <playeffect effect="/shared/effects/paragon_stats.effect" source="this_entity" target="this_entity" /> -->
+				<applystate name="State_Paragon_Stats_VFX" source="this_entity" target="this_entity" duration="4000" />
+			</compare>
+        </onrespawn>
+		
+		<onchannelingstart>
+			<ownsproduct target="this_entity" product="en.rhapsody_stat_track" />
+            <compare a="result" b="0" op="ne">
+				<entitytype type="Ability_Taunt" target="inflictor_entity">
+                    <!-- <playeffect effect="/shared/effects/paragon_stats.effect" source="this_entity" target="this_entity" /> -->
+					<applystate name="State_Paragon_Stats_VFX" source="this_entity" target="this_entity" duration="4000" />
+				</entitytype>
+			</compare>
+		</onchannelingstart>
+		
+		<onkill>
+			<ownsproduct target="this_entity" product="en.rhapsody_stat_track" />
+            <compare a="result" b="0" op="ne">
+                <cantarget targetscheme="enemy_heroes" >
+                    <!-- <playeffect effect="/shared/effects/paragon_stats.effect" source="this_entity" target="this_entity" /> -->
+					<applystate name="State_Paragon_Stats_VFX" source="this_entity" target="this_entity" duration="4000" />
+                </cantarget>
+			</compare>
+        </onkill>
+	
+		<onassist>
+			<ownsproduct target="this_entity" product="en.rhapsody_stat_track" />
+            <compare a="result" b="0" op="ne">
+                <!-- <playeffect effect="/shared/effects/paragon_stats.effect" source="this_entity" target="this_entity" /> -->
+				<applystate name="State_Paragon_Stats_VFX" source="this_entity" target="this_entity" duration="4000" />
+			</compare>
+        </onassist>
+
+		<modifier key="Alt7_Paragon_Circle" modpriority="2"
+            localselectionringmaterial="/shared/materials/selection_indicator_paragon.material"
+        />
+	</altavatar>
+	
+</hero>

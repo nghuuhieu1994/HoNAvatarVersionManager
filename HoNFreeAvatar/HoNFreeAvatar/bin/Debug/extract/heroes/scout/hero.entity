@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hero
+	name="Hero_Scout"
+
+	team="Legion"
+	icon="icon.tga"
+	portrait="icon.tga"
+	model="hd_scout/model.mdf"
+	skin=""
+	
+	passiveeffect=""
+	spawneffect=""
+	respawneffect="/shared/effects/respawn.effect"
+	selectedsound="sounds/voice/select_%.wav"
+	selectedflavorsound="sounds/voice/select_flavour_%.wav"
+	confirmmovesound="sounds/voice/move_%.wav"
+	confirmattacksound="sounds/voice/attack_%.wav"
+	nomanasound="sounds/voice/no_mana.wav"
+	cooldownsound="sounds/voice/cooldown.wav"
+	announcersound="sounds/voice/hero_select.wav"
+	tauntedsound="sounds/voice/taunt_prior.wav"
+	tauntkillsound="sounds/voice/taunt_after.wav"
+	
+	preglobalscale="1.53"
+	modelscale="1.0"
+	effectscale="0.9"
+	boundsheight="112"
+	boundsradius="24"
+	selectionradius="48"
+	targetoffset="0 0 64"
+	
+	category="physical"
+	difficulty="3"
+
+	solorating="1"
+	junglerating="0"
+	carryrating="4"
+	supportrating="0"
+	initiatorrating="0"
+	gankerrating="2"
+	pusherrating="0"
+	rangedrating="0"
+	meleerating="5"
+	
+		movespeed="315"
+	turnrate="540"
+	turnsmoothing="0.05"
+
+	maxhealth="150"
+	healthregen="1.00"
+	maxmana="0"
+	manaregen="0.01"
+
+	armor="2.0"
+	magicarmor="5.5"
+
+	inventory0="Ability_Scout1"
+	inventory1="Ability_Scout2"
+	inventory2="Ability_Scout3"
+	inventory3="Ability_Scout4"
+	inventory4="Ability_AttributeBoost"
+	inventory5="Ability_Scout2_Detonate"
+	inventory6=""
+	inventory7=""
+	inventory8="Ability_Taunt"
+	inventory9=""
+	inventory10=""
+	inventory11=""
+	inventory12="Ability_AutomatedCourier"
+
+	attackduration="1070"
+	attackactiontime="430"
+	attackcooldown="1700"
+	attackdamagemin="29"
+	attackdamagemax="33"
+	attacknumanims="2"
+	attackoffset="20 64 200"
+	attackprojectile=""
+	attackrange="128"
+	attackstarteffect=""
+	attackactioneffect=""
+	attackimpacteffect="effects/impact.effect"
+	attacktype="melee"
+	combattype="Hero"
+
+	aggrorange="600"
+	sightrangeday="1800"
+	sightrangenight="800"
+	wanderrange="250"
+
+	primaryattribute="Agility"
+	strength="20"
+	strengthperlevel="1.7"
+	agility="21"
+	agilityperlevel="3.0"
+	intelligence="16"
+	intelligenceperlevel="1.6"
+	
+	corpsetime="2000"
+	corpsefadetime="2000"
+	corpsefadeeffect="/shared/effects/corpse_sink.effect"
+	
+	previewmodel="hd_scout/preview.mdf"
+	previewpos="0 0 -50"
+	previewangles="0 0 0"
+	previewscale="1.35"
+	
+	storemodel="hd_scout/preview.mdf"
+	storepos="0 0 -20"
+	storeangles="0 0 0"
+	storescale="1.5"
+>
+	<recommendeditem name="Item_ManaPotion" />
+	<recommendeditem name="Item_MinorTotem" />
+	<recommendeditem name="Item_RunesOfTheBlight" />
+	<recommendeditem name="Item_HealthPotion" />
+	<recommendeditem name="Item_HomecomingStone" />
+	
+	<recommendeditem name="Item_Strength5" />
+	<recommendeditem name="Item_Soulscream" />
+	<recommendeditem name="Item_Steamboots" />
+	<recommendeditem name="Item_Brutalizer" />
+	<recommendeditem name="Item_Pierce" />
+	<recommendeditem name="Item_StrengthAgility" />
+	<recommendeditem name="Item_Silence" />
+	<recommendeditem name="Item_ArclightCrown" />
+	<recommendeditem name="Item_Evasion" />
+	<recommendeditem name="Item_Weapon3" />
+	
+	<modifier key="scout_ability1_attackspeed" modpriority="100"
+		attackanim="strong_attack_%"
+		attacknumanims="2"
+	/>
+	
+	<altavatar key="Hero_Scout.Classic"
+		icon2="icon.tga"
+		portrait="icon.tga"
+		model="model.mdf"
+		skin=""
+		
+		passiveeffect=""
+		spawneffect=""
+		respawneffect="/shared/effects/respawn.effect"
+		selectedsound="sounds/voice/select_%.wav"
+		selectedflavorsound="sounds/voice/select_flavour_%.wav"
+		confirmmovesound="sounds/voice/move_%.wav"
+		confirmattacksound="sounds/voice/attack_%.wav"
+		nomanasound="sounds/voice/no_mana.wav"
+		cooldownsound="sounds/voice/cooldown.wav"
+		announcersound="sounds/voice/hero_select.wav"
+		tauntedsound="sounds/voice/taunt_prior.wav"
+		tauntkillsound="sounds/voice/taunt_after.wav"
+		
+		preglobalscale="1.53"
+		modelscale="1.0"
+		effectscale="0.9"
+		boundsheight="112"
+		boundsradius="24"
+		selectionradius="48"
+		targetoffset="0 0 64"
+	
+		previewmodel="preview.mdf"
+		previewpos="0 0 -50"
+		previewangles="0 0 0"
+		previewscale="1.35"
+		
+		storemodel="preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.5"
+	/>
+	
+	<altavatar key="Hero_Scout.Alt"
+		icon2="alt/icon.tga"
+		portrait="alt/icon.tga"
+		model="alt/model.mdf"
+		attacknumanims="3"
+		
+		selectedsound="alt/sounds/voice/select_%.wav"
+		selectedflavorsound="alt/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt/sounds/voice/move_%.wav"
+		confirmattacksound="alt/sounds/voice/attack_%.wav"
+		nomanasound="alt/sounds/voice/no_mana.wav"
+		cooldownsound="alt/sounds/voice/cooldown.wav"
+		announcersound="alt/sounds/voice/hero_select.wav"
+		tauntedsound="alt/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt/sounds/voice/taunt_after.wav"
+		
+		previewmodel="alt/preview.mdf"
+		preglobalscale="1.7"
+		previewpos="0 0 -80"
+		previewangles="0 0 0"
+		previewscale="1.45"
+		
+		storemodel="alt/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.3"
+	>
+	</altavatar>
+	
+	<altavatar key="Hero_Scout.Alt2"
+		icon2="alt2/icon.tga"
+		portrait="alt2/icon.tga"
+		model="alt2/model.mdf"
+		attacknumanims="2"
+		
+		attackimpacteffect="effects/impact.effect"
+		
+		selectedsound="alt2/sounds/voice/select_%.wav"
+		selectedflavorsound="alt2/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt2/sounds/voice/move_%.wav"
+		confirmattacksound="alt2/sounds/voice/attack_%.wav"
+		nomanasound="alt2/sounds/voice/no_mana.wav"
+		cooldownsound="alt2/sounds/voice/cooldown.wav"
+		tauntedsound="alt2/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt2/sounds/voice/taunt_after.wav"
+		
+		previewmodel="alt2/preview.mdf"
+		preglobalscale="1.7"
+		previewpos="0 0 -80"
+		previewangles="0 0 0"
+		previewscale="1.45"
+		
+		modelscale="1.05"
+		
+		storemodel="alt2/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.3"
+	>
+	</altavatar>
+	
+	<altavatar key="Hero_Scout.Alt3"
+		icon2="alt3/icon.tga"
+		portrait="alt3/icon.tga"
+		model="alt3/model.mdf"
+		attacknumanims="3"
+		
+		selectedsound="alt3/sounds/voice/select_%.wav"
+		selectedflavorsound="alt3/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt3/sounds/voice/move_%.wav"
+		confirmattacksound="alt3/sounds/voice/attack_%.wav"
+		nomanasound="alt3/sounds/voice/no_mana.wav"
+		cooldownsound="alt3/sounds/voice/cooldown.wav"
+		tauntedsound="alt3/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt3/sounds/voice/taunt_after.wav"
+
+		previewmodel="alt3/preview.mdf"
+		preglobalscale="1.85"
+		previewpos="0 0 -80"
+		previewangles="0 0 0"
+		previewscale="1.45"
+		previewpassiveeffect="alt3/effects/store_body.effect"
+		
+		storemodel="alt3/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.6"
+		storepassiveeffect="alt3/effects/store_body.effect"
+	>
+		<onspawn>
+			<applystate name="State_Scout_Alt3_Gun_Effects" target="this_entity" continuous="true" />
+			<applystate name="State_Scout_Alt3_Chest_Effects" target="this_entity" continuous="true" />
+			<applystate name="State_Scout_Alt3_Sword_Effects" target="this_entity" continuous="true" />
+			<applystate name="State_Scout_Alt3_Boots_Effects" target="this_entity" continuous="true" />
+			<applystate name="State_Scout_Alt3_Codex_Effects" target="this_entity" continuous="true" />
+			<applystate name="State_Scout_Alt3_Runed_Effects" target="this_entity" continuous="true" />
+			<applystate name="State_Scout_Alt3_Shrunken_Effects" target="this_entity" continuous="true" />
+			<applystate name="State_Scout_Alt3_Lightning_Effects" target="this_entity" continuous="true" />
+			<applystate name="State_Scout_Alt3_Shieldbreaker_Effects" target="this_entity" continuous="true" />
+		</onspawn>
+		
+		<onrespawn>
+			<applystate name="State_Scout_Alt3_Gun_Effects" target="this_entity" continuous="true" />
+			<applystate name="State_Scout_Alt3_Chest_Effects" target="this_entity" continuous="true" />
+			<applystate name="State_Scout_Alt3_Sword_Effects" target="this_entity" continuous="true" />
+			<applystate name="State_Scout_Alt3_Boots_Effects" target="this_entity" continuous="true" />
+			<applystate name="State_Scout_Alt3_Codex_Effects" target="this_entity" continuous="true" />
+			<applystate name="State_Scout_Alt3_Runed_Effects" target="this_entity" continuous="true" />
+			<applystate name="State_Scout_Alt3_Shrunken_Effects" target="this_entity" continuous="true" />
+			<applystate name="State_Scout_Alt3_Lightning_Effects" target="this_entity" continuous="true" />
+			<applystate name="State_Scout_Alt3_Shieldbreaker_Effects" target="this_entity" continuous="true" />
+		</onrespawn>
+	</altavatar>
+	
+	<!-- Black Legion Scout -->
+	<altavatar key="Hero_Scout.Alt4"
+		icon2="alt4/icon.tga"
+		portrait="alt4/icon.tga"
+		model="alt4/model.mdf"
+		
+		selectedsound="alt4/sounds/voice/select_%.wav"
+		selectedflavorsound="alt4/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt4/sounds/voice/move_%.wav"
+		confirmattacksound="alt4/sounds/voice/attack_%.wav"
+		nomanasound="alt4/sounds/voice/no_mana.wav"
+		cooldownsound="alt4/sounds/voice/cooldown.wav"
+		tauntedsound="alt4/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt4/sounds/voice/taunt_after.wav"
+		
+		previewmodel="alt4/preview.mdf"
+		preglobalscale="1.85"
+		previewpos="0 0 -80"
+		previewangles="0 0 0"
+		previewscale="1.45"
+	    attackimpacteffect="alt4/effects/impact.effect"
+			
+		storemodel="alt4/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.6"
+	>
+	
+	<onspawn>
+		<ownsproduct target="this_entity" product="aa.Hero_Legionnaire.Alt4" />
+		<compare a="result" b="1" op="eq">
+			<applystate name="State_Black_Legion" target="this_entity" continuous="true" />
+		</compare>
+	</onspawn>
+	
+	<onrespawn>
+		<ownsproduct target="this_entity" product="aa.Hero_Legionnaire.Alt4" />
+		<compare a="result" b="1" op="eq">
+			<applystate name="State_Black_Legion" target="this_entity" continuous="true" />
+		</compare>
+	</onrespawn>
+	
+	</altavatar>
+	
+	<!-- Hermes Scout -->
+	<altavatar key="Hero_Scout.Alt5"
+		icon2="alt5/icon.tga"
+		portrait="alt5/icon.tga"
+		model="hd_alt5/model.mdf"
+		
+		selectedsound="alt5/sounds/voice/select_%.wav"
+		selectedflavorsound="alt5/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt5/sounds/voice/move_%.wav"
+		confirmattacksound="alt5/sounds/voice/attack_%.wav"
+		nomanasound="alt5/sounds/voice/no_mana.wav"
+		cooldownsound="alt5/sounds/voice/cooldown.wav"
+		tauntedsound="alt5/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt5/sounds/voice/taunt_after.wav"
+		
+		previewmodel="hd_alt5/preview.mdf"
+		preglobalscale="1.75"
+		previewpos="0 0 -80"
+		previewangles="0 0 0"
+		previewscale="1.45"
+	    attackimpacteffect="alt5/effects/impact.effect"
+		
+		corpsetime="2000"
+		corpsefadetime="3500"
+			
+		storemodel="hd_alt5/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.4"
+		
+		portraitcampos="11 -45 28"
+		portraitangles="0 0 20"
+	/>
+	
+	<altavatar key="Hero_Scout.pog_skin" modpriority="1"
+		icon2="icon.tga"
+		portrait="icon.tga"
+		model="pog_skin/model.mdf"
+		
+		previewmodel="pog_skin/preview.mdf"
+		previewpos="0 0 -50"
+		previewangles="0 0 0"
+		previewscale="1.15"
+
+		storemodel="pog_skin/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.5"
+	/>
+	
+	
+	<altavatar key="Hero_Scout.Alt6"
+		icon2="alt6/icon.tga"
+		portrait="alt6/icon.tga"
+		model="alt6/model.mdf"
+		
+		selectedsound="alt6/sounds/voice/select_%.wav"
+		selectedflavorsound="alt6/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt6/sounds/voice/move_%.wav"
+		confirmattacksound="alt6/sounds/voice/attack_%.wav"
+		nomanasound="alt6/sounds/voice/no_mana.wav"
+		cooldownsound="alt6/sounds/voice/cooldown.wav"
+		tauntedsound="alt6/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt6/sounds/voice/taunt_after.wav"
+		
+		previewpassiveeffect="alt6/effects/body_store.effect"
+		previewmodel="alt6/preview.mdf"
+		preglobalscale="1.65"
+		previewpos="0 0 -80"
+		previewangles="0 0 0"
+		previewscale="1.45"
+	    attackimpacteffect="alt6/effects/impact.effect"
+		
+		storepassiveeffect="alt6/effects/body_store.effect"
+		storemodel="alt6/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.4"
+		
+		passiveeffect="alt6/effects/body.effect"
+		corpsetime="1000"
+		corpsefadetime="5000"
+	/>
+	
+	<altavatar key="Hero_Scout.Alt7"
+		icon2="alt7/icon.tga"
+		portrait="alt7/icon.tga"
+		model="alt7/model.mdf"
+
+		selectedsound="alt7/sounds/voice/select_%.wav"
+		selectedflavorsound="alt7/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt7/sounds/voice/move_%.wav"
+		confirmattacksound="alt7/sounds/voice/attack_%.wav"
+		nomanasound="alt7/sounds/voice/no_mana.wav"
+		cooldownsound="alt7/sounds/voice/cooldown.wav"
+		announcersound="alt7/sounds/voice/hero_select.wav"
+		tauntedsound="alt7/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt7/sounds/voice/taunt_after.wav"
+		
+		previewmodel="alt7/preview.mdf"
+		infoheight="140"
+		preglobalscale="1.3"
+		previewpos="0 0 -80"
+		previewangles="0 0 0"
+		previewscale="1.45"
+		
+		storemodel="alt7/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.3"
+		
+		portraitcampos="0 50 -40"
+	/>
+	
+	<altavatar key="Hero_Scout.Alt8"
+		icon2="alt8/icon.tga"
+		portrait="alt8/icon.tga"
+		model="alt8/model.mdf"
+
+		selectedsound="alt8/sounds/voice/select_%.wav"
+		selectedflavorsound="alt8/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt8/sounds/voice/move_%.wav"
+		confirmattacksound="alt8/sounds/voice/attack_%.wav"
+		nomanasound="alt8/sounds/voice/no_mana.wav"
+		cooldownsound="alt8/sounds/voice/cooldown.wav"
+		announcersound="alt8/sounds/voice/hero_select.wav"
+		tauntedsound="alt8/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt8/sounds/voice/taunt_after.wav"
+		
+		previewmodel="alt8/preview.mdf"
+		infoheight="140"
+		preglobalscale="1.4"
+		previewpos="0 0 -80"
+		previewangles="0 0 0"
+		previewscale="1.45"
+		
+		storemodel="alt8/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.5"
+		
+		portraitcampos="10 -20 20"
+	/>
+	
+	<altavatar key="Hero_Scout.Alt9"
+		icon2="alt9/icon.tga"
+		portrait="alt9/icon.tga"
+		model="alt9/model.mdf"
+
+		selectedsound="alt9/sounds/voice/select_%.wav"
+		selectedflavorsound="alt9/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt9/sounds/voice/move_%.wav"
+		confirmattacksound="alt9/sounds/voice/attack_%.wav"
+		nomanasound="alt9/sounds/voice/no_mana.wav"
+		cooldownsound="alt9/sounds/voice/cooldown.wav"
+		announcersound="alt9/sounds/voice/hero_select.wav"
+		tauntedsound="alt9/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt9/sounds/voice/taunt_after.wav"
+		
+		previewmodel="alt9/preview.mdf"
+		infoheight="140"
+		preglobalscale="1.65"
+		previewpos="0 0 -80"
+		previewangles="0 0 0"
+		previewscale="1.45"
+		
+		storemodel="alt9/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.4"
+		
+		attacknumanims="3"
+		portraitcampos="5 0 26"
+		corpsetime="6000"
+	/>
+	<altavatar key="Hero_Scout.Alt10"
+		icon2="alt10/icon.tga"
+		portrait="alt10/icon.tga"
+		model="alt10/model.mdf"
+		passiveeffect="alt10/effects/body.effect"
+		
+
+		selectedsound="alt10/sounds/voice/select_%.wav"
+		selectedflavorsound="alt10/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt10/sounds/voice/move_%.wav"
+		confirmattacksound="alt10/sounds/voice/attack_%.wav"
+		nomanasound="alt10/sounds/voice/no_mana.wav"
+		cooldownsound="alt10/sounds/voice/cooldown.wav"
+		announcersound="alt10/sounds/voice/hero_select.wav"
+		tauntedsound="alt10/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt10/sounds/voice/taunt_after.wav"
+		
+		previewmodel="alt10/preview.mdf"
+		infoheight="140"
+		preglobalscale="2"
+		previewpos="0 0 -80"
+		previewangles="0 0 0"
+		previewscale="1.45"
+		
+		attackoffset="0 0 0"
+		
+		
+		storemodel="alt10/preview.mdf"
+		storepos="0 0 -25"
+		storeangles="0 0 0"
+		storescale="1.85"
+		
+		attacknumanims="2"
+		portraitcampos="-30 -10 20"
+		corpsetime="6000"
+	>
+	
+	<onspawn>
+			 <applystate name="Hotshot_Vanishing_Sound_Initiator" target="source_entity" duration="2000" />
+			<activatemodifierkey name="Vanishing_Sound" />
+	</onspawn>
+	</altavatar>
+</hero>

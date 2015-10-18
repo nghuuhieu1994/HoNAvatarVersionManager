@@ -1,0 +1,608 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hero
+	name="Hero_ShadowBlade"
+
+	team="Hellbourne"
+	icon="icon.tga"
+	portrait="icon.tga"
+	model="model.mdf"
+	skin=""
+	
+	passiveeffect="effects/body.effect"
+	spawneffect=""
+	respawneffect="/shared/effects/respawn.effect"
+	selectedsound="sounds/voice/select_%.wav"
+	selectedflavorsound="sounds/voice/select_flavour_%.wav"
+	confirmmovesound="sounds/voice/move_%.wav"
+	confirmattacksound="sounds/voice/attack_%.wav"
+	nomanasound="sounds/voice/no_mana.wav"
+	cooldownsound="sounds/voice/cooldown.wav"
+	announcersound="sounds/voice/hero_select.wav"
+	tauntedsound="sounds/voice/taunt_prior.wav"
+	tauntkillsound="sounds/voice/taunt_after.wav"
+	
+	preglobalscale="1.85"
+	modelscale="1.0"
+	effectscale="0.9"
+	boundsheight="112"
+	boundsradius="24"
+	selectionradius="48"
+	targetoffset="0 0 92"
+	
+	category="physical magic"
+	difficulty="2.5"
+
+	solorating="0"
+	junglerating="0"
+	carryrating="4"
+	supportrating="0"
+	initiatorrating="0"
+	gankerrating="0"
+	pusherrating="0"
+	rangedrating="0"
+	meleerating="5"
+
+	movespeed="305"
+	turnrate="540"
+	turnsmoothing="0.05"
+
+	maxhealth="150"
+	healthregen="1.0"
+	maxmana="0"
+	manaregen="0.01"
+
+	armor="1"
+	magicarmor="5.5"
+
+	inventory0="Ability_ShadowBlade1"
+	inventory1="Ability_ShadowBlade2"
+	inventory2="Ability_ShadowBlade3"
+	inventory3="Ability_ShadowBlade4"
+	inventory4="Ability_AttributeBoost"
+	inventory5=""
+	inventory6=""
+	inventory8="Ability_Taunt"
+	inventory9=""
+	inventory10=""
+	inventory11=""
+	inventory12="Ability_AutomatedCourier"
+
+	attackduration="1000"
+	attackactiontime="500"
+	attackcooldown="1700"
+	attackdamagemin="32"
+	attackdamagemax="35"
+	attacknumanims="2"
+	attackoffset="0 30 100"
+	attackprojectile=""
+	attackrange="128"
+	attackstarteffect=""
+	attackactioneffect=""
+	attackimpacteffect="effects/impact.effect"
+	attacktype="melee"
+	combattype="Hero"
+
+	aggrorange="600"
+	sightrangeday="1800"
+	sightrangenight="800"
+	wanderrange="250"
+
+	primaryattribute="Agility"
+	strength="19"
+	strengthperlevel="2.3"
+	agility="19"
+	agilityperlevel="2.3"
+	intelligence="19"
+	intelligenceperlevel="2.3"
+	
+	corpsetime="1000"
+	corpsefadetime="1000"
+	corpsefadeeffect="/shared/effects/corpse_sink.effect"
+	
+	previewmodel="preview.mdf"
+	previewpos="0 0 -70"
+	previewangles="0 0 0"
+	previewscale="1.7"
+	
+	storemodel="preview.mdf"
+	storepos="0 0 -20"
+	storeangles="0 0 0"
+	storescale="1.5"
+	storepassiveeffect="effects/shadowblade_clone.effect"
+	
+	tooleffectkeyname0="Item_Intelligence7"
+	tooleffectpath0="effects/boost.effect"
+>
+	<recommendeditem name="Item_ManaPotion" />
+	<recommendeditem name="Item_MinorTotem" />
+	<recommendeditem name="Item_RunesOfTheBlight" />
+	<recommendeditem name="Item_HealthPotion" />
+	<recommendeditem name="Item_HomecomingStone" />
+	<recommendeditem name="Item_LoggersHatchet" />
+	
+	<recommendeditem name="Item_Strength5" />
+	<recommendeditem name="Item_Steamboots" />
+	<recommendeditem name="Item_Insanitarius" />
+	<recommendeditem name="Item_Immunity" />
+	<recommendeditem name="Item_Critical1" />
+	<recommendeditem name="Item_LifeSteal4" />
+	<recommendeditem name="Item_DaemonicBreastplate" />
+	<recommendeditem name="Item_BehemothsHeart" />
+
+	<modifier key="iamsheeped" modpriority="101"
+		passiveeffect=""
+	/>
+	
+	<modifier key="ult_boost" modpriority="100"
+	>
+		<aura state="State_Shadowblade_Ult_Boost" radius="0" targetscheme="self"/>
+	</modifier>
+	
+	<modifier key="shadowq" modpriority="100"
+		passiveeffect=""
+		model="ability_01/effects/shadowq/model.mdf"
+		preglobalscale="2"
+		attackimpacteffect="effects/impact_strength.effect"
+	/>
+	
+	<modifier key="shadoww" modpriority="100"
+		passiveeffect="effects/agi_body.effect"
+		model="ability_02/effects/shadoww/model.mdf"
+		preglobalscale="2.25"
+		attackimpacteffect="effects/impact_agility.effect"
+	/>
+	
+	<modifier key="shadowe" modpriority="100"
+		passiveeffect="effects/int_body.effect"
+		model="ability_03/effects/shadowe/model.mdf"
+		preglobalscale="1.85"
+		attackprojectile="Projectile_ShadowBlade_Ability3"
+		attackimpacteffect=""
+		attackcooldown="1700"
+		attackoffset="0 100 70"
+		attackrange="600"
+		attacktype="ranged"
+		aggrorange="800"
+	/>
+	
+	<modifier key="copyint" modpriority="100"
+		primaryattribute="Intelligence"
+	/>
+	
+	<modifier key="copystr" modpriority="100"
+		primaryattribute="Strength"
+	/>
+	
+	<modifier key="copyagi" modpriority="100"
+		primaryattribute="Agility"
+	/>
+	
+	
+	<altavatar key="Hero_ShadowBlade.Alt" modpriority="1"
+		altavatar="true"
+		
+		preglobalscale="1.85"
+		effectscale="0.9"
+		
+		passiveeffect="alt/effects/body.effect"
+		
+		icon2="alt/icon.tga"
+		portrait="alt/icon.tga"
+		model="alt/model.mdf"
+		
+		infoheight="185"
+		previewmodel="alt/preview.mdf"
+		previewpos="0 0 -70"
+		previewangles="0 0 0"
+		previewscale="1.7"
+		
+		storemodel="alt/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.5"
+		storepassiveeffect="alt/effects/shadowblade_clone.effect"
+	>
+		<modifier key="shadowq_Alt" modpriority="100"
+			passiveeffect=""
+			model="alt/ability_01/effects/shadowq/model.mdf"
+			preglobalscale="1.9"
+			attackimpacteffect="effects/impact_strength.effect"
+		/>
+
+		<modifier key="shadoww_Alt" modpriority="100"
+			passiveeffect="alt/effects/agi_body.effect"
+			model="alt/ability_02/effects/shadoww/model.mdf"
+			preglobalscale="2.25"
+			attackimpacteffect="effects/impact_agility.effect"
+		/>
+
+		<modifier key="shadowe_Alt" modpriority="100"
+			passiveeffect="alt/effects/int_body.effect"
+			model="alt/ability_03/effects/shadowe/model.mdf"
+			preglobalscale="1.85"
+			attackprojectile="Projectile_ShadowBlade_Ability3"
+			attackimpacteffect=""
+			attackcooldown="1700"
+			attackoffset="0 100 70"
+			attackrange="600"
+			attacktype="ranged"
+			aggrorange="800"
+		/>
+	</altavatar>
+	
+	
+	<altavatar key="Hero_ShadowBlade.Alt2" modpriority="1"
+		altavatar="true"
+		
+		preglobalscale="1.7"
+		effectscale="0.9"
+		
+		passiveeffect="alt2/effects/body.effect"
+		attackimpacteffect="alt2/effects/impact.effect"
+		
+		icon2="alt2/icon.tga"
+		portrait="alt2/icon.tga"
+		model="alt2/model.mdf"
+		
+		infoheight="185"
+		previewmodel="alt2/preview.mdf"
+		previewpos="0 0 -70"
+		previewangles="0 0 0"
+		previewscale="1.7"
+			
+		selectedsound="alt2/sounds/voice/select_%.wav"
+		selectedflavorsound="alt2/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt2/sounds/voice/move_%.wav"
+		confirmattacksound="alt2/sounds/voice/attack_%.wav"
+		nomanasound="alt2/sounds/voice/no_mana.wav"
+		cooldownsound="alt2/sounds/voice/cooldown.wav"
+		announcersound="alt2/sounds/voice/hero_select.wav"
+		tauntedsound="alt2/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt2/sounds/voice/taunt_after.wav"
+	
+		storemodel="alt2/preview.mdf"
+		storepos="-20 0 -25"
+		storeangles="0 0 0"
+		storescale="1.5"
+		storepassiveeffect="alt2/effects/shadowblade_clone.effect"
+	>
+		<modifier key="shadowq_Alt2" modpriority="100"
+			passiveeffect=""
+			model="alt2/ability_01/effects/shadowq/model.mdf"
+			preglobalscale="2.8"
+			effectscale="1.2"
+			attackimpacteffect="alt2/effects/impact_strength.effect"
+		/>
+
+		<modifier key="shadoww_Alt2" modpriority="100"
+			passiveeffect="alt2/effects/agi_body.effect"
+			model="alt2/ability_02/effects/shadoww/model.mdf"
+			preglobalscale="1.4"
+			attackimpacteffect="alt2/effects/impact_agility.effect"
+			tiltfactor="1"
+			tiltspeed="90"
+		/>
+
+		<modifier key="shadowe_Alt2" modpriority="100"
+			passiveeffect="alt2/effects/int_body.effect"
+			model="alt2/ability_03/effects/shadowe/model.mdf"
+			preglobalscale="1.85"
+			attackprojectile="Projectile_ShadowBlade_Ability3"
+			attackimpacteffect=""
+			attackcooldown="1700"
+			attackoffset="0 100 70"
+			attackrange="600"
+			attacktype="ranged"
+			aggrorange="800"
+		/>
+	</altavatar>
+	
+	<altavatar key="Hero_ShadowBlade.Alt3" modpriority="1"
+		altavatar="true"
+		
+		preglobalscale="2.3"
+		effectscale="0.9"
+		
+		passiveeffect="alt3/effects/body.effect"
+		attackimpacteffect="alt3/effects/impact.effect"
+			
+		selectedsound="alt3/sounds/voice/select_%.wav"
+		selectedflavorsound="alt3/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt3/sounds/voice/move_%.wav"
+		confirmattacksound="alt3/sounds/voice/attack_%.wav"
+		nomanasound="alt3/sounds/voice/no_mana.wav"
+		cooldownsound="alt3/sounds/voice/cooldown.wav"
+		announcersound="alt3/sounds/voice/hero_select.wav"
+		tauntedsound="alt3/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt3/sounds/voice/taunt_after.wav"
+	
+		icon2="alt3/icon.tga"
+		portrait="alt3/icon.tga"
+		model="alt3/model.mdf"
+		
+		infoheight="185"
+		previewmodel="alt3/preview.mdf"
+		previewpos="0 0 -70"
+		previewangles="0 0 0"
+		previewscale="1.7"
+	
+		storemodel="alt3/preview.mdf"
+		storepos="-20 0 -25"
+		storeangles="0 0 0"
+		storescale="1.5"
+		storepassiveeffect="alt3/effects/shadowblade_clone.effect"
+	>
+	
+		<onspawn propagatetoillusions="false" >
+			<ownsproduct target="this_entity" product="aa.Hero_Javaras.Alt4 aa.Hero_Circe.Alt3 aa.Hero_PuppetMaster.Alt4 aa.Hero_Fade.Alt3 aa.Hero_ShadowBlade.Alt3" />
+			<compare a="result" b="1" op="eq">
+				<activatemodifierkey name="Shroud_Set_Bonus" />
+			</compare>
+		</onspawn>
+		
+		<onrespawn propagatetoillusions="false" >
+			<ownsproduct target="this_entity" product="aa.Hero_Javaras.Alt4 aa.Hero_Circe.Alt3 aa.Hero_PuppetMaster.Alt4 aa.Hero_Fade.Alt3 aa.Hero_ShadowBlade.Alt3" />
+			<compare a="result" b="1" op="eq">
+				<activatemodifierkey name="Shroud_Set_Bonus" />
+			</compare>
+		</onrespawn>
+		
+		<modifier key="Shroud_Set_Bonus" modpriority="90"
+			passiveeffect="alt3/effects/body_shroud.effect"
+		/>
+	
+		<modifier key="shadowq_Alt3" modpriority="90"
+			passiveeffect="/heroes/shadowblade/alt3/ability_01/effects/sword_state.effect"
+			model="alt3/ability_01/effects/shadowq/model.mdf"
+			preglobalscale="2.5"
+			effectscale="1"
+			attackimpacteffect="alt3/effects/impact_strength.effect"
+		/>
+
+		<modifier key="shadoww_Alt3" modpriority="90"
+			passiveeffect="alt3/effects/agi_body.effect"
+			model="alt3/ability_02/effects/shadoww/model.mdf"
+			preglobalscale="2"
+			attackimpacteffect="alt3/effects/impact_agility.effect"
+			tiltfactor="1"
+			tiltspeed="90"
+		/>
+
+		<modifier key="shadowe_Alt3" modpriority="90"
+			passiveeffect="alt3/effects/int_body.effect"
+			model="alt3/ability_03/effects/shadowe/model.mdf"
+			preglobalscale="2.2"
+			attackprojectile="Projectile_ShadowBlade_Ability3"
+			attackimpacteffect=""
+			attackcooldown="1700"
+			attackoffset="0 100 70"
+			attackrange="600"
+			attacktype="ranged"
+			aggrorange="800"
+		/>
+		
+		<modifier key="shadowr_Alt3" modpriority="90"
+		
+			corpsetime="1"
+			corpsefadetime="1"
+			
+			passiveeffect=""
+			model="alt3/ability_04/effects/shadowr/model.mdf"
+			preglobalscale="2.3"
+			attackimpacteffect="alt3/effects/impact.effect"
+		/>
+		
+		<modifier key="shadowq_Alt3_shroud" modpriority="100"
+			passiveeffect="/heroes/shadowblade/alt3/ability_01/effects/sword_state_shroud.effect"
+			model="alt3/ability_01/effects/shadowq/model.mdf"
+			preglobalscale="2.5"
+			effectscale="1"
+			attackimpacteffect="alt3/effects/impact_strength.effect"
+		/>
+
+		<modifier key="shadoww_Alt3_shroud" modpriority="100"
+			passiveeffect="alt3/effects/agi_body_shroud.effect"
+			model="alt3/ability_02/effects/shadoww/model.mdf"
+			preglobalscale="2"
+			attackimpacteffect="alt3/effects/impact_agility.effect"
+			tiltfactor="1"
+			tiltspeed="90"
+		/>
+
+		<modifier key="shadowe_Alt3_shroud" modpriority="100"
+			passiveeffect="alt3/effects/int_body_shroud.effect"
+			model="alt3/ability_03/effects/shadowe/model.mdf"
+			preglobalscale="2.2"
+			attackprojectile="Projectile_ShadowBlade_Ability3"
+			attackimpacteffect=""
+			attackcooldown="1700"
+			attackoffset="0 100 70"
+			attackrange="600"
+			attacktype="ranged"
+		/>
+	</altavatar>
+	
+	<altavatar key="Hero_ShadowBlade.Alt4" modpriority="1"
+		altavatar="true"
+		
+		preglobalscale="2"
+		effectscale="0.9"
+		
+		passiveeffect="alt4/effects/body.effect"
+		attackimpacteffect="alt4/effects/impact.effect"
+		
+		icon2="alt4/icon.tga"
+		portrait="alt4/icon.tga"
+		model="alt4/model.mdf"
+		
+		infoheight="185"
+		previewmodel="alt4/preview.mdf"
+		previewpos="0 0 -70"
+		previewangles="0 0 0"
+		previewscale="1.7"
+				
+		selectedsound="alt4/sounds/voice/select_%.wav"
+		selectedflavorsound="alt4/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt4/sounds/voice/move_%.wav"
+		confirmattacksound="alt4/sounds/voice/attack_%.wav"
+		nomanasound="alt4/sounds/voice/no_mana.wav"
+		cooldownsound="alt4/sounds/voice/cooldown.wav"
+		tauntedsound="alt4/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt4/sounds/voice/taunt_after.wav"
+		
+		storemodel="alt4/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.5"
+		storepassiveeffect="alt4/effects/shadowblade_clone.effect"
+	>
+		<modifier key="shadowq_Alt4" modpriority="100"
+			passiveeffect="/heroes/shadowblade/alt4/ability_01/effects/sword_state.effect"
+			model="alt4/ability_01/effects/shadowq/model.mdf"
+			preglobalscale="1.8"
+			attackimpacteffect="alt4/effects/impact_strength.effect"
+		
+			selectedsound="alt4/sounds/str/voice/select_%.wav"
+			selectedflavorsound="alt4/sounds/str/voice/select_flavour_%.wav"
+			confirmmovesound="alt4/sounds/str/voice/move_%.wav"
+			confirmattacksound="alt4/sounds/str/voice/attack_%.wav"
+			nomanasound="alt4/sounds/str/voice/no_mana.wav"
+			cooldownsound="alt4/sounds/str/voice/cooldown.wav"
+			tauntedsound="alt4/sounds/str/voice/taunt_prior.wav"
+			tauntkillsound="alt4/sounds/str/voice/taunt_after.wav"
+		/>
+
+		<modifier key="shadoww_Alt4" modpriority="100"
+			passiveeffect="alt4/effects/agi_body.effect"
+			model="alt4/ability_02/effects/shadoww/model.mdf"
+			preglobalscale="2.25"
+			attackimpacteffect="effects/impact_agility.effect"
+			
+			selectedsound="alt4/sounds/agi/voice/select_%.wav"
+		    selectedflavorsound="alt4/sounds/agi/voice/select_flavour_%.wav"
+		    confirmmovesound="alt4/sounds/agi/voice/move_%.wav"
+		    confirmattacksound="alt4/sounds/agi/voice/attack_%.wav"
+		    nomanasound="alt4/sounds/agi/voice/no_mana.wav"
+		    cooldownsound="alt4/sounds/agi/voice/cooldown.wav"
+		    tauntedsound="alt4/sounds/agi/voice/taunt_prior.wav"
+		    tauntkillsound="alt4/sounds/agi/voice/taunt_after.wav"
+		/>
+
+		<modifier key="shadowe_Alt4" modpriority="100"
+			passiveeffect="alt4/effects/int_body.effect"
+			model="alt4/ability_03/effects/shadowe/model.mdf"
+			preglobalscale="1.85"
+			attackprojectile="Projectile_ShadowBlade_Ability3"
+			attackimpacteffect=""
+			attackcooldown="1700"
+			attackoffset="0 100 70"
+			attackrange="600"
+			attacktype="ranged"
+			aggrorange="800"
+			
+			selectedsound="alt4/sounds/int/voice/select_%.wav"
+		    selectedflavorsound="alt4/sounds/int/voice/select_flavour_%.wav"
+		    confirmmovesound="alt4/sounds/int/voice/move_%.wav"
+		    confirmattacksound="alt4/sounds/int/voice/attack_%.wav"
+		    nomanasound="alt4/sounds/int/voice/no_mana.wav"
+		    cooldownsound="alt4/sounds/int/voice/cooldown.wav"
+		    tauntedsound="alt4/sounds/int/voice/taunt_prior.wav"
+		    tauntkillsound="alt4/sounds/int/voice/taunt_after.wav"
+		/>
+	</altavatar>
+	
+	<altavatar key="Hero_ShadowBlade.Alt5" modpriority="1"
+		altavatar="true"
+		
+		preglobalscale="1.9"
+		effectscale="0.9"
+		portraitcampos="20 0 20"
+		passiveeffect="alt5/effects/body.effect"
+		attackimpacteffect="alt5/effects/impact.effect"
+		
+		icon2="alt5/icon.tga"
+		portrait="alt5/icon.tga"
+		model="alt5/model.mdf"
+		
+		infoheight="185"
+		previewmodel="alt5/preview.mdf"
+		previewpos="0 0 -70"
+		previewangles="0 0 0"
+		previewscale="1.7"
+			
+		selectedsound="alt5/sounds/voice/select_%.wav"
+		selectedflavorsound="alt5/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt5/sounds/voice/move_%.wav"
+		confirmattacksound="alt5/sounds/voice/attack_%.wav"
+		nomanasound="alt5/sounds/voice/no_mana.wav"
+		cooldownsound="alt5/sounds/voice/cooldown.wav"
+		tauntedsound="alt5/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt5/sounds/voice/taunt_after.wav"
+	
+		storemodel="alt5/preview.mdf"
+		storepos="0 0 -25"
+		storeangles="0 0 0"
+		storescale="1.5"
+		storepassiveeffect="alt5/effects/shadowblade_clone.effect"
+	>
+		<modifier key="shadowq_Alt5" modpriority="100"
+			passiveeffect="alt5/effects/str_body.effect"
+			model="alt5/ability_01/effects/shadowq/model.mdf"
+			preglobalscale="2.15"
+			effectscale="1.2"
+			attackimpacteffect="alt5/effects/impact_strength.effect"
+			portraitcampos="35 0 18"
+			
+			selectedsound="alt5/sounds/voice/str/select_%.wav"
+		    selectedflavorsound="alt5/sounds/voice/str/select_flavour_%.wav"
+		    confirmmovesound="alt5/sounds/voice/str/move_%.wav"
+		    confirmattacksound="alt5/sounds/voice/str/attack_%.wav"
+		    nomanasound="alt5/sounds/voice/str/no_mana.wav"
+		    cooldownsound="alt5/sounds/voice/str/cooldown.wav"
+		    tauntedsound="alt5/sounds/voice/str/taunt_prior.wav"
+	    	tauntkillsound="alt5/sounds/voice/str/taunt_after.wav"
+		/>
+
+		<modifier key="shadoww_Alt5" modpriority="100"
+			passiveeffect="alt5/effects/agi_body.effect"
+			model="alt5/ability_02/effects/shadoww/model.mdf"
+			preglobalscale="1.9"
+			attackimpacteffect="alt5/effects/impact_agility.effect"
+			tiltfactor="1"
+			tiltspeed="90"
+			portraitcampos="18 0 20"
+			selectedsound="alt5/sounds/voice/agi/select_%.wav"
+		    selectedflavorsound="alt5/sounds/voice/agi/select_flavour_%.wav"
+		    confirmmovesound="alt5/sounds/voice/agi/move_%.wav"
+		    confirmattacksound="alt5/sounds/voice/agi/attack_%.wav"
+		    nomanasound="alt5/sounds/voice/agi/no_mana.wav"
+		    cooldownsound="alt5/sounds/voice/agi/cooldown.wav"
+		    tauntedsound="alt5/sounds/voice/agi/taunt_prior.wav"
+	    	tauntkillsound="alt5/sounds/voice/agi/taunt_after.wav"			
+		/>
+
+		<modifier key="shadowe_Alt5" modpriority="100"
+			passiveeffect="alt5/effects/int_body.effect"
+			model="alt5/ability_03/effects/shadowe/model.mdf"
+			preglobalscale="1.85"
+			attackprojectile="Projectile_ShadowBlade_Ability3"
+			attackimpacteffect=""
+			attackcooldown="1700"
+			attackoffset="0 100 70"
+			attackrange="600"
+			attacktype="ranged"
+			aggrorange="800"
+			portraitcampos="0 -25 40"
+			
+			selectedsound="alt5/sounds/voice/int/select_%.wav"
+		    selectedflavorsound="alt5/sounds/voice/int/select_flavour_%.wav"
+		    confirmmovesound="alt5/sounds/voice/int/move_%.wav"
+		    confirmattacksound="alt5/sounds/voice/int/attack_%.wav"
+		    nomanasound="alt5/sounds/voice/int/no_mana.wav"
+		    cooldownsound="alt5/sounds/voice/int/cooldown.wav"
+		    tauntedsound="alt5/sounds/voice/int/taunt_prior.wav"
+	    	tauntkillsound="alt5/sounds/voice/int/taunt_after.wav"
+		/>
+	</altavatar>
+	
+</hero>

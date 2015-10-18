@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hero
+	name="Hero_Adrenaline"
+
+	team="Dev_Hellbourne"
+	icon="icon.tga"
+	portrait="icon.tga"
+	model="model.mdf"
+	skin=""
+	
+	passiveeffect=""
+	spawneffect=""
+	respawneffect="/shared/effects/respawn.effect"
+	deatheffect=""
+	selectedsound="sounds/voice/select_%.wav"
+	selectedflavorsound="sounds/voice/select_flavour_%.wav"
+	confirmmovesound="sounds/voice/move_%.wav"
+	confirmattacksound="sounds/voice/attack_%.wav"
+	nomanasound="sounds/voice/no_mana.wav"
+	cooldownsound="sounds/voice/cooldown.wav"
+	announcersound="sounds/voice/hero_select.wav"
+	tauntedsound="sounds/voice/taunt_prior.wav"
+	tauntkillsound="sounds/voice/taunt_after.wav"
+	
+	preglobalscale="1.8"
+	modelscale="1.0"
+	effectscale="0.81"
+	boundsheight="112"
+	boundsradius="24"
+	selectionradius="44"
+	targetoffset="0 0 64"
+
+	category="physical"
+	difficulty="2.5"
+
+	solorating="2"
+	junglerating="0"
+	carryrating="5"
+	supportrating="0"
+	initiatorrating="0"
+	gankerrating="2"
+	pusherrating="0"
+	rangedrating="0"
+	meleerating="5"
+
+	movespeed="290"
+	turnrate="450"
+	turnsmoothing="0.05"
+
+	maxhealth="150"
+	healthregen="1.00"
+	maxmana="0"
+	manaregen="0.01"
+
+	armor="1"
+	magicarmor="5.5"
+
+	inventory0="Ability_Adrenaline1"
+	inventory1="Ability_Adrenaline2"
+	inventory2="Ability_Adrenaline3"
+	inventory3="Ability_Adrenaline4"
+	inventory4="Ability_AttributeBoost"
+	inventory5=""
+	inventory6=""
+	inventory7=""
+	inventory8="Ability_Taunt"
+	inventory9=""
+	inventory10=""
+	inventory11=""
+	inventory12="Ability_AutomatedCourier"
+
+	attackduration="800"
+	attackactiontime="350"
+	attackcooldown="1700"
+	attackdamagemin="23"
+	attackdamagemax="33"
+	attacknumanims="2"
+	attackoffset="0 0 0"
+	attackprojectile=""
+	attackrange="128"
+	attackstarteffect=""
+	attackactioneffect=""
+	attackimpacteffect="effects/impact.effect"
+	attacktype="melee"
+	combattype="Hero"
+
+	aggrorange="600"
+	sightrangeday="1800"
+	sightrangenight="800"
+	wanderrange="250"
+
+	primaryattribute="Agility"
+	strength="20"
+	strengthperlevel="2.3"
+	agility="24"
+	agilityperlevel="2.6"
+	intelligence="10"
+	intelligenceperlevel="1"
+	
+	corpsetime="1000"
+	corpsefadetime="1000"
+	corpsefadeeffect="/shared/effects/corpse_sink.effect"
+	
+	previewmodel="preview.mdf"
+	previewpos="-20 0 -50"
+	previewangles="0 0 0"
+	previewscale="2.0"
+	
+	storemodel="preview.mdf"
+	storepos="0 0 -20"
+	storeangles="0 0 0"
+	storescale="1.7"
+	
+	tooleffectkeyname39="Item_Intelligence7"
+	tooleffectpath39="effects/boost.effect"
+>
+	<recommendeditem name="Item_ManaPotion" />
+	<recommendeditem name="Item_MinorTotem" />
+	<recommendeditem name="Item_RunesOfTheBlight" />
+	<recommendeditem name="Item_HealthPotion" />
+	<recommendeditem name="Item_HomecomingStone" />
+	
+	<recommendeditem name="Item_Strength5" />
+	<recommendeditem name="Item_Bottle" />
+	<recommendeditem name="Item_IronShield" />
+	<recommendeditem name="Item_Steamboots" />
+	<recommendeditem name="Item_Splash" />
+	<recommendeditem name="Item_Weapon3" />
+	<recommendeditem name="Item_Immunity" />
+	<recommendeditem name="Item_Silence" />
+	<recommendeditem name="Item_LifeSteal4" />
+	<recommendeditem name="Item_Pierce" />
+	
+
+	<modifier key="adrenaline_rush_activated" modpriority="100"	
+		idleanim="idlezerk"
+		attackimpacteffect="ability_4/effects/slash.effect"
+	/>
+	
+</hero>

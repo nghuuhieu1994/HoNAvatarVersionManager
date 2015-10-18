@@ -1,0 +1,659 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hero
+	name="Hero_Maliken"
+
+	team="Hellbourne"
+	icon="icon.tga"
+	portrait="icon.tga"
+	model="model.mdf"
+	skin=""
+	
+	passiveeffect=""
+	spawneffect=""
+	respawneffect="/shared/effects/respawn.effect"
+	selectedsound="sounds/voice/select_%.wav"
+	selectedflavorsound="sounds/voice/select_flavour_%.wav"
+	confirmmovesound="sounds/voice/move_%.wav"
+	confirmattacksound="sounds/voice/attack_%.wav"
+	nomanasound="sounds/voice/no_mana.wav"
+	cooldownsound="sounds/voice/cooldown.wav"
+	announcersound="sounds/voice/hero_select.wav"
+	tauntedsound="sounds/voice/taunt_prior.wav"
+	tauntkillsound="sounds/voice/taunt_after.wav"
+	
+	preglobalscale="1.61"
+	modelscale="1.0"
+	effectscale="0.9"
+	boundsheight="112"
+	boundsradius="24"
+	selectionradius="48"
+	targetoffset="0 0 92"
+	
+	category="tank physical"
+	difficulty="4"
+
+	solorating="0"
+	junglerating="0"
+	carryrating="5"
+	supportrating="0"
+	initiatorrating="2"
+	gankerrating="0"
+	pusherrating="0"
+	rangedrating="0"
+	meleerating="5"
+
+	movespeed="300"
+	turnrate="540"
+	turnsmoothing="0.05"
+	infoheight="200"
+	
+	maxhealth="150"
+	healthregen="1.00"
+	maxmana="0"
+	manaregen="0.01"
+
+	armor="-0.9"
+	magicarmor="5.5"
+
+	inventory0="Ability_Maliken1"
+	inventory1="Ability_Maliken2"
+	inventory2="Ability_Maliken3"
+	inventory3="Ability_Maliken4"
+	inventory4="Ability_AttributeBoost"
+	inventory5="Ability_Maliken2_Flame"
+	inventory6="Ability_Maliken2_Healing"
+	inventory8="Ability_Taunt"
+	inventory9=""
+	inventory10=""
+	inventory11=""
+	inventory12="Ability_AutomatedCourier"
+
+	attackduration="1000"
+	attackactiontime="500"
+	attackcooldown="1700"
+	attackdamagemin="22"
+	attackdamagemax="28"
+	attacknumanims="2"
+	attackoffset="0 30 100"
+	attackprojectile=""
+	attackrange="128"
+	attackstarteffect=""
+	attackactioneffect=""
+	attackimpacteffect="effects/impact.effect"
+	attacktype="melee"
+	combattype="Hero"
+
+	aggrorange="600"
+	sightrangeday="1800"
+	sightrangenight="800"
+	wanderrange="250"
+
+	primaryattribute="Strength"
+	strength="25"
+	strengthperlevel="2.6"
+	agility="20"
+	agilityperlevel="2.0"
+	intelligence="17"
+	intelligenceperlevel="1.7"
+	
+	corpsetime="1000"
+	corpsefadetime="1000"
+	corpsefadeeffect="/shared/effects/corpse_sink.effect"
+	
+	previewmodel="preview.mdf"
+	previewpos="0 0 -50"
+	previewangles="0 0 0"
+	previewscale="1.3"
+	
+	storemodel="preview.mdf"
+	storepos="0 0 -20"
+	storeangles="0 0 0"
+	storescale="1.5"
+>
+	<recommendeditem name="Item_ManaPotion" />
+	<recommendeditem name="Item_MinorTotem" />
+	<recommendeditem name="Item_RunesOfTheBlight" />
+	<recommendeditem name="Item_HealthPotion" />
+	<recommendeditem name="Item_HomecomingStone" />
+	<recommendeditem name="Item_LoggersHatchet" />
+	
+	<recommendeditem name="Item_Strength5" />
+	<recommendeditem name="Item_Steamboots" />
+	<recommendeditem name="Item_Insanitarius" />
+	<recommendeditem name="Item_Immunity" />
+	<recommendeditem name="Item_Critical1" />
+	<recommendeditem name="Item_LifeSteal4" />
+	<recommendeditem name="Item_DaemonicBreastplate" />
+	<recommendeditem name="Item_BehemothsHeart" />
+
+	<modifier key="iamsheeped" modpriority="100"
+		passiveeffect=""
+	/>
+	
+	<modifier key="swordflame" modpriority="80"
+		idleanim="ability_2_fireDefault"
+		attackanim="ability_2_fireAttack_%"
+		attacknumanims="2"
+		attackimpacteffect="effects/impact_flame.effect"
+	/>
+	
+	<modifier key="swordhealing" modpriority="80"
+		idleanim="ability_2_LifeDefault"
+		attackanim="ability_2_LifeAttack_%"
+		attacknumanims="2"
+		attackimpacteffect="effects/impact_heal.effect"
+	/>
+
+	<modifier key="malikenult" modpriority="100"
+		model="ability_04/model.mdf"
+		preglobalscale="1.64"
+		attackprojectile="Projectile_MalikenAttack"
+		attackcooldown="1700"
+		attackoffset="0 100 70"
+		attackrange="550"
+		attacktype="ranged"
+		attackimpacteffect=""
+	/>
+	
+	<onframe>
+		<activatemodifierkey name="Maliken_Sound" />
+	</onframe>
+	
+	<altavatar key="Hero_Maliken.Alt"
+		preglobalscale="1.3"
+		
+		icon2="alt/icon.tga"
+		portrait="alt/icon.tga"
+		model="alt/model.mdf"
+		infoheight="210"
+		
+		selectedsound="alt/sounds/voice/select_%.wav"
+		selectedflavorsound="alt/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt/sounds/voice/move_%.wav"
+		confirmattacksound="alt/sounds/voice/attack_%.wav"
+		nomanasound="alt/sounds/voice/no_mana.wav"
+		cooldownsound="alt/sounds/voice/cooldown.wav"
+		tauntedsound="alt/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt/sounds/voice/taunt_after.wav"
+		
+		previewmodel="alt/preview.mdf"
+		previewpos="0 0 -60"
+		previewangles="0 0 0"
+		previewscale="1"
+	
+		storemodel="alt/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1"
+	>
+	
+		<onspawn propagatetoillusions="false" >
+			<ownsproduct target="this_entity" product="aa.Hero_Dreadknight.Alt2 aa.Hero_SandWraith.Alt aa.Hero_WolfMan.Alt aa.Hero_Pestilence.Alt2" />
+			<compare a="result" b="1" op="eq">
+				<activatemodifierkey name="Horseman_Set" />
+			</compare>
+		</onspawn>
+		
+		<onrespawn propagatetoillusions="false" >
+			<ownsproduct target="this_entity" product="aa.Hero_Dreadknight.Alt2 aa.Hero_SandWraith.Alt aa.Hero_WolfMan.Alt aa.Hero_Pestilence.Alt2" />
+			<compare a="result" b="1" op="eq">
+				<activatemodifierkey name="Horseman_Set" />
+			</compare>
+		</onrespawn>
+		
+		<modifier key="Horseman_Set" modpriority="101"
+			walkanim="walk_2"
+		/>
+	
+		<modifier key="malikenult_Alt" modpriority="100"
+			model="alt/ability_04/model.mdf"
+			preglobalscale="1.64"
+			attackprojectile="Projectile_MalikenAttack"
+			attackcooldown="1700"
+			attackoffset="0 100 70"
+			attackrange="550"
+			attacktype="ranged"
+			attackimpacteffect=""
+		/>
+			<onframe>
+			<activatemodifierkey name="Maliken_Alt_Sound" />
+	</onframe>
+	</altavatar>	
+	
+	<altavatar key="Hero_Maliken.Alt2"
+		preglobalscale="1.6"
+		
+		icon2="alt2/icon.tga"
+		portrait="alt2/icon.tga"
+		model="alt2/model.mdf"
+		infoheight="200"
+		
+		selectedsound="alt2/sounds/voice/select_%.wav"
+		selectedflavorsound="alt2/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt2/sounds/voice/move_%.wav"
+		confirmattacksound="alt2/sounds/voice/attack_%.wav"
+		nomanasound="alt2/sounds/voice/no_mana.wav"
+		cooldownsound="alt2/sounds/voice/cooldown.wav"
+		tauntedsound="alt2/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt2/sounds/voice/taunt_after.wav"
+		
+		previewmodel="alt2/preview.mdf"
+		previewpos="0 0 -60"
+		previewangles="0 0 0"
+		previewscale="1"
+	
+		storemodel="alt2/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.45"
+	>
+		<modifier key="malikenult_Alt2" modpriority="100"
+			model="alt2/ability_04/model.mdf"
+			preglobalscale="1.64"
+			attackprojectile="Projectile_MalikenAttack"
+			attackcooldown="1700"
+			attackoffset="0 100 70"
+			attackrange="550"
+			attacktype="ranged"
+			attackimpacteffect=""
+		/>
+	<onframe>
+	<activatemodifierkey name="Maliken_Alt2_Sound" />
+	</onframe>
+	</altavatar>	
+	
+	<altavatar key="Hero_Maliken.Alt3"
+		preglobalscale="1.6"
+		
+		icon2="alt3/icon.tga"
+		portrait="alt3/icon.tga"
+		model="alt3/model.mdf"
+		infoheight="200"
+		
+		selectedsound="alt3/sounds/voice/select_%.wav"
+		selectedflavorsound="alt3/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt3/sounds/voice/move_%.wav"
+		confirmattacksound="alt3/sounds/voice/attack_%.wav"
+		nomanasound="alt3/sounds/voice/no_mana.wav"
+		cooldownsound="alt3/sounds/voice/cooldown.wav"
+		tauntedsound="alt3/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt3/sounds/voice/taunt_after.wav"
+		
+		previewmodel="alt3/preview.mdf"
+		previewpos="0 0 -60"
+		previewangles="0 0 0"
+		previewscale="1"
+	
+		storemodel="alt3/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.45"
+	>
+		<modifier key="malikenult_Alt3" modpriority="100"
+			model="alt3/ability_04/model.mdf"
+			preglobalscale="1.64"
+			attackprojectile="Projectile_MalikenAttack"
+			attackcooldown="1700"
+			attackoffset="0 100 70"
+			attackrange="550"
+			attacktype="ranged"
+			attackimpacteffect=""
+		/>
+	<onframe>
+	<activatemodifierkey name="Maliken_Alt3_Sound" />
+	</onframe>
+	</altavatar>	
+	
+	<altavatar key="Hero_Maliken.Alt4"
+		preglobalscale="1.6"
+		passiveeffect=""
+		
+		icon2="alt4/icon.tga"
+		portrait="alt4/icon.tga"
+		model="alt4/model.mdf"
+		infoheight="200"
+		
+		selectedsound="alt4/sounds/voice/select_%.wav"
+		selectedflavorsound="alt4/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt4/sounds/voice/move_%.wav"
+		confirmattacksound="alt4/sounds/voice/attack_%.wav"
+		nomanasound="alt4/sounds/voice/no_mana.wav"
+		cooldownsound="alt4/sounds/voice/cooldown.wav"
+		tauntedsound="alt4/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt4/sounds/voice/taunt_after.wav"
+		
+		
+		attackimpacteffect="alt4/effects/impact.effect"
+		previewmodel="alt4/preview.mdf"
+		previewpos="0 0 -60"
+		previewangles="0 0 0"
+		previewscale="1"
+	
+		storemodel="alt4/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.45"
+		
+		corpsetime="1000"
+		corpsefadetime="2500"
+	>
+		<modifier key="swordflame_alt4" modpriority="80"
+			idleanim="ability_2_fireDefault"
+			attackanim="ability_2_fireAttack_%"
+			attacknumanims="2"
+			attackimpacteffect="alt4/effects/impact_flame.effect"
+		/>
+		
+		<modifier key="swordhealing_alt4" modpriority="80"
+			idleanim="ability_2_LifeDefault"
+			attackanim="ability_2_LifeAttack_%"
+			attacknumanims="2"
+			attackimpacteffect="alt4/effects/impact_heal.effect"
+		/>
+
+		<modifier key="malikenult_Alt4" modpriority="100"
+			model="alt4/ability_04/model.mdf"
+			preglobalscale="1.64"
+			attackprojectile="Projectile_MalikenAttack"
+			attackcooldown="1700"
+			attackoffset="0 100 70"
+			attackrange="550"
+			attacktype="ranged"
+			attackimpacteffect=""
+		/>
+	<onframe>
+	<activatemodifierkey name="Maliken_Alt4_Sound" />
+	</onframe>
+	</altavatar>
+	
+	<altavatar key="Hero_Maliken.Alt5"
+		preglobalscale="2"
+		
+		icon2="alt5/icon.tga"
+		portrait="alt5/icon.tga"
+		model="alt5/model.mdf"
+		infoheight="200"
+		
+		selectedsound="alt5/sounds/voice/select_%.wav"
+		selectedflavorsound="alt5/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt5/sounds/voice/move_%.wav"
+		confirmattacksound="alt5/sounds/voice/attack_%.wav"
+		nomanasound="alt5/sounds/voice/no_mana.wav"
+		cooldownsound="alt5/sounds/voice/cooldown.wav"
+		tauntedsound="alt5/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt5/sounds/voice/taunt_after.wav"
+		
+		
+		attackimpacteffect="alt5/effects/impact.effect"
+		
+		previewpassiveeffect="alt5/ability_04/upgraded/body.effect"
+		previewmodel="alt5/ability_04/model.mdf"
+		previewpos="0 0 -60"
+		previewangles="0 0 0"
+		previewscale="1"
+	
+		storepassiveeffect="alt5/ability_04/upgraded/body.effect"
+		storemodel="alt5/ability_04/model.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.45"
+		
+		corpsetime="1000"
+		corpsefadetime="2500"
+		
+		passiveeffect="alt5/effects/body_1.effect,alt5/effects/body_1.effect,alt5/effects/body_1.effect,alt5/effects/body_4.effect,alt5/effects/body_4.effect,alt5/effects/body_4.effect,alt5/effects/body_4.effect,alt5/effects/body_8.effect,alt5/effects/body_8.effect,alt5/effects/body_8.effect,alt5/effects/body_8.effect,alt5/effects/body_12.effect,alt5/effects/body_12.effect,alt5/effects/body_12.effect,alt5/effects/body_12.effect,alt5/effects/body_12.effect,alt5/effects/body_12.effect,alt5/effects/body_12.effect,alt5/effects/body_12.effect,alt5/effects/body_12.effect,alt5/effects/body_12.effect,alt5/effects/body_12.effect,alt5/effects/body_12.effect,alt5/effects/body_12.effect,alt5/effects/body_12.effect"
+		
+		tooleffectkeyname0="effect_Boots"
+		tooleffectpath0="alt5/upgraded_legs/body.effect"
+		tooleffectgroup0="legs"
+		
+		tooleffectkeyname1=""
+		tooleffectpath1="alt5/base_legs/body.effect"
+		tooleffectgroup1="legs"
+		
+		tooleffectkeyname2="Item_LifeSteal4"
+		tooleffectpath2="alt5/upgraded_helmet/body.effect"
+		tooleffectgroup2="helm"
+		
+		tooleffectkeyname3="Item_WhisperingHelm"
+		tooleffectpath3="alt5/upgraded_helmet/body.effect"
+		tooleffectgroup3="helm"
+		
+		tooleffectkeyname4="Item_LifeSteal5"
+		tooleffectpath4="alt5/upgraded_helmet/body.effect"
+		tooleffectgroup4="helm"
+		
+		tooleffectkeyname5="Item_ElderParasite"
+		tooleffectpath5="alt5/upgraded_helmet/body.effect"
+		tooleffectgroup5="helm"
+		
+		tooleffectkeyname6="Item_Critical1"
+		tooleffectpath6="alt5/sword_large/body.effect"
+		tooleffectgroup6="sword"
+		
+		tooleffectkeyname7="Item_Weapon3"
+		tooleffectpath7="alt5/sword_large/body.effect"
+		tooleffectgroup7="sword"
+		
+		tooleffectkeyname8="Item_Lightning1"
+		tooleffectpath8="alt5/sword_large/body.effect"
+		tooleffectgroup8="sword"
+		
+		tooleffectkeyname9="Item_ArclightCrown"
+		tooleffectpath9="alt5/sword_large/body.effect"
+		tooleffectgroup9="sword"
+		
+		tooleffectkeyname10="Item_Pierce"
+		tooleffectpath10="alt5/sword_large/body.effect"
+		tooleffectgroup10="sword"
+		
+		tooleffectkeyname11=""
+		tooleffectpath11="alt5/sword_small/body.effect"
+		tooleffectgroup11="sword"
+	>
+		<!--
+			Helmet upgrade: Whispering Helm/Symbol of Rage, Elder Parasite, Abyssal Skull
+			Leg Armor: All boots in game
+			Sword Grow: Rift Shards, Savage Mace, Charged Hammer, Shieldbreaker
+		-->
+		<onspawn propagatetoillusions="false" >
+			<ownsproduct target="this_entity" product="aa.Hero_Chronos.Alt5 aa.Hero_Maliken.Alt5 aa.Hero_Midas.Alt4 aa.Hero_Nomad.Alt5 aa.Hero_Prisoner.Alt4 aa.Hero_Succubis.Alt3 aa.Hero_Xalynx.Alt4" />
+			<compare a="result" b="1" op="eq">
+				<activatemodifierkey name="Virtue_Set_Bonus" />
+			</compare>
+			<activatemodifierkey name="Maliken_Alt5_Sound" />
+		</onspawn>
+		
+		<onframe>
+		<deactivatemodifierkey name="Maliken_Sound" />
+		</onframe>
+		
+		<onrespawn propagatetoillusions="false" >
+			<ownsproduct target="this_entity" product="aa.Hero_Chronos.Alt5 aa.Hero_Maliken.Alt5 aa.Hero_Midas.Alt4 aa.Hero_Nomad.Alt5 aa.Hero_Prisoner.Alt4 aa.Hero_Succubis.Alt3 aa.Hero_Xalynx.Alt4" />
+			<compare a="result" b="1" op="eq">
+				<activatemodifierkey name="Virtue_Set_Bonus" />
+			</compare>
+			<activatemodifierkey name="Maliken_Alt5_Sound" />
+		</onrespawn>
+		
+		<modifier key="Virtue_Set_Bonus" modpriority="1"
+			tooleffectpath38="alt5/effects/virtue_bonus.effect"
+		/>
+		
+		<modifier key="malikenult_Alt5" modpriority="100"
+			model="alt5/ability_04/model.mdf"
+			preglobalscale="1.64"
+			attackprojectile="Projectile_MalikenAttack"
+			attackcooldown="1700"
+			attackoffset="0 100 70"
+			attackrange="550"
+			attacktype="ranged"
+			attackimpacteffect=""
+			passiveeffect="alt5/ability_04/upgraded/body.effect"
+			
+			selectedsound="alt5/sounds/voice_ult/select_%.wav"
+			selectedflavorsound="alt5/sounds/voice_ult/select_flavour_%.wav"
+			confirmmovesound="alt5/sounds/voice_ult/move_%.wav"
+			confirmattacksound="alt5/sounds_ult/voice/attack_%.wav"
+			nomanasound="alt5/sounds/voice_ult/no_mana.wav"
+			cooldownsound="alt5/sounds/voice_ult/cooldown.wav"
+			tauntedsound="alt5/sounds/voice_ult/taunt_prior.wav"
+			tauntkillsound="alt5/sounds/voice_ult/taunt_after.wav"
+			
+			tooleffectpath0=""
+			tooleffectpath1=""
+			tooleffectpath2=""
+			tooleffectpath3=""
+			tooleffectpath4=""
+			tooleffectpath5=""
+			tooleffectpath6=""
+			tooleffectpath7=""
+			tooleffectpath8=""
+			tooleffectpath9=""
+			tooleffectpath10=""
+			tooleffectpath11=""
+		/>
+		
+		<modifier key="swordflame" modpriority="1"
+			passiveeffect="alt5/effects/body_1.effect,alt5/effects/body_1.effect,alt5/effects/body_1.effect,alt5/effects/body_4_flame.effect,alt5/effects/body_4_flame.effect,alt5/effects/body_4_flame.effect,alt5/effects/body_4_flame.effect,alt5/effects/body_8_flame.effect,alt5/effects/body_8_flame.effect,alt5/effects/body_8_flame.effect,alt5/effects/body_8_flame.effect,alt5/effects/body_12_flame.effect,alt5/effects/body_12_flame.effect,alt5/effects/body_12_flame.effect,alt5/effects/body_12_flame.effect,alt5/effects/body_12_flame.effect,alt5/effects/body_12_flame.effect,alt5/effects/body_12_flame.effect,alt5/effects/body_12_flame.effect,alt5/effects/body_12_flame.effect,alt5/effects/body_12_flame.effect,alt5/effects/body_12_flame.effect,alt5/effects/body_12_flame.effect,alt5/effects/body_12_flame.effect,alt5/effects/body_12_flame.effect"
+			idleanim="ability_2_fireDefault"
+			attackanim="ability_2_fireAttack_%"
+			attacknumanims="1"
+			attackimpacteffect="alt5/effects/impact_flame.effect"
+		/>
+		
+		<modifier key="swordhealing" modpriority="1"
+			passiveeffect="alt5/effects/body_1.effect,alt5/effects/body_1.effect,alt5/effects/body_1.effect,alt5/effects/body_4_heal.effect,alt5/effects/body_4_heal.effect,alt5/effects/body_4_heal.effect,alt5/effects/body_4_heal.effect,alt5/effects/body_8_heal.effect,alt5/effects/body_8_heal.effect,alt5/effects/body_8_heal.effect,alt5/effects/body_8_heal.effect,alt5/effects/body_12_heal.effect,alt5/effects/body_12_heal.effect,alt5/effects/body_12_heal.effect,alt5/effects/body_12_heal.effect,alt5/effects/body_12_heal.effect,alt5/effects/body_12_heal.effect,alt5/effects/body_12_heal.effect,alt5/effects/body_12_heal.effect,alt5/effects/body_12_heal.effect,alt5/effects/body_12_heal.effect,alt5/effects/body_12_heal.effect,alt5/effects/body_12_heal.effect,alt5/effects/body_12_heal.effect,alt5/effects/body_12_heal.effect"
+			idleanim="ability_2_LifeDefault"
+			attackanim="ability_2_LifeAttack_%"
+			attacknumanims="1"
+			attackimpacteffect="alt5/effects/impact_heal.effect"
+		/>
+		
+	</altavatar>
+	
+	<altavatar key="Hero_Maliken.Alt6"
+		passiveeffect=""
+		preglobalscale="1.75"
+		
+		icon2="alt6/icon.tga"
+		portrait="alt6/icon.tga"
+		model="alt6/model.mdf"
+		infoheight="200"
+		
+		selectedsound="alt6/sounds/voice/select_%.wav"
+		selectedflavorsound="alt6/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt6/sounds/voice/move_%.wav"
+		confirmattacksound="alt6/sounds/voice/attack_%.wav"
+		nomanasound="alt6/sounds/voice/no_mana.wav"
+		cooldownsound="alt6/sounds/voice/cooldown.wav"
+		tauntedsound="alt6/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt6/sounds/voice/taunt_after.wav"
+		
+		attackimpacteffect="alt6/effects/impact.effect"
+		previewmodel="alt6/preview.mdf"
+		previewpos="0 0 -60"
+		previewangles="0 0 0"
+		previewscale="1"
+	
+		storemodel="alt6/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.45"
+		
+		corpsetime="1000"
+		corpsefadetime="2500"
+		
+		portraitcampos="0 -7 26"
+	>
+		<modifier key="swordflame" modpriority="80"
+			idleanim="ability_2_fireDefault"
+			attackanim="ability_2_fireAttack_%"
+			attacknumanims="2"
+			attackimpacteffect="alt6/effects/impact_flame.effect"
+		/>
+		
+		<modifier key="swordhealing" modpriority="80"
+			idleanim="ability_2_LifeDefault"
+			attackanim="ability_2_LifeAttack_%"
+			attacknumanims="2"
+			attackimpacteffect="alt6/effects/impact_heal.effect"
+		/>
+
+		<modifier key="malikenult_Alt6" modpriority="100"
+			model="alt6/ability_04/effects/upgrade/model.mdf"
+			preglobalscale="1.64"
+			attackprojectile="Projectile_MalikenAttack"
+			attackcooldown="1700"
+			attackoffset="0 100 70"
+			attackrange="550"
+			attacktype="ranged"
+			attackimpacteffect=""
+			passiveeffect="alt6/ability_04/effects/body.effect"
+			portraitcampos="0 0 35"
+			
+			selectedsound="alt6/sounds/voice/demon/select_%.wav"
+		    confirmmovesound="alt6/sounds/voice/demon/move_%.wav"
+		    confirmattacksound="alt6/sounds/voice/demon/attack_%.wav"
+		    nomanasound="alt6/sounds/voice/demon/no_mana.wav"
+		    cooldownsound="alt6/sounds/voice/demon/cooldown.wav"
+	    	tauntedsound="alt6/sounds/voice/demon/taunt_prior.wav"
+		    tauntkillsound="alt6/sounds/voice/demon/taunt_after.wav"
+		/>
+	</altavatar>
+	
+	<altavatar key="Hero_Maliken.Alt7"
+		passiveeffect=""
+		preglobalscale="1.65"
+		
+		icon2="alt7/icon.tga"
+		portrait="alt7/icon.tga"
+		model="alt7/model.mdf"
+		infoheight="200"
+		
+		previewmodel="alt7/preview.mdf"
+		previewpos="0 0 -60"
+		previewangles="0 0 0"
+		previewscale="1"
+	
+		storemodel="alt7/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.45"
+		
+		corpsetime="1000"
+		corpsefadetime="2500"
+		
+		portraitcampos="-11 -18 19"
+		portraitangles="0 0 25"
+	>
+		<modifier key="malikenult_Alt7" modpriority="100"
+			model="alt7/ability_04/model.mdf"
+			preglobalscale="1.64"
+			attackprojectile="Projectile_MalikenAttack"
+			attackcooldown="1700"
+			attackoffset="0 100 70"
+			attackrange="550"
+			attacktype="ranged"
+			attackimpacteffect=""
+		/>
+	</altavatar>
+	
+	<altavatar key="Hero_Maliken.pog_skin" modpriority="1"
+		
+		icon2="icon.tga"
+		portrait="icon.tga"
+		model="pog_skin/model.mdf"
+		
+		previewmodel="pog_skin/preview.mdf"
+		previewpos="0 0 -50"
+		previewangles="0 0 0"
+		previewscale="1.15"
+
+		storemodel="pog_skin/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.5"
+	/>
+	
+</hero>

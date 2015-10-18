@@ -1,0 +1,1 @@
+D:\HoNFreeAvatar\HoNFreeAvatar\bin\Debug\texconv.exe -ft PNG -o D:\HoNFreeAvatar\HoNFreeAvatar\bin\Debug\extract\00000000\heroes\zephyr\alt7 D:\HoNFreeAvatar\HoNFreeAvatar\bin\Debug\extract\00000000\heroes\zephyr\alt7\icon.dds

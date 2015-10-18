@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hero
+	name="Hero_Moraxus"
+
+	team="Hellbourne"
+	icon="icon.tga"
+	portrait="icon.tga"
+	model="model.mdf"
+	skin=""
+	
+	passiveeffect=""
+	spawneffect=""
+	respawneffect="/shared/effects/respawn.effect"
+	selectedsound="sounds/voice/select_%.wav"
+	selectedflavorsound="sounds/voice/select_flavour_%.wav"
+	confirmmovesound="sounds/voice/move_%.wav"
+	confirmattacksound="sounds/voice/attack_%.wav"
+	nomanasound="sounds/voice/no_mana.wav"
+	cooldownsound="sounds/voice/cooldown.wav"
+	announcersound="sounds/voice/hero_select.wav"
+	tauntedsound="sounds/voice/taunt_prior.wav"
+	tauntkillsound="sounds/voice/taunt_after.wav" 
+	
+	preglobalscale="1.8"
+	modelscale="1.0"
+	effectscale="0.9"
+	boundsheight="112"
+	boundsradius="24"
+	selectionradius="52"
+	targetoffset="0 0 92"
+	
+	category="tank cc"
+	difficulty="3"
+
+	solorating="0"
+	junglerating="0"
+	carryrating="0"
+	supportrating="0"
+	initiatorrating="4"
+	gankerrating="2"
+	pusherrating="0"
+	rangedrating="0"
+	meleerating="5"
+
+	movespeed="300"
+	turnrate="540"
+	turnsmoothing="0.05"
+
+	maxhealth="150"
+	healthregen="1.00"
+	maxmana="0"
+	manaregen="0.01"
+
+	armor="1.0"
+	magicarmor="4.5"
+
+	inventory0="Ability_Moraxus1"
+	inventory1="Ability_Moraxus2"
+	inventory2="Ability_Moraxus3"
+	inventory3="Ability_Moraxus4"
+	inventory4="Ability_AttributeBoost"
+	inventory5=""
+	inventory6=""
+	inventory8="Ability_Taunt"
+	inventory9=""
+	inventory10=""
+	inventory11=""
+	inventory12="Ability_AutomatedCourier"
+
+	attackduration="800"
+	attackactiontime="400"
+	attackcooldown="1700"
+	attackdamagemin="24"
+	attackdamagemax="30"
+	attacknumanims="3"
+	attackoffset="0 100 110"
+	attackprojectile=""
+	attackrange="128"
+	attackstarteffect=""
+	attackactioneffect=""
+	attackimpacteffect="effects/impact.effect"
+	attacktype="melee"
+	combattype="Hero"
+
+	aggrorange="600"
+	sightrangeday="1800"
+	sightrangenight="800"
+	wanderrange="250"
+
+	primaryattribute="Strength"
+	strength="23"
+	strengthperlevel="2.8"
+	agility="16"
+	agilityperlevel="1.7"
+	intelligence="16"
+	intelligenceperlevel="1.7"
+	
+	previewmodel="preview.mdf"
+	previewpos="0 0 -50"
+	previewangles="0 0 0"
+	previewscale="1.6"
+	
+	storemodel="preview.mdf"
+	storepos="0 0 -20"
+	storeangles="0 0 0"
+	storescale="1.65"
+	
+	corpsetime="2000"
+	corpsefadetime="5000"
+	corpsefadeeffect="/shared/effects/corpse_sink.effect"
+	
+	toolchargeseffectkeyname0="Ability_Moraxus3"
+	toolchargeseffectpath0=",ability_03/effects/charge1_state.effect,ability_03/effects/charge2_state.effect,ability_03/effects/charge3_state.effect,ability_03/effects/charge4_state.effect"
+	
+>
+	<recommendeditem name="Item_ManaPotion" />	
+	<recommendeditem name="Item_MinorTotem" />
+	<recommendeditem name="Item_RunesOfTheBlight" />
+	<recommendeditem name="Item_HealthPotion" />
+	<recommendeditem name="Item_HomecomingStone" />
+	
+	<recommendeditem name="Item_Strength5" />	
+	<recommendeditem name="Item_EnhancedMarchers" />
+	<recommendeditem name="Item_BloodChalice" />
+	<recommendeditem name="Item_Shield2" />
+	<recommendeditem name="Item_PortalKey" />
+	
+	<recommendeditem name="Item_Excruciator" />	
+	<recommendeditem name="Item_BarrierIdol" />
+	<recommendeditem name="Item_Damage10" />
+	<recommendeditem name="Item_DaemonicBreastplate" />
+	<recommendeditem name="Item_BehemothsHeart" />
+	
+	<modifier key="iamsheeped" modpriority="100"
+		passiveeffect=""
+	/>
+		
+	<modifier key="ability2_blocked" priority="100"
+	/>
+	
+	<modifier key="moraxus2ready" priority="100"
+		idleanim="shield_idle"
+		attackanim="shield_atk%"
+		attacknumanims="2"
+		walkanim="shield_walk"
+	/>
+	
+	<!-- Staff of the Master -->
+	<modifier key="ult_boost" modpriority="100"
+		
+	>
+		<aura state="State_Moraxus_Ult_Boost" radius="0" targetscheme="self"/>
+	</modifier>
+	
+	
+	<altavatar key="Hero_Moraxus.Alt" modpriority="1"
+		altavatar="true"
+		
+		attacknumanims="2"
+		icon2="alt/icon.tga"
+		portrait="alt/icon.tga"
+		model="alt/model.mdf"
+		
+		selectedsound="alt/sounds/voice/select_%.wav"
+	    selectedflavorsound="alt/sounds/voice/select_flavour_%.wav"
+	    confirmmovesound="alt/sounds/voice/move_%.wav"
+	    confirmattacksound="alt/sounds/voice/attack_%.wav"
+	    nomanasound="alt/sounds/voice/no_mana.wav"
+    	cooldownsound="alt/sounds/voice/cooldown.wav"
+	    tauntedsound="alt/sounds/voice/taunt_prior.wav"
+	    tauntkillsound="alt/sounds/voice/taunt_after.wav"
+	  
+		previewmodel="alt/preview.mdf"
+		previewpos="-15 0 -90"
+		previewangles="0 0 0"
+		previewscale="1.5"
+		
+		storemodel="alt/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.75"
+		
+		toolchargeseffectpath0=",alt/ability_03/effects/charge1_state.effect,alt/ability_03/effects/charge2_state.effect,alt/ability_03/effects/charge3_state.effect,alt/ability_03/effects/charge4_state.effect"
+	/>
+	
+	<altavatar key="Hero_Moraxus.Alt2" modpriority="1"
+		altavatar="true"
+		
+		preglobalscale="1.35"
+		
+		tiltfactor="1"
+		tiltspeed="70"
+		
+		model="alt2/model.mdf"
+		icon2="alt2/icon.tga"
+		portrait="alt2/icon.tga"
+	
+		attacknumanims="2"
+	 
+	    selectedsound="alt2/sounds/voice/select_%.wav"
+	    selectedflavorsound="alt2/sounds/voice/select_flavour_%.wav"
+	    confirmmovesound="alt2/sounds/voice/move_%.wav"
+	    confirmattacksound="alt2/sounds/voice/attack_%.wav"
+	    nomanasound="alt2/sounds/voice/no_mana.wav"
+	    cooldownsound="alt2/sounds/voice/cooldown.wav"
+	    tauntedsound="alt2/sounds/voice/taunt_prior.wav"
+	    tauntkillsound="alt2/sounds/voice/taunt_after.wav"
+	
+		previewmodel="alt2/preview.mdf"
+		previewpos="-15 0 -90"
+		previewangles="0 0 0"
+		previewscale="1.5"
+		
+		storemodel="alt2/preview.mdf"
+		storepos="0 0 -25"
+		storeangles="0 0 0"
+		storescale="1.2"
+
+		toolchargeseffectpath0=",alt2/ability_03/effects/charge1_state.effect,alt2/ability_03/effects/charge2_state.effect,alt2/ability_03/effects/charge3_state.effect,alt2/ability_03/effects/charge4_state.effect"
+	/>
+	
+	<altavatar key="Hero_Moraxus.Alt3" modpriority="1"
+		altavatar="true"
+		
+		preglobalscale="1.75"
+		
+		tiltfactor="1"
+		tiltspeed="70"
+		
+		model="alt3/model.mdf"
+		icon2="alt3/icon.tga"
+		portrait="alt3/icon.tga"
+		passiveeffect="alt3/effects/body.effect"
+	
+		corpsetime="1000"
+		corpsefadetime="7000"
+		corpsefadeeffect="/shared/effects/corpse_sink.effect"
+	
+		attacknumanims="2"
+	 
+	    selectedsound="alt3/sounds/voice/select_%.wav"
+	    selectedflavorsound="alt3/sounds/voice/select_flavour_%.wav"
+	    confirmmovesound="alt3/sounds/voice/move_%.wav"
+	    confirmattacksound="alt3/sounds/voice/attack_%.wav"
+	    nomanasound="alt3/sounds/voice/no_mana.wav"
+	    cooldownsound="alt3/sounds/voice/cooldown.wav"
+	    tauntedsound="alt3/sounds/voice/taunt_prior.wav"
+	    tauntkillsound="alt3/sounds/voice/taunt_after.wav"
+	
+		previewmodel="alt3/preview.mdf"
+		previewpos="-15 0 -90"
+		previewangles="0 0 0"
+		previewscale="1.9"
+		previewpassiveeffect="alt3/effects/body_store.effect"
+		
+		storemodel="alt3/preview.mdf"
+		storepos="0 0 -25"
+		storeangles="0 0 0"
+		storescale="1.65"
+		storepassiveeffect="alt3/effects/body_store.effect"
+		
+		toolchargeseffectpath0=",alt3/ability_03/effects/charge1_state.effect,alt3/ability_03/effects/charge2_state.effect,alt3/ability_03/effects/charge3_state.effect,alt3/ability_03/effects/charge4_state.effect"
+	/>
+	
+	<altavatar key="Hero_Moraxus.Alt4" modpriority="1"
+		altavatar="true"
+		
+		preglobalscale="1.75"
+		
+		tiltfactor="1"
+		tiltspeed="70"
+		
+		model="alt4/model.mdf"
+		icon2="alt4/icon.tga"
+		portrait="alt4/icon.tga"
+		passiveeffect="alt4/effects/body.effect"
+	
+		corpsetime="1000"
+		corpsefadetime="7000"
+		corpsefadeeffect="/shared/effects/corpse_sink.effect"
+	
+		attacknumanims="2"
+	 
+	    selectedsound="alt4/sounds/voice/select_%.wav"
+	    selectedflavorsound="alt4/sounds/voice/select_flavour_%.wav"
+	    confirmmovesound="alt4/sounds/voice/move_%.wav"
+	    confirmattacksound="alt4/sounds/voice/attack_%.wav"
+	    nomanasound="alt4/sounds/voice/no_mana.wav"
+	    cooldownsound="alt4/sounds/voice/cooldown.wav"
+	    tauntedsound="alt4/sounds/voice/taunt_prior.wav"
+	    tauntkillsound="alt4/sounds/voice/taunt_after.wav"
+		portraitcampos="0 30 30"
+		
+		
+		attackimpacteffect="alt4/effects/impact.effect"
+	
+		previewmodel="alt4/preview.mdf"
+		previewpos="-15 0 -90"
+		previewangles="0 0 0"
+		previewscale="1.9"
+		previewpassiveeffect="alt4/effects/body_store.effect"
+		
+		storemodel="alt4/preview.mdf"
+		storepos="0 0 -25"
+		storeangles="0 0 0"
+		storescale="1.65"
+		storepassiveeffect="alt4/effects/body_store.effect"
+		
+		toolchargeseffectpath0=",alt4/ability_03/effects/charge1_state.effect,alt4/ability_03/effects/charge2_state.effect,alt4/ability_03/effects/charge3_state.effect,alt4/ability_03/effects/charge4_state.effect"
+		
+	>
+	<onspawn>
+	<setactivemodifierkey name="Axia_Sound" />
+    <activatemodifierkey name="Ursa_Sound"/>
+	</onspawn>
+	
+	<onrespawn>
+	<setactivemodifierkey name="Axia_Sound" />
+	</onrespawn>
+   </altavatar>
+</hero>

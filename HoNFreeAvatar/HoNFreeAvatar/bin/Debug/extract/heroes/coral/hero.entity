@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hero
+	name="Hero_Coral"
+
+	team="dev_Legion"
+	icon="icon.tga"
+	portrait="icon.tga"
+	model="model.mdf"
+	skin=""
+	
+	passiveeffect="effects/body.effect"
+	spawneffect=""
+	respawneffect="/shared/effects/respawn.effect"
+	selectedsound="sounds/voice/select_%.wav"
+	selectedflavorsound="sounds/voice/select_flavour_%.wav"
+	confirmmovesound="sounds/voice/move_%.wav"
+	confirmattacksound="sounds/voice/attack_%.wav"
+	nomanasound="sounds/voice/no_mana.wav"
+	cooldownsound="sounds/voice/cooldown.wav"
+	announcersound="sounds/voice/hero_select.wav"
+	tauntedsound="sounds/voice/taunt_prior.wav"
+	tauntkillsound="sounds/voice/taunt_after.wav"
+	
+	preglobalscale="1.4"
+	modelscale="1.125"
+	effectscale="0.9"
+	boundsheight="112"
+	boundsradius="24"
+	selectionradius="48"
+	targetoffset="0 0 92"
+
+	category="cc magic"
+	difficulty="3"
+
+	solorating="0"
+	junglerating="0"
+	carryrating="0"
+	supportrating="4"
+	initiatorrating="0"
+	gankerrating="2"
+	pusherrating="0"
+	rangedrating="3"
+	meleerating="0"
+	
+	movespeed="300"
+	turnrate="450"
+	turnsmoothing="0.05"
+
+	maxhealth="150"
+	healthregen="0.25"
+	maxmana="0"
+	manaregen="0.01"
+
+	armor="-0.6"
+	magicarmor="6"
+
+	inventory0="Ability_Coral1"
+	inventory1="Ability_Coral2"
+	inventory2="Ability_Coral3"
+	inventory3="Ability_Coral4"
+	inventory4="Ability_AttributeBoost"
+	inventory5=""
+	inventory6=""
+	inventory8="Ability_Taunt"
+	inventory9=""
+	inventory10=""
+	inventory11=""
+	inventory12="Ability_AutomatedCourier"
+
+	attackduration="800"
+	attackactiontime="400"
+	attackcooldown="1700"
+	attackdamagemin="18"
+	attackdamagemax="26"
+	attacknumanims="2"
+	attackoffset="50 30 80"
+	attackprojectile="Projectile_CoralAttack"
+	attackrange="600"
+	attackstarteffect=""
+	attackactioneffect=""
+	attackimpacteffect=""
+	attacktype="ranged"
+	combattype="Hero"
+
+	aggrorange="800"
+	sightrangeday="1800"
+	sightrangenight="800"
+	wanderrange="250"
+	
+	corpsetime="2500"
+	corpsefadetime="1500"
+	corpsefadeeffect="/shared/effects/corpse_sink.effect"
+
+	primaryattribute="Intelligence"
+	strength="19"
+	strengthperlevel="1.8"
+	agility="15"
+	agilityperlevel="1.4"
+	intelligence="23"
+	intelligenceperlevel="2.4"
+	
+	previewmodel="model.mdf"
+	previewpos="0 0 -60"
+	previewangles="0 0 0"
+	previewscale="1.5"
+	
+	storemodel="model.mdf"
+	storepos="0 0 -20"
+	storeangles="0 0 0"
+	storescale="1.55"
+>
+	<recommendeditem name="Item_ManaPotion" />
+	<recommendeditem name="Item_MinorTotem" />
+	<recommendeditem name="Item_RunesOfTheBlight" />
+	<recommendeditem name="Item_HealthPotion" />
+	<recommendeditem name="Item_HomecomingStone" />
+	
+	<recommendeditem name="Item_Strength5" />
+	<recommendeditem name="Item_BloodChalice" />
+	<recommendeditem name="Item_Steamboots" />
+	<recommendeditem name="Item_SpellShards" />
+	<recommendeditem name="Item_Shield2" />
+	
+	<recommendeditem name="Item_ElderParasite" />
+	<recommendeditem name="Item_Immunity" />
+	<recommendeditem name="Item_FrostfieldPlate" />
+	<recommendeditem name="Item_BehemothsHeart" />
+	<recommendeditem name="Item_Morph" />
+	
+	<modifier key="iamsheeped" modpriority="102"
+		passiveeffect=""
+	/>
+	
+</hero>

@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hero
+	name="Hero_Artesia"
+	
+	team="Hellbourne"
+	icon="icon.tga"
+	portrait="icon.tga"
+	model="model.mdf"
+	skin=""
+	
+	passiveeffect="effects/body.effect"
+	spawneffect=""
+	respawneffect="/shared/effects/respawn.effect"
+	selectedsound="sounds/voice/select_%.wav"
+	selectedflavorsound="sounds/voice/select_flavour_%.wav"
+	confirmmovesound="sounds/voice/move_%.wav"
+	confirmattacksound="sounds/voice/attack_%.wav"
+	nomanasound="sounds/voice/no_mana.wav"
+	cooldownsound="sounds/voice/cooldown.wav"
+	announcersound="sounds/voice/hero_select.wav"
+	tauntedsound="sounds/voice/taunt_prior.wav"
+	tauntkillsound="sounds/voice/taunt_after.wav"
+	
+	preglobalscale="2.2"
+	modelscale="1.0"
+	effectscale="0.9"
+	boundsheight="112"
+	boundsradius="24"
+	selectionradius="48"
+	targetoffset="0 0 92"
+
+	movespeed="300"
+	turnrate="600"
+	turnsmoothing="0.1"
+	infoheight="230"
+	wanderrange="250"
+
+	maxhealth="150"
+	healthregen="0.25"
+	maxmana="0"
+	manaregen="0.01"
+	
+	category="magic"
+	difficulty="3.5"
+
+	solorating="5"
+	junglerating="0"
+	carryrating="0"
+	supportrating="0"
+	initiatorrating="0"
+	gankerrating="2"
+	pusherrating="0"
+	rangedrating="5"
+	meleerating="0"
+
+	armor="-1.24"
+	magicarmor="5.5"
+
+	inventory0="Ability_Artesia1"
+	inventory1="Ability_Artesia2"
+	inventory2="Ability_Artesia3"
+	inventory3="Ability_Artesia4"
+	inventory4="Ability_AttributeBoost"
+	inventory5=""
+	inventory6=""
+	inventory8="Ability_Taunt"
+	inventory9=""
+	inventory10=""
+	inventory11=""
+	inventory12="Ability_AutomatedCourier"
+
+	attackduration="1000"
+	attackactiontime="400"
+	attackcooldown="1700"
+	attackdamagemin="15"
+	attackdamagemax="20"
+	attacknumanims="2"
+	attackoffset="-10 30 175"
+	attackprojectile="Projectile_ArtesiaAttack"
+	attackrange="525"
+	attackstarteffect=""
+	attackactioneffect=""
+	attackimpacteffect=""
+	attacktype="ranged"
+	combattype="Hero"
+
+	aggrorange="800"
+	sightrangeday="1800"
+	sightrangenight="800"
+	
+	corpsetime="250"
+	corpsefadetime="2000"
+	corpsefadeeffect="/shared/effects/corpse_sink.effect"
+
+	primaryattribute="Intelligence"
+	strength="18"
+	strengthperlevel="1.8"
+	agility="15"
+	agilityperlevel="1"
+	intelligence="26"
+	intelligenceperlevel="3"
+	
+	previewmodel="preview.mdf"
+	previewpos="-10 0 -125"
+	previewangles="0 0 0"
+	previewscale="2.25"
+	
+	storemodel="preview.mdf"
+	storepos="-10 0 -60"
+	storeangles="0 0 0"
+	storescale="1.90"
+>
+	<altavatar key="Hero_Artesia.Alt" modpriority="1"
+		altavatar="true"
+		
+		preglobalscale="2.15"
+		passiveeffect="alt/effects/body.effect"
+		
+		attackoffset="-25 60 175"
+		
+		icon2="alt/icon.tga"
+		portrait="alt/icon.tga"
+		model="alt/model.mdf"
+	
+     	selectedsound="alt/sounds/voice/select_%.wav"
+	    selectedflavorsound="alt/sounds/voice/select_flavour_%.wav"
+	    confirmmovesound="alt/sounds/voice/move_%.wav"
+	    confirmattacksound="alt/sounds/voice/attack_%.wav"
+	    nomanasound="alt/sounds/voice/no_mana.wav"
+	    cooldownsound="alt/sounds/voice/cooldown.wav"
+	    tauntedsound="alt/sounds/voice/taunt_prior.wav"
+	    tauntkillsound="alt/sounds/voice/taunt_after.wav"
+	
+		previewmodel="alt/preview.mdf"
+		previewpos="-15 0 -100"
+		previewangles="0 0 0"
+		previewscale="1.95"
+		
+		storemodel="alt/preview.mdf"
+		storepos="-5 0 -60"
+		storeangles="0 0 0"
+		storescale="1.90"
+	/>
+
+	<altavatar key="Hero_Artesia.Alt3" modpriority="1"
+		altavatar="true"
+		icon2="alt3/icon.tga"
+		portrait="alt3/icon.tga"
+		model="alt3/model.mdf"
+		
+		preglobalscale="2.0"
+		passiveeffect="alt3/effects/body.effect"
+			
+		selectedsound="alt3/sounds/voice/select_%.wav"
+	    selectedflavorsound="alt3/sounds/voice/select_flavour_%.wav"
+	    confirmmovesound="alt3/sounds/voice/move_%.wav"
+	    confirmattacksound="alt3/sounds/voice/attack_%.wav"
+	    nomanasound="alt3/sounds/voice/no_mana.wav"
+	    cooldownsound="alt3/sounds/voice/cooldown.wav"
+	    tauntedsound="alt3/sounds/voice/taunt_prior.wav"
+	    tauntkillsound="alt3/sounds/voice/taunt_after.wav"
+		
+		portraitcampos="23 -40 26"
+		portraitangles="0 0 0"
+		portraitscale="1"
+		
+		previewmodel="alt3/preview.mdf"
+		previewpos="-15 0 -100"
+		previewangles="0 0 0"
+		previewscale="1.95"
+		
+		storemodel="alt3/preview.mdf"
+		storepos="-5 0 -60"
+		storeangles="0 0 0"
+		storescale="1.90"
+	/>
+	
+	<altavatar key="Hero_Artesia.Alt4" modpriority="1"
+		altavatar="true"
+		icon2="alt4/icon.tga"
+		portrait="alt4/icon.tga"
+		model="alt4/model.mdf"
+		
+		preglobalscale="2.0"
+		passiveeffect=""
+		attackprojectile="Projectile_ArtesiaAttack_Alt4"
+	     	
+		selectedsound="alt4/sounds/voice/select_%.wav"
+	    selectedflavorsound="alt4/sounds/voice/select_flavour_%.wav"
+	    confirmmovesound="alt4/sounds/voice/move_%.wav"
+	    confirmattacksound="alt4/sounds/voice/attack_%.wav"
+	    nomanasound="alt4/sounds/voice/no_mana.wav"
+	    cooldownsound="alt4/sounds/voice/cooldown.wav"
+	    tauntedsound="alt4/sounds/voice/taunt_prior.wav"
+	    tauntkillsound="alt4/sounds/voice/taunt_after.wav"
+		
+		previewpassiveeffect="alt4/effects/body.effect"
+		previewmodel="alt4/preview.mdf"
+		previewpos="-15 0 -100"
+		previewangles="0 0 0"
+		previewscale="1.95"
+		
+		storepassiveeffect="alt4/effects/body.effect"
+		storemodel="alt4/preview.mdf"
+		storepos="-5 0 -60"
+		storeangles="0 0 0"
+		storescale="1.90"
+	>	
+		<onspawn propagatetoillusions="false" >
+			<ownsproduct target="this_entity" product="aa.Hero_Rhapsody.Alt3 aa.Hero_Artesia.Alt4 aa.Hero_DrunkenMaster.Alt7 aa.Hero_Zephyr.Alt7 aa.Hero_Devourer.Alt7" />
+			<compare a="result" b="1" op="eq">
+				<activatemodifierkey name="Pirate_Set_Bonus" />
+			</compare>
+		</onspawn>
+		
+		<onrespawn propagatetoillusions="false" >
+			<ownsproduct target="this_entity" product="aa.Hero_Rhapsody.Alt3 aa.Hero_Artesia.Alt4 aa.Hero_DrunkenMaster.Alt7 aa.Hero_Zephyr.Alt7 aa.Hero_Devourer.Alt7" />
+			<compare a="result" b="1" op="eq">
+				<activatemodifierkey name="Pirate_Set_Bonus" />
+			</compare>
+		</onrespawn>
+		
+		<modifier key="Pirate_Set_Bonus" modpriority="1000"
+			passiveeffect=""
+		/>
+	</altavatar>
+	
+	<altavatar key="Hero_Artesia.Alt5" modpriority="1"
+		altavatar="true"
+		icon2="alt5/icon.tga"
+		portrait="alt5/icon.tga"
+		model="alt5/model.mdf"
+		
+		preglobalscale="2.0"
+		passiveeffect=""
+		attackprojectile="Projectile_ArtesiaAttack_Alt5"
+	     	
+		selectedsound="alt5/sounds/voice/select_%.wav"
+	    selectedflavorsound="alt5/sounds/voice/select_flavour_%.wav"
+	    confirmmovesound="alt5/sounds/voice/move_%.wav"
+	    confirmattacksound="alt5/sounds/voice/attack_%.wav"
+	    nomanasound="alt5/sounds/voice/no_mana.wav"
+	    cooldownsound="alt5/sounds/voice/cooldown.wav"
+	    tauntedsound="alt5/sounds/voice/taunt_prior.wav"
+	    tauntkillsound="alt5/sounds/voice/taunt_after.wav"
+		
+		previewpassiveeffect="alt5/effects/body.effect"
+		previewmodel="alt5/preview.mdf"
+		previewpos="-15 0 -100"
+		previewangles="0 0 0"
+		previewscale="1.95"
+		
+		storepassiveeffect="alt5/effects/body.effect"
+		storemodel="alt5/preview.mdf"
+		storepos="-5 0 -60"
+		storeangles="0 0 0"
+		storescale="1.90"
+	/>	
+	
+</hero>

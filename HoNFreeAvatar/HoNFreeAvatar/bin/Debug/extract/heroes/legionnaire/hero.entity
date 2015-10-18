@@ -1,0 +1,669 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hero
+	name="Hero_Legionnaire"
+
+	team="Legion"
+	icon="icon.tga"
+	portrait="icon.tga"
+	model="alt9/model.mdf"
+	skin=""
+	
+	passiveeffect=""
+	spawneffect=""
+	respawneffect="/shared/effects/respawn.effect"
+	selectedsound="sounds/voice/select_%.wav"
+	selectedflavorsound="sounds/voice/select_flavour_%.wav"
+	confirmmovesound="sounds/voice/move_%.wav"
+	confirmattacksound="sounds/voice/attack_%.wav"
+	nomanasound="sounds/voice/no_mana.wav"
+	cooldownsound="sounds/voice/cooldown.wav"
+	announcersound="sounds/voice/hero_select.wav"
+	tauntedsound="sounds/voice/taunt_prior.wav"
+	tauntkillsound="sounds/voice/taunt_after.wav"
+	
+	preglobalscale=".9"
+	modelscale="1.0"
+	effectscale="0.9"
+	boundsheight="112"
+	boundsradius="24"
+	selectionradius="52"
+	targetoffset="0 0 92"
+
+	category="cc tank"
+	difficulty="2.5"
+
+	solorating="0"
+	junglerating="5"
+	carryrating="0"
+	supportrating="0"
+	initiatorrating="2"
+	gankerrating="1"
+	pusherrating="0"
+	rangedrating="0"
+	meleerating="5"
+
+	movespeed="295"
+	turnrate="540"
+	turnsmoothing="0.05"
+
+	maxhealth="150"
+	healthregen="1.00"
+	maxmana="0"
+	manaregen="0.01"
+
+	armor="0.0"
+	magicarmor="5.5"
+
+	inventory0="Ability_Legionnaire1"
+	inventory1="Ability_Legionnaire2"
+	inventory2="Ability_Legionnaire3"
+	inventory3="Ability_Legionnaire4"
+	inventory4="Ability_AttributeBoost"
+	inventory5=""
+	inventory6=""
+	inventory8="Ability_Taunt"
+	inventory9=""
+	inventory10=""
+	inventory11=""
+	inventory12="Ability_AutomatedCourier"
+
+	attackduration="1000"
+	attackactiontime="500"
+	attackcooldown="1700"
+	attackdamagemin="24"
+	attackdamagemax="28"
+	attacknumanims="2"
+	attackoffset="0 100 110"
+	attackprojectile=""
+	attackrange="128"
+	attackstarteffect=""
+	attackactioneffect=""
+	attackimpacteffect="effects/impact.effect"
+	attacktype="melee"
+	combattype="Hero"
+
+	aggrorange="600"
+	sightrangeday="1800"
+	sightrangenight="800"
+	wanderrange="250"
+
+	primaryattribute="Strength"
+	strength="25"
+	strengthperlevel="2.5"
+	agility="20"
+	agilityperlevel="2.2"
+	intelligence="17"
+	intelligenceperlevel="1.9"
+	
+	previewmodel="alt9/preview.mdf"
+	previewpos="0 0 -60"
+	previewangles="0 0 0"
+	previewscale="1.6"
+	
+	storemodel="alt9/preview.mdf"
+	storepos="0 0 -20"
+	storeangles="0 0 0"
+	storescale="0.8"
+	
+	corpsetime="1000"
+	corpsefadetime="2500"
+	corpsefadeeffect="/shared/effects/corpse_sink.effect"
+	
+	portraitcampos="-35 20 40"
+	
+	tooleffectkeyname39="Item_Intelligence7"
+	tooleffectpath39="alt9/effects/boost.effect"
+>
+	<recommendeditem name="Item_ManaPotion" />	
+	<recommendeditem name="Item_MinorTotem" />
+	<recommendeditem name="Item_RunesOfTheBlight" />
+	<recommendeditem name="Item_HealthPotion" />
+	<recommendeditem name="Item_HomecomingStone" />
+	
+	<recommendeditem name="Item_Strength5" />
+	<recommendeditem name="Item_PowerSupply" />
+	<recommendeditem name="Item_EnhancedMarchers" />
+	<recommendeditem name="Item_PlatedGreaves" />
+	<recommendeditem name="Item_MagicArmor2" />
+	<recommendeditem name="Item_PortalKey" />
+	<recommendeditem name="Item_Shield2" />
+	<recommendeditem name="Item_Immunity" />
+	<recommendeditem name="Item_BarrierIdol" />
+	<recommendeditem name="Item_BehemothsHeart" />
+	<recommendeditem name="Item_DaemonicBreastplate" />
+	
+	<modifier key="iamsheeped" modpriority="100"
+		passiveeffect=""
+	/>
+	
+	<modifier key="legionnairecharging" priority="100"
+		walkanim="ability_2_sprint"
+		attackanim="ability_2_attack"
+		attacknumanims="1"
+		attackduration="200"
+		attackactiontime="200"
+		attackcooldown="1000"
+	/>
+	
+	<altavatar key="Hero_Legionnaire.Classic"
+		icon2="icon.tga"
+		portrait="icon.tga"
+		model="model.mdf"
+	
+		previewmodel="preview.mdf"
+		previewpos="0 0 -60"
+		previewangles="0 0 0"
+		previewscale="1.6"
+		
+		portraitcampos="0 0 30"
+		preglobalscale="1.8"
+		
+		storemodel="preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.62"
+	
+		tooleffectkeyname39="Item_Intelligence7"
+		tooleffectpath39="effects/boost.effect"
+	/>
+	
+	<altavatar key="Hero_Legionnaire.Alt"
+		icon2="alt/icon.tga"
+		portrait="alt/icon.tga"
+		model="alt/model.mdf"
+		
+		portraitcampos="0 0 30"
+		preglobalscale="1.8"
+		
+		previewmodel="alt/preview.mdf"
+		previewpos="0 0 -60"
+		previewangles="0 0 0"
+		previewscale="1.6"
+	
+		storemodel="alt/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.6"
+	
+		tooleffectkeyname39="Item_Intelligence7"
+		tooleffectpath39="alt/effects/boost.effect"
+	/>	
+	
+	<altavatar key="Hero_Legionnaire.Alt2"
+		icon2="alt2/icon.tga"
+		portrait="alt2/icon.tga"
+		model="alt2/model.mdf"
+		portraitcampos="0 0 30"
+		preglobalscale="1.8"
+		
+		selectedsound="alt2/sounds/voice/select_%.wav"
+	    selectedflavorsound="alt2/sounds/voice/select_flavour_%.wav"
+	    confirmmovesound="alt2/sounds/voice/move_%.wav"
+	    confirmattacksound="alt2/sounds/voice/attack_%.wav"
+	    nomanasound="alt2/sounds/voice/no_mana.wav"
+	    cooldownsound="alt2/sounds/voice/cooldown.wav"
+	    tauntedsound="alt2/sounds/voice/taunt_prior.wav"
+	    tauntkillsound="alt2/sounds/voice/taunt_after.wav"
+		
+		previewmodel="alt2/preview.mdf"
+		previewpos="0 0 -60"
+		previewangles="0 0 0"
+		previewscale="1.6"
+	
+		storemodel="alt2/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.6"
+	
+		tooleffectkeyname39="Item_Intelligence7"
+		tooleffectpath39="alt2/effects/boost.effect"
+	/>
+	
+	<altavatar key="Hero_Legionnaire.Alt3"
+		icon2="alt3/icon.tga"
+		portrait="alt3/icon.tga"
+		model="alt3/model.mdf"
+		
+		preglobalscale="1.8"
+		portraitcampos="0 0 30"
+		passiveeffect="alt3/effects/body.effect"
+		
+		previewmodel="alt3/preview.mdf"
+		previewpos="0 0 -80"
+		previewangles="0 0 0"
+		previewscale="1.5"
+		
+		selectedsound="alt3/sounds/voice/select_%.wav"
+	    selectedflavorsound="alt3/sounds/voice/select_flavour_%.wav"
+	    confirmmovesound="alt3/sounds/voice/move_%.wav"
+	    confirmattacksound="alt3/sounds/voice/attack_%.wav"
+	    nomanasound="alt3/sounds/voice/no_mana.wav"
+	    cooldownsound="alt3/sounds/voice/cooldown.wav"
+	    tauntedsound="alt3/sounds/voice/taunt_prior.wav"
+	    tauntkillsound="alt3/sounds/voice/taunt_after.wav"
+		
+		storemodel="alt3/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.6"
+		
+		infoheight="195"
+	
+		tooleffectkeyname39="Item_Intelligence7"
+		tooleffectpath39="alt3/effects/boost.effect"
+	/>
+	
+	<altavatar key="Hero_Legionnaire.Alt4"
+		icon2="alt4/icon.tga"
+		portrait="alt4/icon.tga"
+		model="alt4/model.mdf"
+		
+		preglobalscale="1.8"
+		portraitcampos="0 0 30"
+		passiveeffect="alt4/effects/body.effect"
+		respawneffect="/shared/effects/respawn_legionnaire.effect"
+		
+		previewmodel="alt4/upgraded_full_body/model.mdf"
+		previewpos="0 0 -80"
+		previewangles="0 0 0"
+		previewscale="1.5"
+		previewpassiveeffect="alt4/effects/store_body.effect"
+		
+		selectedsound="alt4/sounds/voice/select_%.wav"
+		selectedflavorsound="alt4/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt4/sounds/voice/move_%.wav"
+		confirmattacksound="alt4/sounds/voice/attack_%.wav"
+		nomanasound="alt4/sounds/voice/no_mana.wav"
+		cooldownsound="alt4/sounds/voice/cooldown.wav"
+		tauntedsound="alt4/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt4/sounds/voice/taunt_after.wav"
+		
+		storemodel="alt4/upgraded_full_body/model.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.6"
+		storepassiveeffect="alt4/effects/store_body.effect"
+	
+		tooleffectkeyname39="Item_Intelligence7"
+		tooleffectpath39="alt4/effects/boost.effect"
+	>
+		<onspawn propagatetoillusions="false" >
+			<applystate name="State_Black_Legion" target="this_entity" continuous="true" />
+			<ownsproduct target="this_entity" product="aa.Hero_DwarfMagi.Alt3"/>
+			<compare a="result" b="1" op="eq">
+				<applystate name="State_Legionnaire_Alt4_Enhanced_Shield_Effects" target="this_entity" continuous="true" />
+			</compare>
+			<else>
+				<applystate name="State_Legionnaire_Alt4_Shield_Effects" target="this_entity" continuous="true" />
+			</else>
+			
+			<ownsproduct target="this_entity" product="aa.Hero_Engineer.Alt3"/>
+			<compare a="result" b="1" op="eq">
+				<applystate name="State_Legionnaire_Alt4_Enhanced_Weapon_Effects" target="this_entity" continuous="true" />
+			</compare>
+			
+			<ownsproduct target="this_entity" product="aa.Hero_Martyr.Alt2"/>
+			<compare a="result" b="1" op="eq">
+				<applystate name="State_Legionnaire_Alt4_Enhanced_Shoulder_Effects" target="this_entity" continuous="true" />
+			</compare>
+			<else>
+				<applystate name="State_Legionnaire_Alt4_Shoulder_Effects" target="this_entity" continuous="true" />
+			</else>
+			
+			<ownsproduct target="this_entity" product="aa.Hero_Scout.Alt4"/>
+			<compare a="result" b="1" op="eq">
+				<applystate name="State_Legionnaire_Alt4_Enhanced_Boots_Effects" target="this_entity" continuous="true" />
+			</compare>
+			<else>
+				<applystate name="State_Legionnaire_Alt4_Boots_Effects" target="this_entity" continuous="true" />
+			</else>
+			
+			<ownsproduct target="this_entity" product="aa.Hero_DwarfMagi.Alt3 aa.Hero_Engineer.Alt3 aa.Hero_Martyr.Alt2 aa.Hero_Scout.Alt4"/>
+			<compare a="result" b="1" op="eq">
+				<applystate name="State_Legionnaire_Alt4_Enhanced_Helm_Effects" target="this_entity" continuous="true" />
+			</compare>
+			<else>
+				<applystate name="State_Legionnaire_Alt4_Helm_Effects" target="this_entity" continuous="true" />
+			</else>
+			
+			<applystate name="State_Legionnaire_Alt4_Arm_Effects" target="this_entity" continuous="true" />
+			<applystate name="State_Legionnaire_Alt4_Back_Effects" target="this_entity" continuous="true" />
+			<applystate name="State_Legionnaire_Alt4_Chest_Effects" target="this_entity" continuous="true" />
+			<applystate name="State_Legionnaire_Alt4_Waist_Effects" target="this_entity" continuous="true" />
+		</onspawn>
+		
+		<onrespawn propagatetoillusions="false" >
+			<applystate name="State_Black_Legion" target="this_entity" continuous="true" />
+			<ownsproduct target="this_entity" product="aa.Hero_DwarfMagi.Alt3"/>
+			<compare a="result" b="1" op="eq">
+				<applystate name="State_Legionnaire_Alt4_Enhanced_Shield_Effects" target="this_entity" continuous="true" />
+			</compare>
+			<else>
+				<applystate name="State_Legionnaire_Alt4_Shield_Effects" target="this_entity" continuous="true" />
+			</else>
+			
+			<ownsproduct target="this_entity" product="aa.Hero_Engineer.Alt3"/>
+			<compare a="result" b="1" op="eq">
+				<applystate name="State_Legionnaire_Alt4_Enhanced_Weapon_Effects" target="this_entity" continuous="true" />
+			</compare>
+			
+			<ownsproduct target="this_entity" product="aa.Hero_Martyr.Alt2"/>
+			<compare a="result" b="1" op="eq">
+				<applystate name="State_Legionnaire_Alt4_Enhanced_Shoulder_Effects" target="this_entity" continuous="true" />
+			</compare>
+			<else>
+				<applystate name="State_Legionnaire_Alt4_Shoulder_Effects" target="this_entity" continuous="true" />
+			</else>
+			
+			<ownsproduct target="this_entity" product="aa.Hero_Scout.Alt4"/>
+			<compare a="result" b="1" op="eq">
+				<applystate name="State_Legionnaire_Alt4_Enhanced_Boots_Effects" target="this_entity" continuous="true" />
+			</compare>
+			<else>
+				<applystate name="State_Legionnaire_Alt4_Boots_Effects" target="this_entity" continuous="true" />
+			</else>
+			
+			<ownsproduct target="this_entity" product="aa.Hero_DwarfMagi.Alt3 aa.Hero_Engineer.Alt3 aa.Hero_Martyr.Alt2 aa.Hero_Scout.Alt4"/>
+			<compare a="result" b="1" op="eq">
+				<applystate name="State_Legionnaire_Alt4_Enhanced_Helm_Effects" target="this_entity" continuous="true" />
+			</compare>
+			<else>
+				<applystate name="State_Legionnaire_Alt4_Helm_Effects" target="this_entity" continuous="true" />
+			</else>
+			
+			<applystate name="State_Legionnaire_Alt4_Arm_Effects" target="this_entity" continuous="true" />
+			<applystate name="State_Legionnaire_Alt4_Back_Effects" target="this_entity" continuous="true" />
+			<applystate name="State_Legionnaire_Alt4_Chest_Effects" target="this_entity" continuous="true" />
+			<applystate name="State_Legionnaire_Alt4_Waist_Effects" target="this_entity" continuous="true" />
+		</onrespawn>
+	
+		<modifier key="Alt4_Full_Armor" modpriority="2"
+			model="alt4/upgraded_full_body/model.mdf"
+		/>
+	</altavatar>
+	
+	<altavatar key="Hero_Legionnaire.Alt5"
+		icon2="alt5/icon.tga"
+		portrait="alt5/icon.tga"
+		model="alt5/model.mdf"
+		
+		passiveeffect="alt5/effects/body.effect"
+		portraitcampos="0 0 30"
+		previewmodel="alt5/preview.mdf"
+		previewpos="0 0 -80"
+		previewangles="0 0 0"
+		previewscale="1.5"
+		
+		preglobalscale="1.8"
+		
+		selectedsound="alt5/sounds/voice/select_%.wav"
+		selectedflavorsound="alt5/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt5/sounds/voice/move_%.wav"
+		confirmattacksound="alt5/sounds/voice/attack_%.wav"
+		nomanasound="alt5/sounds/voice/no_mana.wav"
+		cooldownsound="alt5/sounds/voice/cooldown.wav"
+		tauntedsound="alt5/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt5/sounds/voice/taunt_after.wav"
+		
+		storemodel="alt5/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.6"
+		
+		infoheight="175"
+		
+		corpsetime="4000"
+		corpsefadetime="3500"
+	
+		tooleffectkeyname39="Item_Intelligence7"
+		tooleffectpath39="alt5/effects/boost.effect"
+	>
+		<ondeath>
+			<playeffect effect="alt5/effects/death.effect"/>
+		</ondeath>
+	
+		<modifier key="Legionnaire_Alt5_Ability4" modpriority="2"
+			passiveeffect=""
+		>
+			<ondeath/>
+		</modifier>
+
+	</altavatar>
+
+	<altavatar key="Hero_Legionnaire.Alt6"
+		icon2="alt6/icon.tga"
+		portrait="alt6/icon.tga"
+		model="alt6/model.mdf"
+		
+		passiveeffect="alt6/effects/body.effect"
+		preglobalscale="1.8"
+		previewmodel="alt6/preview.mdf"
+		previewpos="0 0 -80"
+		previewangles="0 0 0"
+		previewscale="1.5"
+		
+		selectedsound="alt6/sounds/voice/select_%.wav"
+		selectedflavorsound="alt6/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt6/sounds/voice/move_%.wav"
+		confirmattacksound="alt6/sounds/voice/attack_%.wav"
+		nomanasound="alt6/sounds/voice/no_mana.wav"
+		cooldownsound="alt6/sounds/voice/cooldown.wav"
+		tauntedsound="alt6/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt6/sounds/voice/taunt_after.wav"
+		
+		attackstarteffect="alt6/effects/attackstart.effect"
+		attackimpacteffect="alt6/effects/impact.effect"
+		
+		corpsetime="500"
+		portraitcampos="0 0 30"
+		
+		storemodel="alt6/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.6"
+		
+		infoheight="195"
+	
+		tooleffectkeyname39="Item_Intelligence7"
+		tooleffectpath39="alt6/effects/boost.effect"
+	/>
+	
+	<altavatar key="Hero_Legionnaire.Alt7"
+		icon2="alt7/icon.tga"
+		portrait="alt7/icon.tga"
+		model="alt7/model.mdf"
+		
+		passiveeffect="alt7/effects/body.effect"
+		preglobalscale="1.8"
+		portraitcampos="0 0 30"
+		previewmodel="alt7/preview.mdf"
+		previewpos="0 0 -80"
+		previewangles="0 0 0"
+		previewscale="1.5"
+		
+		selectedsound="alt7/sounds/voice/select_%.wav"
+		selectedflavorsound="alt7/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt7/sounds/voice/move_%.wav"
+		confirmattacksound="alt7/sounds/voice/attack_%.wav"
+		nomanasound="alt7/sounds/voice/no_mana.wav"
+		cooldownsound="alt7/sounds/voice/cooldown.wav"
+		tauntedsound="alt7/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt7/sounds/voice/taunt_after.wav"
+		
+		storemodel="alt7/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.6"
+		
+		infoheight="195"
+	
+		tooleffectkeyname39="Item_Intelligence7"
+		tooleffectpath39="alt7/effects/boost.effect"
+	/>
+	
+	<altavatar key="Hero_Legionnaire.Alt8"
+		icon2="alt8/icon.tga"
+		portrait="alt8/icon.tga"
+		model="alt8/model.mdf"
+		
+		passiveeffect=""
+		portraitcampos="0 -20 10"
+		preglobalscale="1.8"
+		previewmodel="alt8/preview.mdf"
+		previewpos="0 0 -80"
+		previewangles="0 0 0"
+		previewscale="1.5"
+		
+		selectedsound="alt8/sounds/voice/select_%.wav"
+		selectedflavorsound="alt8/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt8/sounds/voice/move_%.wav"
+		confirmattacksound="alt8/sounds/voice/attack_%.wav"
+		nomanasound="alt8/sounds/voice/no_mana.wav"
+		cooldownsound="alt8/sounds/voice/cooldown.wav"
+		tauntedsound="alt8/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt8/sounds/voice/taunt_after.wav"
+		
+		storemodel="alt8/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.6"
+		
+		infoheight="195"
+	
+		tooleffectkeyname39="Item_Intelligence7"
+		tooleffectpath39="alt8/effects/boost.effect"
+	>
+		<onspawn propagatetoillusions="false" >
+			<ownsproduct target="this_entity" product="aa.Hero_EmeraldWarden.Alt7 aa.Hero_Hammerstorm.Alt7 aa.Hero_Legionnaire.Alt8 aa.Hero_Predator.Alt9 aa.Hero_Rally.Alt7 aa.Hero_Rocky.Alt5 aa.Hero_Solstice.Alt6 aa.Hero_Dampeer.Alt5 aa.Hero_Kane.Alt3 aa.Hero_Pestilence.Alt5 aa.Hero_Ravenor.Alt6" />
+			<compare a="result" b="1" op="eq">
+				<activatemodifierkey name="ARMS_Set" />
+			</compare>
+		</onspawn>
+		
+		<onrespawn propagatetoillusions="false" >
+			<ownsproduct target="this_entity" product="aa.Hero_EmeraldWarden.Alt7 aa.Hero_Hammerstorm.Alt7 aa.Hero_Legionnaire.Alt8 aa.Hero_Predator.Alt9 aa.Hero_Rally.Alt7 aa.Hero_Rocky.Alt5 aa.Hero_Solstice.Alt6 aa.Hero_Dampeer.Alt5 aa.Hero_Kane.Alt3 aa.Hero_Pestilence.Alt5 aa.Hero_Ravenor.Alt6" />
+			<compare a="result" b="1" op="eq">
+				<activatemodifierkey name="ARMS_Set" />
+			</compare>
+		</onrespawn>
+
+		<modifier key="ARMS_Set" modpriority="1"
+			tooleffectkeyname0=""
+			tooleffectpath0="/shared/effects/set_arms_red.effect"
+		/>
+	</altavatar>
+	
+	<altavatar key="Hero_Legionnaire.Alt10"
+		icon2="alt10/icon.tga"
+		portrait="alt10/icon.tga"
+		model="alt10/legion/model.mdf"
+		
+		passiveeffect=""
+		preglobalscale="0.85"
+		
+		selectedsound="alt10/sounds/voice/legion/select_%.wav"
+		selectedflavorsound="alt10/sounds/voice/legion/select_flavour_%.wav"
+		confirmmovesound="alt10/sounds/voice/legion/move_%.wav"
+		confirmattacksound="alt10/sounds/voice/legion/attack_%.wav"
+		nomanasound="alt10/sounds/voice/legion/no_mana.wav"
+		cooldownsound="alt10/sounds/voice/legion/cooldown.wav"
+		tauntedsound="alt10/sounds/voice/legion/taunt_prior.wav"
+		tauntkillsound="alt10/sounds/voice/legion/taunt_after.wav"
+
+		previewpassiveeffect="alt10/store.effect"
+		previewmodel="/shared/models/invis.mdf"
+		previewpos="0 0 -80"
+		previewangles="0 0 0"
+		previewscale=".75"
+		
+		storepassiveeffect="alt10/store.effect"
+		storemodel="/shared/models/invis.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale=".75"
+		
+		infoheight="195"
+	
+		tooleffectkeyname39="Item_Intelligence7"
+		tooleffectpath39="alt10/legion/effects/boost.effect"
+
+		portraitcampos="-5 20 33"
+		portraitangles="0 0 30"
+	>
+		<onspawn>
+		    <pausevoiceovers duration="7000" />
+			<play2dsound sample="/heroes/legionnaire/alt10/sounds/legion_vox.ogg" channel="10" volume="1.0" dampen="0.7" sourceonly="true"/>
+			<compare a="team" b="2" op="eq" >
+			<pausevoiceovers duration="9000" />
+			    <play2dsound sample="/heroes/legionnaire/alt10/sounds/hellborne_vox.ogg" channel="10" volume="1.0" dampen="0.7" sourceonly="true"/>
+				<activatemodifierkey name="hellbourne" entity="this_entity" />
+			</compare>
+		</onspawn>
+
+		<modifier key="hellbourne" modpriority="1"
+			model="alt10/hellbourne/model.mdf"
+		    selectedsound="alt10/sounds/voice/hellbourne/select_%.wav"
+    		selectedflavorsound="alt10/sounds/voice/hellbourne/select_flavour_%.wav"
+		    confirmmovesound="alt10/sounds/voice/hellbourne/move_%.wav"
+		    confirmattacksound="alt10/sounds/voice/hellbourne/attack_%.wav"
+		    nomanasound="alt10/sounds/voice/hellbourne/no_mana.wav"
+		    cooldownsound="alt10/sounds/voice/hellbourne/cooldown.wav"
+		    tauntedsound="alt10/sounds/voice/hellbourne/taunt_prior.wav"
+		    tauntkillsound="alt10/sounds/voice/hellbourne/taunt_after.wav"
+	
+			tooleffectpath39="alt10/hellbourne/effects/boost.effect"
+		/>
+	</altavatar>
+
+	<altavatar key="Hero_Legionnaire.pog_skin"
+		icon2="icon.tga"
+		portrait="icon.tga"
+		model="pog_skin/model.mdf"
+		portraitcampos="0 0 30"
+		
+		preglobalscale=".9"
+		previewmodel="pog_skin/preview.mdf"
+		previewpos="0 0 -50"
+		previewangles="0 0 0"
+		previewscale="1.6"
+		modelscale="2"
+		
+
+		storemodel="pog_skin/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.8"
+		
+		tooleffectkeyname39="Item_Intelligence7"
+		tooleffectpath39="pog_skin/effects/boost.effect"
+	/>
+	
+
+	
+	<altavatar key="Hero_Legionnaire.trophy_skin"
+		icon2="trophy_skin/icon.tga"
+		portrait="icon.tga"
+		model="trophy_skin/model.mdf"
+		passiveeffect="trophy_skin/effects/body.effect"
+		preglobalscale="1.7"		
+		
+		previewmodel="trophy_skin/preview.mdf"
+		previewpos="0 0 -50"
+		previewangles="0 0 0"
+		previewscale="1.6"
+
+		storemodel="trophy_skin/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.7"
+		
+		portraitcampos="-5 -10 10"
+		portraitangles="0 0 50"
+		portraitscale="1"
+		
+		tooleffectkeyname39="Item_Intelligence7"
+		tooleffectpath39="trophy_skin/effects/boost.effect"
+	/>
+
+
+</hero>

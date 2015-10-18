@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hero
+	name="Hero_Skrap"
+	
+	team="Legion"
+	newhero="true"
+	icon="icon.tga"
+	portrait="icon.tga"
+	portraitcampos="3 -5 25"
+	portraitangles="0 0 50"
+	model="model.mdf"
+	skin=""
+	
+	passiveeffect=""
+	spawneffect=""
+	respawneffect="/shared/effects/respawn.effect"
+	selectedsound="sounds/voice/select_%.wav"
+	selectedflavorsound="sounds/voice/select_flavour_%.wav"
+	confirmmovesound="sounds/voice/move_%.wav"
+	confirmattacksound="sounds/voice/attack_%.wav"
+	nomanasound="sounds/voice/no_mana.wav"
+	cooldownsound="sounds/voice/cooldown.wav"
+	announcersound="sounds/voice/hero_select.wav"
+	tauntedsound="sounds/voice/taunt_prior.wav"
+	tauntkillsound="sounds/voice/taunt_after.wav"
+	
+	preglobalscale="1.5"
+	modelscale="1.0"
+	effectscale="0.9"
+	boundsheight="112"
+	boundsradius="24"
+	selectionradius="48"
+	targetoffset="0 0 64"
+	
+	category="magic pusher"
+	difficulty="3"
+
+	solorating="2"
+	junglerating="0"
+	carryrating="1"
+	supportrating="2"
+	initiatorrating="0"
+	gankerrating="1"
+	pusherrating="5"
+	rangedrating="5"
+	meleerating="0"
+	
+	movespeed="305"
+	turnrate="900"
+	turnsmoothing="0.05"
+
+	maxhealth="150"
+	healthregen="0.25"
+	maxmana="0"
+	manaregen="0.01"
+
+	armor="-0.94"
+	magicarmor="5.5"
+
+	inventory0="Ability_Skrap1"
+	inventory1="Ability_Skrap2"
+	inventory2="Ability_Skrap3"
+	inventory3="Ability_Skrap4"
+	inventory4="Ability_AttributeBoost"
+	inventory5=""
+	inventory6=""
+	inventory8="Ability_Taunt"
+	inventory9=""
+	inventory10=""
+	inventory11=""
+	inventory12="Ability_AutomatedCourier"
+
+	attackduration="1200"
+	attackactiontime="300"
+	attackcooldown="1700"
+	attackdamagemin="22"
+	attackdamagemax="28"
+	attacknumanims="2"
+	attackoffset="0 100 80"
+	attackprojectile="Projectile_Skrap_Attack"
+	attackrange="600"
+	attackstarteffect=""
+	attackactioneffect="projectile/effects/attack_action_sound.effect"
+	attackimpacteffect=""
+	attacktype="ranged"
+	combattype="Hero"
+
+	aggrorange="600"
+	sightrangeday="1800"
+	sightrangenight="800"
+	wanderrange="250"
+	infoheight="170"
+
+	primaryattribute="Intelligence"
+	strength="18"
+	strengthperlevel="1.6"
+	agility="16"
+	agilityperlevel="1.6"
+	intelligence="21"
+	intelligenceperlevel="2.8"
+	
+	previewmodel="preview.mdf"
+	previewpos="-5 0 -50"
+	previewangles="0 0 0"
+	previewscale="1.5"
+	
+	storemodel="model_store.mdf"
+	storepos="0 0 -17"
+	storeangles="0 0 0"
+	storescale="1.35"
+	
+	storepassiveeffect="effects/store_body.effect"
+	previewpassiveeffect="effects/store_body.effect"
+	
+	corpsetime="3000"
+	corpsefadetime="5000"
+	corpsefadeeffect="/shared/effects/corpse_sink.effect"
+
+	tooleffectpath0="effects/body_boomerang.effect"
+>
+	<recommendeditem name="Item_ManaPotion" />
+	<recommendeditem name="Item_MinorTotem" />
+	<recommendeditem name="Item_RunesOfTheBlight" />
+	<recommendeditem name="Item_HealthPotion" />
+	<recommendeditem name="Item_HomecomingStone" />
+
+	<recommendeditem name="Item_FlamingEye" />
+	<recommendeditem name="Item_Strength5" />
+	<recommendeditem name="Item_PlatedGreaves" />
+	<recommendeditem name="Item_Shield2" />
+	<recommendeditem name="Item_Astrolabe" />
+	<recommendeditem name="Item_PortalKey" />
+	<recommendeditem name="Item_BarrierIdol" />
+	<recommendeditem name="Item_SacrificialStone" />
+	<recommendeditem name="Item_Immunity" />
+	<recommendeditem name="Item_FrostfieldPlate" />
+	<recommendeditem name="Item_BehemothsHeart" />
+	
+	<onframe>
+		<compare a="source_movespeed" b="305" op="gt" >
+			<activatemodifierkey entity="this_entity" name="Skrap_Movespeed"/>
+		</compare>
+		<else>
+			<deactivatemodifierkey name="Skrap_Movespeed"/>
+		</else>
+	</onframe>
+
+	<onspawn>
+		<activatemodifierkey entity="this_entity" name="Skrap_Sound"/>
+	</onspawn>
+
+	<onrespawn>
+		<activatemodifierkey entity="this_entity" name="Skrap_Sound"/>
+	</onrespawn>
+	
+	<modifier key="Skrap_Movespeed" modpriority="100"
+		walkanim="walk_2"
+	/>
+	
+	<modifier key="Skrap_Boomerang_Away" modpriority="100"
+		tooleffectpath0=""
+	/>
+
+	<altavatar key="Alt"
+		model="alt/model.mdf"
+		passiveeffect=""
+	
+		preglobalscale="1.5"
+		modelscale="1.0"
+		effectscale="0.9"
+
+		attacknumanims="2"
+		attackoffset="0 100 80"
+		attackprojectile="Projectile_Skrap_Attack"
+
+		icon2="alt/icon.tga"
+		portrait="alt/icon.tga"
+
+		previewmodel="alt/preview.mdf"
+		previewpos="-5 0 -50"
+		previewangles="0 0 0"
+		previewscale="1.5"
+		
+		storemodel="alt/model_store.mdf"
+		storepos="0 0 -17"
+		storeangles="0 0 0"
+		storescale="1.25"
+		    
+		selectedsound="alt/sounds/voice/select_%.wav"
+	    selectedflavorsound="alt/sounds/voice/select_flavour_%.wav"
+	    confirmmovesound="alt/sounds/voice/move_%.wav"
+	    confirmattacksound="alt/sounds/voice/attack_%.wav"
+	    nomanasound="alt/sounds/voice/no_mana.wav"
+	    cooldownsound="alt/sounds/voice/cooldown.wav"
+	    tauntedsound="alt/sounds/voice/taunt_prior.wav"
+	    tauntkillsound="alt/sounds/voice/taunt_after.wav"
+	
+		storepassiveeffect="alt/effects/store_body.effect"
+		previewpassiveeffect="alt/effects/store_body.effect"
+
+		portraitcampos="3 -5 25"
+		portraitangles="0 0 50"
+
+		tooleffectpath0="alt/effects/body_boomerang.effect"
+	/>
+
+	<altavatar key="Alt2"
+		model="alt2/model.mdf"
+		passiveeffect="alt2/effects/body.effect"
+	
+		preglobalscale="1.5"
+		modelscale="1.0"
+		effectscale="0.9"
+
+		attacknumanims="2"
+		attackoffset="0 100 80"
+		attackprojectile="Projectile_Skrap_Attack"
+
+		icon2="alt2/icon.tga"
+		portrait="alt2/icon.tga"
+
+		previewmodel="alt2/preview.mdf"
+		previewpos="-5 0 -50"
+		previewangles="0 0 0"
+		previewscale="1.5"
+		
+		storemodel="alt2/model_store.mdf"
+		storepos="0 0 -17"
+		storeangles="0 0 0"
+		storescale="1.35"
+
+		deathtime="0"
+		corpsetime="2000"
+		corpsefadetime="0"
+	
+	    selectedsound="alt2/sounds/voice/select_%.wav"
+	    selectedflavorsound="alt2/sounds/voice/select_flavour_%.wav"
+	    confirmmovesound="alt2/sounds/voice/move_%.wav"
+	    confirmattacksound="alt2/sounds/voice/attack_%.wav"
+	    nomanasound="alt2/sounds/voice/no_mana.wav"
+	    cooldownsound="alt2/sounds/voice/cooldown.wav"
+	    tauntedsound="alt2/sounds/voice/taunt_prior.wav"
+	    tauntkillsound="alt2/sounds/voice/taunt_after.wav"
+	
+	
+		storepassiveeffect="alt2/effects/store_body.effect"
+		previewpassiveeffect="alt2/effects/store_body.effect"
+
+		portraitcampos="3 -5 25"
+		portraitangles="0 0 50"
+
+		tooleffectpath0="alt2/effects/body_boomerang.effect"
+	/>
+	
+</hero>

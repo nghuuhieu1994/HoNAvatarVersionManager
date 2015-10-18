@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hero
+	name="Hero_ForsakenArcher"
+
+	team="Hellbourne"
+	icon="icon.tga"
+	portrait="icon.tga"
+	portraitcampos="0 50 20"
+	model="hd_forsaken/model.mdf"
+	skin=""
+	
+	newhero="true"
+	
+	passiveeffect="hd_forsaken/effects/body.effect"
+	spawneffect=""
+	respawneffect="/shared/effects/respawn.effect"
+	selectedsound="hd_forsaken/sounds/voice/select_%.wav"
+	selectedflavorsound="hd_forsaken/sounds/voice/select_flavour_%.wav"
+	confirmmovesound="hd_forsaken/sounds/voice/move_%.wav"
+	confirmattacksound="hd_forsaken/sounds/voice/attack_%.wav"
+	nomanasound="hd_forsaken/sounds/voice/no_mana.wav"
+	cooldownsound="hd_forsaken/sounds/voice/cooldown.wav"
+	announcersound="sounds/voice/hero_select.wav"
+	tauntedsound="hd_forsaken/sounds/voice/taunt_prior.wav"
+	tauntkillsound="hd_forsaken/sounds/voice/taunt_after.wav"
+	
+	infoheight="170"
+	preglobalscale="1.10"
+	modelscale="1.0"
+	effectscale="0.9"
+	boundsheight="112"
+	boundsradius="24"
+	selectionradius="48"
+	targetoffset="0 0 64"
+
+	category="physical magic"
+	difficulty="3.5"
+
+	solorating="1"
+	junglerating="0"
+	carryrating="5"
+	supportrating="0"
+	initiatorrating="0"
+	gankerrating="0"
+	pusherrating="2"
+	rangedrating="5"
+	meleerating="0"
+
+	movespeed="300"
+	turnrate="540"
+	turnsmoothing="0.05"
+
+	maxhealth="150"
+	healthregen="0.25"
+	maxmana="0"
+	manaregen="0.01"
+
+	armor="-1"
+	magicarmor="5.5"
+
+	inventory0="Ability_ForsakenArcher1"
+	inventory1="Ability_ForsakenArcher2"
+	inventory2="Ability_ForsakenArcher3"
+	inventory3="Ability_ForsakenArcher4"
+	inventory4="Ability_AttributeBoost"
+	inventory5=""
+	inventory6=""
+	inventory8="Ability_Taunt"
+	inventory9=""
+	inventory10=""
+	inventory11=""
+	inventory12="Ability_AutomatedCourier"
+
+	attackduration="1000"
+	attackactiontime="400"
+	attackcooldown="1700"
+	attackdamagemin="22"
+	attackdamagemax="28"
+	attacknumanims="2"
+	attackoffset="0 100 120"
+	attackprojectile="Projectile_ForsakenArcherAttack"
+	attackrange="600"
+	attackstarteffect=""
+	attackactioneffect=""
+	attackimpacteffect=""
+	attacktype="ranged"
+	combattype="Hero"
+
+	aggrorange="800"
+	sightrangeday="1800"
+	sightrangenight="800"
+	wanderrange="250"
+
+	primaryattribute="Agility"
+	strength="17"
+	strengthperlevel="1.7"
+	agility="22"
+	agilityperlevel="2.5"
+	intelligence="17"
+	intelligenceperlevel="1.8"
+	
+	previewmodel="hd_forsaken/preview.mdf"
+	previewpos="0 0 -50"
+	previewangles="0 0 0"
+	previewscale="1.0"
+	
+	storemodel="hd_forsaken/preview.mdf"
+	storepos="0 0 -20"
+	storeangles="0 0 0"
+	storescale="1.05"
+	
+	corpsetime="1000"
+	corpsefadetime="2500"
+	corpsefadeeffect="/shared/effects/corpse_sink.effect"
+	
+>
+	<recommendeditem name="Item_ManaPotion" />	
+	<recommendeditem name="Item_MinorTotem" />
+	<recommendeditem name="Item_RunesOfTheBlight" />
+	<recommendeditem name="Item_HealthPotion" />
+	<recommendeditem name="Item_HomecomingStone" />
+	
+	<recommendeditem name="Item_Soulscream" />
+	<recommendeditem name="Item_Strength5" />
+	<recommendeditem name="Item_EnhancedMarchers" />
+	<recommendeditem name="Item_ManaBurn1" />
+	<recommendeditem name="Item_Lightning1" />
+	<recommendeditem name="Item_Pierce" />
+	<recommendeditem name="Item_ArclightCrown" />
+	<recommendeditem name="Item_Evasion" />
+	<recommendeditem name="Item_Freeze" />
+
+	<oninflicted>
+		<entitytype type="State_Taunting" target="inflictor_entity">
+			<setproxy entity="this_entity" target="inflictor_entity" />
+		</entitytype>
+	</oninflicted>
+	
+	<onkill>
+        <targettype type="illusion" />
+        <else>
+		<hasmodifier entity="target_entity" name="Ellonia_Sound">
+    	<pushentityproxy entity="this_proxy_entity" />
+    	  <compare a="stack_entity" b="inflictor_entity" op="ne">
+			<pausevoiceovers duration="4000" />
+			<delayannouncer duration="4000"/>
+    	    <playeffect effect="hd_forsaken/sounds/interactions/kill_ellonia.effect" target="source_entity" />
+			<printdebuginfo />
+    	  </compare>
+        </hasmodifier>
+		<else>
+		<hasmodifier entity="target_entity" name="Valkyrie_Sound">
+    	<pushentityproxy entity="this_proxy_entity" />
+    	  <compare a="stack_entity" b="inflictor_entity" op="ne">
+			<pausevoiceovers duration="5000" />
+			<delayannouncer duration="5000"/>
+    	    <playeffect effect="hd_forsaken/sounds/interactions/kill_valkyrie.effect" target="source_entity" />
+    	  </compare>
+        </hasmodifier>
+		<else>
+		<hasmodifier entity="target_entity" name="Berzerker_Sound">
+    	<pushentityproxy entity="this_proxy_entity" />
+    	  <compare a="stack_entity" b="inflictor_entity" op="ne">
+			<pausevoiceovers duration="3000" />
+			<delayannouncer duration="3000"/>
+    	    <playeffect effect="hd_forsaken/sounds/interactions/kill_berzerker.effect" target="source_entity" />
+    	  </compare>
+        </hasmodifier>
+		<else>
+		<hasmodifier entity="target_entity" name="Glacius_Sound">
+    	<pushentityproxy entity="this_proxy_entity" />
+    	  <compare a="stack_entity" b="inflictor_entity" op="ne">
+			<pausevoiceovers duration="4000" />
+			<delayannouncer duration="4000"/>
+    	    <playeffect effect="hd_forsaken/sounds/interactions/kill_glacius.effect" target="source_entity" />
+    	  </compare>
+        </hasmodifier>
+		</else>
+		</else>
+		</else>
+		</else>
+	</onkill>
+	
+	<altavatar key="Hero_ForsakenArcher.Alt" modpriority="1"
+		altavatar="true"
+		preglobalscale="1.9"
+		
+		icon2="alt/icon.tga"
+		portrait="alt/icon.tga"
+		model="alt/model.mdf"
+		
+		previewmodel="alt/preview.mdf"
+		previewpos="0 0 -60"
+		previewangles="0 0 0"
+		previewscale="2.1"
+		
+		selectedsound="sounds/voice/select_%.wav"
+	    selectedflavorsound="sounds/voice/select_flavour_%.wav"
+	    confirmmovesound="sounds/voice/move_%.wav"
+     	confirmattacksound="sounds/voice/attack_%.wav"
+	    nomanasound="sounds/voice/no_mana.wav"
+	    cooldownsound="sounds/voice/cooldown.wav"
+	    tauntedsound="sounds/voice/taunt_prior.wav"
+	    tauntkillsound="sounds/voice/taunt_after.wav"
+	
+	
+		storemodel="alt/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.75"
+		passiveeffect="alt/effects/body.effect"
+		
+		portraitcampos="-8 20 25"
+	>
+		<onkill>
+		</onkill>
+	</altavatar>
+	
+	<altavatar key="Hero_ForsakenArcher.Alt2" modpriority="1"
+		altavatar="true"
+		preglobalscale="2.1"
+		
+		
+		icon2="alt2/icon.tga"
+		portrait="alt2/icon.tga"
+		model="alt2/model.mdf"
+		
+		selectedsound="alt2/sounds/voice/select_%.wav"
+	    selectedflavorsound="alt2/sounds/voice/select_flavour_%.wav"   
+	    confirmmovesound="alt2/sounds/voice/move_%.wav"
+	    confirmattacksound="alt2/sounds/voice/attack_%.wav"
+	    nomanasound="alt2/sounds/voice/no_mana.wav"
+	    cooldownsound="alt2/sounds/voice/cooldown.wav"
+	    tauntedsound="alt2/sounds/voice/taunt_prior.wav"
+	    tauntkillsound="alt2/sounds/voice/taunt_after.wav"
+		
+		attackprojectile="Projectile_ForsakenArcherAttack_Alt2"
+		attackoffset="16 85 125"
+		
+		previewmodel="alt2/preview.mdf"
+		previewpos="0 0 -60"
+		previewangles="0 0 0"
+		previewscale="2.1"
+		
+		storemodel="alt2/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.75"
+		passiveeffect="alt2/effects/body.effect"
+		
+		portraitcampos="20 -20 20"
+		effectscale="0.5"
+	>
+	<onspawn>
+		<ownsproduct target="this_entity" product="aa.Hero_Valkyrie.Alt3 aa.Hero_Bephelgor.Alt2 aa.Hero_Electrician.Alt2 aa.Hero_Flux.Alt2 aa.Hero_Gemini.Alt2 aa.Hero_Arachna.Alt2" />
+		<compare a="result" b="1" op="eq">
+			<applystate name="State_Clockworks" target="this_entity" continuous="true" />
+		</compare>
+	</onspawn>
+	
+	<onrespawn>
+		<ownsproduct target="this_entity" product="aa.Hero_Valkyrie.Alt3 aa.Hero_Bephelgor.Alt2 aa.Hero_Electrician.Alt2 aa.Hero_Flux.Alt2 aa.Hero_Gemini.Alt2 aa.Hero_Arachna.Alt2" />
+		<compare a="result" b="1" op="eq">
+			<applystate name="State_Clockworks" target="this_entity" continuous="true" />
+		</compare>
+	</onrespawn>
+	</altavatar>
+	
+	<altavatar key="Hero_ForsakenArcher.Alt3" modpriority="1"
+		altavatar="true"
+		preglobalscale="1.9"
+		
+		icon2="alt3/icon.tga"
+		portrait="alt3/icon.tga"
+		model="alt3/model.mdf"
+		
+		passiveeffect="alt3/effects/body.effect"
+		
+		selectedsound="alt3/sounds/voice/select_%.wav"
+	    selectedflavorsound="alt3/sounds/voice/select_flavour_%.wav"   
+	    confirmmovesound="alt3/sounds/voice/move_%.wav"
+	    confirmattacksound="alt3/sounds/voice/attack_%.wav"
+	    nomanasound="alt3/sounds/voice/no_mana.wav"
+	    cooldownsound="alt3/sounds/voice/cooldown.wav"
+	    tauntedsound="alt3/sounds/voice/taunt_prior.wav"
+	    tauntkillsound="alt3/sounds/voice/taunt_after.wav"
+		
+		attackprojectile="Projectile_ForsakenArcherAttack_Alt2"
+		attacknumanims="1"
+		attackoffset="-20 50 92"
+		
+		previewmodel="alt3/preview.mdf"
+		previewpos="0 0 -60"
+		previewangles="0 0 0"
+		previewscale="2.1"
+		
+		storemodel="alt3/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.75"
+		
+		corpsetime="3000"
+		corpsefadetime="3500"
+	>
+	<onkill>
+	</onkill>
+	</altavatar>
+	
+	<altavatar key="Hero_ForsakenArcher.Alt4" modpriority="1"
+		alt4avatar="true"
+		preglobalscale="1"
+		
+		icon2="alt4/icon.tga"
+		portrait="alt4/icon.tga"
+		model="alt4/model.mdf"
+		
+		previewmodel="alt4/preview.mdf"
+		previewpos="0 0 -60"
+		previewangles="0 0 0"
+		previewscale="2.1"
+			
+		selectedsound="alt4/sounds/voice/select_%.wav"
+	    selectedflavorsound="alt4/sounds/voice/select_flavour_%.wav"
+	    confirmmovesound="alt4/sounds/voice/move_%.wav"
+	    confirmattacksound="alt4/sounds/voice/attack_%.wav"
+	    nomanasound="alt4/sounds/voice/no_mana.wav"
+	    cooldownsound="alt4/sounds/voice/cooldown.wav"
+	    tauntedsound="alt4/sounds/voice/taunt_prior.wav"
+	    tauntkillsound="alt4/sounds/voice/taunt_after.wav"
+	
+		storemodel="alt4/preview.mdf"
+		storepos="0 0 -30"
+		storeangles="0 0 0"
+		storescale="1.05"
+		passiveeffect="alt4/effects/body.effect"
+		
+		portraitcampos="150 50 75"
+	>
+		<onframe>
+			<setactivemodifierkey name="ForsakenArcher_Alt4_Sound" />
+		</onframe>
+	 
+		<onspawn propagatetoillusions="true">
+			<ownsproduct target="this_entity" product="aa.Hero_FlintBeastwood.Alt9" />
+			<compare a="result" b="1" op="eq">
+				<activatemodifierkey name="Rulian_Bonus"/>
+			</compare>
+			<setactivemodifierkey name="ForsakenArcher_Alt4_Sound" /> 
+		</onspawn>
+		
+		<onrespawn propagatetoillusions="true">
+			<ownsproduct target="this_entity" product="aa.Hero_FlintBeastwood.Alt9" />
+			<compare a="result" b="1" op="eq">
+				<activatemodifierkey name="Rulian_Bonus" />
+			</compare>
+		</onrespawn>
+		
+		
+	
+		<modifier key="Rulian_Bonus" modpriority="99"
+			model="alt4/rulian_model.mdf"
+		>
+			<onlevelup>
+					<playeffect effect="/heroes/flint_beastwood/alt9/effects/levelup_sound.effect" source="source_entity"/>
+			</onlevelup>
+		</modifier>
+	<onkill>
+	</onkill>
+	</altavatar>
+	
+	<altavatar key="Hero_ForsakenArcher.Alt5" modpriority="1"
+		alt4avatar="true"
+		preglobalscale="2.25"
+		
+		icon2="alt5/icon.tga"
+		portrait="alt5/icon.tga"
+		model="alt5/model.mdf"
+		
+		previewmodel="alt5/preview.mdf"
+		previewpos="0 0 -60"
+		previewangles="0 0 0"
+		previewscale="2.1"
+	
+		storemodel="alt5/preview.mdf"
+		storepos="0 0 -30"
+		storeangles="0 0 0"
+		storescale="2.35"
+		passiveeffect="alt5/effects/body.effect"
+				
+		selectedsound="sounds/voice/select_%.wav"
+		selectedflavorsound="sounds/voice/select_flavour_%.wav"
+		confirmmovesound="sounds/voice/move_%.wav"
+		confirmattacksound="sounds/voice/attack_%.wav"
+		nomanasound="sounds/voice/no_mana.wav"
+		cooldownsound="sounds/voice/cooldown.wav"
+		tauntedsound="sounds/voice/taunt_prior.wav"
+		tauntkillsound="sounds/voice/taunt_after.wav"
+		
+		portraitcampos="15 -50 10"
+		attackoffset="0 100 120"
+	/>
+
+	<altavatar key="Hero_ForsakenArcher.main_reskin" modpriority="1"
+		altavatar="true"
+		
+		icon2="reskin/icon.tga"
+		portrait="reskin/icon.tga"
+		model="reskin/model.mdf"
+		
+		selectedsound="sounds/voice/select_%.wav"
+		selectedflavorsound="sounds/voice/select_flavour_%.wav"
+		confirmmovesound="sounds/voice/move_%.wav"
+		confirmattacksound="sounds/voice/attack_%.wav"
+		nomanasound="sounds/voice/no_mana.wav"
+		cooldownsound="sounds/voice/cooldown.wav"
+		announcersound="sounds/voice/hero_select.wav"
+		tauntedsound="sounds/voice/taunt_prior.wav"
+		tauntkillsound="sounds/voice/taunt_after.wav"
+		
+		attackoffset="0 100 70"
+		attackprojectile="Projectile_ForsakenArcherAttack"	
+		
+		previewmodel="reskin/preview.mdf"
+		previewpos="0 0 -60"
+		previewangles="0 0 0"
+		
+		storemodel="reskin/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+	>
+	<onkill>
+	</onkill>
+	</altavatar>
+	
+	<altavatar key="Hero_ForsakenArcher.pog_skin" modpriority="1"
+		
+		icon2="icon.tga"
+		portrait="icon.tga"
+		model="pog_skin/model.mdf"
+		
+	    selectedsound="sounds/voice/select_%.wav"
+	    selectedflavorsound="sounds/voice/select_flavour_%.wav"
+	    confirmmovesound="sounds/voice/move_%.wav"
+     	confirmattacksound="sounds/voice/attack_%.wav"
+	    nomanasound="sounds/voice/no_mana.wav"
+	    cooldownsound="sounds/voice/cooldown.wav"
+	    tauntedsound="sounds/voice/taunt_prior.wav"
+	    tauntkillsound="sounds/voice/taunt_after.wav"
+	
+		previewmodel="pog_skin/preview.mdf"
+		previewpos="0 0 -50"
+		previewangles="0 0 0"
+		previewscale="1.15"
+
+		storemodel="pog_skin/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.1"
+	>
+	<onkill>
+	</onkill>
+	</altavatar>
+	
+</hero>

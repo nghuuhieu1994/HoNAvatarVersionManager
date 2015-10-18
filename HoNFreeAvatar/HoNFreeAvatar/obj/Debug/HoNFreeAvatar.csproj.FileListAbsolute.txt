@@ -1,0 +1,45 @@
+c:\users\hieu\documents\visual studio 2013\Projects\HoNFreeAvatar\HoNFreeAvatar\bin\Debug\HoNFreeAvatar.exe.config
+c:\users\hieu\documents\visual studio 2013\Projects\HoNFreeAvatar\HoNFreeAvatar\bin\Debug\HoNFreeAvatar.exe
+c:\users\hieu\documents\visual studio 2013\Projects\HoNFreeAvatar\HoNFreeAvatar\bin\Debug\HoNFreeAvatar.pdb
+c:\users\hieu\documents\visual studio 2013\Projects\HoNFreeAvatar\HoNFreeAvatar\bin\Debug\Ionic.Zip.pdb
+c:\users\hieu\documents\visual studio 2013\Projects\HoNFreeAvatar\HoNFreeAvatar\bin\Debug\Ionic.Zip.xml
+c:\users\hieu\documents\visual studio 2013\Projects\HoNFreeAvatar\HoNFreeAvatar\obj\Debug\HoNFreeAvatar.csprojResolveAssemblyReference.cache
+c:\users\hieu\documents\visual studio 2013\Projects\HoNFreeAvatar\HoNFreeAvatar\obj\Debug\HoNFreeAvatar.Form1.resources
+c:\users\hieu\documents\visual studio 2013\Projects\HoNFreeAvatar\HoNFreeAvatar\obj\Debug\HoNFreeAvatar.Properties.Resources.resources
+c:\users\hieu\documents\visual studio 2013\Projects\HoNFreeAvatar\HoNFreeAvatar\obj\Debug\HoNFreeAvatar.csproj.GenerateResource.Cache
+c:\users\hieu\documents\visual studio 2013\Projects\HoNFreeAvatar\HoNFreeAvatar\obj\Debug\HoNFreeAvatar.exe
+c:\users\hieu\documents\visual studio 2013\Projects\HoNFreeAvatar\HoNFreeAvatar\obj\Debug\HoNFreeAvatar.pdb
+E:\HoNFreeAvatar\HoNFreeAvatar\bin\Debug\HoNFreeAvatar.exe.config
+E:\HoNFreeAvatar\HoNFreeAvatar\obj\Debug\HoNFreeAvatar.exe
+E:\HoNFreeAvatar\HoNFreeAvatar\obj\Debug\HoNFreeAvatar.pdb
+E:\HoNFreeAvatar\HoNFreeAvatar\bin\Debug\HoNFreeAvatar.exe
+E:\HoNFreeAvatar\HoNFreeAvatar\bin\Debug\HoNFreeAvatar.pdb
+E:\HoNFreeAvatar\HoNFreeAvatar\bin\Debug\Ionic.Zip.pdb
+E:\HoNFreeAvatar\HoNFreeAvatar\bin\Debug\Ionic.Zip.xml
+E:\HoNFreeAvatar\HoNFreeAvatar\obj\Debug\HoNFreeAvatar.csprojResolveAssemblyReference.cache
+E:\HoNFreeAvatar\HoNFreeAvatar\obj\Debug\HoNFreeAvatar.Form1.resources
+E:\HoNFreeAvatar\HoNFreeAvatar\obj\Debug\HoNFreeAvatar.Properties.Resources.resources
+E:\HoNFreeAvatar\HoNFreeAvatar\obj\Debug\HoNFreeAvatar.csproj.GenerateResource.Cache
+D:\Download Storage\Compressed\HoNFreeAvatar\HoNFreeAvatar\HoNFreeAvatar\bin\Debug\HoNFreeAvatar.exe.config
+D:\Download Storage\Compressed\HoNFreeAvatar\HoNFreeAvatar\HoNFreeAvatar\obj\Debug\HoNFreeAvatar.exe
+D:\Download Storage\Compressed\HoNFreeAvatar\HoNFreeAvatar\HoNFreeAvatar\obj\Debug\HoNFreeAvatar.pdb
+D:\Download Storage\Compressed\HoNFreeAvatar\HoNFreeAvatar\HoNFreeAvatar\bin\Debug\HoNFreeAvatar.exe
+D:\Download Storage\Compressed\HoNFreeAvatar\HoNFreeAvatar\HoNFreeAvatar\bin\Debug\HoNFreeAvatar.pdb
+D:\Download Storage\Compressed\HoNFreeAvatar\HoNFreeAvatar\HoNFreeAvatar\bin\Debug\Ionic.Zip.pdb
+D:\Download Storage\Compressed\HoNFreeAvatar\HoNFreeAvatar\HoNFreeAvatar\bin\Debug\Ionic.Zip.xml
+D:\Download Storage\Compressed\HoNFreeAvatar\HoNFreeAvatar\HoNFreeAvatar\obj\Debug\HoNFreeAvatar.csprojResolveAssemblyReference.cache
+D:\Download Storage\Compressed\HoNFreeAvatar\HoNFreeAvatar\HoNFreeAvatar\obj\Debug\HoNFreeAvatar.Form1.resources
+D:\Download Storage\Compressed\HoNFreeAvatar\HoNFreeAvatar\HoNFreeAvatar\obj\Debug\HoNFreeAvatar.Properties.Resources.resources
+D:\Download Storage\Compressed\HoNFreeAvatar\HoNFreeAvatar\HoNFreeAvatar\obj\Debug\HoNFreeAvatar.csproj.GenerateResource.Cache
+D:\HoNFreeAvatar\HoNFreeAvatar\bin\Debug\HoNFreeAvatar.exe.config
+D:\HoNFreeAvatar\HoNFreeAvatar\obj\Debug\HoNFreeAvatar.exe
+D:\HoNFreeAvatar\HoNFreeAvatar\obj\Debug\HoNFreeAvatar.pdb
+D:\HoNFreeAvatar\HoNFreeAvatar\bin\Debug\HoNFreeAvatar.exe
+D:\HoNFreeAvatar\HoNFreeAvatar\bin\Debug\HoNFreeAvatar.pdb
+D:\HoNFreeAvatar\HoNFreeAvatar\bin\Debug\Ionic.Zip.pdb
+D:\HoNFreeAvatar\HoNFreeAvatar\bin\Debug\Ionic.Zip.xml
+D:\HoNFreeAvatar\HoNFreeAvatar\obj\Debug\HoNFreeAvatar.csprojResolveAssemblyReference.cache
+D:\HoNFreeAvatar\HoNFreeAvatar\obj\Debug\HoNFreeAvatar.Properties.Resources.resources
+D:\HoNFreeAvatar\HoNFreeAvatar\obj\Debug\HoNFreeAvatar.csproj.GenerateResource.Cache
+D:\HoNFreeAvatar\HoNFreeAvatar\obj\Debug\HoNFreeAvatar.ChangePath.resources
+D:\HoNFreeAvatar\HoNFreeAvatar\obj\Debug\HoNFreeAvatar.MainForm.resources

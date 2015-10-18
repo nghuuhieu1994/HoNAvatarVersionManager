@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hero
+	name="Hero_Ebulus"
+
+	team="Hellbourne"
+	icon="icon.tga"
+	portrait="icon.tga"
+	model="hd_slither/model.mdf"
+	skin=""
+	
+	passiveeffect=""
+	spawneffect=""
+	respawneffect="/shared/effects/respawn.effect"
+	selectedsound="sounds/voice/select_%.wav"
+	selectedflavorsound="sounds/voice/select_flavour_%.wav"
+	confirmmovesound="sounds/voice/move_%.wav"
+	confirmattacksound="sounds/voice/attack_%.wav"
+	nomanasound="sounds/voice/no_mana.wav"
+	cooldownsound="sounds/voice/cooldown.wav"
+	announcersound="sounds/voice/hero_select.wav"
+	tauntedsound="sounds/voice/taunt_prior.wav"
+	tauntkillsound="sounds/voice/taunt_after.wav"
+	
+	preglobalscale="1.71"
+	modelscale="1.0"
+	effectscale="0.9"
+	boundsheight="112"
+	boundsradius="24"
+	selectionradius="48"
+	targetoffset="0 0 64"
+
+	category="magic"
+	difficulty="2.5"
+
+	solorating="1"
+	junglerating="0"
+	carryrating="1"
+	supportrating="1"
+	initiatorrating="0"
+	gankerrating="2"
+	pusherrating="3"
+	rangedrating="4"
+	meleerating="0"
+
+	movespeed="290"
+	turnrate="360"
+	turnsmoothing="0.05"
+
+	maxhealth="150"
+	healthregen="0.25"
+	maxmana="0"
+	manaregen="0.01"
+
+	armor="0"
+	magicarmor="5.5"
+
+	inventory0="Ability_Ebulus1"
+	inventory1="Ability_Ebulus2"
+	inventory2="Ability_Ebulus3"
+	inventory3="Ability_Ebulus4"
+	inventory4="Ability_AttributeBoost"
+	inventory5=""
+	inventory6=""
+	inventory8="Ability_Taunt"
+	inventory9=""
+	inventory10=""
+	inventory11=""
+	inventory12="Ability_AutomatedCourier"
+
+	attackduration="1000"
+	attackactiontime="250"
+	attackcooldown="1700"
+	attackdamagemin="24"
+	attackdamagemax="26"
+	attacknumanims="2"
+	attackoffset="0 100 70"
+	attackprojectile="Projectile_EbulusAttack"
+	attackrange="500"
+	attackstarteffect=""
+	attackactioneffect=""
+	attackimpacteffect=""
+	attacktype="ranged"
+	combattype="Hero"
+
+	aggrorange="800"
+	sightrangeday="1800"
+	sightrangenight="800"
+	wanderrange="250"
+
+	primaryattribute="Agility"
+	strength="18"
+	strengthperlevel="1.9"
+	agility="22"
+	agilityperlevel="2.6"
+	intelligence="16"
+	intelligenceperlevel="1.8"
+	
+	previewmodel="hd_slither/preview.mdf"
+	previewpos="0 0 -50"
+	previewangles="0 0 0"
+	previewscale="1.75"
+
+	storemodel="hd_slither/preview.mdf"
+	storepos="0 0 -20"
+	storeangles="0 0 0"
+	storescale="1.75"
+	
+	corpsetime="2500"
+	corpsefadetime="2500"
+	corpsefadeeffect="/shared/effects/corpse_sink.effect"
+>
+	<recommendeditem name="Item_ManaPotion" />
+	<recommendeditem name="Item_MinorTotem" />
+	<recommendeditem name="Item_RunesOfTheBlight" />
+	<recommendeditem name="Item_HealthPotion" />
+	<recommendeditem name="Item_HomecomingStone" />
+	
+	<recommendeditem name="Item_FlamingEye" />
+	<recommendeditem name="Item_Soulscream" />
+	<recommendeditem name="Item_Strength5" />
+	<recommendeditem name="Item_Striders" />
+	<recommendeditem name="Item_Intelligence7" />
+	<recommendeditem name="Item_Stealth" />
+	<recommendeditem name="Item_ManaBurn1" />
+	<recommendeditem name="Item_ManaBurn2" />
+	<recommendeditem name="Item_Evasion" />
+	
+	
+	<!-- Staff of the master upgrade effect-->
+	<modifier key="ult_boost" modpriority="100"
+		passiveeffect=""
+	>
+		<aura state="State_Ebulus_Ult_Boost" radius="0" targetscheme="self"/>
+	</modifier>
+	
+	<altavatar key="Hero_Ebulus.Classic"
+		icon2="icon.tga"
+		portrait="icon.tga"
+		model="model.mdf"
+		skin=""
+		
+		passiveeffect=""
+		spawneffect=""
+		respawneffect="/shared/effects/respawn.effect"
+		selectedsound="sounds/voice/select_%.wav"
+		selectedflavorsound="sounds/voice/select_flavour_%.wav"
+		confirmmovesound="sounds/voice/move_%.wav"
+		confirmattacksound="sounds/voice/attack_%.wav"
+		nomanasound="sounds/voice/no_mana.wav"
+		cooldownsound="sounds/voice/cooldown.wav"
+		announcersound="sounds/voice/hero_select.wav"
+		tauntedsound="sounds/voice/taunt_prior.wav"
+		tauntkillsound="sounds/voice/taunt_after.wav"
+		
+		preglobalscale="1.71"
+		modelscale="1.0"
+		effectscale="0.9"
+		boundsheight="112"
+		boundsradius="24"
+		selectionradius="48"
+		targetoffset="0 0 64"
+	
+		previewmodel="preview.mdf"
+		previewpos="0 0 -50"
+		previewangles="0 0 0"
+		previewscale="1.75"
+
+		storemodel="preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.75"
+		
+		corpsetime="2500"
+		corpsefadetime="2500"
+		corpsefadeeffect="/shared/effects/corpse_sink.effect"
+	/>
+	
+	<altavatar key="Hero_Ebulus.Alt"
+		preglobalscale="2.3"
+		infoheight="170"
+		icon2="alt/icon.tga"
+		portrait="alt/icon.tga"
+		model="alt/model.mdf"
+		
+		previewmodel="alt/preview.mdf"
+		previewpos="-25 0 -50"
+		previewangles="0 0 0"
+		previewscale="2.35"
+		
+		storemodel="alt/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.8"
+
+		selectedsound="alt/sounds/voice/select_%.wav"
+		selectedflavorsound="alt/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt/sounds/voice/move_%.wav"
+		confirmattacksound="alt/sounds/voice/attack_%.wav"
+		nomanasound="alt/sounds/voice/no_mana.wav"
+		cooldownsound="alt/sounds/voice/cooldown.wav"
+		announcersound="alt/sounds/voice/hero_select.wav"
+		tauntedsound="alt/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt/sounds/voice/taunt_after.wav"
+		
+		corpsetime="2500"
+		corpsefadetime="2500"
+		corpsefadeeffect="/shared/effects/corpse_sink.effect"
+	/>
+	
+	<altavatar key="Hero_Ebulus.Alt2"
+		preglobalscale="2"
+		infoheight="170"
+		icon2="alt2/icon.tga"
+		portrait="alt2/icon.tga"
+		model="alt2/model.mdf"
+		
+		previewmodel="alt2/preview.mdf"
+		previewpos="0 35 -50"
+		previewangles="0 0 0"
+		previewscale="2"
+		
+		attackoffset="0 75 90"
+		
+		storemodel="alt2/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.8"
+
+		selectedsound="alt2/sounds/voice/select_%.wav"
+		selectedflavorsound="alt2/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt2/sounds/voice/move_%.wav"
+		confirmattacksound="alt2/sounds/voice/attack_%.wav"
+		nomanasound="alt2/sounds/voice/no_mana.wav"
+		cooldownsound="alt2/sounds/voice/cooldown.wav"
+		announcersound="alt2/sounds/voice/hero_select.wav"
+		tauntedsound="alt2/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt2/sounds/voice/taunt_after.wav"
+		
+		corpsetime="1500"
+		corpsefadetime="2500"
+		corpsefadeeffect="/shared/effects/corpse_sink.effect"
+	/>
+	
+	<altavatar key="Hero_Ebulus.Alt3"
+		preglobalscale="1.5"
+		infoheight="170"
+		icon2="alt3/icon.tga"
+		portrait="alt3/icon.tga"
+		model="alt3/model.mdf"
+		
+		previewmodel="alt3/preview.mdf"
+		previewpos="0 35 -50"
+		previewangles="0 0 0"
+		previewscale="2"
+		
+		attackoffset="0 75 90"
+		
+		storemodel="alt3/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.4"
+		
+		tiltfactor="1"
+		tiltspeed="80"
+
+		selectedsound="alt3/sounds/voice/select_%.wav"
+		selectedflavorsound="alt3/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt3/sounds/voice/move_%.wav"
+		confirmattacksound="alt3/sounds/voice/attack_%.wav"
+		nomanasound="alt3/sounds/voice/no_mana.wav"
+		cooldownsound="alt3/sounds/voice/cooldown.wav"
+		announcersound="alt3/sounds/voice/hero_select.wav"
+		tauntedsound="alt3/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt3/sounds/voice/taunt_after.wav"
+		
+		corpsetime="1500"
+		corpsefadetime="2500"
+		corpsefadeeffect="/shared/effects/corpse_sink.effect"
+	>
+		<onspawn propagatetoillusions="false" >
+			<ownsproduct target="this_entity" product="aa.Hero_Arachna.Alt3 aa.Hero_Bubbles.Alt4 aa.Hero_Devourer.Alt6 aa.Hero_Ebulus.Alt3 aa.Hero_EmeraldWarden.Alt5 aa.Hero_Predator.Alt4 aa.Hero_Ravenor.Alt4 aa.Hero_Riftmage.Alt2" />
+			<compare a="result" b="1" op="eq">
+				<activatemodifierkey name="RiftBeast_Set" />
+			</compare>
+		</onspawn>
+		
+		<onrespawn propagatetoillusions="false" >
+			<ownsproduct target="this_entity" product="aa.Hero_Arachna.Alt3 aa.Hero_Bubbles.Alt4 aa.Hero_Devourer.Alt6 aa.Hero_Ebulus.Alt3 aa.Hero_EmeraldWarden.Alt5 aa.Hero_Predator.Alt4 aa.Hero_Ravenor.Alt4 aa.Hero_Riftmage.Alt2" />
+			<compare a="result" b="1" op="eq">
+				<activatemodifierkey name="RiftBeast_Set" />
+			</compare>
+		</onrespawn>
+		
+		<modifier key="RiftBeast_Set" modpriority="101"
+			tooleffectpath38="/shared/effects/riftbeast.effect"
+		/>	
+	</altavatar>
+	
+	<altavatar key="Hero_Ebulus.Alt4"
+		preglobalscale="1.6"
+		infoheight="170"
+		icon2="alt4/icon.tga"
+		portrait="alt4/icon.tga"
+		model="alt4/model.mdf"
+		
+		previewmodel="alt4/preview.mdf"
+		previewpos="0 35 -50"
+		previewangles="0 0 0"
+		previewscale="2"
+		
+		attackoffset="0 75 90"
+		
+		storemodel="alt4/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.6"
+		
+		tiltfactor="1"
+		tiltspeed="80"
+
+		selectedsound="alt4/sounds/voice/select_%.wav"
+		selectedflavorsound="alt4/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt4/sounds/voice/move_%.wav"
+		confirmattacksound="alt4/sounds/voice/attack_%.wav"
+		nomanasound="alt4/sounds/voice/no_mana.wav"
+		cooldownsound="alt4/sounds/voice/cooldown.wav"
+		announcersound="alt4/sounds/voice/hero_select.wav"
+		tauntedsound="alt4/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt4/sounds/voice/taunt_after.wav"
+		
+		corpsetime="1500"
+		corpsefadetime="2500"
+		corpsefadeeffect="/shared/effects/corpse_sink.effect"
+		>
+			
+	<onspawn propagatetoillusions="false" >
+		<ownsproduct target="this_entity" product="aa.Hero_Plant.Alt3 aa.Hero_Ebulus.Alt4 aa.Hero_Panda.Alt4 aa.Hero_Bubbles.Alt5" />
+			<compare a="result" b="1" op="eq">
+				<targettype type="mimic" target="this_entity" >
+						<deactivatemodifierkey name="xmas_set" />
+					   </targettype>
+					   <else>
+							<activatemodifierkey name="xmas_set"/>
+							<playanim name="surprise"/>
+					   </else>
+			</compare>
+			
+			
+		</onspawn>
+		
+		<onrespawn propagatetoillusions="false" >
+			<ownsproduct target="this_entity" product="aa.Hero_Plant.Alt3 aa.Hero_Ebulus.Alt4 aa.Hero_Panda.Alt4 aa.Hero_Bubbles.Alt5" />
+			<compare a="result" b="1" op="eq">
+				<targettype type="mimic" target="this_entity" >
+						<deactivatemodifierkey name="xmas_set" />
+					   </targettype>
+					   <else>
+							<playanim name="surprise"/>
+							<activatemodifierkey name="xmas_set"/>
+					   </else>
+			</compare>
+		</onrespawn>
+		
+		<modifier key="xmas_set" modpriority="1" target="this_entity"
+			model="alt4/model2.mdf"
+			
+		/>
+	</altavatar>
+	
+	<altavatar key="Hero_Ebulus.Alt5"
+		preglobalscale="1.25"
+		infoheight="170"
+		icon2="alt5/icon.tga"
+		portrait="alt5/icon.tga"
+		model="hd_alt5/model.mdf"
+		
+		previewmodel="hd_alt5/preview.mdf"
+		previewpos="-25 0 -50"
+		previewangles="0 0 0"
+		previewscale="1.35"
+		
+		storemodel="hd_alt5/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="0.9"
+
+		selectedsound="alt5/sounds/voice/select_%.wav"
+		selectedflavorsound="alt5/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt5/sounds/voice/move_%.wav"
+		confirmattacksound="alt5/sounds/voice/attack_%.wav"
+		nomanasound="alt5/sounds/voice/no_mana.wav"
+		cooldownsound="alt5/sounds/voice/cooldown.wav"
+		announcersound="alt5/sounds/voice/hero_select.wav"
+		tauntedsound="alt5/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt5/sounds/voice/taunt_after.wav"
+		
+		corpsetime="2500"
+		corpsefadetime="2500"
+		corpsefadeeffect="/shared/effects/corpse_sink.effect"
+
+		portraitcampos="12 3 23"
+		portraitangles="0 0 16"
+	>
+		<onspawn>
+			<ownsproduct target="this_entity" product="aa.Hero_Solstice.Alt7 aa.Hero_Kraken.Alt4 aa.Hero_Pearl.Alt6 aa.Hero_Bubbles.Alt6 aa.Hero_Ophelia.Alt4 aa.Hero_EmeraldWarden.Alt6 aa.Hero_Hantumon.Alt6 aa.Hero_MasterOfArms.Alt6 aa.Hero_Martyr.Alt5 aa.Hero_Magmar.Alt5 aa.Hero_Riptide.Alt2" />
+			<compare a="result" b="1" op="eq">
+				<activatemodifierkey name="Zodiac_Set" />
+			</compare>
+		</onspawn>
+
+		<onrespawn>
+			<ownsproduct target="this_entity" product="aa.Hero_Solstice.Alt7 aa.Hero_Kraken.Alt4 aa.Hero_Pearl.Alt6 aa.Hero_Bubbles.Alt6 aa.Hero_Ophelia.Alt4 aa.Hero_EmeraldWarden.Alt6 aa.Hero_Hantumon.Alt6 aa.Hero_MasterOfArms.Alt6 aa.Hero_Martyr.Alt5 aa.Hero_Magmar.Alt5 aa.Hero_Riptide.Alt2" />
+			<compare a="result" b="1" op="eq">
+				<activatemodifierkey name="Zodiac_Set" />
+			</compare>
+		</onrespawn>
+
+		<!-- <onframe>
+			<activatemodifierkey name="Zodiac_Set" />
+		</onframe> -->
+
+		<modifier key="Zodiac_Set" modpriority="1"
+			tooleffectkeyname0=""
+			tooleffectpath0="/shared/effects/set_zodiac.effect"
+		/>
+	</altavatar>
+	
+	<altavatar key="Hero_Ebulus.Alt6"
+		preglobalscale="1.71"
+		infoheight="170"
+		icon2="alt6/icon.tga"
+		portrait="alt6/icon.tga"
+		model="alt6/model.mdf"
+		
+		previewmodel="alt6/preview.mdf"
+		previewpos="-25 0 -50"
+		previewangles="0 0 0"
+		previewscale="1.35"
+		
+		storemodel="alt6/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="0.9"
+
+		selectedsound="alt6/sounds/voice/select_%.wav"
+		selectedflavorsound="alt6/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt6/sounds/voice/move_%.wav"
+		confirmattacksound="alt6/sounds/voice/attack_%.wav"
+		nomanasound="alt6/sounds/voice/no_mana.wav"
+		cooldownsound="alt6/sounds/voice/cooldown.wav"
+		announcersound="alt6/sounds/voice/hero_select.wav"
+		tauntedsound="alt6/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt6/sounds/voice/taunt_after.wav"
+		
+		corpsetime="2500"
+		corpsefadetime="2500"
+		corpsefadeeffect="/shared/effects/corpse_sink.effect"
+
+		portraitcampos="14 -15 26"
+		portraitangles="0 0 16"
+	/>
+	
+	<altavatar key="Hero_Ebulus.pog_skin"
+		icon2="pog_skin/icon.tga"
+		portrait="pog_skin/icon.tga"
+		model="pog_skin/model.mdf"
+		skin=""
+		
+		passiveeffect=""
+		spawneffect=""
+		respawneffect="/shared/effects/respawn.effect"
+		selectedsound="pog_skin/sounds/voice/select_%.wav"
+		selectedflavorsound="pog_skin/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="pog_skin/sounds/voice/move_%.wav"
+		confirmattacksound="pog_skin/sounds/voice/attack_%.wav"
+		nomanasound="pog_skin/sounds/voice/no_mana.wav"
+		cooldownsound="pog_skin/sounds/voice/cooldown.wav"
+		announcersound="pog_skin/sounds/voice/hero_select.wav"
+		tauntedsound="pog_skin/sounds/voice/taunt_prior.wav"
+		tauntkillsound="pog_skin/sounds/voice/taunt_after.wav"
+		
+		preglobalscale="1.71"
+		modelscale="1.0"
+		effectscale="0.9"
+		boundsheight="112"
+		boundsradius="24"
+		selectionradius="48"
+		targetoffset="0 0 64"
+	
+		previewmodel="pog_skin/preview.mdf"
+		previewpos="0 0 -50"
+		previewangles="0 0 0"
+		previewscale="1.75"
+
+		storemodel="pog_skin/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.75"
+		
+		corpsetime="2500"
+		corpsefadetime="2500"
+		corpsefadeeffect="/shared/effects/corpse_sink.effect"
+	/>
+	
+</hero>

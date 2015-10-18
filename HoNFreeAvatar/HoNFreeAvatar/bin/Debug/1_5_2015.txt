@@ -1,0 +1,995 @@
+
+ClientSpawnUnit Hero_Accursed 0 1 1 1700 1000
+ClientSpawnUnit Hero_Accursed.Classic 0 1 1 1700 1000
+ClientSpawnUnit Hero_Accursed.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_Accursed.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Accursed.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_Accursed.Alt4 0 1 1 1700 1000
+ClientSpawnUnit Hero_Accursed.Alt5 0 1 1 1700 1000
+ClientSpawnUnit Hero_Accursed.pog_skin 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Aluna 0 1 1 1700 1000
+ClientSpawnUnit Hero_Aluna.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_Aluna.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Aluna.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_Aluna.Alt4 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Andromeda 0 1 1 1700 1000
+ClientSpawnUnit Hero_Andromeda.Classic 0 1 1 1700 1000
+ClientSpawnUnit Hero_Andromeda.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_Andromeda.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Andromeda.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_Andromeda.pog_skin 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Arachna 0 1 1 1700 1000
+ClientSpawnUnit Hero_Arachna.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_Arachna.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Arachna.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_Arachna.main_reskin 0 1 1 1700 1000
+ClientSpawnUnit Hero_Arachna.pog_skin 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Armadon 0 1 1 1700 1000
+ClientSpawnUnit Hero_Armadon.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_Armadon.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Armadon.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_Armadon.Alt4 0 1 1 1700 1000
+ClientSpawnUnit Hero_Armadon.Alt5 0 1 1 1700 1000
+ClientSpawnUnit Hero_Armadon.Alt6 0 1 1 1700 1000
+ClientSpawnUnit Hero_Armadon.pog_skin 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Artesia 0 1 1 1700 1000
+ClientSpawnUnit Hero_Artesia.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_Artesia.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_Artesia.Alt4 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Artillery 0 1 1 1700 1000
+ClientSpawnUnit Hero_Artillery.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_Artillery.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Artillery.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_Artillery.Alt4 0 1 1 1700 1000
+ClientSpawnUnit Hero_Artillery.Alt5 0 1 1 1700 1000
+ClientSpawnUnit Hero_Artillery.Alt6 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_BabaYaga 0 1 1 1700 1000
+ClientSpawnUnit Hero_BabaYaga.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_BabaYaga.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_BabaYaga.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_BabaYaga.Alt4 0 1 1 1700 1000
+ClientSpawnUnit Hero_BabaYaga.Alt5 0 1 1 1700 1000
+ClientSpawnUnit Hero_BabaYaga.Alt6 0 1 1 1700 1000
+ClientSpawnUnit Hero_BabaYaga.Alt7 0 1 1 1700 1000
+ClientSpawnUnit Hero_BabaYaga.pog_skin 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Behemoth 0 1 1 1700 1000
+ClientSpawnUnit Hero_Behemoth.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_Behemoth.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Behemoth.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_Behemoth.Alt4 0 1 1 1700 1000
+ClientSpawnUnit Hero_Behemoth.Alt5 0 1 1 1700 1000
+ClientSpawnUnit Hero_Behemoth.main_reskin 0 1 1 1700 1000
+ClientSpawnUnit Hero_Behemoth.pog_skin 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Bephelgor 0 1 1 1700 1000
+ClientSpawnUnit Hero_Bephelgor.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Bephelgor.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_Bephelgor.Alt4 0 1 1 1700 1000
+ClientSpawnUnit Hero_Bephelgor.pog_skin 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Berzerker 0 1 1 1700 1000
+ClientSpawnUnit Hero_Berzerker.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_Berzerker.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Berzerker.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_Berzerker.Alt4 0 1 1 1700 1000
+ClientSpawnUnit Hero_Berzerker.Alt5 0 1 1 1700 1000
+ClientSpawnUnit Hero_Berzerker.Alt6 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Blitz 0 1 1 1700 1000
+ClientSpawnUnit Hero_Blitz.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_Blitz.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Blitz.Alt3 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Bombardier 0 1 1 1700 1000
+ClientSpawnUnit Hero_Bombardier.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_Bombardier.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Bombardier.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_Bombardier.Alt4 0 1 1 1700 1000
+ClientSpawnUnit Hero_Bombardier.Alt5 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Bubbles 0 1 1 1700 1000
+ClientSpawnUnit Hero_Bubbles.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_Bubbles.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Bubbles.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_Bubbles.Alt4 0 1 1 1700 1000
+ClientSpawnUnit Hero_Bubbles.Alt5 0 1 1 1700 1000
+ClientSpawnUnit Hero_Bubbles.Alt6 0 1 1 1700 1000
+ClientSpawnUnit Hero_Bubbles.Alt7 0 1 1 1700 1000
+ClientSpawnUnit Hero_Bubbles.Alt9 0 1 1 1700 1000
+ClientSpawnUnit Hero_Bubbles.pog_skin 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Bushwack 0 1 1 1700 1000
+ClientSpawnUnit Hero_Bushwack.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_Bushwack.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Bushwack.Alt3 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Calamity 0 1 1 1700 1000
+ClientSpawnUnit Hero_Calamity.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_Calamity.Alt2 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Chipper 0 1 1 1700 1000
+ClientSpawnUnit Hero_Chipper.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_Chipper.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Chipper.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_Chipper.Alt4 0 1 1 1700 1000
+ClientSpawnUnit Hero_Chipper.pog_skin 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Chronos 0 1 1 1700 1000
+ClientSpawnUnit Hero_Chronos.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_Chronos.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Chronos.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_Chronos.Alt4 0 1 1 1700 1000
+ClientSpawnUnit Hero_Chronos.Alt5 0 1 1 1700 1000
+ClientSpawnUnit Hero_Chronos.Alt6 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Circe 0 1 1 1700 1000
+ClientSpawnUnit Hero_Circe.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_Circe.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Circe.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_Circe.Alt4 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_CorruptedDisciple 0 1 1 1700 1000
+ClientSpawnUnit Hero_CorruptedDisciple.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_CorruptedDisciple.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_CorruptedDisciple.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_CorruptedDisciple.Alt4 0 1 1 1700 1000
+ClientSpawnUnit Hero_CorruptedDisciple.pog_skin 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Cthulhuphant 0 1 1 1700 1000
+ClientSpawnUnit Hero_Cthulhuphant.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_Cthulhuphant.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Cthulhuphant.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_Cthulhuphant.Alt4 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Dampeer 0 1 1 1700 1000
+ClientSpawnUnit Hero_Dampeer.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_Dampeer.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Dampeer.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_Dampeer.Alt4 0 1 1 1700 1000
+ClientSpawnUnit Hero_Dampeer.Alt5 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Deadlift 0 1 1 1700 1000
+ClientSpawnUnit Hero_Deadlift.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_Deadlift.Alt2 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Deadwood 0 1 1 1700 1000
+ClientSpawnUnit Hero_Deadwood.Classic 0 1 1 1700 1000
+ClientSpawnUnit Hero_Deadwood.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_Deadwood.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Deadwood.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_Deadwood.Alt4 0 1 1 1700 1000
+ClientSpawnUnit Hero_Deadwood.Alt5 0 1 1 1700 1000
+ClientSpawnUnit Hero_Deadwood.main_reskin 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Defiler 0 1 1 1700 1000
+ClientSpawnUnit Hero_Defiler.Classic 0 1 1 1700 1000
+ClientSpawnUnit Hero_Defiler.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_Defiler.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Defiler.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_Defiler.Alt4 0 1 1 1700 1000
+ClientSpawnUnit Hero_Defiler.pog_skin 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Devourer 0 1 1 1700 1000
+ClientSpawnUnit Hero_Devourer.Classic 0 1 1 1700 1000
+ClientSpawnUnit Hero_Devourer.Clown 0 1 1 1700 1000
+ClientSpawnUnit Hero_Devourer.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Devourer.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_Devourer.Alt4 0 1 1 1700 1000
+ClientSpawnUnit Hero_Devourer.Alt5 0 1 1 1700 1000
+ClientSpawnUnit Hero_Devourer.Alt6 0 1 1 1700 1000
+ClientSpawnUnit Hero_Devourer.main_reskin 0 1 1 1700 1000
+ClientSpawnUnit Hero_Devourer.Alt7 0 1 1 1700 1000
+ClientSpawnUnit Hero_Devourer.Alt8 0 1 1 1700 1000
+ClientSpawnUnit Hero_Devourer.Alt9 0 1 1 1700 1000
+ClientSpawnUnit Hero_Devourer.Alt10 0 1 1 1700 1000
+ClientSpawnUnit Hero_Devourer.pog_skin 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_DiseasedRider 0 1 1 1700 1000
+ClientSpawnUnit Hero_DiseasedRider.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_DiseasedRider.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_DiseasedRider.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_DiseasedRider.Alt4 0 1 1 1700 1000
+ClientSpawnUnit Hero_DiseasedRider.Alt6 0 1 1 1700 1000
+ClientSpawnUnit Hero_DiseasedRider.Alt7 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_DoctorRepulsor 0 1 1 1700 1000
+ClientSpawnUnit Hero_DoctorRepulsor.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_DoctorRepulsor.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_DoctorRepulsor.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_DoctorRepulsor.Alt4 0 1 1 1700 1000
+ClientSpawnUnit Hero_DoctorRepulsor.pog_skin 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Dreadknight 0 1 1 1700 1000
+ClientSpawnUnit Hero_Dreadknight.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_Dreadknight.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Dreadknight.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_Dreadknight.Alt4 0 1 1 1700 1000
+ClientSpawnUnit Hero_Dreadknight.Alt5 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_DrunkenMaster 0 1 1 1700 1000
+ClientSpawnUnit Hero_DrunkenMaster.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_DrunkenMaster.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_DrunkenMaster.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_DrunkenMaster.Alt4 0 1 1 1700 1000
+ClientSpawnUnit Hero_DrunkenMaster.Alt5 0 1 1 1700 1000
+ClientSpawnUnit Hero_DrunkenMaster.Alt6 0 1 1 1700 1000
+ClientSpawnUnit Hero_DrunkenMaster.Alt7 0 1 1 1700 1000
+ClientSpawnUnit Hero_DrunkenMaster.Alt8 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_DwarfMagi 0 1 1 1700 1000
+ClientSpawnUnit Hero_DwarfMagi.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_DwarfMagi.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_DwarfMagi.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_DwarfMagi.Alt4 0 1 1 1700 1000
+ClientSpawnUnit Hero_DwarfMagi.pog_skin 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Ebulus 0 1 1 1700 1000
+ClientSpawnUnit Hero_Ebulus.Classic 0 1 1 1700 1000
+ClientSpawnUnit Hero_Ebulus.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_Ebulus.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Ebulus.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_Ebulus.Alt4 0 1 1 1700 1000
+ClientSpawnUnit Hero_Ebulus.Alt5 0 1 1 1700 1000
+ClientSpawnUnit Hero_Ebulus.Alt5_Classic 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Electrician 0 1 1 1700 1000
+ClientSpawnUnit Hero_Electrician.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_Electrician.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Electrician.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_Electrician.Alt4 0 1 1 1700 1000
+ClientSpawnUnit Hero_Electrician.Alt5 0 1 1 1700 1000
+ClientSpawnUnit Hero_Electrician.pog_skin 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Ellonia 0 1 1 1700 1000
+ClientSpawnUnit Hero_Ellonia.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_Ellonia.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Ellonia.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_Ellonia.Alt4 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_EmeraldWarden 0 1 1 1700 1000
+ClientSpawnUnit Hero_EmeraldWarden.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_EmeraldWarden.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_EmeraldWarden.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_EmeraldWarden.Alt4 0 1 1 1700 1000
+ClientSpawnUnit Hero_EmeraldWarden.Alt5 0 1 1 1700 1000
+ClientSpawnUnit Hero_EmeraldWarden.Alt6 0 1 1 1700 1000
+ClientSpawnUnit Hero_EmeraldWarden.Alt7 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Empath 0 1 1 1700 1000
+ClientSpawnUnit Hero_Empath.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_Empath.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Empath.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_Empath.Alt4 0 1 1 1700 1000
+ClientSpawnUnit Hero_Empath.Alt5 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Engineer 0 1 1 1700 1000
+ClientSpawnUnit Hero_Engineer.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_Engineer.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Engineer.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_Engineer.Alt4 0 1 1 1700 1000
+ClientSpawnUnit Hero_Engineer.Alt5 0 1 1 1700 1000
+ClientSpawnUnit Hero_Engineer.Alt6 0 1 1 1700 1000
+ClientSpawnUnit Hero_Engineer.Alt7 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Fade 0 1 1 1700 1000
+ClientSpawnUnit Hero_Fade.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_Fade.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Fade.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_Fade.Alt_reskin 0 1 1 1700 1000
+ClientSpawnUnit Hero_Fade.pog_skin 0 1 1 1700 1000
+ClientSpawnUnit Hero_Fade.trophy_skin 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Fairy 0 1 1 1700 1000
+ClientSpawnUnit Hero_Fairy.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_Fairy.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Fairy.main_reskin 0 1 1 1700 1000
+ClientSpawnUnit Hero_Fairy.pog_skin 0 1 1 1700 1000
+ClientSpawnUnit Hero_Fairy.Alt3 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_FlameDragon 0 1 1 1700 1000
+ClientSpawnUnit Hero_FlameDragon.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_FlameDragon.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_FlameDragon.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_FlameDragon.main_reskin 0 1 1 1700 1000
+ClientSpawnUnit Hero_FlameDragon.Alt4 0 1 1 1700 1000
+ClientSpawnUnit Hero_FlameDragon.Alt5 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_FlintBeastwood 0 1 1 1700 1000
+ClientSpawnUnit Hero_FlintBeastwood.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_FlintBeastwood.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_FlintBeastwood.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_FlintBeastwood.Alt4 0 1 1 1700 1000
+ClientSpawnUnit Hero_FlintBeastwood.Alt5 0 1 1 1700 1000
+ClientSpawnUnit Hero_FlintBeastwood.Alt6 0 1 1 1700 1000
+ClientSpawnUnit Hero_FlintBeastwood.Alt7 0 1 1 1700 1000
+ClientSpawnUnit Hero_FlintBeastwood.Alt8 0 1 1 1700 1000
+ClientSpawnUnit Hero_FlintBeastwood.Alt9 0 1 1 1700 1000
+ClientSpawnUnit Hero_FlintBeastwood.pog_skin 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Flux 0 1 1 1700 1000
+ClientSpawnUnit Hero_Flux.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_Flux.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Flux.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_Flux.Alt4 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_ForsakenArcher 0 1 1 1700 1000
+ClientSpawnUnit Hero_ForsakenArcher.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_ForsakenArcher.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_ForsakenArcher.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_ForsakenArcher.Alt4 0 1 1 1700 1000
+ClientSpawnUnit Hero_ForsakenArcher.main_reskin 0 1 1 1700 1000
+ClientSpawnUnit Hero_ForsakenArcher.pog_skin 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Frosty 0 1 1 1700 1000
+ClientSpawnUnit Hero_Frosty.Classic 0 1 1 1700 1000
+ClientSpawnUnit Hero_Frosty.Female 0 1 1 1700 1000
+ClientSpawnUnit Hero_Frosty.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Frosty.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_Frosty.Alt4 0 1 1 1700 1000
+ClientSpawnUnit Hero_Frosty.Alt5 0 1 1 1700 1000
+ClientSpawnUnit Hero_Frosty.pog_skin 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Gauntlet 0 1 1 1700 1000
+ClientSpawnUnit Hero_Gauntlet.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_Gauntlet.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Gauntlet.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_Gauntlet.main_reskin 0 1 1 1700 1000
+ClientSpawnUnit Hero_Gauntlet.Alt4 0 1 1 1700 1000
+ClientSpawnUnit Hero_Gauntlet.Alt5 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Gemini 0 1 1 1700 1000
+ClientSpawnUnit Hero_Gemini.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_Gemini.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Gemini.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_Gemini.Alt4 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Geomancer 0 1 1 1700 1000
+ClientSpawnUnit Hero_Geomancer.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_Geomancer.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Geomancer.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_Geomancer.main_reskin 0 1 1 1700 1000
+ClientSpawnUnit Hero_Geomancer.Alt4 0 1 1 1700 1000
+ClientSpawnUnit Hero_Geomancer.Alt5 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Gladiator 0 1 1 1700 1000
+ClientSpawnUnit Hero_Gladiator.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_Gladiator.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Gladiator.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_Gladiator.Alt4 0 1 1 1700 1000
+ClientSpawnUnit Hero_Gladiator.Alt5 0 1 1 1700 1000
+ClientSpawnUnit Hero_Gladiator.Alt6 0 1 1 1700 1000
+ClientSpawnUnit Hero_Gladiator.Alt7 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Grinex 0 1 1 1700 1000
+ClientSpawnUnit Hero_Grinex.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_Grinex.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Grinex.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_Grinex.Alt4 0 1 1 1700 1000
+ClientSpawnUnit Hero_Grinex.Alt5 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Gunblade 0 1 1 1700 1000
+ClientSpawnUnit Hero_Gunblade.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_Gunblade.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Gunblade.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_Gunblade.Alt4 0 1 1 1700 1000
+ClientSpawnUnit Hero_Gunblade.Alt5 0 1 1 1700 1000
+ClientSpawnUnit Hero_Gunblade.Alt6 0 1 1 1700 1000
+ClientSpawnUnit Hero_Gunblade.Alt7 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Hammerstorm 0 1 1 1700 1000
+ClientSpawnUnit Hero_Hammerstorm.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_Hammerstorm.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Hammerstorm.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_Hammerstorm.Alt4 0 1 1 1700 1000
+ClientSpawnUnit Hero_Hammerstorm.Alt5 0 1 1 1700 1000
+ClientSpawnUnit Hero_Hammerstorm.Alt6 0 1 1 1700 1000
+ClientSpawnUnit Hero_Hammerstorm.Alt7 0 1 1 1700 1000
+ClientSpawnUnit Hero_Hammerstorm.pog_skin 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Hantumon 0 1 1 1700 1000
+ClientSpawnUnit Hero_Hantumon.Classic 0 1 1 1700 1000
+ClientSpawnUnit Hero_Hantumon.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_Hantumon.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Hantumon.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_Hantumon.Alt4 0 1 1 1700 1000
+ClientSpawnUnit Hero_Hantumon.Alt5 0 1 1 1700 1000
+ClientSpawnUnit Hero_Hantumon.pog_skin 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Hellbringer 0 1 1 1700 1000
+ClientSpawnUnit Hero_Hellbringer.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_Hellbringer.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Hellbringer.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_Hellbringer.Alt4 0 1 1 1700 1000
+ClientSpawnUnit Hero_Hellbringer.Alt5 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_HellDemon 0 1 1 1700 1000
+ClientSpawnUnit Hero_HellDemon.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_HellDemon.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_HellDemon.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_HellDemon.Alt4 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Hiro 0 1 1 1700 1000
+ClientSpawnUnit Hero_Hiro.Classic 0 1 1 1700 1000
+ClientSpawnUnit Hero_Hiro.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_Hiro.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Hiro.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_Hiro.Alt4 0 1 1 1700 1000
+ClientSpawnUnit Hero_Hiro.Alt5 0 1 1 1700 1000
+ClientSpawnUnit Hero_Hiro.Alt6 0 1 1 1700 1000
+ClientSpawnUnit Hero_Hiro.Alt7 0 1 1 1700 1000
+ClientSpawnUnit Hero_Hiro.Alt8 0 1 1 1700 1000
+ClientSpawnUnit Hero_Hiro.pog_skin 0 1 1 1700 1000
+ClientSpawnUnit Hero_Hiro.trophy_skin 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Hunter 0 1 1 1700 1000
+ClientSpawnUnit Hero_Hunter.Classic 0 1 1 1700 1000
+ClientSpawnUnit Hero_Hunter.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_Hunter.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Hunter.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_Hunter.Alt4 0 1 1 1700 1000
+ClientSpawnUnit Hero_Hunter.Alt5 0 1 1 1700 1000
+ClientSpawnUnit Hero_Hunter.Alt6 0 1 1 1700 1000
+ClientSpawnUnit Hero_Hunter.Alt7 0 1 1 1700 1000
+ClientSpawnUnit Hero_Hunter.pog_skin 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Hydromancer 0 1 1 1700 1000
+ClientSpawnUnit Hero_Hydromancer.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_Hydromancer.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Hydromancer.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_Hydromancer.Alt4 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Javaras 0 1 1 1700 1000
+ClientSpawnUnit Hero_Javaras.Classic 0 1 1 1700 1000
+ClientSpawnUnit Hero_Javaras.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_Javaras.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Javaras.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_Javaras.Alt4 0 1 1 1700 1000
+ClientSpawnUnit Hero_Javaras.Alt5 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Jereziah 0 1 1 1700 1000
+ClientSpawnUnit Hero_Jereziah.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_Jereziah.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Jereziah.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_Jereziah.main_reskin 0 1 1 1700 1000
+ClientSpawnUnit Hero_Jereziah.Alt4 0 1 1 1700 1000
+ClientSpawnUnit Hero_Jereziah.Alt5 0 1 1 1700 1000
+ClientSpawnUnit Hero_Jereziah.pog_skin 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Kane 0 1 1 1700 1000
+ClientSpawnUnit Hero_Kane.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_Kane.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Kane.Alt3 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Kenisis 0 1 1 1700 1000
+ClientSpawnUnit Hero_Kenisis.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_Kenisis.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Kenisis.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_Kenisis.Alt4 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Klanx 0 1 1 1700 1000
+ClientSpawnUnit Hero_Klanx.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_Klanx.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Klanx.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_Klanx.Alt4 0 1 1 1700 1000
+ClientSpawnUnit Hero_Klanx.Alt5 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Kraken 0 1 1 1700 1000
+ClientSpawnUnit Hero_Kraken.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_Kraken.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Kraken.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_Kraken.pog_skin 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Krixi 0 1 1 1700 1000
+ClientSpawnUnit Hero_Krixi.Classic 0 1 1 1700 1000
+ClientSpawnUnit Hero_Krixi.Sexy 0 1 1 1700 1000
+ClientSpawnUnit Hero_Krixi.main_reskin 0 1 1 1700 1000
+ClientSpawnUnit Hero_Krixi.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Krixi.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_Krixi.Alt4 0 1 1 1700 1000
+ClientSpawnUnit Hero_Krixi.Alt5 0 1 1 1700 1000
+ClientSpawnUnit Hero_Krixi.pog_skin 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Kunas 0 1 1 1700 1000
+ClientSpawnUnit Hero_Kunas.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_Kunas.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Kunas.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_Kunas.Alt6 0 1 1 1700 1000
+ClientSpawnUnit Hero_Kunas.Alt7 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Legionnaire 0 1 1 1700 1000
+ClientSpawnUnit Hero_Legionnaire.Classic 0 1 1 1700 1000
+ClientSpawnUnit Hero_Legionnaire.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_Legionnaire.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Legionnaire.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_Legionnaire.Alt4 0 1 1 1700 1000
+ClientSpawnUnit Hero_Legionnaire.Alt5 0 1 1 1700 1000
+ClientSpawnUnit Hero_Legionnaire.Alt6 0 1 1 1700 1000
+ClientSpawnUnit Hero_Legionnaire.Alt7 0 1 1 1700 1000
+ClientSpawnUnit Hero_Legionnaire.Alt8 0 1 1 1700 1000
+ClientSpawnUnit Hero_Legionnaire.pog_skin 0 1 1 1700 1000
+ClientSpawnUnit Hero_Legionnaire.trophy_skin 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Lodestone 0 1 1 1700 1000
+ClientSpawnUnit Hero_Lodestone.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_Lodestone.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Lodestone.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_Lodestone.Alt4 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Magmar 0 1 1 1700 1000
+ClientSpawnUnit Hero_Magmar.Scorpion 0 1 1 1700 1000
+ClientSpawnUnit Hero_Magmar.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Magmar.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_Magmar.Alt4 0 1 1 1700 1000
+ClientSpawnUnit Hero_Magmar.Alt5 0 1 1 1700 1000
+ClientSpawnUnit Hero_Magmar.Alt6 0 1 1 1700 1000
+ClientSpawnUnit Hero_Magmar.Alt7 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Maliken 0 1 1 1700 1000
+ClientSpawnUnit Hero_Maliken.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_Maliken.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Maliken.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_Maliken.Alt4 0 1 1 1700 1000
+ClientSpawnUnit Hero_Maliken.Alt5 0 1 1 1700 1000
+ClientSpawnUnit Hero_Maliken.Alt6 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Martyr 0 1 1 1700 1000
+ClientSpawnUnit Hero_Martyr.Classic 0 1 1 1700 1000
+ClientSpawnUnit Hero_Martyr.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_Martyr.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Martyr.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_Martyr.Alt4 0 1 1 1700 1000
+ClientSpawnUnit Hero_Martyr.Alt5 0 1 1 1700 1000
+ClientSpawnUnit Hero_Martyr.Alt6 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_MasterOfArms 0 1 1 1700 1000
+ClientSpawnUnit Hero_MasterOfArms.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_MasterOfArms.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_MasterOfArms.Alt4 0 1 1 1700 1000
+ClientSpawnUnit Hero_MasterOfArms.Alt5 0 1 1 1700 1000
+ClientSpawnUnit Hero_MasterOfArms.Alt6 0 1 1 1700 1000
+ClientSpawnUnit Hero_MasterOfArms.Alt7 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Midas 0 1 1 1700 1000
+ClientSpawnUnit Hero_Midas.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_Midas.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Midas.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_Midas.Alt4 0 1 1 1700 1000
+ClientSpawnUnit Hero_Midas.Alt5 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Moira 0 1 1 1700 1000
+ClientSpawnUnit Hero_Moira.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_Moira.Alt2 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Monarch 0 1 1 1700 1000
+ClientSpawnUnit Hero_Monarch.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_Monarch.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Monarch.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_Monarch.Alt4 0 1 1 1700 1000
+ClientSpawnUnit Hero_Monarch.Alt5 0 1 1 1700 1000
+ClientSpawnUnit Hero_Monarch.Alt6 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_MonkeyKing 0 1 1 1700 1000
+ClientSpawnUnit Hero_MonkeyKing.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_MonkeyKing.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_MonkeyKing.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_MonkeyKing.Alt4 0 1 1 1700 1000
+ClientSpawnUnit Hero_MonkeyKing.Alt5 0 1 1 1700 1000
+ClientSpawnUnit Hero_MonkeyKing.Alt6 0 1 1 1700 1000
+ClientSpawnUnit Hero_MonkeyKing.Alt7 0 1 1 1700 1000
+ClientSpawnUnit Hero_MonkeyKing.main_reskin 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Moraxus 0 1 1 1700 1000
+ClientSpawnUnit Hero_Moraxus.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_Moraxus.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Moraxus.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_Moraxus.Alt4 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Mumra 0 1 1 1700 1000
+ClientSpawnUnit Hero_Mumra.Classic 0 1 1 1700 1000
+ClientSpawnUnit Hero_Mumra.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_Mumra.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Mumra.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_Mumra.Alt4 0 1 1 1700 1000
+ClientSpawnUnit Hero_Mumra.pog_skin 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Nomad 0 1 1 1700 1000
+ClientSpawnUnit Hero_Nomad.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_Nomad.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Nomad.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_Nomad.Alt4 0 1 1 1700 1000
+ClientSpawnUnit Hero_Nomad.Alt5 0 1 1 1700 1000
+ClientSpawnUnit Hero_Nomad.Alt6 0 1 1 1700 1000
+ClientSpawnUnit Hero_Nomad.Alt7 0 1 1 1700 1000
+ClientSpawnUnit Hero_Nomad.Alt8 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Oogie 0 1 1 1700 1000
+ClientSpawnUnit Hero_Oogie.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_Oogie.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Oogie.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_Oogie.Alt4 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Ophelia 0 1 1 1700 1000
+ClientSpawnUnit Hero_Ophelia.Classic 0 1 1 1700 1000
+ClientSpawnUnit Hero_Ophelia.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_Ophelia.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Ophelia.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_Ophelia.Alt4 0 1 1 1700 1000
+ClientSpawnUnit Hero_Ophelia.pog_skin 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Panda 0 1 1 1700 1000
+ClientSpawnUnit Hero_Panda.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_Panda.main_reskin 0 1 1 1700 1000
+ClientSpawnUnit Hero_Panda.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Panda.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_Panda.Alt4 0 1 1 1700 1000
+ClientSpawnUnit Hero_Panda.Alt5 0 1 1 1700 1000
+ClientSpawnUnit Hero_Panda.Alt6 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Parallax 0 1 1 1700 1000
+ClientSpawnUnit Hero_Parallax.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_Parallax.Alt2 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Parasite 0 1 1 1700 1000
+ClientSpawnUnit Hero_Parasite.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_Parasite.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Parasite.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_Parasite.Alt4 0 1 1 1700 1000
+ClientSpawnUnit Hero_Parasite.Alt6 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Pearl 0 1 1 1700 1000
+ClientSpawnUnit Hero_Pearl.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_Pearl.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Pearl.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_Pearl.Alt4 0 1 1 1700 1000
+ClientSpawnUnit Hero_Pearl.Alt5 0 1 1 1700 1000
+ClientSpawnUnit Hero_Pearl.Alt6 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Pestilence 0 1 1 1700 1000
+ClientSpawnUnit Hero_Pestilence.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_Pestilence.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Pestilence.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_Pestilence.Alt4 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Plant 0 1 1 1700 1000
+ClientSpawnUnit Hero_Plant.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_Plant.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Plant.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_Plant.Alt4 0 1 1 1700 1000
+ClientSpawnUnit Hero_Plant.Alt5 0 1 1 1700 1000
+ClientSpawnUnit Hero_Plant.Alt6 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_PollywogPriest 0 1 1 1700 1000
+ClientSpawnUnit Hero_PollywogPriest.Chieftain 0 1 1 1700 1000
+ClientSpawnUnit Hero_PollywogPriest.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_PollywogPriest.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_PollywogPriest.Alt4 0 1 1 1700 1000
+ClientSpawnUnit Hero_PollywogPriest.Alt5 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Predator 0 1 1 1700 1000
+ClientSpawnUnit Hero_Predator.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_Predator.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Predator.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_Predator.Alt4 0 1 1 1700 1000
+ClientSpawnUnit Hero_Predator.Alt5 0 1 1 1700 1000
+ClientSpawnUnit Hero_Predator.Alt6 0 1 1 1700 1000
+ClientSpawnUnit Hero_Predator.Alt7 0 1 1 1700 1000
+ClientSpawnUnit Hero_Predator.Alt8 0 1 1 1700 1000
+ClientSpawnUnit Hero_Predator.Alt9 0 1 1 1700 1000
+ClientSpawnUnit Hero_Predator.pog_skin 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Prisoner 0 1 1 1700 1000
+ClientSpawnUnit Hero_Prisoner.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_Prisoner.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Prisoner.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_Prisoner.Alt4 0 1 1 1700 1000
+ClientSpawnUnit Hero_Prisoner.Alt5 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Prophet 0 1 1 1700 1000
+ClientSpawnUnit Hero_Prophet.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_Prophet.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Prophet.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_Prophet.Alt4 0 1 1 1700 1000
+ClientSpawnUnit Hero_Prophet.Alt5 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_PuppetMaster 0 1 1 1700 1000
+ClientSpawnUnit Hero_PuppetMaster.Classic 0 1 1 1700 1000
+ClientSpawnUnit Hero_PuppetMaster.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_PuppetMaster.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_PuppetMaster.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_PuppetMaster.Alt4 0 1 1 1700 1000
+ClientSpawnUnit Hero_PuppetMaster.Alt5 0 1 1 1700 1000
+ClientSpawnUnit Hero_PuppetMaster.Alt7 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Pyromancer 0 1 1 1700 1000
+ClientSpawnUnit Hero_Pyromancer.Female 0 1 1 1700 1000
+ClientSpawnUnit Hero_Pyromancer.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Pyromancer.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_Pyromancer.Alt4 0 1 1 1700 1000
+ClientSpawnUnit Hero_Pyromancer.Alt5 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Ra 0 1 1 1700 1000
+ClientSpawnUnit Hero_Ra.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_Ra.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Ra.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_Ra.Alt4 0 1 1 1700 1000
+ClientSpawnUnit Hero_Ra.Alt5 0 1 1 1700 1000
+ClientSpawnUnit Hero_Ra.Alt6 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Rally 0 1 1 1700 1000
+ClientSpawnUnit Hero_Rally.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_Rally.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Rally.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_Rally.Alt4 0 1 1 1700 1000
+ClientSpawnUnit Hero_Rally.Alt5 0 1 1 1700 1000
+ClientSpawnUnit Hero_Rally.Alt6 0 1 1 1700 1000
+ClientSpawnUnit Hero_Rally.Alt7 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Rampage 0 1 1 1700 1000
+ClientSpawnUnit Hero_Rampage.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_Rampage.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Rampage.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_Rampage.Alt4 0 1 1 1700 1000
+ClientSpawnUnit Hero_Rampage.Alt5 0 1 1 1700 1000
+ClientSpawnUnit Hero_Rampage.Alt6 0 1 1 1700 1000
+ClientSpawnUnit Hero_Rampage.Alt7 0 1 1 1700 1000
+ClientSpawnUnit Hero_Rampage.Alt8 0 1 1 1700 1000
+ClientSpawnUnit Hero_Rampage.Alt9 0 1 1 1700 1000
+ClientSpawnUnit Hero_Rampage.Alt10 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Ravenor 0 1 1 1700 1000
+ClientSpawnUnit Hero_Ravenor.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_Ravenor.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Ravenor.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_Ravenor.Alt4 0 1 1 1700 1000
+ClientSpawnUnit Hero_Ravenor.Alt5 0 1 1 1700 1000
+ClientSpawnUnit Hero_Ravenor.Alt6 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Revenant 0 1 1 1700 1000
+ClientSpawnUnit Hero_Revenant.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_Revenant.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Revenant.Alt3 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Rhapsody 0 1 1 1700 1000
+ClientSpawnUnit Hero_Rhapsody.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_Rhapsody.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Rhapsody.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_Rhapsody.Alt4 0 1 1 1700 1000
+ClientSpawnUnit Hero_Rhapsody.Alt5 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Riftmage 0 1 1 1700 1000
+ClientSpawnUnit Hero_Riftmage.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_Riftmage.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Riftmage.Alt3 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Riptide 0 1 1 1700 1000
+ClientSpawnUnit Hero_Riptide.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_Riptide.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Riptide.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_Riptide.Alt4 0 1 1 1700 1000
+ClientSpawnUnit Hero_Riptide.Alt5 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Rocky 0 1 1 1700 1000
+ClientSpawnUnit Hero_Rocky.Classic 0 1 1 1700 1000
+ClientSpawnUnit Hero_Rocky.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_Rocky.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Rocky.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_Rocky.Alt4 0 1 1 1700 1000
+ClientSpawnUnit Hero_Rocky.Alt5 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Salomon 0 1 1 1700 1000
+ClientSpawnUnit Hero_Salomon.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_Salomon.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Salomon.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_Salomon.Alt4 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_SandWraith 0 1 1 1700 1000
+ClientSpawnUnit Hero_SandWraith.Classic 0 1 1 1700 1000
+ClientSpawnUnit Hero_SandWraith.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_SandWraith.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_SandWraith.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_SandWraith.Alt4 0 1 1 1700 1000
+ClientSpawnUnit Hero_SandWraith.pog_skin 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Scar 0 1 1 1700 1000
+ClientSpawnUnit Hero_Scar.Classic 0 1 1 1700 1000
+ClientSpawnUnit Hero_Scar.Scary 0 1 1 1700 1000
+ClientSpawnUnit Hero_Scar.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Scar.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_Scar.Alt4 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Scout 0 1 1 1700 1000
+ClientSpawnUnit Hero_Scout.Classic 0 1 1 1700 1000
+ClientSpawnUnit Hero_Scout.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_Scout.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Scout.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_Scout.Alt4 0 1 1 1700 1000
+ClientSpawnUnit Hero_Scout.Alt5 0 1 1 1700 1000
+ClientSpawnUnit Hero_Scout.Alt5_Classic 0 1 1 1700 1000
+ClientSpawnUnit Hero_Scout.pog_skin 0 1 1 1700 1000
+ClientSpawnUnit Hero_Scout.Alt6 0 1 1 1700 1000
+ClientSpawnUnit Hero_Scout.Alt7 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_ShadowBlade 0 1 1 1700 1000
+ClientSpawnUnit Hero_ShadowBlade.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_ShadowBlade.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_ShadowBlade.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_ShadowBlade.Alt4 0 1 1 1700 1000
+ClientSpawnUnit Hero_ShadowBlade.Alt5 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Shaman 0 1 1 1700 1000
+ClientSpawnUnit Hero_Shaman.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_Shaman.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Shaman.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_Shaman.Alt4 0 1 1 1700 1000
+ClientSpawnUnit Hero_Shaman.Alt5 0 1 1 1700 1000
+ClientSpawnUnit Hero_Shaman.pog_skin 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Silhouette 0 1 1 1700 1000
+ClientSpawnUnit Hero_Silhouette.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_Silhouette.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Silhouette.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_Silhouette.Alt4 0 1 1 1700 1000
+ClientSpawnUnit Hero_Silhouette.Alt5 0 1 1 1700 1000
+ClientSpawnUnit Hero_Silhouette.Alt7 0 1 1 1700 1000
+ClientSpawnUnit Hero_Silhouette.Alt8 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_SirBenzington 0 1 1 1700 1000
+ClientSpawnUnit Hero_SirBenzington.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_SirBenzington.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_SirBenzington.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_SirBenzington.Alt4 0 1 1 1700 1000
+ClientSpawnUnit Hero_SirBenzington.Alt5 0 1 1 1700 1000
+ClientSpawnUnit Hero_SirBenzington.Alt6 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Solstice 0 1 1 1700 1000
+ClientSpawnUnit Hero_Solstice.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_Solstice.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Solstice.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_Solstice.Alt4 0 1 1 1700 1000
+ClientSpawnUnit Hero_Solstice.Alt5 0 1 1 1700 1000
+ClientSpawnUnit Hero_Solstice.Alt6 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Soulstealer 0 1 1 1700 1000
+ClientSpawnUnit Hero_Soulstealer.Classic 0 1 1 1700 1000
+ClientSpawnUnit Hero_Soulstealer.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_Soulstealer.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Soulstealer.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_Soulstealer.Alt4 0 1 1 1700 1000
+ClientSpawnUnit Hero_Soulstealer.pog_skin 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Succubis 0 1 1 1700 1000
+ClientSpawnUnit Hero_Succubis.Classic 0 1 1 1700 1000
+ClientSpawnUnit Hero_Succubis.Naughty 0 1 1 1700 1000
+ClientSpawnUnit Hero_Succubis.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Succubis.main_reskin 0 1 1 1700 1000
+ClientSpawnUnit Hero_Succubis.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_Succubis.Alt4 0 1 1 1700 1000
+ClientSpawnUnit Hero_Succubis.pog_skin 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Taint 0 1 1 1700 1000
+ClientSpawnUnit Hero_Taint.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_Taint.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Taint.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_Taint.Alt4 0 1 1 1700 1000
+ClientSpawnUnit Hero_Taint.Alt5 0 1 1 1700 1000
+ClientSpawnUnit Hero_Taint.Alt6 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Tarot 0 1 1 1700 1000
+ClientSpawnUnit Hero_Tarot.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_Tarot.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Tarot.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_Tarot.Alt4 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Tempest 0 1 1 1700 1000
+ClientSpawnUnit Hero_Tempest.Classic 0 1 1 1700 1000
+ClientSpawnUnit Hero_Tempest.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_Tempest.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Tempest.main_reskin 0 1 1 1700 1000
+ClientSpawnUnit Hero_Tempest.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_Tempest.Alt4 0 1 1 1700 1000
+ClientSpawnUnit Hero_Tempest.Alt5 0 1 1 1700 1000
+ClientSpawnUnit Hero_Tempest.pog_skin 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Treant 0 1 1 1700 1000
+ClientSpawnUnit Hero_Treant.Classic 0 1 1 1700 1000
+ClientSpawnUnit Hero_Treant.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_Treant.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Treant.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_Treant.Alt4 0 1 1 1700 1000
+ClientSpawnUnit Hero_Treant.Alt5 0 1 1 1700 1000
+ClientSpawnUnit Hero_Treant.pog_skin 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Tremble 0 1 1 1700 1000
+ClientSpawnUnit Hero_Tremble.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_Tremble.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Tremble.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_Tremble.main_reskin 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Tundra 0 1 1 1700 1000
+ClientSpawnUnit Hero_Tundra.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_Tundra.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Tundra.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_Tundra.Alt4 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Valkyrie 0 1 1 1700 1000
+ClientSpawnUnit Hero_Valkyrie.Classic 0 1 1 1700 1000
+ClientSpawnUnit Hero_Valkyrie.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_Valkyrie.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Valkyrie.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_Valkyrie.Alt4 0 1 1 1700 1000
+ClientSpawnUnit Hero_Valkyrie.Alt5 0 1 1 1700 1000
+ClientSpawnUnit Hero_Valkyrie.Alt6 0 1 1 1700 1000
+ClientSpawnUnit Hero_Valkyrie.Alt7 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Vanya 0 1 1 1700 1000
+ClientSpawnUnit Hero_Vanya.Classic 0 1 1 1700 1000
+ClientSpawnUnit Hero_Vanya.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_Vanya.Alt_reskin 0 1 1 1700 1000
+ClientSpawnUnit Hero_Vanya.Alt_reskin2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Vanya.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Vanya.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_Vanya.pog_skin 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Vindicator 0 1 1 1700 1000
+ClientSpawnUnit Hero_Vindicator.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_Vindicator.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Vindicator.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_Vindicator.Alt4 0 1 1 1700 1000
+ClientSpawnUnit Hero_Vindicator.Alt5 0 1 1 1700 1000
+ClientSpawnUnit Hero_Vindicator.Alt6 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Voodoo 0 1 1 1700 1000
+ClientSpawnUnit Hero_Voodoo.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_Voodoo.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Voodoo.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_Voodoo.Alt4 0 1 1 1700 1000
+ClientSpawnUnit Hero_Voodoo.pog_skin 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_WitchSlayer 0 1 1 1700 1000
+ClientSpawnUnit Hero_WitchSlayer.Pimp 0 1 1 1700 1000
+ClientSpawnUnit Hero_WitchSlayer.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_WitchSlayer.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_WitchSlayer.Alt4 0 1 1 1700 1000
+ClientSpawnUnit Hero_WitchSlayer.Alt5 0 1 1 1700 1000
+ClientSpawnUnit Hero_WitchSlayer.Alt6 0 1 1 1700 1000
+ClientSpawnUnit Hero_WitchSlayer.pog_skin 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_WolfMan 0 1 1 1700 1000
+ClientSpawnUnit Hero_WolfMan.Classic 0 1 1 1700 1000
+ClientSpawnUnit Hero_WolfMan.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_WolfMan.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_WolfMan.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_WolfMan.Alt4 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Xalynx 0 1 1 1700 1000
+ClientSpawnUnit Hero_Xalynx.Classic 0 1 1 1700 1000
+ClientSpawnUnit Hero_Xalynx.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_Xalynx.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Xalynx.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_Xalynx.Alt4 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Yogi 0 1 1 1700 1000
+ClientSpawnUnit Hero_Yogi.Classic 0 1 1 1700 1000
+ClientSpawnUnit Hero_Yogi.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_Yogi.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Yogi.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_Yogi.Alt4 0 1 1 1700 1000
+ClientSpawnUnit Hero_Yogi.pog_skin 0 1 1 1700 1000
+
+ClientSpawnUnit Hero_Zephyr 0 1 1 1700 1000
+ClientSpawnUnit Hero_Zephyr.Alt 0 1 1 1700 1000
+ClientSpawnUnit Hero_Zephyr.Alt2 0 1 1 1700 1000
+ClientSpawnUnit Hero_Zephyr.Alt3 0 1 1 1700 1000
+ClientSpawnUnit Hero_Zephyr.Alt4 0 1 1 1700 1000
+ClientSpawnUnit Hero_Zephyr.Alt5 0 1 1 1700 1000
+ClientSpawnUnit Hero_Zephyr.Alt6 0 1 1 1700 1000
+ClientSpawnUnit Hero_Zephyr.Alt7 0 1 1 1700 1000
+ClientSpawnUnit Hero_Zephyr.pog_skin 0 1 1 1700 1000

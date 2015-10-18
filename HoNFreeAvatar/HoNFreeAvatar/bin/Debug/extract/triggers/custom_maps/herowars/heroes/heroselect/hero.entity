@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hero
+	name="Hero_DevX_AvatarSelect"
+	icon="/heroes/devourer/icon.tga"
+	portrait="/heroes/devourer/icon.tga"
+	model="/core/null/invis.mdf"
+	skin=""
+	isselectable="false"
+	
+	passiveeffect=""
+	spawneffect=""  
+	respawneffect=""
+
+	
+	preglobalscale="0.0"
+	modelscale="0.0"
+	effectscale="1.0"
+	boundsheight="0"
+	boundsradius="0"
+	selectionradius="54"
+	targetoffset="0 0 92"
+
+	category="tank cc"
+	difficulty="4"
+
+	solorating="2"
+	junglerating="0"
+	carryrating="0"
+	supportrating="0"
+	initiatorrating="2"
+	gankerrating="4"
+	pusherrating="0"
+	rangedrating="0"
+	meleerating="5"
+	
+	movespeed="0" 
+	turnrate="450"
+	turnsmoothing="0.05"
+	invulnerable="true"
+
+	maxhealth="150"
+	healthregen="1.00"
+	maxmana="100"
+	manaregen="0.01"
+
+	armor="1.0"
+	magicarmor="5.5"
+
+	inventory0="Ability_DevX_HookLevelUp_Damagex"
+	inventory1="Ability_DevX_HookLevelUp_Rangex"
+	inventory2="Ability_DevX_HookLevelUp_Speedx"
+	inventory3="Ability_DevX_HookLevelUp_Widthx"
+	inventory4="Hero_DevX_Avatar1"
+	inventory5="Hero_DevX_Avatar2"
+	inventory6="Hero_DevX_Avatar3"
+	inventory7="Hero_DevX_Avatar4"
+	inventory8=""
+	inventory9="Hero_DevX_Avatar5"
+	inventory10="Hero_DevX_Avatar6"
+	inventory11="Hero_DevX_Avatar_Page2"
+	inventory12="Ability_DevX1"
+
+	attackduration="1000"
+	attackactiontime="500"
+	attackcooldown="1700"
+
+	attackdamagemin="27"
+	attackdamagemax="33"
+
+	attacknumanims="4"
+	attackoffset="0 50 100"
+	attackprojectile=""
+	attackrange="128"
+	attackstarteffect=""
+	attackactioneffect=""
+	attackimpacteffect=""
+	attacktype="melee"
+	combattype="Hero"
+	norender="true"
+	aggrorange="600"
+	sightrangeday="2000"
+	sightrangenight="2000"
+	wanderrange="250"
+	
+	corpsetime="5000"
+	corpsefadetime="5000"
+	corpsefadeeffect="/shared/effects/corpse_sink.effect"
+
+	primaryattribute="Strength"
+	strength="25"
+	strengthperlevel="3.2"
+	agility="14"
+	agilityperlevel="1.5"
+	intelligence="0"
+	intelligenceperlevel="2"
+	
+	previewmodel="/heroes/devourer/hd_devourer/preview.mdf"
+	previewpos="0 0 -60"
+	previewangles="0 0 0"
+	previewscale="1.7"
+	
+	storemodel="/heroes/devourer/hd_devourer/preview.mdf"
+	storepos="0 0 -19"
+	storeangles="0 0 0"
+	storescale="2.0"
+>
+
+	<onspawn>
+		<activatemodifierkey entity="this_entity" name="avatarselecthero" />
+		<applystate name="State_Stunned" target="this_entity" continuous="true" />
+	</onspawn>
+
+	<modifier key="avatarselecthero" modpriority="100" movespeed="500" />
+	
+	<modifier key="page2" modpriority="101" 
+	inventory4="Hero_DevX_Avatar7"
+	inventory5="Hero_DevX_Avatar8"
+	inventory6="Hero_DevX_Avatar9"
+	inventory7="Hero_DevX_Avatar10"
+	inventory8=""
+	inventory9="Hero_DevX_Avatar11"
+	inventory10="Hero_DevX_Avatar12"
+	inventory11="Hero_DevX_Avatar_Page1"
+	inventory12="Ability_DevX1"
+
+	/>
+	
+
+	
+</hero>

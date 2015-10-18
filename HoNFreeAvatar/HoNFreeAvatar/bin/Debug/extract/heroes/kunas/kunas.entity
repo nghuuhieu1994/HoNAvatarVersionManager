@@ -1,0 +1,649 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hero
+	name="Hero_Kunas"
+
+	team="Legion"
+	icon="icons/hero.tga"
+	portrait="icons/hero.tga"
+	model="model.mdf"
+	skin=""
+	
+	passiveeffect=""
+	spawneffect=""
+	respawneffect="/shared/effects/respawn.effect"
+	selectedsound="sounds/voice/select_%.wav"
+	selectedflavorsound="sounds/voice/select_flavour_%.wav"
+	confirmmovesound="sounds/voice/move_%.wav"
+	confirmattacksound="sounds/voice/attack_%.wav"
+	nomanasound="sounds/voice/no_mana.wav"
+	cooldownsound="sounds/voice/cooldown.wav"
+	announcersound="sounds/voice/hero_select.wav"
+	tauntedsound="sounds/voice/taunt_prior.wav"
+	tauntkillsound="sounds/voice/taunt_after.wav"
+	
+	preglobalscale="1.35"
+	modelscale="1.0"
+	effectscale="1.08"
+	boundsheight="112"
+	boundsradius="24"
+	selectionradius="54"
+	targetoffset="0 0 64"
+	
+	category="magic"
+	difficulty="1.5"
+
+	solorating="5"
+	junglerating="0"
+	carryrating="0"
+	supportrating="0"
+	initiatorrating="0"
+	gankerrating="2"
+	pusherrating="0"
+	rangedrating="3"
+	meleerating="0"
+
+	movespeed="300"
+	turnrate="540"
+	turnsmoothing="0.05"
+
+	maxhealth="150"
+	healthregen="0.25"
+	maxmana="0"
+	manaregen="0.01"
+
+	armor="0.46"
+	magicarmor="6.5"
+
+	inventory0="Ability_Kunas1"
+	inventory1="Ability_Kunas2"
+	inventory2="Ability_Kunas3"
+	inventory3="Ability_Kunas4"
+	inventory4="Ability_AttributeBoost"
+	inventory5=""
+	inventory6=""
+	inventory8="Ability_Taunt"
+	inventory9=""
+	inventory10=""
+	inventory11=""
+	inventory12="Ability_AutomatedCourier"
+
+	attackduration="1000"
+	attackactiontime="500"
+	attackcooldown="1700"
+	attackdamagemin="21"
+	attackdamagemax="29"
+	attacknumanims="2"
+	attackoffset="0 130 80"
+	attackprojectile="Projectile_KunasAttack"
+	attackrange="350"
+	attackstarteffect=""
+	attackactioneffect="projectile/effects/attack.effect"
+	attackimpacteffect=""
+	attacktype="ranged"
+	combattype="Hero"
+
+	aggrorange="800"
+	sightrangeday="1800"
+	sightrangenight="800"
+	wanderrange="250"
+
+	primaryattribute="Intelligence"
+	strength="19"
+	strengthperlevel="1.8"
+	agility="11"
+	agilityperlevel="1.2"
+	intelligence="20"
+	intelligenceperlevel="2.7"
+	
+	previewmodel="preview.mdf"
+	previewpos="0 0 -50"
+	previewangles="0 0 0"
+	previewscale="1.3"
+
+	storemodel="preview.mdf"
+	storepos="0 0 -20"
+	storeangles="0 0 0"
+	storescale="1.45"
+	
+	corpsetime="3000"
+	corpsefadetime="5000"
+	corpsefadeeffect="/shared/effects/corpse_sink.effect"
+>
+	<recommendeditem name="Item_ManaPotion" />	
+	<recommendeditem name="Item_MinorTotem" />
+	<recommendeditem name="Item_RunesOfTheBlight" />
+	<recommendeditem name="Item_HealthPotion" />
+	<recommendeditem name="Item_HomecomingStone" />
+	
+	<recommendeditem name="Item_FlamingEye" />
+	<recommendeditem name="Item_Intelligence5" />
+	<recommendeditem name="Item_Strength5" />
+	<recommendeditem name="Item_Bottle" />
+	<recommendeditem name="Item_EnhancedMarchers" />
+	
+	<recommendeditem name="Item_SpellShards" />
+	<recommendeditem name="Item_Intelligence7" />
+	<recommendeditem name="Item_SacrificialStone" />
+	<recommendeditem name="Item_RestorationStone" />
+	<recommendeditem name="Item_BehemothsHeart" />
+
+	<modifier key="iamsheeped" modpriority="100"
+		passiveeffect=""
+	>
+	</modifier>
+	
+	<modifier key="ult_boost" modpriority="100"
+		passiveeffect="effects/staff_fx.effect"
+	>
+	</modifier>
+	
+	<altavatar key="Hero_Kunas.Alt" modpriority="1"
+		altavatar="true"
+		
+		icon2="alt/icon.tga"
+		portrait="alt/icon.tga"
+		model="alt/model.mdf"
+		passiveeffect="alt/effects/body.effect"
+		
+		previewmodel="alt/preview.mdf"
+		previewpos="-10 0 -50"
+		previewangles="0 0 0"
+		previewscale="1.5"
+		
+		storemodel="alt/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.3"
+		
+		preglobalscale="1.52"
+		selectedsound="alt/sounds/voice/select_%.wav"
+		selectedflavorsound="alt/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt/sounds/voice/move_%.wav"
+		confirmattacksound="alt/sounds/voice/attack_%.wav"
+		nomanasound="alt/sounds/voice/no_mana.wav"
+		cooldownsound="alt/sounds/voice/cooldown.wav"
+		announcersound="alt/sounds/voice/hero_select.wav"
+		tauntedsound="alt/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt/sounds/voice/taunt_after.wav"
+	>
+	<onspawn>
+	<setactivemodifierkey name="Norse_Sound" />
+	</onspawn>
+	
+	<onrespawn>
+	<setactivemodifierkey name="Norse_Sound" />
+	</onrespawn>
+	</altavatar>
+	
+	<altavatar key="Hero_Kunas.Alt2" modpriority="1"
+		altavatar="true"
+		
+		icon2="alt2/icon.tga"
+		portrait="alt2/icon.tga"
+		model="alt2/model.mdf"
+		
+		preglobalscale="1.7"
+		passiveeffect="alt2/effects/body.effect"
+		
+		attackprojectile="Projectile_KunasAttack_Alt2"
+		attackactioneffect="alt2/projectile/effects/attack.effect"
+		
+		previewmodel="alt2/preview.mdf"
+		previewpos="-10 0 -50"
+		previewangles="0 0 0"
+		previewscale="1.5"
+		
+		storemodel="alt2/preview.mdf"
+		storepos="0 0 -28"
+		storeangles="0 0 0"
+		storescale="1.8"
+		
+		selectedsound="alt2/sounds/voice/select_%.wav"
+	    selectedflavorsound="alt2/sounds/voice/select_flavour_%.wav"
+	    confirmmovesound="alt2/sounds/voice/move_%.wav"
+	    confirmattacksound="alt2/sounds/voice/attack_%.wav"
+	    nomanasound="alt2/sounds/voice/no_mana.wav"
+	    cooldownsound="alt2/sounds/voice/cooldown.wav"
+	    tauntedsound="alt2/sounds/voice/taunt_prior.wav"
+	    tauntkillsound="alt2/sounds/voice/taunt_after.wav"
+	/>
+	
+	<altavatar key="Hero_Kunas.Alt3" modpriority="1"
+		altavatar="true"
+		
+		icon2="alt3/icon.tga"
+		portrait="alt3/icon.tga"
+		model="alt3/model.mdf"
+		
+		preglobalscale="2"
+		passiveeffect="alt3/effects/body.effect"
+		
+		attackprojectile="Projectile_KunasAttack_Alt3"
+		attackactioneffect="alt3/projectile/effects/attack.effect"
+		
+		previewmodel="alt3/preview.mdf"
+		previewpos="-10 0 -60"
+		previewangles="0 0 0"
+		previewscale="1.5"
+		
+		storemodel="alt3/preview.mdf"
+		storepos="0 0 -50"
+		storeangles="0 0 0"
+		storescale="1.8"
+		
+		selectedsound="alt3/sounds/voice/select_%.wav"
+	    selectedflavorsound="alt3/sounds/voice/select_flavour_%.wav"
+	    confirmmovesound="alt3/sounds/voice/move_%.wav"
+	    confirmattacksound="alt3/sounds/voice/attack_%.wav"
+	    nomanasound="alt3/sounds/voice/no_mana.wav"
+	    cooldownsound="alt3/sounds/voice/cooldown.wav"
+	    tauntedsound="alt3/sounds/voice/taunt_prior.wav"
+	    tauntkillsound="alt3/sounds/voice/taunt_after.wav"
+	/>
+	
+	<altavatar key="Hero_Kunas.Alt4" modpriority="1"
+		altavatar="true"
+		
+		icon2="alt4/icon.tga"
+		portrait="alt4/icon.tga"
+		model="alt4/model.mdf"
+		
+		preglobalscale="2"
+		passiveeffect="alt4/effects/body.effect"
+		
+		attackprojectile="Projectile_KunasAttack_Alt3"
+		attackactioneffect="alt4/projectile/effects/attack.effect"
+		
+		previewmodel="alt4/preview.mdf"
+		previewpos="-10 0 -60"
+		previewangles="0 0 0"
+		previewscale="1.5"
+		
+		storemodel="alt4/preview.mdf"
+		storepos="0 0 -50"
+		storeangles="0 0 0"
+		storescale="1.8"
+		
+		selectedsound="alt4/sounds/voice/select_%.wav"
+	    selectedflavorsound="alt4/sounds/voice/select_flavour_%.wav"
+	    confirmmovesound="alt4/sounds/voice/move_%.wav"
+	    confirmattacksound="alt4/sounds/voice/attack_%.wav"
+	    nomanasound="alt4/sounds/voice/no_mana.wav"
+	    cooldownsound="alt4/sounds/voice/cooldown.wav"
+	    tauntedsound="alt4/sounds/voice/taunt_prior.wav"
+	    tauntkillsound="alt4/sounds/voice/taunt_after.wav"
+	/>
+	
+	<altavatar key="Hero_Kunas.Alt5" modpriority="1"
+		altavatar="true"
+		
+		icon2="alt5/icon.tga"
+		portrait="alt5/icon.tga"
+		model="alt5/model.mdf"
+		passiveeffect="alt5/effects/body.effect"
+		
+		previewmodel="alt5/preview.mdf"
+		previewpos="-10 0 -50"
+		previewangles="0 0 0"
+		previewscale="1.5"
+		
+		storemodel="alt5/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.3"
+		
+		preglobalscale="1.52"
+		selectedsound="alt5/sounds/voice/select_%.wav"
+		selectedflavorsound="alt5/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt5/sounds/voice/move_%.wav"
+		confirmattacksound="alt5/sounds/voice/attack_%.wav"
+		nomanasound="alt5/sounds/voice/no_mana.wav"
+		cooldownsound="alt5/sounds/voice/cooldown.wav"
+		announcersound="alt5/sounds/voice/hero_select.wav"
+		tauntedsound="alt5/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt5/sounds/voice/taunt_after.wav"
+	/>
+	
+	<altavatar key="Hero_Kunas.Alt6" modpriority="1"
+		altavatar="true"
+		
+		icon2="alt6/icon.tga"
+		portrait="alt6/icon.tga"
+		model="alt6/model.mdf"
+		passiveeffect=""
+		storepassiveeffect="alt6/effects/body_store.effect"
+
+		previewmodel="alt6/preview.mdf"
+		previewpos="-10 0 -50"
+		previewangles="0 0 0"
+		previewscale="1.5"
+		
+		storemodel="alt6/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.3"
+		
+		preglobalscale="1.52"
+		selectedsound="alt6/sounds/voice/select_%.wav"
+		selectedflavorsound="alt6/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt6/sounds/voice/move_%.wav"
+		confirmattacksound="alt6/sounds/voice/attack_%.wav"
+		nomanasound="alt6/sounds/voice/no_mana.wav"
+		cooldownsound="alt6/sounds/voice/cooldown.wav"
+		announcersound="alt6/sounds/voice/hero_select.wav"
+		tauntedsound="alt6/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt6/sounds/voice/taunt_after.wav"
+	>
+		<onspawn>
+			<setactivemodifierkey name="Norse_Sound" />
+		</onspawn>
+	
+		<onrespawn>
+			<setactivemodifierkey name="Norse_Sound" />
+		</onrespawn>
+	</altavatar>
+	
+	<altavatar key="Hero_Kunas.Alt7" modpriority="1"
+		altavatar="true"
+		
+		icon2="alt7/icon.tga"
+		portrait="alt7/icon.tga"
+		model="alt7/model.mdf"
+		passiveeffect="alt7/effects/body.effect"
+		storepassiveeffect="alt7/effects/body_store.effect"
+		infoheight="200"
+
+		previewmodel="alt7/preview.mdf"
+		previewpos="-10 0 -50"
+		previewangles="0 0 0"
+		previewscale="1.5"
+		
+		portraitcampos="0 20 -60"
+		
+		storemodel="alt7/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.3"
+		
+		attackactioneffect="alt7/projectile/effects/attack.effect"
+		preglobalscale="1.52"
+		selectedsound="alt7/sounds/voice/select_%.wav"
+		selectedflavorsound="alt7/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt7/sounds/voice/move_%.wav"
+		confirmattacksound="alt7/sounds/voice/attack_%.wav"
+		nomanasound="alt7/sounds/voice/no_mana.wav"
+		cooldownsound="alt7/sounds/voice/cooldown.wav"
+		announcersound="alt7/sounds/voice/hero_select.wav"
+		tauntedsound="alt7/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt7/sounds/voice/taunt_after.wav"
+	>
+		<modifier key="ult_boost" modpriority="100"
+			passiveeffect="alt7/effects/staff_fx.effect"
+		>
+		</modifier>
+	</altavatar>
+	
+	<altavatar key="Hero_Kunas.Alt8" modpriority="1"
+		altavatar="true"
+		
+		icon2="alt8/icon.tga"
+		portrait="alt8/icon.tga"
+		model="alt8/center/model.mdf"
+		passiveeffect=""
+		storepassiveeffect="alt8/center/effects/body_store.effect"
+		infoheight="200"
+
+		previewmodel="alt8/center/preview.mdf"
+		previewpos="-10 0 -50"
+		previewangles="0 0 0"
+		previewscale="1.5"
+		
+		portraitcampos="15 0 10"
+		
+		storemodel="alt8/center/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.3"
+		
+		attackactioneffect="alt8/center/projectile/effects/attack.effect"
+		preglobalscale="1.52"
+		selectedsound="alt8/sounds/voice/select_%.wav"
+		selectedflavorsound="alt8/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt8/sounds/voice/move_%.wav"
+		confirmattacksound="alt8/sounds/voice/attack_%.wav"
+		nomanasound="alt8/sounds/voice/no_mana.wav"
+		cooldownsound="alt8/sounds/voice/cooldown.wav"
+		announcersound="alt8/sounds/voice/hero_select.wav"
+		tauntedsound="alt8/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt8/sounds/voice/taunt_after.wav"
+		
+		tooleffectkeyname0="effect_Boots"
+		tooleffectpath0=""
+		tooleffectgroup0="boots"
+		
+		tooleffectkeyname1=""
+		tooleffectpath1=""
+		tooleffectgroup1="boots"
+		
+		tooleffectkeyname2="Item_RestorationStone"
+		tooleffectpath2=""
+		tooleffectgroup2="orb"
+		
+		tooleffectkeyname3="Item_Weapon1"
+		tooleffectpath3="alt8/effects/center_arcana_orb.effect"
+		tooleffectgroup3="orb"
+
+		tooleffectkeyname4=""
+		tooleffectpath4=""
+		tooleffectgroup4="orb"
+		
+		tooleffectkeyname5="Item_SpellShards"
+		tooleffectpath5="alt8/effects/spellshards.effect"
+		tooleffectgroup5="shards"
+		
+		tooleffectkeyname6=""
+		tooleffectpath6=""
+		tooleffectgroup6="shards"
+		
+		tooleffectkeyname7="Item_Replenish"
+		tooleffectpath7="alt8/effects/ringofsorcery.effect"
+		tooleffectgroup7="ring"
+		
+		tooleffectkeyname8=""
+		tooleffectpath8=""
+		tooleffectgroup8="ring"
+		
+		tooleffectkeyname9="Item_Intelligence7"
+		tooleffectpath9=""
+		tooleffectgroup9="sotm"
+		
+		tooleffectkeyname10=""
+		tooleffectpath10=""
+		tooleffectgroup10="sotm"
+
+	>
+		<onspawn>
+			<applystate name="State_Kunas_Alt8_Terrain" continuous="true" />
+		</onspawn>
+		
+		<ondeath>
+			<applystate name="State_Kunas_Alt8_Terrain" continuous="true" />
+		</ondeath>
+		
+		<onrespawn>
+			<applystate name="State_Kunas_Alt8_Terrain" continuous="true" />
+		</onrespawn>
+		
+		<modifier key="ult_boost" modpriority="100"
+			passiveeffect=""
+		/>
+		
+		<modifier key="East" modpriority="100"
+			model="alt8/east/model.mdf"
+			passiveeffect=""
+			attackactioneffect="alt8/east/projectile/effects/attack.effect"
+			
+			tooleffectkeyname0="effect_Boots"
+			tooleffectpath0="alt8/effects/east_boots.effect"
+			tooleffectgroup0="boots"
+			
+			tooleffectkeyname2="Item_RestorationStone"
+			tooleffectpath2="alt8/effects/east_resto_orb.effect"
+			tooleffectgroup2="orb"
+			
+			tooleffectkeyname3="Item_Weapon1"
+			tooleffectpath3="alt8/effects/east_arcana_orb.effect"
+			tooleffectgroup3="orb"
+		
+			tooleffectkeyname4=""
+			tooleffectpath4="alt8/effects/east_orb.effect"
+			tooleffectgroup4="orb"
+			
+			tooleffectkeyname9="Item_Intelligence7"
+			tooleffectpath9="alt8/effects/east_boost.effect"
+			tooleffectgroup9="sotm"
+		>
+			<ondeath>
+				<playeffect effect="alt8/east/effects/death.effect" source="this_entity" target="this_entity" />
+			</ondeath>
+		</modifier>
+		
+		<modifier key="North" modpriority="100"
+			model="alt8/north/model.mdf"
+			passiveeffect=""
+			attackactioneffect="alt8/north/projectile/effects/attack.effect"
+			
+			tooleffectkeyname0="effect_Boots"
+			tooleffectpath0="alt8/effects/north_boots.effect"
+			tooleffectgroup0="boots"
+			
+			tooleffectkeyname2="Item_RestorationStone"
+			tooleffectpath2="alt8/effects/north_resto_orb.effect"
+			tooleffectgroup2="orb"
+			
+			tooleffectkeyname3="Item_Weapon1"
+			tooleffectpath3="alt8/effects/north_arcana_orb.effect"
+			tooleffectgroup3="orb"
+			
+			tooleffectkeyname4=""
+			tooleffectpath4="alt8/effects/north_orb.effect"
+			tooleffectgroup4="orb"
+			
+			tooleffectkeyname9="Item_Intelligence7"
+			tooleffectpath9="alt8/effects/north_boost.effect"
+			tooleffectgroup9="sotm"
+		>
+			<ondeath>
+				<playeffect effect="alt8/north/effects/death.effect" source="this_entity" target="this_entity" />
+			</ondeath>
+		</modifier>
+		
+		<modifier key="South" modpriority="100"
+			model="alt8/south/model.mdf"
+			passiveeffect=""
+			attackactioneffect="alt8/south/projectile/effects/attack.effect"
+			
+			tooleffectkeyname0="effect_Boots"
+			tooleffectpath0="alt8/effects/south_boots.effect"
+			tooleffectgroup0="boots"
+			
+			tooleffectkeyname2="Item_RestorationStone"
+			tooleffectpath2="alt8/effects/south_resto_orb.effect"
+			tooleffectgroup2="orb"
+			
+			tooleffectkeyname3="Item_Weapon1"
+			tooleffectpath3="alt8/effects/south_arcana_orb.effect"
+			tooleffectgroup3="orb"
+			
+			tooleffectkeyname4=""
+			tooleffectpath4="alt8/effects/south_orb.effect"
+			tooleffectgroup4="orb"
+			
+			tooleffectkeyname9="Item_Intelligence7"
+			tooleffectpath9="alt8/effects/south_boost.effect"
+			tooleffectgroup9="sotm"
+		>
+			<ondeath>
+				<playeffect effect="alt8/south/effects/death.effect" source="this_entity" target="this_entity" />
+			</ondeath>
+		</modifier>
+		
+		<modifier key="West" modpriority="100"
+			model="alt8/west/model.mdf"
+			passiveeffect=""
+			attackactioneffect="alt8/west/projectile/effects/attack.effect"
+			
+			tooleffectkeyname0="effect_Boots"
+			tooleffectpath0="alt8/effects/west_boots.effect"
+			tooleffectgroup0="boots"
+			
+			tooleffectkeyname2="Item_RestorationStone"
+			tooleffectpath2="alt8/effects/west_resto_orb.effect"
+			tooleffectgroup2="orb"
+			
+			tooleffectkeyname3="Item_Weapon1"
+			tooleffectpath3="alt8/effects/west_arcana_orb.effect"
+			tooleffectgroup3="orb"
+			
+			tooleffectkeyname4=""
+			tooleffectpath4="alt8/effects/west_orb.effect"
+			tooleffectgroup4="orb"
+			
+			tooleffectkeyname9="Item_Intelligence7"
+			tooleffectpath9="alt8/effects/west_boost.effect"
+			tooleffectgroup9="sotm"
+		>
+			<ondeath>
+				<playeffect effect="alt8/west/effects/death.effect" source="this_entity" target="this_entity" />
+			</ondeath>
+		</modifier>
+		
+		<modifier key="Center" modpriority="100"
+			model="alt8/center/model.mdf"
+			passiveeffect=""
+			attackactioneffect="alt8/center/projectile/effects/attack.effect"
+			
+			tooleffectkeyname0="effect_Boots"
+			tooleffectpath0="alt8/effects/center_boots.effect"
+			tooleffectgroup0="boots"
+			
+			tooleffectkeyname2="Item_RestorationStone"
+			tooleffectpath2="alt8/effects/center_resto_orb.effect"
+			tooleffectgroup2="orb"
+			
+			tooleffectkeyname3="Item_Weapon1"
+			tooleffectpath3="alt8/effects/center_arcana_orb.effect"
+			tooleffectgroup3="orb"
+			
+			tooleffectkeyname4=""
+			tooleffectpath4="alt8/effects/center_orb.effect"
+			tooleffectgroup4="orb"
+			
+			tooleffectkeyname9="Item_Intelligence7"
+			tooleffectpath9="alt8/effects/center_boost.effect"
+			tooleffectgroup9="sotm"
+		>
+			<ondeath>
+				<playeffect effect="alt8/center/effects/death.effect" source="this_entity" target="this_entity" />
+			</ondeath>
+		</modifier>
+	</altavatar>
+	
+	<altavatar key="Hero_Kunas.pog_skin" modpriority="1"
+		
+		icon2="pog_skin/icon.tga"
+		portrait="pog_skin/icon.tga"
+		model="pog_skin/model.mdf"
+		
+		previewmodel="pog_skin/preview.mdf"
+		previewpos="0 0 -50"
+		previewangles="0 0 0"
+		previewscale="1.15"
+
+		storemodel="pog_skin/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.35"
+	/>
+	
+</hero>

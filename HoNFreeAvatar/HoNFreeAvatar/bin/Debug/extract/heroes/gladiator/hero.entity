@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hero
+	name="Hero_Gladiator"
+
+	team="Legion"
+	icon="icon.tga"
+	portrait="icon.tga"
+	model="model.mdf"
+	skin=""
+	
+	passiveeffect=""
+	spawneffect=""
+	respawneffect="/shared/effects/respawn.effect"
+	selectedsound="sounds/voice/select_%.wav"
+	selectedflavorsound="sounds/voice/select_flavour_%.wav"
+	confirmmovesound="sounds/voice/move_%.wav"
+	confirmattacksound="sounds/voice/attack_%.wav"
+	nomanasound="sounds/voice/no_mana.wav"
+	cooldownsound="sounds/voice/cooldown.wav"
+	announcersound="sounds/voice/hero_select.wav"
+	tauntedsound="sounds/voice/taunt_prior.wav"
+	tauntkillsound="sounds/voice/taunt_after.wav"
+	
+	preglobalscale="1.75"
+	modelscale="1.0"
+	effectscale="1.0"
+	boundsheight="112"
+	boundsradius="24"
+	selectionradius="52"
+	targetoffset="0 0 92"
+
+	category="physical cc"
+	difficulty="5"
+
+	solorating="2"
+	junglerating="0"
+	carryrating="3"
+	supportrating="0"
+	initiatorrating="1"
+	gankerrating="0"
+	pusherrating="0"
+	rangedrating="0"
+	meleerating="5"
+
+	movespeed="300"
+	turnrate="540"
+	turnsmoothing="0.1"
+
+	maxhealth="150"
+	healthregen="1.00"
+	maxmana="0"
+	manaregen="0.01"
+
+	armor="0.7"
+	magicarmor="5.75"
+
+	inventory0="Ability_Gladiator1"
+	inventory1="Ability_Gladiator2"
+	inventory2="Ability_Gladiator3"
+	inventory3="Ability_Gladiator4"
+	inventory4="Ability_AttributeBoost"
+	inventory5=""
+	inventory6=""
+	inventory8="Ability_Taunt"
+	inventory9=""
+	inventory10=""
+	inventory11=""
+	inventory12="Ability_AutomatedCourier"
+
+	attackduration="900"
+	attackactiontime="400"
+	attackcooldown="1700"
+	attackdamagemin="26"
+	attackdamagemax="36"
+	attacknumanims="2"
+	attackoffset="0 30 100"
+	attackprojectile=""
+	attackrange="128"
+	attackstarteffect=""
+	attackactioneffect=""
+	attackimpacteffect="effects/impact.effect"
+	attacktype="melee"
+	combattype="Hero"
+
+	aggrorange="600"
+	sightrangeday="1800"
+	sightrangenight="800"
+	wanderrange="250"
+
+	primaryattribute="Strength"
+	strength="21"
+	strengthperlevel="2.7"
+	agility="15"
+	agilityperlevel="1.2"
+	intelligence="18"
+	intelligenceperlevel="2.0"
+	
+	previewmodel="preview.mdf"
+	previewpos="0 0 -50"
+	previewangles="0 0 0"
+	previewscale="1.7"
+	
+	storemodel="preview.mdf"
+	storepos="0 0 -20"
+	storeangles="0 0 0"
+	storescale="1.65"
+	
+	corpsetime="2000"
+	corpsefadetime="2500"
+	corpsefadeeffect="/shared/effects/corpse_sink.effect"
+	
+	
+>
+	<recommendeditem name="Item_ManaPotion" />
+	<recommendeditem name="Item_MinorTotem" />
+	<recommendeditem name="Item_RunesOfTheBlight" />
+	<recommendeditem name="Item_HealthPotion" />
+	<recommendeditem name="Item_HomecomingStone" />
+	
+	<recommendeditem name="Item_PowerSupply" />
+	<recommendeditem name="Item_Strength5" />
+	<recommendeditem name="Item_Bottle" />
+	<recommendeditem name="Item_Steamboots" />
+	<recommendeditem name="Item_WhisperingHelm" />
+	<recommendeditem name="Item_Immunity" />
+	<recommendeditem name="Item_Splash" />
+	<recommendeditem name="Item_StrengthAgility" />
+	<recommendeditem name="Item_Damage10" />
+	<recommendeditem name="Item_BehemothsHeart" />
+	
+	<modifier key="ability3" modpriority="1"
+		passiveeffect=""
+	/>
+	
+	<modifier key="iamsheeped" modpriority="100"
+		passiveeffect=""
+	/>
+
+	<altavatar key="Hero_Gladiator.Alt" modpriority="1"
+		altavatar="true"
+		
+		icon2="alt/icon.tga"
+		portrait="alt/icon.tga"
+		model="alt/model.mdf"
+		
+		previewmodel="alt/preview.mdf"
+		previewpos="0 0 -50"
+		previewangles="0 0 0"
+		previewscale="1.7"
+		
+		storemodel="alt/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.6"
+		
+		selectedsound="alt/sounds/voice/select_%.wav"
+		selectedflavorsound="alt/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt/sounds/voice/move_%.wav"
+		confirmattacksound="alt/sounds/voice/attack_%.wav"
+		nomanasound="alt/sounds/voice/no_mana.wav"
+		cooldownsound="alt/sounds/voice/cooldown.wav"
+		tauntedsound="alt/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt/sounds/voice/taunt_after.wav"
+	/>
+
+	<altavatar key="Hero_Gladiator.Alt2" modpriority="1"
+		altavatar="true"
+		passiveeffect=""
+		icon2="alt2/icon.tga"
+		portrait="alt2/icon.tga"
+		model="alt2/model.mdf"		
+		previewmodel="alt2/preview.mdf"
+		previewpos="0 0 -60"
+		previewangles="0 0 0"
+		previewscale="1.55"	
+		
+		storemodel="alt2/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.55"
+		
+		selectedsound="alt2/sounds/voice/select_%.wav"
+		selectedflavorsound="alt2/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt2/sounds/voice/move_%.wav"
+		confirmattacksound="alt2/sounds/voice/attack_%.wav"
+		nomanasound="alt2/sounds/voice/no_mana.wav"
+		cooldownsound="alt2/sounds/voice/cooldown.wav"
+		tauntedsound="alt2/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt2/sounds/voice/taunt_after.wav"
+	/>
+	
+	<altavatar key="Hero_Gladiator.Alt3" modpriority="1"
+		altavatar="true"
+		icon2="alt3/icon.tga"
+		portrait="alt3/icon.tga"
+		model="alt3/model.mdf"
+		previewmodel="alt3/preview.mdf"
+		previewpos="0 0 -60"
+		previewangles="0 0 0"
+		previewscale="1.55"
+		
+		preglobalscale="1.8"
+		
+		passiveeffect="alt3/effects/body.effect"
+		
+		storemodel="alt3/preview.mdf"
+		storepos="0 0 -18"
+		storeangles="0 0 0"
+		storescale="1.60"
+		
+		selectedsound="alt3/sounds/voice/select_%.wav"
+		selectedflavorsound="alt3/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt3/sounds/voice/move_%.wav"
+		confirmattacksound="alt3/sounds/voice/attack_%.wav"
+		nomanasound="alt3/sounds/voice/no_mana.wav"
+		cooldownsound="alt3/sounds/voice/cooldown.wav"
+		tauntedsound="alt3/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt3/sounds/voice/taunt_after.wav"
+	/>
+	
+	<altavatar key="Hero_Gladiator.Alt4" modpriority="1"
+		altavatar="true"
+		
+		icon2="alt4/icon.tga"
+		portrait="alt4/icon.tga"
+		model="alt4/model.mdf"
+		
+		previewmodel="alt4/preview.mdf"
+		previewpos="0 0 -50"
+		previewangles="0 0 0"
+		previewscale="1.7"
+		
+		storemodel="alt4/preview.mdf"
+		storepos="0 0 -25"
+		storeangles="0 0 0"
+		storescale="1.8"
+		
+		selectedsound="alt4/sounds/voice/select_%.wav"
+		selectedflavorsound="alt4/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt4/sounds/voice/move_%.wav"
+		confirmattacksound="alt4/sounds/voice/attack_%.wav"
+		nomanasound="alt4/sounds/voice/no_mana.wav"
+		cooldownsound="alt4/sounds/voice/cooldown.wav"
+		tauntedsound="alt4/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt4/sounds/voice/taunt_after.wav"
+	/>
+	
+	<altavatar key="Hero_Gladiator.Alt5" modpriority="1"
+		altavatar="true"
+		
+		icon2="alt5/icon.tga"
+		portrait="alt5/icon.tga"
+		model="alt5/model.mdf"
+		
+		previewmodel="alt5/preview.mdf"
+		previewpos="0 0 -50"
+		previewangles="0 0 0"
+		previewscale="1.7"
+		
+		storemodel="alt5/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.65"
+		
+		selectedsound="alt5/sounds/voice/select_%.wav"
+		selectedflavorsound="alt5/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt5/sounds/voice/move_%.wav"
+		confirmattacksound="alt5/sounds/voice/attack_%.wav"
+		nomanasound="alt5/sounds/voice/no_mana.wav"
+		cooldownsound="alt5/sounds/voice/cooldown.wav"
+		tauntedsound="alt5/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt5/sounds/voice/taunt_after.wav"
+	/>
+
+	<altavatar key="Hero_Gladiator.Alt6" modpriority="1"
+		altavatar="true"
+		
+		preglobalscale="1.75"
+		modelscale="1.1"
+		effectscale="1.0"
+		
+		icon2="alt6/icon.tga"
+		portrait="alt6/icon.tga"
+		model="alt6/model.mdf"
+		
+		previewmodel="alt6/preview.mdf"
+		previewpos="0 0 -50"
+		previewangles="0 0 0"
+		previewscale="1.7"
+		
+		passiveeffect=""
+		portraitcampos="-5 20 15"
+		
+		storemodel="alt6/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.65"
+		storepassiveeffect="alt6/02/lvl4/shards/body_preview.effect"
+		
+		respawneffect="/shared/effects/respawn_gladiator.effect"
+		selectedsound="alt6/sounds/voice/select_%.wav"
+		selectedflavorsound="alt6/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt6/sounds/voice/move_%.wav"
+		confirmattacksound="alt6/sounds/voice/attack_%.wav"
+		nomanasound="alt6/sounds/voice/no_mana.wav"
+		cooldownsound="alt6/sounds/voice/cooldown.wav"
+		tauntedsound="alt6/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt6/sounds/voice/taunt_after.wav"
+		
+		tooleffectkeyname0="Item_Critical1"
+		tooleffectpath0="alt6/weapons/riftshards/body.effect"
+		tooleffectgroup0="blade"
+		
+		tooleffectkeyname1="Item_Broadsword"
+		tooleffectpath1="alt6/weapons/broadsword/body.effect"
+		tooleffectgroup1="blade"
+		
+		tooleffectkeyname2=""
+		tooleffectpath2="alt6/weapons/blade/body.effect"
+		tooleffectgroup2="blade"
+		
+		tooleffectkeyname3="Item_Critical1"
+		tooleffectpath3="alt6/weapons/riftshards/body.effect"
+		tooleffectgroup3="hilt"
+		
+		tooleffectkeyname4="Item_Punchdagger"
+		tooleffectpath4="alt6/weapons/punchdagger/body.effect"
+		tooleffectgroup4="hilt"
+		
+		tooleffectkeyname5=""
+		tooleffectpath5=""
+		tooleffectgroup5="hilt"
+	>	
+	
+		<modifier key="alt_Critical" modpriority="2"
+			model="alt6/model02.mdf"
+			respawneffect="/shared/effects/respawn_gladiator.effect"
+			passiveeffect="alt6/02/lvl1/body.effect"
+			attackimpacteffect="alt6/effects/impact.effect"	
+		/>
+		
+		<modifier key="alt_Critical2" modpriority="3"
+			model="alt6/model02.mdf"
+			respawneffect="/shared/effects/respawn_gladiator.effect"
+			passiveeffect="alt6/02/lvl2/body.effect"
+			attackimpacteffect="alt6/effects/impact.effect"
+		/>
+		
+		<modifier key="alt_Critical3" modpriority="4"
+			model="alt6/model02.mdf"
+			respawneffect="/shared/effects/respawn_gladiator.effect"
+			passiveeffect="alt6/02/lvl3/body.effect"
+			attackimpacteffect="alt6/effects/impact.effect"
+		/>
+		
+		<modifier key="alt_Critical4" modpriority="5"
+			model="alt6/model03.mdf"
+			respawneffect="/shared/effects/respawn_gladiator.effect"
+			passiveeffect="alt6/02/lvl4/shards/body.effect"
+			attackimpacteffect="alt6/effects/impact.effect"
+		   
+    	    selectedsound="alt6/sounds/voice/corrupted/select_%.wav"
+		    selectedflavorsound="alt6/sounds/voice/corrupted/select_flavour_%.wav"
+		    confirmmovesound="alt6/sounds/voice/corrupted/move_%.wav"
+		    confirmattacksound="alt6/sounds/voice/corrupted/attack_%.wav"
+		    nomanasound="alt6/sounds/voice/corrupted/no_mana.wav"
+		    cooldownsound="alt6/sounds/voice/corrupted/cooldown.wav"
+		    tauntedsound="alt6/sounds/voice/corrupted/taunt_prior.wav"
+		    tauntkillsound="alt6/sounds/voice/corrupted/taunt_after.wav"
+		/>
+		
+	</altavatar>
+	
+	<altavatar key="Hero_Gladiator.Alt7" modpriority="1"
+		altavatar="true"
+		preglobalscale="2"
+		portraitcampos="-10 -5 15"
+		
+		icon2="alt7/icon.tga"
+		portrait="alt7/icon.tga"
+		model="alt7/model.mdf"
+		
+		previewmodel="alt7/preview.mdf"
+		previewpos="0 0 -50"
+		previewangles="0 0 0"
+		previewscale="1.7"
+		
+		storemodel="alt7/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.85"
+		
+		selectedsound="alt7/sounds/voice/select_%.wav"
+		selectedflavorsound="alt7/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt7/sounds/voice/move_%.wav"
+		confirmattacksound="alt7/sounds/voice/attack_%.wav"
+		nomanasound="alt7/sounds/voice/no_mana.wav"
+		cooldownsound="alt7/sounds/voice/cooldown.wav"
+		tauntedsound="alt7/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt7/sounds/voice/taunt_after.wav"
+	>
+		<onspawn>
+		<setactivemodifierkey name="Arctos_Sound" />
+		 <activatemodifierkey name="Ursa_Sound"/>
+		</onspawn>
+		
+		<onrespawn>
+		<setactivemodifierkey name="Arctos_Sound" />
+		</onrespawn>
+  </altavatar>
+
+  <altavatar key="Hero_Gladiator.Alt8" modpriority="1"
+		altavatar="true"
+		
+		icon2="alt8/icon.tga"
+		portrait="alt8/icon.tga"
+		model="alt8/model.mdf"
+		preglobalscale="2.2"
+		
+		previewmodel="alt8/preview.mdf"
+		previewpos="0 0 -50"
+		previewangles="0 0 0"
+		previewscale="1.7"
+		portraitcampos="0 -40 15"
+		
+		storemodel="alt8/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.8"
+		
+		selectedsound="alt8/sounds/voice/select_%.wav"
+		selectedflavorsound="alt8/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt8/sounds/voice/move_%.wav"
+		confirmattacksound="alt8/sounds/voice/attack_%.wav"
+		nomanasound="alt8/sounds/voice/no_mana.wav"
+		cooldownsound="alt8/sounds/voice/cooldown.wav"
+		tauntedsound="alt8/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt8/sounds/voice/taunt_after.wav"
+	/>
+  
+  
+   <altavatar key="Hero_Gladiator.pog_skin" modpriority="1"
+		icon2="icon.tga"
+		portrait="icon.tga"
+		model="pog_skin/model.mdf"
+		
+		previewmodel="pog_skin/preview.mdf"
+		previewpos="0 0 -50"
+		previewangles="0 0 0"
+		previewscale="1.4"
+		
+		storemodel="pog_skin/preview.mdf"
+		storepos="0 0 -20"
+		storeangles="0 0 0"
+		storescale="1.65"
+		
+	/>
+   
+   <oninflicted>
+		<entitytype type="State_Taunting" target="inflictor_entity">
+			<setproxy entity="this_entity" target="inflictor_entity" />
+		</entitytype>
+	</oninflicted>
+</hero>
